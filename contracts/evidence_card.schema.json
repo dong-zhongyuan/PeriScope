@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neurobridge/contracts/evidence_card.schema.json",
+  "title": "Evidence Card",
+  "type": "object",
+  "required": [
+    "claim_id", "claim_class", "claim_text_allowed", "estimand", "analysis_unit",
+    "evidence_runs", "primary_statistic", "null_control", "uncertainty_status",
+    "forbidden_wording", "open_gaps", "provenance"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "claim_id": {"type": "string", "pattern": "^EC-[A-Za-z0-9_.-]+$"},
+    "claim_class": {"enum": ["C1_association", "C2_predictive_mapping", "C3_spatial_colocalization", "C4_model_intervention_response", "C5_identified_counterfactual", "C6_genetically_proxied_effect", "C7_experimentally_supported_effect"]},
+    "claim_text_allowed": {"type": "string", "description": "the strongest wording this card permits"},
+    "estimand": {"type": "string"},
+    "analysis_unit": {"enum": ["cell", "spot", "roi", "region", "sample", "donor", "cohort", "feature"]},
+    "target_population": {"type": "string"},
+    "evidence_runs": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["run_id", "what_it_shows"],
+        "properties": {
+          "run_id": {"type": "string"},
+          "what_it_shows": {"type": "string"},
+          "output_ref": {"type": "string"}
+        }
+      }
+    },
+    "primary_statistic": {
+      "type": "object",
+      "required": ["name", "value"],
+      "properties": {"name": {"type": "string"}, "value": {"type": "number"}, "ci": {"type": "object"}}
+    },
+    "null_control": {
+      "type": "array", "minItems": 1,
+      "items": {"type": "object", "required": ["name", "passed"], "properties": {"name": {"type": "string"}, "passed": {"type": "boolean"}, "detail": {"type": "string"}}}
+    },
+    "uncertainty_status": {"enum": ["estimated", "unsupported", "unknown"]},
+    "validation_grade": {"enum": ["none", "internal", "held-out-donor", "external-cohort", "experimental"]},
+    "forbidden_wording": {"type": "array", "items": {"type": "string"}},
+    "open_gaps": {"type": "array", "items": {"type": "string"}},
+    "provenance": {
+      "type": "object",
+      "required": ["git_commit", "created_at"],
+      "properties": {
+        "git_commit": {"type": "string"},
+        "created_at": {"type": "string"},
+        "input_refs": {"type": "array", "items": {"type": "string"}},
+        "claim_policy_version": {"type": "string"}
+      }
+    },
+    "observation_status": {"enum": ["measured", "inferred"]},
+    "spatial_status": {"enum": ["measured", "reconstructed", "pseudo", "not_spatial"]},
+    "scenario_status": {"enum": ["observed", "model_intervention", "identified_counterfactual"]}
+  }
+}

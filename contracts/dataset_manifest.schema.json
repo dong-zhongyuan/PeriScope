@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neurobridge/contracts/dataset_manifest.schema.json",
+  "title": "Dataset Manifest",
+  "type": "object",
+  "required": ["dataset_id", "accession", "source_version", "source", "files", "location", "license", "access_class", "biology", "use", "isolation"],
+  "additionalProperties": true,
+  "properties": {
+    "dataset_id": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+$"},
+    "accession": {"type": "string"},
+    "title": {"type": "string"},
+    "source_version": {"type": "string"},
+    "source": {
+      "type": "object",
+      "required": ["canonical_url"],
+      "properties": {
+        "canonical_url": {"type": "string", "format": "uri"},
+        "landing_page": {"type": "string", "format": "uri"},
+        "paper_doi": {"type": "string"},
+        "download_completed": {"type": "string"},
+        "downloader": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["relative_path", "bytes", "sha256", "archive_status"],
+        "properties": {
+          "relative_path": {"type": "string"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "archive_status": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "location": {"type": "string"},
+    "license": {"type": "string"},
+    "access_class": {"enum": ["public", "controlled-access", "internal", "prohibited"]},
+    "redistribution_allowed": {"type": ["string", "boolean"]},
+    "biology": {
+      "type": "object",
+      "required": ["species", "tissue", "condition", "assay"],
+      "properties": {
+        "species": {"type": "string"},
+        "tissue": {"type": "string"},
+        "region": {"type": "string"},
+        "condition": {"type": "string"},
+        "assay": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "design": {
+      "type": "object",
+      "properties": {
+        "pairedness": {"type": "string"},
+        "longitudinal": {"type": "boolean"},
+        "case_control": {"type": ["boolean", "string"]}
+      },
+      "additionalProperties": true
+    },
+    "spatial_semantics": {"type": "string"},
+    "use": {
+      "type": "object",
+      "properties": {
+        "discovery": {"type": ["boolean", "string"]},
+        "training": {"type": ["boolean", "string"]},
+        "calibration": {"type": ["boolean", "string"]},
+        "model_selection": {"type": ["boolean", "string"]},
+        "locked_test": {"type": ["boolean", "string"]},
+        "external_validation": {"type": ["boolean", "string"]},
+        "spatial_anchor": {"type": ["boolean", "string"]},
+        "staging": {"type": ["boolean", "string"]}
+      },
+      "additionalProperties": false
+    },
+    "isolation": {
+      "type": "object",
+      "required": ["leakage_group"],
+      "properties": {
+        "leakage_group": {"type": "string"},
+        "related_datasets": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "open_items": {"type": "array", "items": {"type": "string"}}
+  }
+}

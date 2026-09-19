@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: pdproduct
+Version: 0.1.0
+Summary: pd_product: PD blood-protein to brain-gene intervention model track (CCWM equilibrium simulator); platform components copied from pd_bbm
+Requires-Python: >=3.10
+Requires-Dist: pyyaml>=6
+Requires-Dist: jsonschema>=4

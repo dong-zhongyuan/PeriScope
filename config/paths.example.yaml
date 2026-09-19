@@ -1,0 +1,27 @@
+# 路径配置样例 —— 复制为 paths.yaml（不入 Git）后按机器实际填写
+# 绝对路径只允许出现在本地未提交配置中（HANDOFF_SERVER_V1 §16.2 原则）
+
+asset_root: /public/home/mengxl/dzy/pd_product_assets
+repo_root: /public/home/mengxl/dzy/pd_product
+
+raw_dir: ${asset_root}/raw
+processed_dir: ${asset_root}/processed
+interim_dir: ${asset_root}/interim
+checkpoints_dir: ${asset_root}/checkpoints
+runs_dir: ${asset_root}/runs
+manifests_dir: ${asset_root}/manifests
+quarantine_dir: ${asset_root}/quarantine
+cache_dir: ${asset_root}/cache
+
+# 外部只读资产（引用不复制，D9）
+ad_omics_root: /public/home/mengxl/dzy/ad_omics_v2
+
+# 环境
+python_env: /public/home/mengxl/dzy/envs/pd_bbm/bin/python
+
+# GPU（用户 2026-08-27 规则：用前 nvidia-smi 看空闲显存选卡，CUDA_VISIBLE_DEVICES 指定；以下为示例值）
+gpu_uuid: GPU-16f7669d-ea96-c810-d187-090e7f37838b
+gpu_physical_index: 1
+
+# 上游冻结输入（只读引用，不复制）：pd_bbm 平台已校验资产（SHA256 见其 registry/manifests）
+upstream_asset_root: /public/home/mengxl/dzy/pd_bbm_assets

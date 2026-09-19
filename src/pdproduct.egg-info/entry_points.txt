@@ -1,0 +1,2 @@
+[console_scripts]
+pdproduct = pdproduct.cli.main:main

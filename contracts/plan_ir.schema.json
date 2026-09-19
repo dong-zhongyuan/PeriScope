@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neurobridge/contracts/plan_ir.schema.json",
+  "title": "Plan IR",
+  "description": "Tasks compile to Plan IR and pass seven pre-flight gates before any execution (HANDOFF_SERVER_V1 §17.4).",
+  "type": "object",
+  "required": ["task_id", "user_intent", "requested_claim_class", "steps", "data_splits", "authorization_scope"],
+  "properties": {
+    "task_id": {"type": "string", "pattern": "^PLAN-[A-Za-z0-9_.-]+$"},
+    "user_intent": {"type": "string"},
+    "requested_claim_class": {"enum": ["C1_association", "C2_predictive_mapping", "C3_spatial_colocalization", "C4_model_intervention_response", "C5_identified_counterfactual", "C6_genetically_proxied_effect", "C7_experimentally_supported_effect"]},
+    "input_modalities": {"type": "array", "items": {"type": "string"}},
+    "output_modality": {"type": "string"},
+    "observed_inputs": {"type": "array", "items": {"type": "string"}},
+    "missing_inputs": {"type": "array", "items": {"type": "string"}},
+    "selected_methods": {"type": "array", "items": {"type": "string"}},
+    "baseline_methods": {"type": "array", "items": {"type": "string"}},
+    "steps": {
+      "type": "array", "minItems": 1,
+      "items": {"type": "object", "required": ["step_id", "method"], "properties": {"step_id": {"type": "string"}, "method": {"type": "string"}, "depends_on": {"type": "array", "items": {"type": "string"}}}}
+    },
+    "data_splits": {"type": "array", "items": {"type": "string"}},
+    "authorization_scope": {"type": "string"},
+    "compute_budget": {"type": "object", "properties": {"max_gpu_hours": {"type": "number"}, "max_ram_gb": {"type": "number"}}},
+    "expected_outputs": {"type": "array", "items": {"type": "string"}},
+    "refusal_paths": {"type": "array", "items": {"type": "string"}},
+    "validation_plan": {"type": "string"},
+    "evidence_independence_map": {"type": "object"}
+  }
+}

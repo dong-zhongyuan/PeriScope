@@ -1,0 +1,17 @@
+# local machine config, never committed
+config/paths.yaml
+
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# artifacts
+data/*
+models/*
+results/
+_work/
+*.log
+nohup.out
+.ipynb_checkpoints/

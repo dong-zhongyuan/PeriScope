@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neurobridge/contracts/run_manifest.schema.json",
+  "title": "Run Manifest",
+  "type": "object",
+  "required": ["run_id", "operator", "approved_scope", "started_at", "host", "git_commit", "command", "status"],
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+$"},
+    "parent_run_id": {"type": ["string", "null"]},
+    "operator": {"type": "string"},
+    "approved_scope": {"type": "string", "description": "e.g. phaseB-W3-smoke, authorized by ADR-0001"},
+    "started_at": {"type": "string"},
+    "ended_at": {"type": ["string", "null"]},
+    "host": {"type": "string"},
+    "container": {"type": ["string", "null"]},
+    "gpu": {
+      "type": ["object", "null"],
+      "properties": {
+        "assigned_uuid": {"type": "string"},
+        "physical_index": {"type": "integer"},
+        "logical_index": {"type": "integer"},
+        "pre_run_snapshot": {"type": "string"}
+      }
+    },
+    "git_commit": {"type": "string"},
+    "git_dirty": {"type": "boolean"},
+    "config_sha256": {"type": ["string", "null"]},
+    "dataset_manifest_sha256": {"type": ["string", "null"]},
+    "split_sha256": {"type": ["string", "null"]},
+    "environment_digest": {"type": ["string", "null"]},
+    "command": {"type": "string"},
+    "seed": {"type": ["integer", "null"]},
+    "exit_code": {"type": ["integer", "null"]},
+    "peak_ram_gb": {"type": ["number", "null"]},
+    "peak_gpu_mem_mib": {"type": ["number", "null"]},
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string"},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "bytes": {"type": "integer"}
+        }
+      }
+    },
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "refusal": {"type": ["object", "null"]},
+    "human_review": {"type": ["string", "null"]},
+    "status": {"enum": ["completed", "failed", "inconclusive", "blocked", "refused", "not-started"]}
+  }
+}

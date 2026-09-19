@@ -1,0 +1,50 @@
+# benchmark_grid.yaml — CCWM 消融网格（v1.0 已冻结 2026-08-31，ADR-0001 APPROVED）
+# 冻结纪律：第 3 步训练启动前 commit 冻结（沿用 pd_bbm/docs/G2_PREREGISTRATION.md 的格式
+# 写正式预注册文档后，本文件 frozen: true）。全格报告（含输的格子），不许选择性汇报。
+
+version: v1.0
+frozen: true
+
+seeds: [42, 43, 44]
+
+architecture:
+  z_dim: [128]
+  k_steps: [4, 8]            # 展开下降步数
+  alpha_l2: [0.01]           # (α/2)||z||^2
+  coupling: [on, off]        # off = U_耦合≡0，同时是生死门②的消融
+
+loss:
+  dsm_sigma_rel: [[0.1, 0.3, 0.5]]  # σ 相对 z std 的档（蓝本 Block B）
+  sinkhorn_eps: [0.05, 0.1, 0.15, 0.3]  # 分层 Sinkhorn（Block A）
+  beta_protein_head: [1.0]
+  beta_recon: [0.1]          # 三头自重建（Zero-Masked MSE+cos）
+  beta_kl: [0.01]
+
+training:
+  lr: [1.0e-3, 3.0e-4]
+  batch_size: [1024]
+  epochs: [200]
+  grad_clip: [1.0]
+
+robustness_gates:            # 预注册生死/诊断门（阈值来自蓝本 Step 2）
+  gate0_solver_sanity: {mono_frac_ge: 0.99, pred_var_ratio_ge: 0.1, action: "v1.1 新增：能量非单调或预测方差塌缩的 run 不参与门①②判定"}  # 触发原因见 CCWM_V1_DIAGNOSTICS.md
+  random_pairing_control: {threshold_le_ratio: 0.8, action: "随机配对重训达到疾病配对 80% → 组织轴判死"}
+  coupling_ablation: {threshold_le_ratio: 0.8, action: "耦合关断达到耦合版 80% → 判死"}
+  condition_dropout_collapse: {action: "条件 dropout 后组织预测塌到随机 → 判死"}
+  gradient_layer_check: {action: "‖∇U‖ 按疾病×细胞类型×块分层，>2 倍层只进敏感性分析"}
+
+fallback_ladder:             # 训练不稳时逐级回退，每级限 2 周时间盒
+  - unrolled_gradient_flow_dsm      # ① 展开梯度流+DSM（主设计）
+  - tolerance_fixed_point           # ② ①+容忍裕量定点损失
+  - free_field_potential_penalty    # ③ 自由场+势一致惩罚（≈ad_omics_v2 架构加正则）
+
+baselines_fixed:             # 对照臂（不进网格，单独报）
+  - cell_type_mean
+  - ridge_gpu
+  - scipenn_T1_reverse        # sciPENN 换向重训（第 2 步实现）
+  - neural_ot                 # CellOT 路线（第 2 步实现）
+
+report_rules:
+  - 全格连输一起报（benchmark_protocol 沿用 pd_bbm）
+  - 生死门在任何格子通过前先跑
+  - donor split：脑侧 GSE178265 split v1（pd_bbm 冻结件）；血侧不 split（6 供体全进，仅作条件层）

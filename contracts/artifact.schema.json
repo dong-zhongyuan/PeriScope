@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "neurobridge/contracts/artifact.schema.json",
+  "title": "Artifact Contract",
+  "description": "Every consumable output of the platform carries orthogonal semantic axes; merging axes into one truth flag is prohibited.",
+  "type": "object",
+  "required": ["artifact_id", "run_id", "path", "sha256", "observation_status", "spatial_status", "scenario_status", "entity_level", "uncertainty_status"],
+  "additionalProperties": true,
+  "properties": {
+    "artifact_id": {"type": "string"},
+    "parent_artifact_ids": {"type": "array", "items": {"type": "string"}},
+    "run_id": {"type": "string"},
+    "path": {"type": "string"},
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "data_manifest_ref": {"type": "string"},
+    "code_commit": {"type": "string"},
+    "model_version": {"type": ["string", "null"]},
+    "environment_digest": {"type": ["string", "null"]},
+    "seed": {"type": ["integer", "null"]},
+    "split_ref": {"type": ["string", "null"]},
+    "observation_status": {"enum": ["measured", "inferred"]},
+    "spatial_status": {"enum": ["measured", "reconstructed", "pseudo", "not_spatial"]},
+    "scenario_status": {"enum": ["observed", "model_intervention", "identified_counterfactual"]},
+    "modality": {"type": "string"},
+    "entity_level": {"enum": ["cell", "spot", "roi", "region", "sample", "donor", "cohort", "feature"]},
+    "coordinate_chain": {"type": ["string", "null"], "description": "transform chain if any spatial registration involved"},
+    "observed_mask_ref": {"type": ["string", "null"]},
+    "point_estimate": {"type": ["number", "null"]},
+    "uncertainty_status": {"enum": ["estimated", "unsupported", "unknown"]},
+    "interval": {
+      "type": ["object", "null"],
+      "required": ["low", "high", "level"],
+      "properties": {"low": {"type": "number"}, "high": {"type": "number"}, "level": {"type": "number"}}
+    },
+    "validation_grade": {"enum": ["none", "internal", "held-out-donor", "external-cohort", "experimental"]},
+    "causal_grade": {"enum": ["none", "association", "predictive", "model-response", "genetically-proxied", "identified", "experimentally-supported"]},
+    "permitted_downstream_uses": {"type": "array", "items": {"type": "string"}},
+    "prohibited_downstream_uses": {"type": "array", "items": {"type": "string"}},
+    "refusal_reason": {"type": ["string", "null"]}
+  }
+}

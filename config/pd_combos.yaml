@@ -1,0 +1,32 @@
+# pd_combos.yaml — 扰动/v-KO 组合（v1.0 已冻结 2026-08-31，ADR-0001 APPROVED）
+# 冻结纪律：第 3 步（CCWM 训练）启动前必须 commit 冻结；任何改动 = 新版本号 + 新 run id。
+# 源 = 血侧细胞类型（GSE223138 注释 v0.1，2026-08-31）；
+# 靶 = 脑侧细胞类型（GSE178265 注释，pd_bbm 冻结资产）。
+
+version: v1.0
+frozen: true
+
+conditions: [Normal, Early PD, Late PD]
+
+blood_strata: [CD4_T, CD8_T, B_cell, NK, Monocyte_CD14, Monocyte_CD16, DC, pDC]
+brain_strata: [DA_neuron, Neuron_other, Astrocyte, Oligodendrocyte, OPC, Microglia, Pericyte, Endothelial, T_cell, B_cell, Mono_macro]
+
+# 分室对应（蓝本 PROJECT_BRIEF"配对轴加厚"：血髓系↔脑小胶质；血T↔脑浸润T）
+compartment_pairs:
+  - {name: myeloid, blood: [Monocyte_CD14, Monocyte_CD16, DC, pDC], brain: [Microglia, Mono_macro]}
+  - {name: t_cell, blood: [CD4_T, CD8_T], brain: [T_cell]}
+  - {name: b_cell, blood: [B_cell], brain: [B_cell]}
+  # 神经谱系无血侧对应：DA_neuron/Neuron_other/Astro/Oligo/OPC/Pericyte/Endo 只作靶端
+
+# 多档扰动读出（蓝本 Step 3：Jacobian=线性档，v-KO=治疗档，全曲线=剂量响应）
+perturbation_levels:
+  jacobian_epsilon: [0.01, 0.05, 0.1]          # 线性档：数值微分步长
+  quantile_clamps: [0.1, 0.25, 0.5, 0.75, 0.9] # 治疗档：蛋白 u 钳到分位后重解平衡
+
+# 联合干预（非可加性检验的初始对，第 4 步读出时按 top 单基因边扩充）
+joint_initial_pairs: 2   # 取 randko q 最小的两条源边
+
+known_limitations:
+  - "GSE223138 注释 v0.1：NK 42% 为 CD8/NK 细胞毒性 marker 交叉（GNLY/NKG7 双阳性），冻结前须决定：合并为 CD8/NK 细胞毒性层，或出注释 v2 细化"
+  - "血侧仅 6 供体（每 condition 2 个）：禁止血侧供体级泛化主张；donor split 仅在脑侧执行"
+  - "CITE-seq 为健康/COVID 域（Hao/COMBAT），ADT≠血浆蛋白：Block B 结果须带域条件标注"

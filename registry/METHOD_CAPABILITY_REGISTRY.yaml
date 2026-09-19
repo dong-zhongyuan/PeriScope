@@ -1,0 +1,334 @@
+# METHOD CAPABILITY REGISTRY — pd_bbm / NeuroBridge-VT
+# 版本: Phase A 草案 v1 | 日期: 2026-08-17 | 依据: docs/HANDOFF_SERVER_V1.md §7 §14 §28 + skills/ 目录审计
+# 状态口径（五级，见 HANDOFF_SERVER_V1 §14.3）:
+#   KNOWLEDGE-ONLY     只有方法卡/论文信息
+#   SOURCE-AVAILABLE   源码固定，但环境/权重/测试不全
+#   CHALLENGER         能运行，只进 benchmark
+#   CONDITIONALLY-READY 限定数据域/panel/任务上通过门
+#   PRODUCTION-ELIGIBLE 通过独立复现/许可/校准/拒答/回放
+# 当前全服务器没有任何方法达到 CONDITIONALLY-READY 及以上；checkpoint-reproduced = 0。
+# upstream_evidence 取自 skills source-ledger（仅覆盖 12 个空间方法），其余为 knowledge-card。
+
+meta:
+  registry_version: 0.1.0-phaseA
+  last_verified: 2026-08-17
+  verifier: ZCode agent (Phase A, design-only)
+  skill_root_host: /public/home/mengxl/dzy/skills
+  skill_root_container: /home/node/dzy/skills
+  note: >
+    本表当前是知识资产登记，不是可执行专家清单。任何方法升级到 CHALLENGER
+    必须满足 HANDOFF_SERVER_V1 §7.4 的 12 项准入条件并单独 ADR。
+
+# ── 空间与跨模态（source-ledger 覆盖的 12 个） ──────────────────────────
+
+methods:
+  - method_id: scipenn
+    category: rna_to_protein
+    io: {input_modalities: [rna], output_modalities: [adt_protein], entity_level: [cell]}
+    upstream_evidence: metadata-verified
+    readiness: CHALLENGER   # 2026-08-19 G2 实测（RF-001 已撤回，依据被上游 build_dir bug 推翻）
+    core_capability: 配对 CITE-seq 训练，从 scRNA 预测有限蛋白 panel
+    candidate_role: RNA→surface-protein challenger（运行于 Hao 基准：0.380 vs Ridge 0.376，+1.2% 噪声内）
+    legal_output: 训练 panel 词表内的预测蛋白（ADT 量纲）
+    forbidden: [冒充 plasma protein 浓度, panel 外蛋白 zero-shot 主张, 称显著超越基线, PD 域直接使用（未评估）]
+    mvp_role: "CHALLENGER（2026-08-19：G2 实测 0.3802 vs Ridge 0.3759，+1.2% 未达显著增益门；训练 ~3min/内存正常，需 3 个已记录环境补丁；判定文档 results/index/G2_scipenn_revision_v1.md）"
+    cost_profile: "train ~3min (50K cells, batch512, ES@35ep), host RAM normal, GPU normal; 3 upstream patches required (numba pin, gene_normalize branch, build_dir infinite loop)"
+    calibration_capability: "q10-q90 分位数区间为有效置信代理（2026-08-19 风险-覆盖翻盘验证：最自信层 rho 0.943 vs 最不自信 0.511，Δ+0.23）——平台拒答分层机制的当前依据"
+
+  - method_id: sctranslator
+    category: rna_to_protein
+    io: {input_modalities: [rna], output_modalities: [adt_protein], entity_level: [cell]}
+    upstream_evidence: code-verified
+    readiness: SOURCE-AVAILABLE   # 容器 /home/node/dzy/sctranslator 仅源码 checkout
+    core_capability: RNA→蛋白翻译，强调跨数据映射
+    candidate_role: challenger
+    legal_output: 模型支持词表内的单细胞蛋白丰度预测
+    forbidden: [称已安装/已有权重, 无微调推理解释成任意新蛋白或 PD 域 zero-shot, 冒充校准不确定性]
+    mvp_role: 暂缓（D8：先做许可与环境审计；无权重、环境不兼容 torch1.12/py3.8 vs 容器 torch2.2/py3.11）
+
+  - method_id: spider
+    category: rna_to_protein
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 单细胞 RNA→蛋白预测路线
+    candidate_role: registry 节点
+    legal_output: 模型支持词表中的表面蛋白预测
+    forbidden: [unseen-protein zero-shot 未逐 cohort 验证即主张]
+    mvp_role: 不进 MVP
+
+  - method_id: sprout
+    category: spatial_mapping
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 单细胞状态映射/重建到空间结构
+    candidate_role: reconstructed-space adapter
+    legal_output: 重建坐标或空间细胞布局（reconstructed，非实测）
+    forbidden: [重建坐标冒充实测坐标]
+    mvp_role: 不进 MVP
+
+  - method_id: scprospatial
+    category: spatial_mapping
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 借助实测空间蛋白 anchor 做细胞定位
+    candidate_role: measured-anchor spatial adapter
+    legal_output: 有实测 anchor 条件下的细胞定位
+    forbidden: [无实测空间蛋白 anchor 时启用（G3b）]
+    mvp_role: 仅在 G3b anchor 到位后评估；否则 refusal
+
+  - method_id: csomap
+    category: spatial_mapping
+    io: {input_modalities: [rna], output_modalities: [coordinates], entity_level: [cell]}
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 配体-受体互作先验构建细胞伪空间
+    candidate_role: hypothesis generator
+    legal_output: pseudo-space 邻近关系
+    forbidden: [冒充物理坐标, 预测真实空间蛋白]
+    mvp_role: 仅 pseudo-space hypothesis mode
+
+  - method_id: virtues
+    category: spatial_protein_representation
+    io: {input_modalities: [spatial_protein], output_modalities: [embedding], entity_level: [cell, roi, region]}
+    upstream_evidence: full-text-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 表征已实测的高维空间蛋白组织
+    candidate_role: measured spatial-protein representation
+    legal_output: 表征、区域/细胞生态位（输入必须是实测空间蛋白）
+    forbidden: [从 RNA 生成蛋白（不负责该任务）]
+    mvp_role: 不进 MVP（PD 无实测空间蛋白输入）
+
+  - method_id: hex
+    category: image_to_protein
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 配对训练域内 H&E→固定 panel virtual spatial protein（开发域肺癌）
+    candidate_role: image→protein challenger
+    legal_output: 开发域、固定 panel 内预测图
+    forbidden: [PD 脑直接使用（染色/panel/OOD 高风险）]
+    mvp_role: 不进 MVP
+
+  - method_id: rosie
+    category: image_to_protein
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: paired H&E→mIF fixed-marker
+    candidate_role: image→protein challenger
+    legal_output: 配对开发域内固定 marker 预测
+    forbidden: [组织/染色/平台/marker/truth 不匹配时使用]
+    mvp_role: 不进 MVP
+
+  - method_id: histoplexer
+    category: image_to_protein
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: paired H&E/IMC 多重蛋白表型
+    candidate_role: image→multiplex protein challenger
+    legal_output: 配对开发域内 IMC/蛋白表型预测
+    forbidden: [直接迁移 PD 脑；无 held-out truth 时主张]
+    mvp_role: 不进 MVP
+
+  - method_id: hipi
+    category: image_to_protein
+    upstream_evidence: metadata-verified
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 开发域内 H&E WSI→CyCIF/多重蛋白表达
+    candidate_role: image→multiplex protein challenger
+    legal_output: 开发域内固定多重蛋白表达预测
+    forbidden: [任务定义/组织/panel/开发域未逐项核对即使用]
+    mvp_role: 不进 MVP
+
+  - method_id: tissuecraftai
+    category: generative_spatial
+    upstream_evidence: discovery-only
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 设想中的组织/多模态生成路线
+    candidate_role: 暂不纳入
+    legal_output: 无
+    forbidden: [缺规范论文/代码锚时正式推荐]
+    mvp_role: 排除
+
+# ── 单细胞状态、机制、临床（knowledge-card，未入 source-ledger） ─────────
+
+  - method_id: copykat
+    category: cnv_inference
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 从 scRNA 推断大尺度 CNV/非整倍体（肿瘤识别常用）
+    candidate_role: 特定肿瘤场景 QC/annotation
+    forbidden: [作为 PD 通用必选项]
+    mvp_role: 不进 MVP
+
+  - method_id: cellmarker
+    category: annotation_resource
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 人工整理细胞标记知识库
+    candidate_role: annotation 证据源
+    forbidden: [作为真值或自动注释模型]
+    mvp_role: 注释交叉参考
+
+  - method_id: panglaodb
+    category: annotation_resource
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 细胞类型/marker 资源
+    candidate_role: annotation 交叉参考
+    forbidden: [作为单一权威标签]
+    mvp_role: 注释交叉参考
+
+  - method_id: augur
+    category: prioritization
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 细胞类型对扰动/条件的响应可分性排序
+    candidate_role: condition-responsive cell prioritization
+    forbidden: [解释为因果效应大小]
+    mvp_role: Step W3-4 数据表征候选
+
+  - method_id: milo
+    category: differential_abundance
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 图邻域层面差异丰度
+    candidate_role: differential abundance
+    forbidden: [解释为细胞轨迹或机制因果]
+    mvp_role: Step W3-4 数据表征候选
+
+  - method_id: gsea
+    category: pathway
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 基因集富集
+    candidate_role: pathway summary
+    forbidden: [作为单基因因果验证]
+    mvp_role: 分析工具
+
+  - method_id: nmf
+    category: gene_program
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 共表达程序分解
+    candidate_role: gene-program discovery
+    forbidden: [作为唯一真实生物通路]
+    mvp_role: 候选程序定义工具（PD 案例第 1 步）
+
+  - method_id: cytotrace2
+    category: state_ordering
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 细胞状态/分化潜能估计
+    candidate_role: state ordering cross-reference
+    forbidden: [作为实际时间轨迹]
+    mvp_role: 不进 MVP
+
+  - method_id: monocle2
+    category: trajectory
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 伪时间/轨迹推断
+    candidate_role: trajectory hypothesis
+    forbidden: [作为纵向真实时间]
+    mvp_role: 不进 MVP
+
+  - method_id: cellchat
+    category: communication
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 配体-受体通信推断
+    candidate_role: interaction hypothesis
+    forbidden: [作为实际细胞通讯或 blood→brain 因果]
+    mvp_role: 不进 MVP
+
+  - method_id: mime
+    category: prognosis
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 多模型预后/机器学习框架
+    candidate_role: 样本量合格时的独立预后轨
+    forbidden: [小样本下作为稳定临床工具]
+    mvp_role: 不进 MVP（Phase B 之后的独立轨）
+
+  - method_id: scmr
+    category: mr
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 单细胞相关 MR 框架
+    candidate_role: 遗传代理效应证据
+    forbidden: [作为整条治疗链或药物效果证明]
+    mvp_role: 不进 MVP（长期 hypothesis route 组件）
+
+  - method_id: cellos
+    category: foundation_model
+    upstream_evidence: discovery-only
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 厂商/二手材料描述的细胞表征候选
+    candidate_role: 暂不进入 benchmark
+    forbidden: [称第五裁判或主引擎（论文/任务/权重/许可/评测均未核验）]
+    mvp_role: 排除
+
+  - method_id: lingshu-cell
+    category: foundation_model
+    upstream_evidence: knowledge-card
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 通用单细胞基础模型候选
+    candidate_role: frozen embedding / judge 消融
+    forbidden: [作为具有控制通道的生物世界模型]
+    mvp_role: 不进 MVP（消融候选）
+
+  - method_id: scrna-prognosis-pipeline
+    category: prognosis
+    upstream_evidence: discovery-only
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 预后管线候选
+    candidate_role: 暂不进入 benchmark
+    forbidden: [未核验即作为已实现方法]
+    mvp_role: 排除
+
+# ── 其他组件（非 skill 方法，作为平台内部件登记） ────────────────────────
+
+  - method_id: ccwm
+    category: simulator_plugin
+    upstream_evidence: internal-concept   # 旧 PLAN v0.8 概念，当前无实现
+    readiness: NOT-EVALUABLE   # G5B 正式落档 2026-08-19：无真实 held-out action/intervention 数据，永不得用 observational fit 替代（HANDOFF_SERVER_V1 §19.4）；仅可作非因果敏感性研究插件
+    core_capability: 势函数平衡模型 z_hat_star(u,c)，模型内敏感性/扰动响应
+    candidate_role: equilibrium/sensitivity simulator 插件
+    legal_output: 模型内平衡响应、候选与敏感性排序、structural-nonidentifiability 标记
+    forbidden: [称完整 world model, 参与对自身结果的独立验证, 预测再作真值, 无 held-out action 数据时做因果主张（NOT-EVALUABLE）]
+    mvp_role: Phase B 后段 challenger（D7）
+
+  - method_id: baselines-cell-type-mean
+    category: baseline
+    io: {input_modalities: [rna], output_modalities: [adt_protein], entity_level: [cell]}
+    upstream_evidence: internal
+    readiness: 待实现（Phase B W5-6）
+    core_capability: 按细胞类型均值的蛋白预测基线
+    candidate_role: 强制基线（所有复杂模型必须击败）
+    mvp_role: 核心（2+1 中的第 1）
+
+  - method_id: baselines-ridge
+    category: baseline
+    io: {input_modalities: [rna], output_modalities: [adt_protein], entity_level: [cell]}
+    upstream_evidence: internal
+    readiness: 待实现（Phase B W5-6）
+    core_capability: Ridge 回归 RNA→蛋白基线
+    candidate_role: 强制基线
+    mvp_role: 核心（2+1 中的第 2）
+
+  - method_id: legacy-ad-bridge
+    category: rna_to_protein
+    io: {input_modalities: [rna], output_modalities: [adt_protein], entity_level: [cell]}
+    upstream_evidence: internal-legacy   # ad_omics_v2 models/bridge_*，随机 cell split（step5_train_bridge.py L151-155）
+    readiness: KNOWLEDGE-ONLY
+    core_capability: 历史 CITE-seq 桥模型（citeseq/combat/secretome 三份 checkpoint）
+    candidate_role: legacy challenger（仅限）
+    forbidden: [作为已验证专家（非 donor-held-out）, 继承旧指标宣称 PD 性能]
+    mvp_role: challenger（须在新 benchmark 下复测）
+
+  - method_id: llm-router
+    category: llm_interface
+    upstream_evidence: internal
+    readiness: 待实现
+    core_capability: 自然语言→候选任务翻译、Plan IR 草案、解释与汇总
+    forbidden: [绕过数据合同, 自行升级 claim, 缺失值当实测, 判断统计显著性, 自我反思替代 QC, 工具失败时编造结果, 未经授权触发下载/训练/发布]
+    mvp_role: 接口层（无科学主张批准权；须对照确定性规则路由基线证明增量，否则降级）
