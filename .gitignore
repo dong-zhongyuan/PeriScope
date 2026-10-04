@@ -7,6 +7,6 @@ __pycache__/
 nohup.out
 .ipynb_checkpoints/
 .venv/
-data/
-models/
+/data/
+/models/
 recomputed/

@@ -4,8 +4,8 @@
   "source_state": "current working files including uncommitted analysis updates",
   "files": {
     ".gitignore": {
-      "bytes": 133,
-      "sha256": "eedfcaa4cd989271cbf80c26cc182bded27c2cf5da805d41ac1594c7cc1221d3"
+      "bytes": 135,
+      "sha256": "c11159fe219ec0ecc9c0b0e78bae3f8e7ad4269925fdbcdf388130e35b664748"
     },
     "README.md": {
       "bytes": 6795,
