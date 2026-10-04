@@ -1,0 +1,62 @@
+{
+  "version": "20261003_spatial_subtype_author_v6",
+  "method": "RCTD full mode; C-SIDE intercept per spatial donor; donor-level program tests",
+  "reference": "Ma et al author annotated substantia nigra RNA counts,196693 nuclei; GEO identity crosswalk; exclude all overlapping spatial donors and unresolved OJ5 identity; donor-balanced reference",
+  "pre_fit_amendment": "Reference inventory showed negligible T/B coverage and original Mono_macro cells absorbed into purified microglia labels. Add nuisance lineages before any RCTD or candidate result is examined.",
+  "states": [
+    "astro_fibrous",
+    "astro_protoplasmic",
+    "microglia_homeostatic",
+    "microglia_mhc2"
+  ],
+  "resolution": "Author annotated Fibrous/Protoplasmic astrocytes and Baseline/Activated microglia; Monocyte_Derived BAM separate; model astro parent programs evaluated in both spatial leaves, without claiming the model predicts leaf identity",
+  "deconvolution_genes": "40 reference enriched markers per author subtype plus pre-existing biological markers; exclude sex/MT/ribosomal genes; evaluation genes disjoint",
+  "quality_mixtures": "400 RNA mixtures from brain calibration donors plus Hao P5 immune backgrounds, disjoint from reference donors; 1500 UMIs each; synthetic mixtures are QC only, never candidate evidence",
+  "quality_rule_per_state": {
+    "fraction_spearman_min": 0.5,
+    "fraction_RMSE_max": 0.15,
+    "minimum_QC_mixtures": 100
+  },
+  "RCTD": "full mode, default gene/fold thresholds, UMI_min=100; no case/control labels used in deconvolution",
+  "CSIDE": {
+    "cell_type_threshold": 25,
+    "gene_threshold": 1e-05,
+    "weight_threshold": 0.8,
+    "doublet_mode": false,
+    "sigma_gene": true,
+    "normalize_expr": false,
+    "expression": "intercept model fit separately for each donor; all sufficiently represented mixture types included"
+  },
+  "program_test": {
+    "minimum_donors_each_arm": 3,
+    "minimum_genes": 4,
+    "minimum_program_gene_fraction": 0.5,
+    "gene_values": "C-SIDE estimated cell-state log-expression; nonconverged/nonfinite estimates missing",
+    "competitive_null": "5000 expression-matched random gene sets,20 bins,seed42; whole6849program family and both directions",
+    "C7": "state passes QC; estimable donor contrast; competitive q<=0.05; spatial within-state disease direction agrees with pre-existing Kamath same-state direction",
+    "missing": "unresolved, not biological negative; no substitution of mixed tissue or different microglia state"
+  },
+  "adoption": "quality evaluated before inspecting target outcomes; seven-criterion results use unchanged C1-C6 and independently report C7 pass/not_supported/unresolved",
+  "reference_source": "https://github.com/dmcable/spacexr",
+  "recipient_mapping": {
+    "astro": [
+      "astro_fibrous",
+      "astro_protoplasmic"
+    ],
+    "microglia_homeostatic": [
+      "microglia_homeostatic"
+    ],
+    "microglia_mhc2": [
+      "microglia_mhc2"
+    ]
+  },
+  "reference_QC_holdout": [
+    "OJ11",
+    "OJ13",
+    "OJ9",
+    "OJ22"
+  ],
+  "amendment": "Kamath-derived microglia references were not identifiable in heldout mixtures; replace with original spatial-study author subtype annotations and donor-disjoint reference before any candidate outcome inspection",
+  "leaf_aggregation": "BH over all program x applicable spatial leaf x both directions; use q in pre-existing matched-brain direction AND same actual donor effect sign; any supported leaf passes, no support plus unresolved leaf remains unresolved; all tested nonsupport means not_supported",
+  "candidate_outcomes_used_in_reference_selection": false
+}

@@ -1,0 +1,146 @@
+{
+  "brain_train": {
+    "shape": [
+      227475,
+      4741
+    ],
+    "genes_sha256": "db3eb2972de3ba591158577153c06dfd4f0ba1bb5f76a8f5ce7e295d187823a5",
+    "donors": [
+      "SN-1963",
+      "SN-2544",
+      "SN-2569",
+      "SN-3346",
+      "SN-3482",
+      "SN-3873",
+      "SN-3887",
+      "SN-4560",
+      "SN-4956",
+      "SN-5610",
+      "SN-6173"
+    ],
+    "state_counts": {
+      "astro": 25287,
+      "microglia_homeostatic": 2419,
+      "microglia_mhc2": 8842,
+      "neural_other": 190927
+    },
+    "raw_log_min": 0.0
+  },
+  "brain_locked_test": {
+    "shape": [
+      119790,
+      4741
+    ],
+    "genes_sha256": "db3eb2972de3ba591158577153c06dfd4f0ba1bb5f76a8f5ce7e295d187823a5",
+    "donors": [
+      "SN-2142",
+      "SN-3298",
+      "SN-3322",
+      "SN-4568",
+      "SN-4775"
+    ],
+    "state_counts": {
+      "astro": 9869,
+      "microglia_homeostatic": 44,
+      "microglia_mhc2": 5195,
+      "neural_other": 104682
+    },
+    "raw_log_min": 0.0
+  },
+  "brain_calibration": {
+    "shape": [
+      39962,
+      4741
+    ],
+    "genes_sha256": "db3eb2972de3ba591158577153c06dfd4f0ba1bb5f76a8f5ce7e295d187823a5",
+    "donors": [
+      "SN-2561",
+      "SN-3345"
+    ],
+    "state_counts": {
+      "astro": 5072,
+      "microglia_homeostatic": 770,
+      "microglia_mhc2": 1990,
+      "neural_other": 32130
+    },
+    "raw_log_min": 0.0
+  },
+  "blood": {
+    "shape": [
+      140063,
+      4741
+    ],
+    "genes_sha256": "db3eb2972de3ba591158577153c06dfd4f0ba1bb5f76a8f5ce7e295d187823a5",
+    "donors": [
+      "b223:BL-E1",
+      "b223:BL-E2",
+      "b223:BL-L1",
+      "b223:BL-L2",
+      "b223:BL-N1",
+      "b223:BL-N2",
+      "bmb:CTRL1",
+      "bmb:CTRL10",
+      "bmb:CTRL2",
+      "bmb:CTRL3",
+      "bmb:CTRL4",
+      "bmb:CTRL5",
+      "bmb:CTRL6",
+      "bmb:CTRL7",
+      "bmb:CTRL8",
+      "bmb:CTRL9",
+      "bmb:PD1",
+      "bmb:PD10",
+      "bmb:PD11",
+      "bmb:PD12",
+      "bmb:PD13",
+      "bmb:PD14",
+      "bmb:PD2",
+      "bmb:PD3",
+      "bmb:PD4",
+      "bmb:PD5",
+      "bmb:PD6",
+      "bmb:PD7",
+      "bmb:PD8",
+      "bmb:PD9"
+    ],
+    "state_counts": {
+      "cDC": 2082,
+      "classical_mono": 29407,
+      "nonclassical_mono": 6600,
+      "pDC": 822,
+      "none": 101152
+    },
+    "raw_log_min": 0.0
+  },
+  "citeseq": {
+    "shape": [
+      161159,
+      4741
+    ],
+    "genes_sha256": "db3eb2972de3ba591158577153c06dfd4f0ba1bb5f76a8f5ce7e295d187823a5",
+    "donors": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ],
+    "state_counts": {
+      "cDC": 2728,
+      "classical_mono": 42690,
+      "nonclassical_mono": 6320,
+      "pDC": 861,
+      "none": 108560
+    },
+    "raw_log_min": 0.0
+  },
+  "ADT_reconstruction_max_error": 1.0489173476457836e-06,
+  "ADT_CLR_max_abs_sum": 0.00013780593872070312,
+  "brain_raw_count_crosscheck": 2.384185791015625e-07,
+  "blood223_raw_count_crosscheck": 2.384185791015625e-07,
+  "bloodmb_raw_count_crosscheck": 2.384185791015625e-07,
+  "status": "passed"
+}

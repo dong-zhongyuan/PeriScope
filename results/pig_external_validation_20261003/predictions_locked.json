@@ -1,0 +1,43 @@
+{
+  "adapter_sha256": "99613d22b488e5e4a492998d173ee3e10fe763fc1c91c37a96b01c3d403d257b",
+  "protocol_sha256": "63297d9ec4b1204b264a53d81f4b8a6a33cb975eaebc74f6f250cf5cf994219f",
+  "primary_predictions_sha256": "44aa07f0aad8e948ff7258bfebc2aeb8f4dae63e02c30d201e90602f815fd791",
+  "ten_seed_predictions_sha256": "d86a2f324a8a1f7187fd991a4018ae1a21fbc183cfdc4e7f6fbb269a9bb89fcb",
+  "checkpoint_sha256": {
+    "42": "5e7afe4eddcc33409e36da71b85da46393719abcf54a824f72e47da3f6cb0529",
+    "43": "9694e8c505b4851f6b0f1661753ac72b009f6b77eb6a27178cef8547517b6c9c",
+    "44": "99f4223a16a02ddfa09d6001105fcaacd96ffeb0d18aa88838d1da3c6dc00130",
+    "45": "6ee242e4756a17777063f70d8336b89b8b1d117c2e69a06ef20774ac3b24a508",
+    "46": "eb8b4da9708f415053bb3a66a60bd6c3300d595a007406114383dc392e76f989",
+    "47": "6e855e31b12ce65052f27efaf1068ac7af5ac65fb4b338ef959785c063f6df85",
+    "48": "b1a19d966f377f5599ede325e490ac7adf3645976a784d32944ef7abcc03e11e",
+    "49": "5798d6114e5d0d2506caf08a936e75e0fa03aa6da8a7cd295d56b06688e86002",
+    "50": "c9b0fc5a4f460a5a89fc4feb802a2e762cf58a50d0e709cb9215e9b7b3c71da8",
+    "51": "40188c3b521f0478b1d3ae06211c439e3aafadcad31d92004e5e75a4041ad6e7"
+  },
+  "baseline_sources_sha256": {
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/cDC__astro.npz": "b8be73ebc3605af9580e6ec89ff320b686699dc774bbb7d8424c2aa5867abcf1",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/shared_readout/parameters/seed_42/shared_label_mean__cDC__astro.npz": "540202a007bc02babc5c4865c57a3c9678f208f5b026a71fd3e3291255634568",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/cDC__microglia_mhc2.npz": "7ddfa79e9b1d16dda9c978017cf2248927877a5f5f17a4764278401f7ee29aaa",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/shared_readout/parameters/seed_42/shared_label_mean__cDC__microglia_mhc2.npz": "5d479f51f8a2d817d9b9eba6788634c52b88f0b440e6494c129d4e1607c949ea",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/classical_mono__astro.npz": "3d2a95b2600683b5ac0797f61e5c8106c7030785d7e1ff39c519f52b47f53991",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/shared_readout/parameters/seed_42/shared_label_mean__classical_mono__astro.npz": "09de5e9e6a80ec578072ba5baadb0edf3771e0cff4118cff000a8b7034b34f88",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/classical_mono__microglia_mhc2.npz": "909d8dbe04a430b752c97dc34f8814f17482d326931021947eeb133273f21e85",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/shared_readout/parameters/seed_42/shared_label_mean__classical_mono__microglia_mhc2.npz": "54372d0f268978ebf08689c6ab0fc9f2454423460e7dc4289e12a5ee9d136729",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/nonclassical_mono__astro.npz": "5edc45de6c6cf722dfa738cea79d873c2d572c64c5882cb0d649c287bf867146",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/shared_readout/parameters/seed_42/shared_label_mean__nonclassical_mono__astro.npz": "04f87e9a29f2b299e946c82fbb7b2d34578af50d1dfc70a8f974bcb2b59e5d6d",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/nonclassical_mono__microglia_mhc2.npz": "04255845342eb19ce4fbc4610645fa204353fc7710d0691c5a3e785f50047c68",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/shared_readout/parameters/seed_42/shared_label_mean__nonclassical_mono__microglia_mhc2.npz": "d847283f310daed6a02924521ee2d0fc4db229c20eab3d93e294d46a6357ccb6"
+  },
+  "prediction_script_sha256": "97ff46b4db7d2ee2c17b692b6f9c855f4c1605f1e1464e7024ac5234e0506574",
+  "pig_brain_expression_accessed": false,
+  "primary_seed": 42,
+  "primary_condition": 0,
+  "shared_representation": true,
+  "readout": "human-validation-selected shared calibration",
+  "ten_seed_readout": "Original PeriScope readout with authoritative repaired ten-seed weights; separate from calibrated primary comparison",
+  "n_reference_cells_per_source": 128,
+  "completed_utc": "2026-10-03T14:26:32Z",
+  "ten_seed_refresh_script_sha256": "816c30c8d1de89eb1d3aaae01372d9702627b498c58c2579e26f6a8a5d92a673",
+  "model_registry_sha256": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9"
+}

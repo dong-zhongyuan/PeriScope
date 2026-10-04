@@ -1,0 +1,22 @@
+{
+  "protocol_sha256": "63297d9ec4b1204b264a53d81f4b8a6a33cb975eaebc74f6f250cf5cf994219f",
+  "selected": {
+    "alpha": 0.1,
+    "gain": 0.75,
+    "cap_log": 2.0794415416798357,
+    "human_CV_mse": 0.004951984381272453,
+    "n_donors": 23.0
+  },
+  "features": 3730,
+  "train_donor_macro_MSE": 0.004951984381272453,
+  "validation_donor_macro_MSE": 0.005714011024162077,
+  "validation_no_change_MSE": 0.006384311486486691,
+  "validation_direction_median": 0.33522570516385897,
+  "reference_sha256": "9b8277aa24cd4764ea6bf5f6fdf61e024dbd87a79cdf33e62bc7f2f46e9b0180",
+  "marker_sha256": "684d5084ae94fe4991357763309e0e1fe0056abc6213573e4aa40bab4bf0906b",
+  "pig_brain_expression_accessed": false,
+  "checkpoint_sha256": "5e7afe4eddcc33409e36da71b85da46393719abcf54a824f72e47da3f6cb0529",
+  "script_sha256": "f3fe8436e241eb124c13f73a5a5dcc8e233ceac106b4de4316910ab14d794d5a",
+  "selected_gain_zero": false,
+  "interpretation": "Control-referenced bulk-to-human-cell response transfer, not measured pig subtype deconvolution."
+}

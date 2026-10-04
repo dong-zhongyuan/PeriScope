@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "n_programs": 6849,
+  "n_biological_antigens": 213,
+  "program_tiers": {
+    "D": 6821,
+    "C": 22,
+    "B": 6
+  },
+  "priority_targets": [
+    "CD36",
+    "CD43",
+    "CD117",
+    "HLA-DR"
+  ],
+  "priority_tiers": {
+    "B": 4
+  },
+  "source_definitions": {
+    "raw": 5009,
+    "relative": 1840
+  },
+  "nomination_flow": [
+    {
+      "step": "all_programs",
+      "n_programs": 6849,
+      "n_antigens": 213
+    },
+    {
+      "step": "technical_pass",
+      "n_programs": 1449,
+      "n_antigens": 82
+    },
+    {
+      "step": "reproducible_pass",
+      "n_programs": 469,
+      "n_antigens": 78
+    },
+    {
+      "step": "specificity_pass",
+      "n_programs": 111,
+      "n_antigens": 30
+    },
+    {
+      "step": "brain_pass",
+      "n_programs": 6,
+      "n_antigens": 4
+    },
+    {
+      "step": "independent_direction_pass",
+      "n_programs": 6,
+      "n_antigens": 4
+    },
+    {
+      "step": "genetics",
+      "n_programs": 0,
+      "n_antigens": 0
+    }
+  ],
+  "all_thresholds_unchanged": true,
+  "joint_multiple_testing": true,
+  "source_sha256": {
+    "all_program_evidence.csv": "9a534be8679764a332e463aa52f69ce132d9adaa8fac675568694641ce591141",
+    "target_specific/all_program_evidence.csv": "cba157a72f0654cc61304667c2f9c77d93cb71863bae58d4e95dbaae8fc49788"
+  }
+}

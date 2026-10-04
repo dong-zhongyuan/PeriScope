@@ -1,0 +1,22 @@
+{
+  "active_directory": "mr_parallel_gate_20261003",
+  "policy_id": "MR_parallel_perturbation_20261003",
+  "preferred_term": "peripherally druggable targets candidates",
+  "historical_rule_directories": [
+    "joint_analysis",
+    "current_nomination"
+  ],
+  "candidate_table": "priority_antigens.csv",
+  "all_program_table": "priority_all_programs.csv",
+  "pending_table": "MR_pending_programs.csv",
+  "previous_active_directory": "six_criteria_20261003",
+  "parallel_gates": [
+    "MR",
+    "perturbation"
+  ],
+  "spatial_layer_status": "Existing partial cell-subtype evaluation retained; no new global C7 gate",
+  "status": "complete",
+  "model_registry": "model_registry.json",
+  "model_registry_sha256": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9",
+  "pipeline_entrypoint": "/public/home/mengxl/dzy/pd_product/_work/optimization_20261003/refresh_current_pipeline.py"
+}

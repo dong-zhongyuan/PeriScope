@@ -1,0 +1,128 @@
+{
+  "complete": true,
+  "n_outcomes": 16,
+  "n_exposure_assays": 57,
+  "n_requested_pairs": 912,
+  "n_matched_pairs": 865,
+  "n_AGES_pairs": 224,
+  "n_UKB_pairs": 641,
+  "matched": [
+    {
+      "outcome": "IDP_T1_FIRST_left_thalamus_volume",
+      "accession": "GCST90002436",
+      "requested": 57,
+      "matched": 55
+    },
+    {
+      "outcome": "IDP_T1_FIRST_right_thalamus_volume",
+      "accession": "GCST90002437",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_T1_FIRST_left_caudate_volume",
+      "accession": "GCST90002438",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_T1_FIRST_right_caudate_volume",
+      "accession": "GCST90002439",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_T1_FIRST_left_putamen_volume",
+      "accession": "GCST90002440",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_T1_FIRST_right_putamen_volume",
+      "accession": "GCST90002441",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_T1_FIRST_left_pallidum_volume",
+      "accession": "GCST90002442",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_T1_FIRST_right_pallidum_volume",
+      "accession": "GCST90002443",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_left_thalamus",
+      "accession": "GCST90003863",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_right_thalamus",
+      "accession": "GCST90003864",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_left_caudate",
+      "accession": "GCST90003865",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_right_caudate",
+      "accession": "GCST90003866",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_left_putamen",
+      "accession": "GCST90003867",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_right_putamen",
+      "accession": "GCST90003868",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_left_pallidum",
+      "accession": "GCST90003869",
+      "requested": 57,
+      "matched": 54
+    },
+    {
+      "outcome": "IDP_SWI_T2star_right_pallidum",
+      "accession": "GCST90003870",
+      "requested": 57,
+      "matched": 54
+    }
+  ],
+  "unfiltered_sources": true,
+  "query_failures": 0,
+  "sources_sha256": {
+    "raw/indexed_checked/GCST90002436.sentinels.json": "dd6587fbb445fb88324a6dee8fe1232c519f0cb699a3be1e29dc37e167624ba5",
+    "raw/indexed_checked/GCST90002437.sentinels.json": "172534db0f0a184624996e40faef29539a18f1767ff3044de28d70637164b9b4",
+    "raw/indexed_checked/GCST90002438.sentinels.json": "cf957b86f248225930c6d08866410de78c8bd8b75f8e12b45f2a0722226442c4",
+    "raw/indexed_checked/GCST90002439.sentinels.json": "fc0f8a367f5b1d0a4728e4d2dd2619e92140fd1f0be4cc32001fe54281a477d1",
+    "raw/indexed_checked/GCST90002440.sentinels.json": "cc0f231a59ec8170e260d57a62eab3c0a696b7db98733d1586e45059f263a9d4",
+    "raw/indexed_checked/GCST90002441.sentinels.json": "fd5449ecd25690531abb757ff30c1ab248c91ba52b37285ef86ac2b914017967",
+    "raw/indexed_checked/GCST90002442.sentinels.json": "2862c40e50de2674ae4008dc0a197cf0d194d67493133f52a74e758239de69d0",
+    "raw/indexed_checked/GCST90002443.sentinels.json": "ba6e5c618c22c5ee0f6e9e541d1fcbd43f990ffde945356cc29d27d0778f83a8",
+    "raw/indexed_checked/GCST90003863.sentinels.json": "12c3e5e7e275e37185f01de67aa04d78525eee9342d9027347e6445391229be7",
+    "raw/indexed_checked/GCST90003864.sentinels.json": "51a4c9bc73b0bc3d5ac188cb5e17728c04240fdbac7553dd2ad7d2be4a741be5",
+    "raw/indexed_checked/GCST90003865.sentinels.json": "44dc973b75f77d1523a69cc88b77f39365095f00491a0da73b496da950710d0f",
+    "raw/indexed_checked/GCST90003866.sentinels.json": "2b1ff5d46cda6017590a7561ce7e723c1182bd6aa9cce9d88b6fed034f055508",
+    "raw/indexed_checked/GCST90003867.sentinels.json": "b17c1ffa04ea4f2e4eb3ef724c3fead8c2364b82f5a9bb209e210c9d07efeeed",
+    "raw/indexed_checked/GCST90003868.sentinels.json": "f31d8c382f396cfc38cf0c811cf56c422c10b0bb217efc50614ab7e4cc92c995",
+    "raw/indexed_checked/GCST90003869.sentinels.json": "c9738f6f212ae8e919590d5947264330d589c0cca22905b01122084e2c1580d0",
+    "raw/indexed_checked/GCST90003870.sentinels.json": "fc6f57b6490c585c9d1495a0ff7538cff4a289e1d04942d5e22a133079dd80f1"
+  },
+  "finished_UTC": "2026-10-03T12:38:48.736949+00:00"
+}

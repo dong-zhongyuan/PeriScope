@@ -1,0 +1,32 @@
+# Study meta-data
+gwas_id: GCST90003867
+gwas_catalog_api: https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90003867
+date_metadata_last_modified: 2025-01-04
+
+# Trait Information
+trait_description:
+  - IDP SWI T2star left putamen
+ontology_mapping:
+  - EFO_0004346
+
+# Genotyping Information
+genome_assembly: GRCh37
+genotyping_technology:
+  - Genome-wide genotyping array
+
+# Sample Information
+samples:
+  - sample_ancestry_category:
+      - European
+    sample_ancestry:
+      - British
+    sample_size: 20043
+
+# Summary Statistic information
+data_file_name: GCST90003867_buildGRCh37.tsv
+file_type: ''
+data_file_md5sum: 8b3ad3acc0e68d61f2cdf0afc6946cb8
+
+# Harmonization status
+is_harmonised: false
+is_sorted: false

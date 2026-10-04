@@ -1,0 +1,5 @@
+brain_state,spatial_subtype,state_identifiability_pass,n_PD,n_control,n_genes,donors
+astro,astro_fibrous,True,5,5,2578,T-4515;T-0081;T-3870;T-2791;T-5498;T-4839;T-5359;T-4424;T-3799;T-2465
+astro,astro_protoplasmic,False,5,5,2578,T-4515;T-0081;T-3870;T-2791;T-5498;T-4839;T-5359;T-4424;T-3799;T-2465
+microglia_homeostatic,microglia_homeostatic,False,2,1,2301,T-3870;T-5498;T-4424
+microglia_mhc2,microglia_mhc2,True,3,4,2490,T-4515;T-3870;T-2791;T-5498;T-5359;T-4424;T-3799

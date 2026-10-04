@@ -1,0 +1,11 @@
+{
+  "retention_distribution.csv": "803f69f4c0c46c2f498f41ab324a63e7109285de743997bb87a0a036c64979d4",
+  "verification.json": "82f82d1351bc9017592a19fedf84ec74ec994d63bbce60829551738dbd4b1145",
+  "priority_program_retention.csv": "7f71fc568162497a5eb3450cf89611e0c87053f02514971223b13ba4104f0a1d",
+  "definition.json": "6cbd13855865bd6ad8604f8559153f23ee565f7d4597bf8f3b8a530a04447077",
+  "priority_plot_input.csv": "021de437ff086b6330eeb12452d57b16e117ac28bdcb967e6e77209fce682ae5",
+  "leave_one_seed_out.csv": "e8080521b9f8844a0f5068bec3fbcbb27536a76f1297e951b8f4bb4e9523b6eb",
+  "all_five_confirmation.csv": "f71f477753d10ca00496279932cddbd444b1a26697c3fad98dbcef132cf64044",
+  "leave_one_seed_summary.csv": "a8a6d70ac349709cf28eebfa25a76f607a01cae628c14105e5cde4df9d068f0a",
+  "omission_summary.csv": "bc19fe353da393c71ea5c90a3f6745a23661748beb5e4cc5a3746012cd5d4745"
+}

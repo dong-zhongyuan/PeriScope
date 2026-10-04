@@ -1,24 +1,6 @@
-"""p6 spatial validation — 竞争性 Test B（现行唯一口径，2026-09-10 用户指令重写）。
-
-分析内容（唯一保留）：
-  竞争性 Test B：供体级 log1p-CPM pseudobulk Welch t 的集合统计
-  （mean t），对照 1000 次"表达量匹配（20 分箱）"随机基因集零分布
-  （seed 42）；Ma 2025 GeoMx + Kamath snRNA 双腿 + Stouffer 合并；
-  阳性对照门（Ma 自身 DE 上下行签名）不过则全部结果 UNANSWERABLE。
-  2026-09-18 优化（用户授权的方法调整，如实标注）：Ma 腿改为星形语境限制
-  （每供体按 GFAP/AQP4/SLC1A3/ALDH1L1 z 均值打分保留 top-50% ROI——与 Kamath
-  腿按细胞类型打分的语境匹配逻辑对齐）；零分布抽样 1000→2000。
-  基因集合 = p5_gsea/gsea_stable_v1.json 的 GSEA 显著程序集，
-  按当前边家族动态生成；权重 s_i = sign(delta_i)
-  （剂量曲线 x_mean[q95]-x_mean[q05]，种子平均）。
-输出 testb_competitive_v1.json。
-措辞边界：competitive claim only（强于表达匹配背景），association 级，
-C3 brain-side compatibility；不作 blood→brain 方向主张。
-
-历史说明：2026-09-10 用户指令删除旧版空间分析框架（Test A 共定位/
-单侧签名 Test B/LMM/EV 确认/合并池/跨队列单侧扩展及其全部产物与
-文档痕迹），本文件仅保留竞争性检验为现行唯一口径。
-"""
+"""Brain competitive validation using discovery_union_v1 programs; 2000 expression-matched random sets."""
+import hashlib
+from datetime import date
 import json
 import re
 import sys
@@ -41,6 +23,7 @@ MOESM11_SHEET_A_XML = "xl/worksheets/sheet1.xml"  # SN PD-vs-Control DE, 193 row
 KAMATH_H5AD = "/public/home/mengxl/dzy/pd_product_assets/processed/gse178265/v0.1/GSE178265_sn_annotated.h5ad"
 V2_JSON = Path(A) / "results" / "p6_spatial" / "spatial_validation_v2.json"
 
+REGISTRY = "/public/home/mengxl/dzy/pd_product_assets/results/figure_program_registry/programs.json"
 N_PERM = 2000
 SEED = 42
 ASTRO_MARKERS = ["GFAP", "AQP4", "SLC1A3", "ALDH1L1"]   # Ma-leg astro-context scoring
@@ -103,84 +86,12 @@ def load_vocab_and_deltas():
     return genes, gidx, delta
 
 
-def load_candidate_sets(panel, gidx, delta):
-    """GSEA program sets; cross-edge sets upgraded to full GO tables (A1) with weights (A2)."""
-    import gseapy as gp
-    gsea = json.load(open(A + "/results/p5_gsea/gsea_stable_v1.json"))
-    golib = gp.get_library(name="GO_Biological_Process_2023", organism="human")
-    go_by_id = {}
-    for name, glist in golib.items():
-        m = re.search(r"\((GO:\d+)\)", name)
-        if m:
-            go_by_id.setdefault(m.group(1), (name, [str(g) for g in glist]))
-
-    sets = {}
-    term_groups = {}
-    for pkey, terms in gsea.items():
-        if not terms:
-            continue
-        protein, edge = pkey.split("__", 1)
-        brain_state = edge.split("__x__")[1]
-        genes = sorted({g for t in terms for g in t["genes"]})
-        sets[f"gsea::{pkey}"] = {
-            "source": "p5_gsea significant-term union (<=6 genes/term cores, unchanged)",
-            "kind": "per_combo",
-            "edge": edge, "brain_state": brain_state, "protein": protein,
-            "n_sig_terms": len(terms), "genes": genes,
-        }
-        for t in terms:
-            g = term_groups.setdefault(term_key(t["term"]),
-                                       {"term": t["term"], "combos": set(), "genes_core": set(),
-                                        "min_p_adj": t["p_adj"]})
-            g["combos"].add(pkey)
-            g["genes_core"].update(t["genes"])
-            g["min_p_adj"] = min(g["min_p_adj"], t["p_adj"])
-
-    for key, g in sorted(term_groups.items()):
-        if len(g["combos"]) < CROSS_EDGE_MIN_COMBOS:
-            continue
-        if key in go_by_id:
-            term_name, full = go_by_id[key]
-            in_panel = sorted(set(full) & panel)
-            coverage = {"term_genes": len(full), "in_panel": len(in_panel)}
-            genes = in_panel
-        else:  # frozen fallback: core union (not expected for the 10 GO terms)
-            term_name, coverage = g["term"], {"term_genes": None, "in_panel": None}
-            genes = sorted(g["genes_core"])
-        sets[f"program::{key}"] = {
-            "source": f"p5_gsea cross-edge recurrent term, full GO_BP_2023 table ∩ panel (A1)",
-            "kind": "cross_edge_program",
-            "term": term_name, "term_key": key,
-            "n_combos": len(g["combos"]), "combos": sorted(g["combos"]),
-            "min_p_adj": g["min_p_adj"],
-            "edge": None, "brain_state": None, "protein": None,
-            "genes": genes, "core_genes_v2": sorted(g["genes_core"]),
-            "panel_coverage": coverage,
-        }
-
-    # A2 weights + frozen direction
-    for sid, s in sets.items():
-        w, n_nv, deltas_seen = {}, 0, []
-        for g in s["genes"]:
-            if s["kind"] == "per_combo":
-                ds = [delta[(s["protein"], s["edge"])][gidx[g]]] if g in gidx else []
-            else:
-                ds = [delta[(c.split("__", 1)[0], c.split("__", 1)[1])][gidx[g]]
-                      for c in s["combos"] if g in gidx]
-            if ds:
-                med = float(np.median(ds))
-                w[g] = 1 if med > 0 else -1
-                deltas_seen.append(med)
-            else:
-                w[g] = 1
-                n_nv += 1
-        n_up = sum(1 for v in w.values() if v > 0)
-        s["weights"] = w
-        s["n_out_of_vocab_equal_weight"] = n_nv
-        s["direction_frozen"] = {"d": 1 if n_up >= len(w) - n_up else -1,
-                                 "n_up": n_up, "n_down": len(w) - n_up,
-                                 "median_abs_delta": float(np.median(np.abs(deltas_seen))) if deltas_seen else None}
-    return sets
+def load_candidate_sets(panel, gidx=None, delta=None):
+    programs = json.load(open(REGISTRY))
+    return {'gsea::'+c: dict(source='discovery_union_v1', kind='per_combo',
+            protein=c.split('__',1)[0], edge=c.split('__',1)[1],
+            brain_state=c.split('__x__')[1], genes=genes)
+            for c,genes in programs.items()}
 
 
 def read_moesm11_sheet(sheet_xml):
@@ -247,8 +158,8 @@ def crosscohort_celltype(s):
 
 
 
-def _competitive_test(M, is_pd, set_cols, n_perm=1000, seed=SEED, n_bins=20):
-    """Mean Welch-t of the set vs expression-matched random-set null (1000 draws)."""
+def _competitive_test(M, is_pd, set_cols, n_perm=N_PERM, seed=SEED, n_bins=20):
+    """Mean Welch-t of the set vs expression-matched random-set null (N_PERM draws)."""
     t = _welch_t(M, is_pd)
     ok = np.isfinite(t)
     expr = M.mean(axis=0)
@@ -297,8 +208,8 @@ def main_testb3():
             "MaDE_down": (sorted(g for g, r in de.items()
                                  if r["log2FC"] < 0 and r["p_val_adj"] < 0.05), "p_down")}
     out = {"metadata": {
-        "date": "2026-09-04",
-        "version": "testb competitive v1 (Amendment 9 Part 2, frozen before first run)",
+        "date": str(date.today()), "registry": REGISTRY, "registry_sha256": hashlib.sha256(Path(REGISTRY).read_bytes()).hexdigest(), "n_permutations": N_PERM, "n_programs": len(json.load(open(REGISTRY))),
+        "version": "discovery_union_v1",
         "statistic": "donor-level log1p-CPM pseudobulk Welch t; set stat = mean t",
         "null": "2000 expression-matched (20-bin) random gene sets, seed 42",
         "ma_leg": "astro-context restricted: top-50% astro-score ROIs per donor (GFAP/AQP4/SLC1A3/ALDH1L1 z-mean), 2026-09-18 optimization, disclosed",
@@ -310,7 +221,7 @@ def main_testb3():
     adata = ad.read_h5ad(H5AD)
     vn = [str(g) for g in adata.var_names]
     gene_index = {g: i for i, g in enumerate(vn)}
-    vocab, gidx, delta = load_vocab_and_deltas()
+    gidx, delta = None, None
     sets_ma = {k: v for k, v in load_candidate_sets(set(vn), gidx, delta).items()
                if v["kind"] == "per_combo"}
     L = roi_lognorm(adata)
@@ -332,6 +243,7 @@ def main_testb3():
         r = _competitive_test(M_ma, is_pd_ma,
                               [gene_index[g] for g in s["genes"] if g in gene_index])
         r["n_present"] = len([g for g in s["genes"] if g in gene_index])
+        r.update(n_donors=len(ds_ma), n_PD=int(is_pd_ma.sum()), n_Control=int((~is_pd_ma).sum()))
         ma_res[sid] = r
     gate = {name: _competitive_test(M_ma, is_pd_ma,
                                     [gene_index[g] for g in genes if g in gene_index])
@@ -398,6 +310,7 @@ def main_testb3():
                                   [sym_col[g] for g in s["genes"] if g in sym_col])
             r["n_present"] = len([g for g in s["genes"] if g in sym_col])
             r["cell_type"] = ct
+            r.update(n_donors=len(keep_d), n_PD=int(is_pd.sum()), n_Control=int((~is_pd).sum()))
             kam_res[sid] = r
         del acc, M, Xc
         print(f"Kamath {ct} done ({len(keep_d)} donors)")
@@ -420,10 +333,10 @@ def main_testb3():
             zs, ws = [], []
             if pm is not None:
                 zs.append(float(stats.norm.isf(min(max(pm, 1e-300), 1 - 1e-16))))
-                ws.append(np.sqrt(10.0))
+                ws.append(np.sqrt(ma_res[sid]["n_donors"]))
             if pk is not None:
                 zs.append(float(stats.norm.isf(min(max(pk, 1e-300), 1 - 1e-16))))
-                ws.append(np.sqrt(13.0))
+                ws.append(np.sqrt(kam_res[sid]["n_donors"]))
             if not zs:
                 continue
             zc2 = float(np.dot(zs, ws) / np.sqrt(np.dot(ws, ws)))
@@ -447,7 +360,7 @@ def main_testb3():
                     "meta_up_sig": sum(1 for r in meta["p_up"].values() if r["q_p_up_meta"] <= 0.05),
                     "meta_down_sig": sum(1 for r in meta["p_down"].values() if r["q_p_down_meta"] <= 0.05),
                 }})
-    out_path = Path(A) / "results" / "p6_spatial" / "testb_competitive_v1.json"
+    out_path = Path(A) / "results" / "p6_spatial" / "testb_competitive_discovery_union_v1.json"
     json.dump(out, open(out_path, "w"), indent=1)
     print(f"summary: {out['summary']}")
     print(f"saved: {out_path}")

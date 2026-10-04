@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-03T02:36:55Z",
+  "status_at_definition": "After discovery/external evidence comparison; before complete confirmation/randKO/nomination outputs.",
+  "rationale": "Target-relative discovery reduced discovery-fold reproducibility and genetic support. Retain every tested program from both definitions and account for the expanded search family.",
+  "families": [
+    "raw dose-slope discovery",
+    "target-relative discovery"
+  ],
+  "multiple_testing": "BH over concatenated program records for gene decoys, protein decoys and primary-meta genetics; brain BH over concatenated programs and both disease directions; retain identical gene sets with distinct source records conservatively.",
+  "thresholds": "Unchanged technical, 4/5 confirmation, 0.75 monotonicity, gene-decoy q<=0.05, protein percentile>=0.95, brain q<=0.05 plus directions, independent direction, and A genetic q<=0.05.",
+  "ranking": "Same original tier, confirmation fraction, protein-decoy q, gene-decoy q, brain q, protein rho; no new weights.",
+  "interpretation": "Pooled-family exploratory nomination after the program-definition comparison; original frozen branches and their outcomes remain available.",
+  "primary_GWAS": "Author-combined GP2/Leonard meta-analysis only; overlapping cohort results retained as sensitivities."
+}

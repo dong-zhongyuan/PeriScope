@@ -1,0 +1,172 @@
+{
+  "policy": "20261003_six_biological_and_drug_criteria",
+  "status": "complete",
+  "source_sha256": "8f4b1f23f9d12aa610682fd82d70731a1c12ed20f0a83e076b0d4694939915f0",
+  "total": {
+    "programs": 6849,
+    "antigens": 213
+  },
+  "flow": [
+    {
+      "step": "all",
+      "programs": 6849,
+      "antigens": 213
+    },
+    {
+      "step": "C1",
+      "programs": 5301,
+      "antigens": 170,
+      "removed_programs": 1548,
+      "removed_antigens": 43
+    },
+    {
+      "step": "C2",
+      "programs": 5301,
+      "antigens": 170,
+      "removed_programs": 0,
+      "removed_antigens": 0
+    },
+    {
+      "step": "C3",
+      "programs": 3038,
+      "antigens": 166,
+      "removed_programs": 2263,
+      "removed_antigens": 4
+    },
+    {
+      "step": "C4",
+      "programs": 1042,
+      "antigens": 152,
+      "removed_programs": 1996,
+      "removed_antigens": 14
+    },
+    {
+      "step": "C5",
+      "programs": 1042,
+      "antigens": 152,
+      "removed_programs": 0,
+      "removed_antigens": 0
+    },
+    {
+      "step": "C6",
+      "programs": 391,
+      "antigens": 62,
+      "removed_programs": 651,
+      "removed_antigens": 90
+    }
+  ],
+  "five_criteria": {
+    "programs": 1042,
+    "antigens": 152
+  },
+  "six_criteria": {
+    "programs": 391,
+    "antigens": 62
+  },
+  "approved_subset": {
+    "programs": 194,
+    "antigens": 27
+  },
+  "nominated_antigens": [
+    "CD105",
+    "CD115",
+    "CD117",
+    "CD119",
+    "CD11a/CD18",
+    "CD122",
+    "CD123",
+    "CD124",
+    "CD126",
+    "CD134",
+    "CD135",
+    "CD137",
+    "CD14",
+    "CD142",
+    "CD158b",
+    "CD178",
+    "CD18",
+    "CD184",
+    "CD192",
+    "CD194",
+    "CD195",
+    "CD199",
+    "CD2",
+    "CD200",
+    "CD205",
+    "CD22",
+    "CD243",
+    "CD252",
+    "CD26",
+    "CD273",
+    "CD274",
+    "CD275",
+    "CD279",
+    "CD284",
+    "CD29",
+    "CD294",
+    "CD30",
+    "CD303",
+    "CD304",
+    "CD319",
+    "CD357",
+    "CD366",
+    "CD38",
+    "CD4",
+    "CD40",
+    "CD45",
+    "CD47",
+    "CD49d",
+    "CD54",
+    "CD56",
+    "CD64",
+    "CD71",
+    "CD73",
+    "CD79b",
+    "CD80",
+    "CD85g",
+    "CD86",
+    "HLA-DR",
+    "Integrin-7",
+    "MERTK",
+    "Notch-1",
+    "Notch-2"
+  ],
+  "approved_subset_antigens": [
+    "CD115",
+    "CD117",
+    "CD119",
+    "CD11a/CD18",
+    "CD122",
+    "CD123",
+    "CD124",
+    "CD126",
+    "CD135",
+    "CD142",
+    "CD184",
+    "CD194",
+    "CD195",
+    "CD2",
+    "CD22",
+    "CD26",
+    "CD274",
+    "CD279",
+    "CD294",
+    "CD30",
+    "CD319",
+    "CD38",
+    "CD4",
+    "CD49d",
+    "CD79b",
+    "CD80",
+    "CD86"
+  ],
+  "note": "Retrospective six-criterion evidence screen. A6 differs from historical A. Clinical phases are historical maximum phases, not current active/marketed status. No drug-specific brain response is claimed.",
+  "cd22": {
+    "programs": 3,
+    "antigens": 1
+  },
+  "cd35": {
+    "programs": 0,
+    "antigens": 0
+  }
+}

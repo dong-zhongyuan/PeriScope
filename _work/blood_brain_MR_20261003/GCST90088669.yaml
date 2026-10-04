@@ -1,0 +1,34 @@
+# Study meta-data
+gwas_id: GCST90088669
+author_notes: Gudjonsson, A., Gudmundsdottir, V., et al. (2021) A genome-wide association
+  study of serum proteins reveals shared loci with common diseases. bioRxiv, 2021.07.02.450858.
+gwas_catalog_api: https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90088669
+date_metadata_last_modified: 2025-01-14
+
+# Trait Information
+trait_description:
+  - Serum levels of protein ICAM1
+ontology_mapping:
+  - ''
+
+# Genotyping Information
+genome_assembly: GRCh37
+genotyping_technology:
+  - Genome-wide genotyping array
+
+# Sample Information
+samples:
+  - sample_ancestry_category:
+      - European
+    sample_ancestry:
+      - Icelandic
+    sample_size: 5366
+
+# Summary Statistic information
+data_file_name: GCST90088669_buildGRCh37.tsv
+file_type: pre-GWAS-SSF
+data_file_md5sum: 4ae9110b9a74407f6bbcb44cab571610
+
+# Harmonization status
+is_harmonised: false
+is_sorted: false

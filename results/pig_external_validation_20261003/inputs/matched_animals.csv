@@ -1,0 +1,11 @@
+sample_id,group,pig_id,duration_min,has_blood,has_brain
+3.Control,Control,3,305,True,True
+4.Control,Control,4,306,True,True
+6.Control,Control,6,310,True,True
+7.Control,Control,7,310,True,True
+10.Control,Control,10,305,True,True
+11.Control,Control,11,300,True,True
+2.LPS,LPS,2,190,True,True
+8.LPS,LPS,8,260,True,True
+12.LPS,LPS,12,390,True,True
+14.LPS,LPS,14,562,True,True

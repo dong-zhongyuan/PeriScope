@@ -1,0 +1,3 @@
+combo,fold,library,term,p,q,overlap,background,query,genes
+CD22__cDC__x__astro__up,A,KEGG_2021_Human,Salivary secretion,1.699478944129561e-06,0.0049165925853668,9,4741,200,ADCY2;ADRA1A;ATP2B4;CD38;CST3;PLCB1;PRKCA;PRKG1;RYR3
+CD22__cDC__x__astro__up,A,GO_Biological_Process_2023,Positive Regulation Of Protein Localization To Membrane (GO:1905477),2.2902452768373492e-05,0.0331283979294522,8,4741,200,ATP2B4;CEMIP;DPP10;FYN;LRP1;PRKN;SORBS1;SPTBN1

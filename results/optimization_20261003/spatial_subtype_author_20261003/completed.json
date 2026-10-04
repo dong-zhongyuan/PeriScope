@@ -1,0 +1,276 @@
+{
+  "status": "complete",
+  "method": "RCTD full + C-SIDE donor intercepts",
+  "spatial_layer_adoptable": false,
+  "scope": "existing six criteria unchanged; C7 applied to the same program and recipient state",
+  "required_states_for_global_adoption": [
+    "astro",
+    "microglia_mhc2"
+  ],
+  "usable_states": [
+    "astro",
+    "microglia_mhc2"
+  ],
+  "required_subtypes_for_global_adoption": [
+    "astro_fibrous",
+    "astro_protoplasmic",
+    "microglia_mhc2"
+  ],
+  "usable_subtypes": [
+    "astro_fibrous",
+    "microglia_mhc2"
+  ],
+  "matched_parent_states_analyzable": true,
+  "adoption_reason": "Some mapped subtypes unresolved; retain six-criterion screen and report strict seven-criterion supported tier",
+  "source_six_criteria_sha256": "4017b0bdbf2339707446d8d8e490bdb939214afb05785089b1cc0b71b14169b1",
+  "protocol_sha256": "b335f3e626401b830da5c9b40ae0daf015edc17869717226cef7c23faeef1899",
+  "total": {
+    "programs": 6849,
+    "antigens": 213
+  },
+  "A6": {
+    "programs": 391,
+    "antigens": 62
+  },
+  "A7": {
+    "programs": 6,
+    "antigens": 4
+  },
+  "approved_subset": {
+    "programs": 6,
+    "antigens": 4
+  },
+  "flow": [
+    {
+      "step": "all",
+      "programs": 6849,
+      "antigens": 213
+    },
+    {
+      "step": "C1",
+      "programs": 5301,
+      "antigens": 170,
+      "removed_programs": 1548,
+      "removed_antigens": 43
+    },
+    {
+      "step": "C2",
+      "programs": 5301,
+      "antigens": 170,
+      "removed_programs": 0,
+      "removed_antigens": 0
+    },
+    {
+      "step": "C3",
+      "programs": 3038,
+      "antigens": 166,
+      "removed_programs": 2263,
+      "removed_antigens": 4
+    },
+    {
+      "step": "C4",
+      "programs": 1042,
+      "antigens": 152,
+      "removed_programs": 1996,
+      "removed_antigens": 14
+    },
+    {
+      "step": "C5",
+      "programs": 1042,
+      "antigens": 152,
+      "removed_programs": 0,
+      "removed_antigens": 0
+    },
+    {
+      "step": "C6",
+      "programs": 391,
+      "antigens": 62,
+      "removed_programs": 651,
+      "removed_antigens": 90
+    },
+    {
+      "step": "C7",
+      "programs": 6,
+      "antigens": 4,
+      "removed_programs": 385,
+      "removed_antigens": 58
+    }
+  ],
+  "C7_status": {
+    "unresolved": 4957,
+    "not_supported": 1853,
+    "pass": 39
+  },
+  "A6_C7_status": {
+    "unresolved": 234,
+    "not_supported": 151,
+    "pass": 6
+  },
+  "A7_antigens": [
+    "CD274",
+    "CD294",
+    "CD30",
+    "CD80"
+  ],
+  "quality": [
+    {
+      "state": "BAM",
+      "n": 400,
+      "spearman": 0.731319812881823,
+      "RMSE": 0.0633796445491639,
+      "mean_true": 0.0706175067625048,
+      "mean_estimated": 0.090363356549587,
+      "quality_pass": true
+    },
+    {
+      "state": "Endothelial",
+      "n": 400,
+      "spearman": 0.744033180870073,
+      "RMSE": 0.0591039075537712,
+      "mean_true": 0.0875854439609483,
+      "mean_estimated": 0.0949858174880374,
+      "quality_pass": true
+    },
+    {
+      "state": "OPC",
+      "n": 400,
+      "spearman": 0.596974978085818,
+      "RMSE": 0.0815193846307931,
+      "mean_true": 0.0819755282554813,
+      "mean_estimated": 0.0856459461953578,
+      "quality_pass": true
+    },
+    {
+      "state": "Oligo",
+      "n": 400,
+      "spearman": 0.741461094876709,
+      "RMSE": 0.0623055992064964,
+      "mean_true": 0.0882945315010665,
+      "mean_estimated": 0.113650421783662,
+      "quality_pass": true
+    },
+    {
+      "state": "Tcells",
+      "n": 400,
+      "spearman": 0.521866222061876,
+      "RMSE": 0.0935215805981066,
+      "mean_true": 0.0734157087341208,
+      "mean_estimated": 0.0491985864918724,
+      "quality_pass": true
+    },
+    {
+      "state": "astro_fibrous",
+      "n": 400,
+      "spearman": 0.599625603468405,
+      "RMSE": 0.123130673768287,
+      "mean_true": 0.109948108216099,
+      "mean_estimated": 0.0987676418994159,
+      "quality_pass": true
+    },
+    {
+      "state": "astro_protoplasmic",
+      "n": 400,
+      "spearman": 0.473113021501245,
+      "RMSE": 0.153175921844122,
+      "mean_true": 0.109550123789205,
+      "mean_estimated": 0.137198400544241,
+      "quality_pass": false
+    },
+    {
+      "state": "microglia_homeostatic",
+      "n": 400,
+      "spearman": 0.178062831943093,
+      "RMSE": 0.168164838263759,
+      "mean_true": 0.0872114840889352,
+      "mean_estimated": 0.0154631648996718,
+      "quality_pass": false
+    },
+    {
+      "state": "microglia_mhc2",
+      "n": 400,
+      "spearman": 0.599092848064432,
+      "RMSE": 0.105216663666243,
+      "mean_true": 0.0881602421526512,
+      "mean_estimated": 0.102924692802734,
+      "quality_pass": true
+    },
+    {
+      "state": "neuron_GABAergic",
+      "n": 400,
+      "spearman": 0.555115939876075,
+      "RMSE": 0.0726125561757501,
+      "mean_true": 0.0650444881863855,
+      "mean_estimated": 0.0794507802719884,
+      "quality_pass": true
+    },
+    {
+      "state": "neuron_MEG3",
+      "n": 400,
+      "spearman": 0.556533643672205,
+      "RMSE": 0.0688120780852612,
+      "mean_true": 0.0670958348249711,
+      "mean_estimated": 0.0667532960233623,
+      "quality_pass": true
+    },
+    {
+      "state": "neuron_dopaminergic",
+      "n": 400,
+      "spearman": 0.668402672620179,
+      "RMSE": 0.0577247010338551,
+      "mean_true": 0.0711009995276316,
+      "mean_estimated": 0.06559789505007,
+      "quality_pass": true
+    }
+  ],
+  "state_coverage": [
+    {
+      "brain_state": "astro",
+      "spatial_subtype": "astro_fibrous",
+      "state_identifiability_pass": true,
+      "n_PD": 5,
+      "n_control": 5,
+      "n_genes": 2578,
+      "donors": "T-4515;T-0081;T-3870;T-2791;T-5498;T-4839;T-5359;T-4424;T-3799;T-2465"
+    },
+    {
+      "brain_state": "astro",
+      "spatial_subtype": "astro_protoplasmic",
+      "state_identifiability_pass": false,
+      "n_PD": 5,
+      "n_control": 5,
+      "n_genes": 2578,
+      "donors": "T-4515;T-0081;T-3870;T-2791;T-5498;T-4839;T-5359;T-4424;T-3799;T-2465"
+    },
+    {
+      "brain_state": "microglia_homeostatic",
+      "spatial_subtype": "microglia_homeostatic",
+      "state_identifiability_pass": false,
+      "n_PD": 2,
+      "n_control": 1,
+      "n_genes": 2301,
+      "donors": "T-3870;T-5498;T-4424"
+    },
+    {
+      "brain_state": "microglia_mhc2",
+      "spatial_subtype": "microglia_mhc2",
+      "state_identifiability_pass": true,
+      "n_PD": 3,
+      "n_control": 4,
+      "n_genes": 2490,
+      "donors": "T-4515;T-3870;T-2791;T-5498;T-5359;T-4424;T-3799"
+    }
+  ],
+  "A7_previously_opposed_in_mixed_tissue": {
+    "programs": 6,
+    "antigens": 4
+  },
+  "CD22": {
+    "programs": 0,
+    "antigens": 0
+  },
+  "CD35": {
+    "programs": 0,
+    "antigens": 0
+  },
+  "model_registry_sha256": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9"
+}

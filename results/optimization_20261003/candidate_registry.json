@@ -1,0 +1,3293 @@
+[
+  {
+    "target": "CD39",
+    "channels": [
+      0
+    ],
+    "channel_names": [
+      "CD39"
+    ],
+    "is_control": false,
+    "genes": [
+      "ENTPD1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Rat-IgG1-1",
+    "channels": [
+      1
+    ],
+    "channel_names": [
+      "Rat-IgG1-1"
+    ],
+    "is_control": true,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD107a",
+    "channels": [
+      2
+    ],
+    "channel_names": [
+      "CD107a"
+    ],
+    "is_control": false,
+    "genes": [
+      "LAMP1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD62P",
+    "channels": [
+      3
+    ],
+    "channel_names": [
+      "CD62P"
+    ],
+    "is_control": false,
+    "genes": [
+      "SELP"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TCR-2",
+    "channels": [
+      4
+    ],
+    "channel_names": [
+      "TCR-2"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD30",
+    "channels": [
+      5
+    ],
+    "channel_names": [
+      "CD30"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF8"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD31",
+    "channels": [
+      6
+    ],
+    "channel_names": [
+      "CD31"
+    ],
+    "is_control": false,
+    "genes": [
+      "PECAM1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD34",
+    "channels": [
+      7
+    ],
+    "channel_names": [
+      "CD34"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD34"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD35",
+    "channels": [
+      8
+    ],
+    "channel_names": [
+      "CD35"
+    ],
+    "is_control": false,
+    "genes": [
+      "CR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD36",
+    "channels": [
+      9
+    ],
+    "channel_names": [
+      "CD36"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD36"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD223",
+    "channels": [
+      10
+    ],
+    "channel_names": [
+      "CD223"
+    ],
+    "is_control": false,
+    "genes": [
+      "LAG3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TIGIT",
+    "channels": [
+      11
+    ],
+    "channel_names": [
+      "TIGIT"
+    ],
+    "is_control": false,
+    "genes": [
+      "TIGIT"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TCR-V-9",
+    "channels": [
+      12
+    ],
+    "channel_names": [
+      "TCR-V-9"
+    ],
+    "is_control": false,
+    "genes": [
+      "TRGV9"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "331311",
+    "antibody_clone": "B3",
+    "identity_note": "TCR gamma variable 9."
+  },
+  {
+    "target": "CD226",
+    "channels": [
+      13
+    ],
+    "channel_names": [
+      "CD226"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD226"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD178",
+    "channels": [
+      14
+    ],
+    "channel_names": [
+      "CD178"
+    ],
+    "is_control": false,
+    "genes": [
+      "FASLG"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD319",
+    "channels": [
+      15
+    ],
+    "channel_names": [
+      "CD319"
+    ],
+    "is_control": false,
+    "genes": [
+      "SLAMF7"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD171",
+    "channels": [
+      16
+    ],
+    "channel_names": [
+      "CD171"
+    ],
+    "is_control": false,
+    "genes": [
+      "L1CAM"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Siglec-8",
+    "channels": [
+      17
+    ],
+    "channel_names": [
+      "Siglec-8"
+    ],
+    "is_control": false,
+    "genes": [
+      "SIGLEC8"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD340",
+    "channels": [
+      18
+    ],
+    "channel_names": [
+      "CD340"
+    ],
+    "is_control": false,
+    "genes": [
+      "ERBB2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Rat-IgG2b",
+    "channels": [
+      19
+    ],
+    "channel_names": [
+      "Rat-IgG2b"
+    ],
+    "is_control": true,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "VEGFR-3",
+    "channels": [
+      20
+    ],
+    "channel_names": [
+      "VEGFR-3"
+    ],
+    "is_control": false,
+    "genes": [
+      "FLT4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD29",
+    "channels": [
+      21
+    ],
+    "channel_names": [
+      "CD29"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGB1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD62E",
+    "channels": [
+      22
+    ],
+    "channel_names": [
+      "CD62E"
+    ],
+    "is_control": false,
+    "genes": [
+      "SELE"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD4",
+    "channels": [
+      23,
+      24
+    ],
+    "channel_names": [
+      "CD4-2",
+      "CD4-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD22",
+    "channels": [
+      25
+    ],
+    "channel_names": [
+      "CD22"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD22"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD3",
+    "channels": [
+      26,
+      216
+    ],
+    "channel_names": [
+      "CD3-1",
+      "CD3-2"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD247",
+      "CD3D",
+      "CD3E",
+      "CD3G"
+    ],
+    "mapping": "defined_complex",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD20",
+    "channels": [
+      27
+    ],
+    "channel_names": [
+      "CD20"
+    ],
+    "is_control": false,
+    "genes": [
+      "MS4A1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD27",
+    "channels": [
+      28
+    ],
+    "channel_names": [
+      "CD27"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD27"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD45RB",
+    "channels": [
+      29
+    ],
+    "channel_names": [
+      "CD45RB"
+    ],
+    "is_control": false,
+    "genes": [
+      "PTPRC"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD25",
+    "channels": [
+      30
+    ],
+    "channel_names": [
+      "CD25"
+    ],
+    "is_control": false,
+    "genes": [
+      "IL2RA"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "302643",
+    "antibody_clone": "BC96",
+    "identity_note": "Surface IL-2 receptor alpha; ISG20 historical alias is not this antigen."
+  },
+  {
+    "target": "CD24",
+    "channels": [
+      31
+    ],
+    "channel_names": [
+      "CD24"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD24"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD146",
+    "channels": [
+      32
+    ],
+    "channel_names": [
+      "CD146"
+    ],
+    "is_control": false,
+    "genes": [
+      "MCAM"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Galectin-9",
+    "channels": [
+      33
+    ],
+    "channel_names": [
+      "Galectin-9"
+    ],
+    "is_control": false,
+    "genes": [
+      "LGALS9"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD142",
+    "channels": [
+      34
+    ],
+    "channel_names": [
+      "CD142"
+    ],
+    "is_control": false,
+    "genes": [
+      "F3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD141",
+    "channels": [
+      35
+    ],
+    "channel_names": [
+      "CD141"
+    ],
+    "is_control": false,
+    "genes": [
+      "THBD"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD294",
+    "channels": [
+      36
+    ],
+    "channel_names": [
+      "CD294"
+    ],
+    "is_control": false,
+    "genes": [
+      "PTGDR2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Rat-IgG1-2",
+    "channels": [
+      37
+    ],
+    "channel_names": [
+      "Rat-IgG1-2"
+    ],
+    "is_control": true,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD45RA",
+    "channels": [
+      38
+    ],
+    "channel_names": [
+      "CD45RA"
+    ],
+    "is_control": false,
+    "genes": [
+      "PTPRC"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CX3CR1",
+    "channels": [
+      39
+    ],
+    "channel_names": [
+      "CX3CR1"
+    ],
+    "is_control": false,
+    "genes": [
+      "CX3CR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD56",
+    "channels": [
+      40,
+      41
+    ],
+    "channel_names": [
+      "CD56-2",
+      "CD56-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "NCAM1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD45RO",
+    "channels": [
+      42
+    ],
+    "channel_names": [
+      "CD45RO"
+    ],
+    "is_control": false,
+    "genes": [
+      "PTPRC"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD303",
+    "channels": [
+      43
+    ],
+    "channel_names": [
+      "CD303"
+    ],
+    "is_control": false,
+    "genes": [
+      "CLEC4C"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "GP130",
+    "channels": [
+      44
+    ],
+    "channel_names": [
+      "GP130"
+    ],
+    "is_control": false,
+    "genes": [
+      "IL6ST"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD253",
+    "channels": [
+      45
+    ],
+    "channel_names": [
+      "CD253"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFSF10"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD357",
+    "channels": [
+      46
+    ],
+    "channel_names": [
+      "CD357"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF18"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD11b",
+    "channels": [
+      47,
+      49
+    ],
+    "channel_names": [
+      "CD11b-1",
+      "CD11b-2"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGAM"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD354",
+    "channels": [
+      48
+    ],
+    "channel_names": [
+      "CD354"
+    ],
+    "is_control": false,
+    "genes": [
+      "TREM1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CLEC12A",
+    "channels": [
+      50
+    ],
+    "channel_names": [
+      "CLEC12A"
+    ],
+    "is_control": false,
+    "genes": [
+      "CLEC12A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD38",
+    "channels": [
+      51,
+      52
+    ],
+    "channel_names": [
+      "CD38-2",
+      "CD38-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD38"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "Folate",
+    "channels": [
+      53
+    ],
+    "channel_names": [
+      "Folate"
+    ],
+    "is_control": false,
+    "genes": [
+      "FOLR2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "391707",
+    "antibody_clone": "94b/FOLR2",
+    "identity_note": "Original catalog matches FOLR2 antibody; not soluble folate concentration."
+  },
+  {
+    "target": "Rag-IgG2c",
+    "channels": [
+      54
+    ],
+    "channel_names": [
+      "Rag-IgG2c"
+    ],
+    "is_control": true,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD209",
+    "channels": [
+      55
+    ],
+    "channel_names": [
+      "CD209"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD209"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD152",
+    "channels": [
+      56
+    ],
+    "channel_names": [
+      "CD152"
+    ],
+    "is_control": false,
+    "genes": [
+      "CTLA4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD154",
+    "channels": [
+      57
+    ],
+    "channel_names": [
+      "CD154"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD40LG"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD155",
+    "channels": [
+      58
+    ],
+    "channel_names": [
+      "CD155"
+    ],
+    "is_control": false,
+    "genes": [
+      "PVR"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Cadherin",
+    "channels": [
+      59
+    ],
+    "channel_names": [
+      "Cadherin"
+    ],
+    "is_control": false,
+    "genes": [
+      "CDH11"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "368715",
+    "antibody_clone": "16G5",
+    "identity_note": "Original catalog identifies cadherin 11, not a pan-cadherin measurement."
+  },
+  {
+    "target": "CD201",
+    "channels": [
+      60
+    ],
+    "channel_names": [
+      "CD201"
+    ],
+    "is_control": false,
+    "genes": [
+      "PROCR"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD204",
+    "channels": [
+      61
+    ],
+    "channel_names": [
+      "CD204"
+    ],
+    "is_control": false,
+    "genes": [
+      "MSR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD205",
+    "channels": [
+      62
+    ],
+    "channel_names": [
+      "CD205"
+    ],
+    "is_control": false,
+    "genes": [
+      "LY75"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD206",
+    "channels": [
+      63
+    ],
+    "channel_names": [
+      "CD206"
+    ],
+    "is_control": false,
+    "genes": [
+      "MRC1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD207",
+    "channels": [
+      64
+    ],
+    "channel_names": [
+      "CD207"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD207"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD1d",
+    "channels": [
+      65
+    ],
+    "channel_names": [
+      "CD1d"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD1D"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD284",
+    "channels": [
+      66
+    ],
+    "channel_names": [
+      "CD284"
+    ],
+    "is_control": false,
+    "genes": [
+      "TLR4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD1c",
+    "channels": [
+      67
+    ],
+    "channel_names": [
+      "CD1c"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD1C"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Podoplanin",
+    "channels": [
+      68
+    ],
+    "channel_names": [
+      "Podoplanin"
+    ],
+    "is_control": false,
+    "genes": [
+      "PDPN"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD1a",
+    "channels": [
+      69
+    ],
+    "channel_names": [
+      "CD1a"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD1A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD366",
+    "channels": [
+      70
+    ],
+    "channel_names": [
+      "CD366"
+    ],
+    "is_control": false,
+    "genes": [
+      "HAVCR2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "IgD",
+    "channels": [
+      71
+    ],
+    "channel_names": [
+      "IgD"
+    ],
+    "is_control": false,
+    "genes": [
+      "IGHD"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "IgM",
+    "channels": [
+      72
+    ],
+    "channel_names": [
+      "IgM"
+    ],
+    "is_control": false,
+    "genes": [
+      "IGHM"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD66a/c/e",
+    "channels": [
+      73
+    ],
+    "channel_names": [
+      "CD66a/c/e"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD49d",
+    "channels": [
+      74
+    ],
+    "channel_names": [
+      "CD49d"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGA4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "LOX-1",
+    "channels": [
+      75
+    ],
+    "channel_names": [
+      "LOX-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "OLR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TIM-4",
+    "channels": [
+      76
+    ],
+    "channel_names": [
+      "TIM-4"
+    ],
+    "is_control": false,
+    "genes": [
+      "TIMD4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD98",
+    "channels": [
+      77
+    ],
+    "channel_names": [
+      "CD98"
+    ],
+    "is_control": false,
+    "genes": [
+      "SLC3A2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "315605",
+    "antibody_clone": "MEM-108",
+    "identity_note": "Clone recognizes CD98 heavy chain, not the SLC7A5 light chain."
+  },
+  {
+    "target": "CD370",
+    "channels": [
+      78
+    ],
+    "channel_names": [
+      "CD370"
+    ],
+    "is_control": false,
+    "genes": [
+      "CLEC9A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD49a",
+    "channels": [
+      79
+    ],
+    "channel_names": [
+      "CD49a"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGA1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD44",
+    "channels": [
+      80,
+      82
+    ],
+    "channel_names": [
+      "CD44-2",
+      "CD44-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD44"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "C5L2",
+    "channels": [
+      81
+    ],
+    "channel_names": [
+      "C5L2"
+    ],
+    "is_control": false,
+    "genes": [
+      "C5AR2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD158e1",
+    "channels": [
+      83
+    ],
+    "channel_names": [
+      "CD158e1"
+    ],
+    "is_control": false,
+    "genes": [
+      "KIR3DL1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD124",
+    "channels": [
+      84
+    ],
+    "channel_names": [
+      "CD124"
+    ],
+    "is_control": false,
+    "genes": [
+      "IL4R"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD127",
+    "channels": [
+      85
+    ],
+    "channel_names": [
+      "CD127"
+    ],
+    "is_control": false,
+    "genes": [
+      "IL7R"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD126",
+    "channels": [
+      86
+    ],
+    "channel_names": [
+      "CD126"
+    ],
+    "is_control": false,
+    "genes": [
+      "IL6R"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD279",
+    "channels": [
+      87
+    ],
+    "channel_names": [
+      "CD279"
+    ],
+    "is_control": false,
+    "genes": [
+      "PDCD1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD278",
+    "channels": [
+      88
+    ],
+    "channel_names": [
+      "CD278"
+    ],
+    "is_control": false,
+    "genes": [
+      "ICOS"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD123",
+    "channels": [
+      89
+    ],
+    "channel_names": [
+      "CD123"
+    ],
+    "is_control": false,
+    "genes": [
+      "IL3RA"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD122",
+    "channels": [
+      90
+    ],
+    "channel_names": [
+      "CD122"
+    ],
+    "is_control": false,
+    "genes": [
+      "IL2RB"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD96",
+    "channels": [
+      91
+    ],
+    "channel_names": [
+      "CD96"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD96"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD274",
+    "channels": [
+      92
+    ],
+    "channel_names": [
+      "CD274"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD274"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD95",
+    "channels": [
+      93
+    ],
+    "channel_names": [
+      "CD95"
+    ],
+    "is_control": false,
+    "genes": [
+      "FAS"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD271",
+    "channels": [
+      94
+    ],
+    "channel_names": [
+      "CD271"
+    ],
+    "is_control": false,
+    "genes": [
+      "NGFR"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD270",
+    "channels": [
+      95
+    ],
+    "channel_names": [
+      "CD270"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF14"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD90",
+    "channels": [
+      96
+    ],
+    "channel_names": [
+      "CD90"
+    ],
+    "is_control": false,
+    "genes": [
+      "THY1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD272",
+    "channels": [
+      97
+    ],
+    "channel_names": [
+      "CD272"
+    ],
+    "is_control": false,
+    "genes": [
+      "BTLA"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD16",
+    "channels": [
+      98
+    ],
+    "channel_names": [
+      "CD16"
+    ],
+    "is_control": false,
+    "genes": [
+      "FCGR3A",
+      "FCGR3B"
+    ],
+    "mapping": "multiple",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD14",
+    "channels": [
+      99
+    ],
+    "channel_names": [
+      "CD14"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD14"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD15",
+    "channels": [
+      100
+    ],
+    "channel_names": [
+      "CD15"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD13",
+    "channels": [
+      101
+    ],
+    "channel_names": [
+      "CD13"
+    ],
+    "is_control": false,
+    "genes": [
+      "ANPEP"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD267",
+    "channels": [
+      102
+    ],
+    "channel_names": [
+      "CD267"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF13B"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD26",
+    "channels": [
+      103,
+      105
+    ],
+    "channel_names": [
+      "CD26-2",
+      "CD26-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "DPP4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD200",
+    "channels": [
+      104
+    ],
+    "channel_names": [
+      "CD200"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD200"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD18",
+    "channels": [
+      106
+    ],
+    "channel_names": [
+      "CD18"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGB2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD19",
+    "channels": [
+      107
+    ],
+    "channel_names": [
+      "CD19"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD19"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD194",
+    "channels": [
+      108
+    ],
+    "channel_names": [
+      "CD194"
+    ],
+    "is_control": false,
+    "genes": [
+      "CCR4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TCR-1",
+    "channels": [
+      109
+    ],
+    "channel_names": [
+      "TCR-1"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TCR-V-7.2",
+    "channels": [
+      110
+    ],
+    "channel_names": [
+      "TCR-V-7.2"
+    ],
+    "is_control": false,
+    "genes": [
+      "TRAV1-2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "351733",
+    "antibody_clone": "3C10",
+    "identity_note": "TCR alpha variable 7.2; gene TRAV1-2."
+  },
+  {
+    "target": "CD70",
+    "channels": [
+      111
+    ],
+    "channel_names": [
+      "CD70"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD70"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD71",
+    "channels": [
+      112
+    ],
+    "channel_names": [
+      "CD71"
+    ],
+    "is_control": false,
+    "genes": [
+      "TFRC"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD72",
+    "channels": [
+      113
+    ],
+    "channel_names": [
+      "CD72"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD72"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD73",
+    "channels": [
+      114
+    ],
+    "channel_names": [
+      "CD73"
+    ],
+    "is_control": false,
+    "genes": [
+      "NT5E"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TCR-V-2",
+    "channels": [
+      115
+    ],
+    "channel_names": [
+      "TCR-V-2"
+    ],
+    "is_control": false,
+    "genes": [
+      "TRDV2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "331433",
+    "antibody_clone": "B6",
+    "identity_note": "TCR delta variable segment 2; not the gamma V2 alternative nomenclature."
+  },
+  {
+    "target": "CD177",
+    "channels": [
+      116
+    ],
+    "channel_names": [
+      "CD177"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD177"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD301",
+    "channels": [
+      117
+    ],
+    "channel_names": [
+      "CD301"
+    ],
+    "is_control": false,
+    "genes": [
+      "CLEC10A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD140a",
+    "channels": [
+      118
+    ],
+    "channel_names": [
+      "CD140a"
+    ],
+    "is_control": false,
+    "genes": [
+      "PDGFRA"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD140b",
+    "channels": [
+      119
+    ],
+    "channel_names": [
+      "CD140b"
+    ],
+    "is_control": false,
+    "genes": [
+      "PDGFRB"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD305",
+    "channels": [
+      120
+    ],
+    "channel_names": [
+      "CD305"
+    ],
+    "is_control": false,
+    "genes": [
+      "LAIR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD304",
+    "channels": [
+      121
+    ],
+    "channel_names": [
+      "CD304"
+    ],
+    "is_control": false,
+    "genes": [
+      "NRP1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD2",
+    "channels": [
+      122
+    ],
+    "channel_names": [
+      "CD2"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD309",
+    "channels": [
+      123
+    ],
+    "channel_names": [
+      "CD309"
+    ],
+    "is_control": false,
+    "genes": [
+      "KDR"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD85g",
+    "channels": [
+      124
+    ],
+    "channel_names": [
+      "CD85g"
+    ],
+    "is_control": false,
+    "genes": [
+      "LILRA4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD110",
+    "channels": [
+      125
+    ],
+    "channel_names": [
+      "CD110"
+    ],
+    "is_control": false,
+    "genes": [
+      "MPL"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD8",
+    "channels": [
+      126
+    ],
+    "channel_names": [
+      "CD8"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD8A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD9",
+    "channels": [
+      127
+    ],
+    "channel_names": [
+      "CD9"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD9"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "HLA-DR",
+    "channels": [
+      128
+    ],
+    "channel_names": [
+      "HLA-DR"
+    ],
+    "is_control": false,
+    "genes": [
+      "HLA-DRA",
+      "HLA-DRB1",
+      "HLA-DRB3",
+      "HLA-DRB4",
+      "HLA-DRB5"
+    ],
+    "mapping": "defined_complex",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD137",
+    "channels": [
+      129
+    ],
+    "channel_names": [
+      "CD137"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF9"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD134",
+    "channels": [
+      130
+    ],
+    "channel_names": [
+      "CD134"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD135",
+    "channels": [
+      131
+    ],
+    "channel_names": [
+      "CD135"
+    ],
+    "is_control": false,
+    "genes": [
+      "FLT3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD61",
+    "channels": [
+      132
+    ],
+    "channel_names": [
+      "CD61"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGB3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD192",
+    "channels": [
+      133
+    ],
+    "channel_names": [
+      "CD192"
+    ],
+    "is_control": false,
+    "genes": [
+      "CCR2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD268",
+    "channels": [
+      134
+    ],
+    "channel_names": [
+      "CD268"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF13C"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD269",
+    "channels": [
+      135
+    ],
+    "channel_names": [
+      "CD269"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFRSF17"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD81",
+    "channels": [
+      136
+    ],
+    "channel_names": [
+      "CD81"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD81"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD80",
+    "channels": [
+      137
+    ],
+    "channel_names": [
+      "CD80"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD80"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD83",
+    "channels": [
+      138
+    ],
+    "channel_names": [
+      "CD83"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD83"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD193",
+    "channels": [
+      139
+    ],
+    "channel_names": [
+      "CD193"
+    ],
+    "is_control": false,
+    "genes": [
+      "CCR3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TSLPR",
+    "channels": [
+      140
+    ],
+    "channel_names": [
+      "TSLPR"
+    ],
+    "is_control": false,
+    "genes": [
+      "CRLF2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD86",
+    "channels": [
+      141
+    ],
+    "channel_names": [
+      "CD86"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD86"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CCR10",
+    "channels": [
+      142
+    ],
+    "channel_names": [
+      "CCR10"
+    ],
+    "is_control": false,
+    "genes": [
+      "CCR10"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Notch-1",
+    "channels": [
+      143
+    ],
+    "channel_names": [
+      "Notch-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "NOTCH1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Notch-2",
+    "channels": [
+      144
+    ],
+    "channel_names": [
+      "Notch-2"
+    ],
+    "is_control": false,
+    "genes": [
+      "NOTCH2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD337",
+    "channels": [
+      145
+    ],
+    "channel_names": [
+      "CD337"
+    ],
+    "is_control": false,
+    "genes": [
+      "NCR3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD79b",
+    "channels": [
+      146
+    ],
+    "channel_names": [
+      "CD79b"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD79B"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD275",
+    "channels": [
+      147,
+      148
+    ],
+    "channel_names": [
+      "CD275-2",
+      "CD275-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "ICOSLG"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD79a",
+    "channels": [
+      149
+    ],
+    "channel_names": [
+      "CD79a"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD79A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD49b",
+    "channels": [
+      150
+    ],
+    "channel_names": [
+      "CD49b"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGA2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD64",
+    "channels": [
+      151
+    ],
+    "channel_names": [
+      "CD64"
+    ],
+    "is_control": false,
+    "genes": [
+      "FCGR1A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD63",
+    "channels": [
+      152
+    ],
+    "channel_names": [
+      "CD63"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD63"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD45",
+    "channels": [
+      153,
+      154
+    ],
+    "channel_names": [
+      "CD45-2",
+      "CD45-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "PTPRC"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD133",
+    "channels": [
+      155,
+      156
+    ],
+    "channel_names": [
+      "CD133-2",
+      "CD133-1"
+    ],
+    "is_control": false,
+    "genes": [
+      "PROM1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD69",
+    "channels": [
+      157
+    ],
+    "channel_names": [
+      "CD69"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD69"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD68",
+    "channels": [
+      158
+    ],
+    "channel_names": [
+      "CD68"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD68"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD314",
+    "channels": [
+      159
+    ],
+    "channel_names": [
+      "CD314"
+    ],
+    "is_control": false,
+    "genes": [
+      "KLRK1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD11a/CD18",
+    "channels": [
+      160
+    ],
+    "channel_names": [
+      "CD11a/CD18"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGAL",
+      "ITGB2"
+    ],
+    "mapping": "defined_complex",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD186",
+    "channels": [
+      161
+    ],
+    "channel_names": [
+      "CD186"
+    ],
+    "is_control": false,
+    "genes": [
+      "CXCR6"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD185",
+    "channels": [
+      162
+    ],
+    "channel_names": [
+      "CD185"
+    ],
+    "is_control": false,
+    "genes": [
+      "CXCR5"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD184",
+    "channels": [
+      163
+    ],
+    "channel_names": [
+      "CD184"
+    ],
+    "is_control": false,
+    "genes": [
+      "CXCR4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD103",
+    "channels": [
+      164
+    ],
+    "channel_names": [
+      "CD103"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGAE"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD102",
+    "channels": [
+      165
+    ],
+    "channel_names": [
+      "CD102"
+    ],
+    "is_control": false,
+    "genes": [
+      "ICAM2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD106",
+    "channels": [
+      166
+    ],
+    "channel_names": [
+      "CD106"
+    ],
+    "is_control": false,
+    "genes": [
+      "VCAM1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD105",
+    "channels": [
+      167
+    ],
+    "channel_names": [
+      "CD105"
+    ],
+    "is_control": false,
+    "genes": [
+      "ENG"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD66b",
+    "channels": [
+      168
+    ],
+    "channel_names": [
+      "CD66b"
+    ],
+    "is_control": false,
+    "genes": [
+      "CEACAM8"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD252",
+    "channels": [
+      169
+    ],
+    "channel_names": [
+      "CD252"
+    ],
+    "is_control": false,
+    "genes": [
+      "TNFSF4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD109",
+    "channels": [
+      170
+    ],
+    "channel_names": [
+      "CD109"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD109"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "TCR-V-24-J-18",
+    "channels": [
+      171
+    ],
+    "channel_names": [
+      "TCR-V-24-J-18"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "Integrin-7",
+    "channels": [
+      172
+    ],
+    "channel_names": [
+      "Integrin-7"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGB7"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1,
+    "antibody_catalog": "321227",
+    "antibody_clone": "FIB504",
+    "identity_note": "Original catalog identifies integrin beta7; sanitized channel name dropped beta."
+  },
+  {
+    "target": "CD158b",
+    "channels": [
+      173
+    ],
+    "channel_names": [
+      "CD158b"
+    ],
+    "is_control": false,
+    "genes": [
+      "KIR2DL2",
+      "KIR2DL3",
+      "KIR2DS2"
+    ],
+    "mapping": "multiple",
+    "clone_group_size": 1,
+    "antibody_catalog": "312615",
+    "antibody_clone": "DX27",
+    "identity_note": "Shared epitope on several receptors; not a unique gene or assembled complex."
+  },
+  {
+    "target": "CD158f",
+    "channels": [
+      174
+    ],
+    "channel_names": [
+      "CD158f"
+    ],
+    "is_control": false,
+    "genes": [
+      "KIR2DL5A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD8a",
+    "channels": [
+      175
+    ],
+    "channel_names": [
+      "CD8a"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD8A"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD203c",
+    "channels": [
+      176
+    ],
+    "channel_names": [
+      "CD203c"
+    ],
+    "is_control": false,
+    "genes": [
+      "ENPP3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD52",
+    "channels": [
+      177
+    ],
+    "channel_names": [
+      "CD52"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD52"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD195",
+    "channels": [
+      178
+    ],
+    "channel_names": [
+      "CD195"
+    ],
+    "is_control": false,
+    "genes": [
+      "CCR5"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD196",
+    "channels": [
+      179
+    ],
+    "channel_names": [
+      "CD196"
+    ],
+    "is_control": false,
+    "genes": [
+      "CCR6"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD57",
+    "channels": [
+      180
+    ],
+    "channel_names": [
+      "CD57"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD54",
+    "channels": [
+      181
+    ],
+    "channel_names": [
+      "CD54"
+    ],
+    "is_control": false,
+    "genes": [
+      "ICAM1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD55",
+    "channels": [
+      182
+    ],
+    "channel_names": [
+      "CD55"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD55"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD99",
+    "channels": [
+      183
+    ],
+    "channel_names": [
+      "CD99"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD99"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD59",
+    "channels": [
+      184
+    ],
+    "channel_names": [
+      "CD59"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD59"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD199",
+    "channels": [
+      185
+    ],
+    "channel_names": [
+      "CD199"
+    ],
+    "is_control": false,
+    "genes": [
+      "CCR9"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD93",
+    "channels": [
+      186
+    ],
+    "channel_names": [
+      "CD93"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD93"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD244",
+    "channels": [
+      187
+    ],
+    "channel_names": [
+      "CD244"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD244"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD158",
+    "channels": [
+      188
+    ],
+    "channel_names": [
+      "CD158"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD235ab",
+    "channels": [
+      189
+    ],
+    "channel_names": [
+      "CD235ab"
+    ],
+    "is_control": false,
+    "genes": [],
+    "mapping": "unresolved",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD273",
+    "channels": [
+      190
+    ],
+    "channel_names": [
+      "CD273"
+    ],
+    "is_control": false,
+    "genes": [
+      "PDCD1LG2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD243",
+    "channels": [
+      191
+    ],
+    "channel_names": [
+      "CD243"
+    ],
+    "is_control": false,
+    "genes": [
+      "ABCB1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD325",
+    "channels": [
+      192
+    ],
+    "channel_names": [
+      "CD325"
+    ],
+    "is_control": false,
+    "genes": [
+      "CDH2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD324",
+    "channels": [
+      193
+    ],
+    "channel_names": [
+      "CD324"
+    ],
+    "is_control": false,
+    "genes": [
+      "CDH1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD307e",
+    "channels": [
+      194
+    ],
+    "channel_names": [
+      "CD307e"
+    ],
+    "is_control": false,
+    "genes": [
+      "FCRL5"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD172a",
+    "channels": [
+      195
+    ],
+    "channel_names": [
+      "CD172a"
+    ],
+    "is_control": false,
+    "genes": [
+      "SIRPA"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD307d",
+    "channels": [
+      196
+    ],
+    "channel_names": [
+      "CD307d"
+    ],
+    "is_control": false,
+    "genes": [
+      "FCRL4"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD42b",
+    "channels": [
+      197
+    ],
+    "channel_names": [
+      "CD42b"
+    ],
+    "is_control": false,
+    "genes": [
+      "GP1BA"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD115",
+    "channels": [
+      198
+    ],
+    "channel_names": [
+      "CD115"
+    ],
+    "is_control": false,
+    "genes": [
+      "CSF1R"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD117",
+    "channels": [
+      199
+    ],
+    "channel_names": [
+      "CD117"
+    ],
+    "is_control": false,
+    "genes": [
+      "KIT"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "XCR1",
+    "channels": [
+      200
+    ],
+    "channel_names": [
+      "XCR1"
+    ],
+    "is_control": false,
+    "genes": [
+      "XCR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD112",
+    "channels": [
+      201
+    ],
+    "channel_names": [
+      "CD112"
+    ],
+    "is_control": false,
+    "genes": [
+      "NECTIN2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "MERTK",
+    "channels": [
+      202
+    ],
+    "channel_names": [
+      "MERTK"
+    ],
+    "is_control": false,
+    "genes": [
+      "MERTK"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "B7-H4",
+    "channels": [
+      203
+    ],
+    "channel_names": [
+      "B7-H4"
+    ],
+    "is_control": false,
+    "genes": [
+      "VTCN1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD21",
+    "channels": [
+      204
+    ],
+    "channel_names": [
+      "CD21"
+    ],
+    "is_control": false,
+    "genes": [
+      "CR2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD307c/FcRL3",
+    "channels": [
+      205
+    ],
+    "channel_names": [
+      "CD307c/FcRL3"
+    ],
+    "is_control": false,
+    "genes": [
+      "FCRL3"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CLEC2",
+    "channels": [
+      206
+    ],
+    "channel_names": [
+      "CLEC2"
+    ],
+    "is_control": false,
+    "genes": [
+      "CLEC1B"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD48",
+    "channels": [
+      207
+    ],
+    "channel_names": [
+      "CD48"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD48"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD47",
+    "channels": [
+      208
+    ],
+    "channel_names": [
+      "CD47"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD47"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD46",
+    "channels": [
+      209
+    ],
+    "channel_names": [
+      "CD46"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD46"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD41",
+    "channels": [
+      210
+    ],
+    "channel_names": [
+      "CD41"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGA2B"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD40",
+    "channels": [
+      211
+    ],
+    "channel_names": [
+      "CD40"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD40"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD43",
+    "channels": [
+      212
+    ],
+    "channel_names": [
+      "CD43"
+    ],
+    "is_control": false,
+    "genes": [
+      "SPN"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD338",
+    "channels": [
+      213
+    ],
+    "channel_names": [
+      "CD338"
+    ],
+    "is_control": false,
+    "genes": [
+      "ABCG2"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD235a",
+    "channels": [
+      214
+    ],
+    "channel_names": [
+      "CD235a"
+    ],
+    "is_control": false,
+    "genes": [
+      "GYPA"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD335",
+    "channels": [
+      215
+    ],
+    "channel_names": [
+      "CD335"
+    ],
+    "is_control": false,
+    "genes": [
+      "NCR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD119",
+    "channels": [
+      217
+    ],
+    "channel_names": [
+      "CD119"
+    ],
+    "is_control": false,
+    "genes": [
+      "IFNGR1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD169",
+    "channels": [
+      218
+    ],
+    "channel_names": [
+      "CD169"
+    ],
+    "is_control": false,
+    "genes": [
+      "SIGLEC1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD28",
+    "channels": [
+      219
+    ],
+    "channel_names": [
+      "CD28"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD28"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD161",
+    "channels": [
+      220
+    ],
+    "channel_names": [
+      "CD161"
+    ],
+    "is_control": false,
+    "genes": [
+      "KLRB1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD163",
+    "channels": [
+      221
+    ],
+    "channel_names": [
+      "CD163"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD163"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD138",
+    "channels": [
+      222,
+      224
+    ],
+    "channel_names": [
+      "CD138-1",
+      "CD138-2"
+    ],
+    "is_control": false,
+    "genes": [
+      "SDC1"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 2
+  },
+  {
+    "target": "CD164",
+    "channels": [
+      223
+    ],
+    "channel_names": [
+      "CD164"
+    ],
+    "is_control": false,
+    "genes": [
+      "CD164"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD144",
+    "channels": [
+      225
+    ],
+    "channel_names": [
+      "CD144"
+    ],
+    "is_control": false,
+    "genes": [
+      "CDH5"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD202b",
+    "channels": [
+      226
+    ],
+    "channel_names": [
+      "CD202b"
+    ],
+    "is_control": false,
+    "genes": [
+      "TEK"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  },
+  {
+    "target": "CD11c",
+    "channels": [
+      227
+    ],
+    "channel_names": [
+      "CD11c"
+    ],
+    "is_control": false,
+    "genes": [
+      "ITGAX"
+    ],
+    "mapping": "unique",
+    "clone_group_size": 1
+  }
+]

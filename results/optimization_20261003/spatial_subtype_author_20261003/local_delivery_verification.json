@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checked_files": 191,
+  "server_only_RDS_caches": [
+    "samples/GSM8031360/cside.rds",
+    "samples/GSM8031360/rctd.rds",
+    "samples/GSM8031361/cside.rds",
+    "samples/GSM8031361/rctd.rds",
+    "samples/GSM8031362/cside.rds",
+    "samples/GSM8031362/rctd.rds",
+    "samples/GSM8031363/cside.rds",
+    "samples/GSM8031363/rctd.rds",
+    "samples/GSM8031364/cside.rds",
+    "samples/GSM8031364/rctd.rds",
+    "samples/GSM8031365/cside.rds",
+    "samples/GSM8031365/rctd.rds",
+    "samples/GSM8031366/cside.rds",
+    "samples/GSM8031366/rctd.rds",
+    "samples/GSM8031367/cside.rds",
+    "samples/GSM8031367/rctd.rds",
+    "samples/GSM8031368/cside.rds",
+    "samples/GSM8031368/rctd.rds",
+    "samples/GSM8031369/cside.rds",
+    "samples/GSM8031369/rctd.rds",
+    "samples/QC/rctd.rds"
+  ],
+  "preview_directory": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/preview/spatial_subtype_review",
+  "all_statistics_and_inputs_verified": true
+}

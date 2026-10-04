@@ -1,0 +1,7 @@
+{
+  "row_distance": "Euclidean",
+  "column_distance": "Euclidean within condition",
+  "linkage": "complete",
+  "standardization": "unchanged pipeline donor program score; no display-wise renormalization",
+  "row_order": ["relative::CD274__pDC__x__astro__up", "raw::CD80__pDC__x__astro__up", "raw::CD80__nonclassical_mono__x__astro__up", "raw::CD30__classical_mono__x__astro__up", "raw::CD294__pDC__x__astro__up", "raw::CD294__classical_mono__x__astro__up"]
+}

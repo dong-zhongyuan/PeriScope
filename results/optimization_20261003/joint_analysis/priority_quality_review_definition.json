@@ -1,0 +1,6 @@
+{
+  "scope": "Diagnostic review of all nominated programs; nomination rules and tier assignments unchanged.",
+  "response": "Measured 95th minus 5th percentile dose, confirmation seeds 47-51.",
+  "disease": "Identical held-out donor contrasts and RNA coordinates to program_effect_sizes.py.",
+  "checks": "Reproduce stored mean projection, compare its sign with the seed-majority sign, inspect isotype controls and reported uncertainty."
+}

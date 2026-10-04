@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "original_six_criteria_all_columns_unchanged": true,
+  "n_programs": 6849,
+  "n_antigens": 213,
+  "n_leaf_tests": 9308,
+  "source_donor_overlap": false,
+  "composition_evaluation_gene_overlap": false,
+  "n_spots_by_sample": {
+    "GSM8031360": 1857,
+    "GSM8031361": 516,
+    "GSM8031362": 772,
+    "GSM8031363": 840,
+    "GSM8031364": 1767,
+    "GSM8031365": 709,
+    "GSM8031366": 1234,
+    "GSM8031367": 1567,
+    "GSM8031368": 1010,
+    "GSM8031369": 869,
+    "QC": 400
+  },
+  "classification_verified": true
+}

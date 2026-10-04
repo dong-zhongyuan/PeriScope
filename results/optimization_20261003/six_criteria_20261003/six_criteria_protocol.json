@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-03",
+  "scope": "User-requested six-criterion rescreen of every frozen program, not filtering the previous nine A antigens",
+  "timing": "Retrospective rule revision after existing response and disease results are known; drug reference retrieval precedes joint six-criterion selection",
+  "family": "All 6849 frozen raw and relative programs / 213 biological antigens; original full-family P/q retained",
+  "C1": "Interpretable antigen identity and observed antigen support in source-cell context; flag ambiguous lineage/mixed events for contextual review, without a protein-prediction rho cutoff",
+  "C2": "Existing measured nondegenerate dose IQR > 1e-6; no new dose fitting",
+  "C3": "Frozen program gene-decoy q <= 0.05; retain continuous seed diagnostics without extra gate",
+  "C4": "Existing matched-cell-state Kamath/GSE157783 analysis: both evaluable, common actual disease direction, common relative competitive direction, pooled full-family meta q <= 0.05; Ma spatial sign not used",
+  "C5": "Evidence of extracellular/cell-surface accessibility and an interpretable intervention route; verify molecular target identity, distinguish abundance intervention from pharmacological action",
+  "C6": "Existing clinical drug or clinical-stage candidate with documented direct molecular target mechanism; approved subset reported separately. Exclude mere gene associations, endogenous ligands without therapeutic development, and scaffold/replacement proteins mislabelled as drugs against the scaffold gene",
+  "drug_source": "Archived DGIdb for recall, ChEMBL direct mechanism/clinical phase for systematic verification, UniProt for molecular identity and accessible location; specific primary sources for exceptions",
+  "clinical_stage": "Database maximum clinical phase is historical reached phase, not evidence of an ongoing trial or present marketing authorization",
+  "not_gates": ["protein prediction rho", "positive-prediction donor count", "4/5 seed direction", "0.75 monotonicity", "antigen panel rank", "GWAS", "Ma mixed-tissue direction", "Olink coverage", "drug already approved for PD"],
+  "outputs": "Per-program six statuses, cumulative funnel, all-antigen disposition, verified drug-target links, approved and clinical-stage strata, CD22/CD35 details, unresolved evidence list, source hashes",
+  "claim": "Drug-supported peripheral target candidates; not predictions that a particular drug treatment has demonstrated brain efficacy"
+}

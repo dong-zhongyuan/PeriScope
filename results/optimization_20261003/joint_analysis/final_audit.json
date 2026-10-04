@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "checks": {
+    "raw_source_records_match": true,
+    "relative_source_records_match": true,
+    "q_gene_decoy_full_family_BH": true,
+    "q_protein_decoy_full_family_BH": true,
+    "brain_13698_tests": true,
+    "spatial_68490_tests": true,
+    "matched_state_sensitivity_full_family": true,
+    "antigen_and_program_alignment": true,
+    "tier_assignment_and_complete_denominator": true
+  },
+  "n_programs": 6849,
+  "n_antigens": 213,
+  "program_tiers": {
+    "D": 6821,
+    "C": 22,
+    "B": 6
+  },
+  "best_antigen_tiers": {
+    "D": 193,
+    "C": 16,
+    "B": 4
+  },
+  "priority_targets": [
+    "CD36",
+    "CD43",
+    "CD117",
+    "HLA-DR"
+  ],
+  "n_gene_decoy_FDR": 3710,
+  "n_protein_decoy_FDR": 0,
+  "source_sha256": {
+    "joint_analysis/all_program_evidence.csv": "f1347ab0baeea15886b4af66d61c82bb7d8c6bcc2ae2ea587cd400950cc07ca9",
+    "joint_analysis/priority_targets.csv": "1f12e42bc610198540b647fb89119f4394973247b78e6155ec49d436c8c26893",
+    "joint_analysis/programs.json": "d5bcbbb5e80a8493a19c27deb31b3526bf6d8de3523be836af006017bb5f4599"
+  }
+}

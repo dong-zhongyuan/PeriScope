@@ -1,0 +1,102 @@
+{
+  "spacexr_repository": "https://github.com/dmcable/spacexr",
+  "spacexr_commit": "9f5dc33c8060f946c6072a138b70e189636e1435",
+  "biological_data": "Real raw counts; synthetic known mixtures used only to assess state recovery",
+  "sources": [
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/processed/gse178265/v0.1/GSE178265_sn_annotated.h5ad",
+      "bytes": 11122524188,
+      "sha256": "3d6fa461bc8e0e43877b5d957e99134a28b0184ca1b68c7424b316632362738c"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/processed/gse253975/v0.1/GSE253975_geomx.h5ad",
+      "bytes": 28582716,
+      "sha256": "bba586e56cffda9726812dcd185599df63ed341036bdb0b6404a01069a3fe903"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/interim/v0.1/purification/c178_brain_astro.csv",
+      "bytes": 1043134,
+      "sha256": "02a38758e77e06f0e053ce472b247e9551bf3801d096ac9164e4f1439a5f59ae"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/interim/v0.1/purification/c178_brain_microglia.csv",
+      "bytes": 652507,
+      "sha256": "ffd213726b55912ac48158bd46c59c36f81ced7f3f5e2d3f81ef8b5c4fd9590b"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/interim/v0.1/splits/GSE178265_sn_donor_split_v1.json",
+      "bytes": 981,
+      "sha256": "9e97e463c7c6674d510c2cbcff1dfbf56a96ba2678176ddc34d545dbdf754e1a"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/raw/citeseq_hao/GSE164378_sc.meta.data_3P.csv.gz",
+      "bytes": 3119866,
+      "sha256": "eaf9acf53cf24c86ebf6228ebef4f0bf682c5ea8c7018a3aa42a386a28f232ab"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/raw/citeseq_hao/raw_3p/GSM5008737_RNA_3P-barcodes.tsv.gz",
+      "bytes": 683095,
+      "sha256": "aae8e3ab848d9b80a3c52bde969e81c6696db2c778e9747603d0c24e6a86cee2"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/raw/citeseq_hao/raw_3p/GSM5008737_RNA_3P-features.tsv.gz",
+      "bytes": 233354,
+      "sha256": "9f3a435942cab5fa1bf41aac342d17ec4818d8c20139b5bcb3713cdedfdee7d1"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/raw/citeseq_hao/raw_3p/GSM5008737_RNA_3P-matrix.mtx.gz",
+      "bytes": 1125353463,
+      "sha256": "0ecba0d5463c9ecf53b1f191a4c1629cee02c99741d5e442ef3a2154b3ab0af4"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/programs.json",
+      "bytes": 3292624,
+      "sha256": "b64b5ac56782bee39d313a26d4c65f9e3452c54891a894481de0ca816ec670ba"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/target_specific/programs.json",
+      "bytes": 647514,
+      "sha256": "950b54db6da8f8750a25675a1a767052070349dc7ae82204be4a87d2d8751e3a"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/six_criteria_20261003/all_6849_programs_six_criteria.csv",
+      "bytes": 18755573,
+      "sha256": "94ce3d0cd23eb8e5468eced4ce4fa7f0e7105767225d3be3a36e7bfe4785db94"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product/_work/optimization_20261003/reference/spatial_coordinates.csv",
+      "bytes": 1760809,
+      "sha256": "30565ce4b59cbe5bc1ae0bb929a2b510295c146bab3e1487f078f3042542ba28"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product/_work/optimization_20261003/spatial_analysis.py",
+      "bytes": 8294,
+      "sha256": "6c8ed4280a4fe9f7844621accf9b142b04d6eef8c689c358bb7caf039c5a215d"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/interim/rescreen_20261002/brain_train.npz",
+      "bytes": 4327982275,
+      "sha256": "4c439905c3ca4e8a28dada4289df5e16e815c4dc0c7ee6b06ecff00d0554f5b7"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/raw/ma_published_reference_20261003/processed_sn_obj.rds",
+      "bytes": 1770471811,
+      "sha256": "3ea224938ac1c56ed6b775cb32bb31b23dbd155a9bec0cece84e35181ff92982"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/raw/ma_published_reference_20261003/download_provenance.json",
+      "bytes": 571,
+      "sha256": "e996a5cacd164399838f1b66b60e9f67baebf815c741ef21c0552da21fa59bc7"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product/_work/spatial_subtype_20261003/ma_reference_sources/GEO_author_donor_crosswalk.csv",
+      "bytes": 3112,
+      "sha256": "9ff869453901c0f6508fa04563f6234e863aea918eca78ee3a1c0b1533fc3a46"
+    },
+    {
+      "path": "/public/home/mengxl/dzy/pd_product/_work/optimization_20261003/reference/hgnc_complete_set.txt",
+      "bytes": 16963116,
+      "sha256": "2b4224ea847df2fc6982f5b2a52804c5d92fbb8810b134afb636f6029452dc03"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "updated",
+  "programs": 6849,
+  "model_registry_sha256": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9",
+  "table_sha256": "8f4b1f23f9d12aa610682fd82d70731a1c12ed20f0a83e076b0d4694939915f0",
+  "gene_decoy_FDR_programs": 3950,
+  "protein_panel_metrics_role": "evaluation_only"
+}

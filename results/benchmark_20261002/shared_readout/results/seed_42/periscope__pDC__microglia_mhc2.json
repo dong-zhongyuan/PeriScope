@@ -1,0 +1,118 @@
+{
+  "method": "periscope",
+  "seed": 42,
+  "blood_state": "pDC",
+  "brain_state": "microglia_mhc2",
+  "distribution_by_donor": [
+    {
+      "mean_mse": 0.01791380434760807,
+      "energy_per_sqrt_gene": 0.035289014551694475,
+      "mmd": 0.032269915368852375,
+      "variance_ratio": 1.1153236274860463,
+      "condition": 0,
+      "donor": 9
+    },
+    {
+      "mean_mse": 0.01739710820738898,
+      "energy_per_sqrt_gene": 0.03337356534197775,
+      "mmd": 0.03036293750356922,
+      "variance_ratio": 1.0075582921313033,
+      "condition": 0,
+      "donor": 10
+    },
+    {
+      "mean_mse": 0.012783734942296255,
+      "energy_per_sqrt_gene": 0.0257654831461715,
+      "mmd": 0.022718229175583637,
+      "variance_ratio": 0.9382695239612183,
+      "condition": 1,
+      "donor": 5
+    },
+    {
+      "mean_mse": 0.06782254306841551,
+      "energy_per_sqrt_gene": 0.11633841821739488,
+      "mmd": 0.11382409283984174,
+      "variance_ratio": 1.1690284890579352,
+      "condition": 1,
+      "donor": 17
+    },
+    {
+      "mean_mse": 0.00967178828602414,
+      "energy_per_sqrt_gene": 0.023596008316809882,
+      "mmd": 0.020517646398301004,
+      "variance_ratio": 1.3040463202339445,
+      "condition": 1,
+      "donor": 18
+    }
+  ],
+  "distribution_average": {
+    "mean_mse": 0.02511779577034659,
+    "energy_per_sqrt_gene": 0.0468724979148097,
+    "mmd": 0.0439385642572296,
+    "variance_ratio": 1.1068452505740898
+  },
+  "direction": {
+    "condition_aware": {
+      "rho": 0.204320222997922,
+      "delta_mse": 0.016045855787867255,
+      "predicted_rms": 0.06770619232952235,
+      "observed_rms": 0.11447905749082565,
+      "n_blood_PD": 1,
+      "n_blood_control": 1,
+      "n_brain_PD": 3,
+      "n_brain_control": 2
+    },
+    "fixed_control": {
+      "rho": 0.02797427802311301,
+      "delta_mse": 0.013096594508228794,
+      "predicted_rms": 0.008772111978276232,
+      "observed_rms": 0.11447905749082565,
+      "n_blood_PD": 1,
+      "n_blood_control": 1,
+      "n_brain_PD": 3,
+      "n_brain_control": 2
+    },
+    "fixed_PD": {
+      "rho": 0.002193441876714375,
+      "delta_mse": 0.013145464027061689,
+      "predicted_rms": 0.007427515797262679,
+      "observed_rms": 0.11447905749082565,
+      "n_blood_PD": 1,
+      "n_blood_control": 1,
+      "n_brain_PD": 3,
+      "n_brain_control": 2
+    }
+  },
+  "training": {
+    "offset_alpha": 0.5,
+    "residual_scale": 1.0,
+    "validation_mean_mse_grid": [
+      0.014418417306708054,
+      0.014264045719426799,
+      0.014242009699228637,
+      0.014594944360081585
+    ],
+    "validation_mmd_grid": [
+      0.08055563907078722,
+      0.0736624117547553,
+      0.056315925431550506,
+      0.0256115925838154
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scale_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "human validation only; identical grids for all methods",
+    "offset": "pooled training-only, condition-independent",
+    "noise": "same centered training brain reconstruction residual draw for all methods",
+    "contrast_error": 0.0
+  }
+}

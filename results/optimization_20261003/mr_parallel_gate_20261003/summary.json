@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "all": {
+    "programs": 6849,
+    "antigens": 213
+  },
+  "MR_and_perturbation": {
+    "programs": 42,
+    "antigens": 3
+  },
+  "priority": {
+    "programs": 16,
+    "antigens": 3
+  },
+  "priority_targets": [
+    "CD22",
+    "CD40",
+    "CD71"
+  ],
+  "spatial_supported_priority": {
+    "programs": 0,
+    "antigens": 0
+  },
+  "MR_available_antigens": 35,
+  "MR_pending_antigens": 178,
+  "elapsed_seconds": 3.7418925759848207,
+  "MR_threshold": "q_BH<0.05 across original576 selected exposure-outcome tests",
+  "perturbation_threshold": "q_gene_decoy<=0.05 from unchanged full frozen program family",
+  "MRI_direction_not_forced_against_cell_state": true,
+  "downstream_evidence_reused": true,
+  "models_retrained": false,
+  "spatial_rule": "retain existing partial evaluation; not newly forced as a global gate",
+  "MR_scope": "current59-target exposure search, not all213-antigen proteome-wide search",
+  "model_registry_sha256": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9",
+  "replaced_seeds": [
+    47,
+    48,
+    49
+  ],
+  "confirmation_recomputed": true
+}

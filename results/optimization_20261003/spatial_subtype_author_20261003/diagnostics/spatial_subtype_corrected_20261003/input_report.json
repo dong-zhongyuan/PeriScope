@@ -1,0 +1,9 @@
+{
+  "source_input_directory": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/spatial_subtype_20261003/inputs",
+  "n_reserved_markers": 509,
+  "n_evaluation_genes": 4405,
+  "program_coverage_eligible": 6836,
+  "n_programs": 6849,
+  "selection_uses_candidate_statistics": false,
+  "protocol_sha256": "9a904c015e8cedf5516aefd2c17499b7792b58f35c38b1c424cecba97412c678"
+}

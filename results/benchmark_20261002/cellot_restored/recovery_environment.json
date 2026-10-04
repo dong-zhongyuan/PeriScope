@@ -1,0 +1,87 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+  "platform": "Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.17",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "torch": "2.5.1+cu121",
+  "cuda": "12.1",
+  "blas_libraries": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 48,
+      "prefix": "libscipy_openblas",
+      "filepath": "/public/home/mengxl/dzy/envs/pd_bbm/lib/python3.10/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+      "version": "0.3.29",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 48,
+      "prefix": "libscipy_openblas",
+      "filepath": "/public/home/mengxl/dzy/envs/pd_bbm/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-68440149.so",
+      "version": "0.3.28",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 48,
+      "prefix": "libgomp",
+      "filepath": "/public/home/mengxl/dzy/envs/pd_bbm/lib/python3.10/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 48,
+      "prefix": "libgomp",
+      "filepath": "/public/home/mengxl/dzy/envs/pd_bbm/lib/python3.10/site-packages/torch/lib/libgomp-a34b3233.so.1",
+      "version": null
+    }
+  ],
+  "training_function_sha256": "243f81fe5acb75146d79782b5035390de10da8cda4c6ff2f1a567da99d1b016c",
+  "inputs": {
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/nonclassical_mono__astro.npz": "5edc45de6c6cf722dfa738cea79d873c2d572c64c5882cb0d649c287bf867146",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/cDC__microglia_mhc2.npz": "7ddfa79e9b1d16dda9c978017cf2248927877a5f5f17a4764278401f7ee29aaa",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/cDC__astro.npz": "b8be73ebc3605af9580e6ec89ff320b686699dc774bbb7d8424c2aa5867abcf1",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/pDC__astro.npz": "2791aa65307b6ced49b585858e38e79ed877a792d5fd3ee384d758908d5be120",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/classical_mono__astro.npz": "3d2a95b2600683b5ac0797f61e5c8106c7030785d7e1ff39c519f52b47f53991",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/classical_mono__microglia_mhc2.npz": "909d8dbe04a430b752c97dc34f8814f17482d326931021947eeb133273f21e85",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/pDC__microglia_mhc2.npz": "fc88f47e361bee285afa8c735124de756524461b8e1fb12db665630a46e4f297",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cache/nonclassical_mono__microglia_mhc2.npz": "04255845342eb19ce4fbc4610645fa204353fc7710d0691c5a3e785f50047c68",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/nonclassical_mono__astro.npz": "6a195ca337f965274ae5349d9c8a06af2e0568af9ccb1575c7029b084358ea1f",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/cDC__microglia_mhc2.npz": "9a47f3d16b51836f03831572655566e625a2ad672886dfead9c16346129da52d",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/cDC__astro.npz": "c8ef23d86079dc6bc9e247a04e6b3c265d9783d19df26a65db3e983c258de113",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/pDC__astro.npz": "3630085bbc916a28ff9adb3b23c8a1295f27b401e67686b6fbb12f939a040f38",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/classical_mono__astro.npz": "668a576a00b8889878de2ee442672720c5d0fd17f64c339d34131dcb1aa6e01c",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/classical_mono__microglia_mhc2.npz": "90ba98762a988731d4488d944d8fa8fb2bc562323a4cb1d8a8255547168bbf6c",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/pDC__microglia_mhc2.npz": "b16bce92dc2e83458b9e0fa693e28ce2ed57cbbc11ed5c948d03217e134daac0",
+    "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/cellot_recomputed_20261003/projection/nonclassical_mono__microglia_mhc2.npz": "1e2c00bb32212e3cfa0a4ae6fbc233f49bbd9b90c307bb5383d3d97ee350da92",
+    "/public/home/mengxl/dzy/pd_product_assets/results/pig_external_validation_20261003/adapted_pig_blood_reference_inputs.npz": "cb127338ddb15f66c40aeed163e8da2ec69042f385cad9c70abd41d355ef7a33",
+    "/public/home/mengxl/dzy/pd_product_assets/results/pig_external_validation_20261003/human_reference_cells.npz": "9b8277aa24cd4764ea6bf5f6fdf61e024dbd87a79cdf33e62bc7f2f46e9b0180",
+    "/public/home/mengxl/dzy/pd_product_assets/results/pig_external_validation_20261003/inputs/brain_one2one_sum_provided_transcript_TPM.csv": "af3bbbc6abece5e65a917d02b50cd5d781a057d6a71ace530ea3ff4f3201e6f0"
+  },
+  "numerical_settings": {
+    "PCA_original_six_axes_threads": 2,
+    "PCA_pDC_extension_threads": 1,
+    "CPU_worker_torch_threads": 1,
+    "CPU_worker_BLAS_threads": 1,
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "PCA_seed": 42,
+    "seed42_original_six_axes": {
+      "device": "cpu",
+      "torch_threads": 2,
+      "BLAS_threads": 2,
+      "evidence": "Three cDC->microglia fixed-control metrics match archived means after subtracting recovered seeds43/44, to floating-point rounding"
+    }
+  }
+}

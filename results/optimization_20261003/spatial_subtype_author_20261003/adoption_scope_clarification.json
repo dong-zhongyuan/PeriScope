@@ -1,0 +1,13 @@
+{
+  "reason": "For a global exclusion rule, all spatial leaf subtypes mapped to an existing model parent need usable assessment. Any reliable leaf can support positive A7 membership; unresolved alternate leaves prevent global negative exclusion.",
+  "timing": "Corrected global deployment logic after first candidate evaluation; reference, thresholds, statistical tests, C7 statuses and A7 membership unchanged.",
+  "statistical_output_hashes_before": {
+    "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/spatial_subtype_author_20261003/all_leaf_program_spatial_tests.csv": "c10696b3d8445e9ad518cfc26c9a564da68713729f686a92ad5a9d5d0187d577",
+    "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/seven_criteria_20261003/all_6849_programs_seven_criteria.csv": "7dfc0f27fa4e3039b999e57c3329bbd28d1676d77dbab63fac65b4ac32214ac3"
+  },
+  "statistical_output_hashes_after": {
+    "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/spatial_subtype_author_20261003/all_leaf_program_spatial_tests.csv": "c10696b3d8445e9ad518cfc26c9a564da68713729f686a92ad5a9d5d0187d577",
+    "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/seven_criteria_20261003/all_6849_programs_seven_criteria.csv": "7dfc0f27fa4e3039b999e57c3329bbd28d1676d77dbab63fac65b4ac32214ac3"
+  },
+  "all_statistical_outputs_identical": true
+}

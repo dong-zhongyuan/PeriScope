@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "n_spots": 11859,
+  "n_reference_cells": 18017,
+  "reference_donors": [
+    "Hao:P1",
+    "Hao:P2",
+    "Hao:P3",
+    "Hao:P4",
+    "SN-1963",
+    "SN-2544",
+    "SN-3346",
+    "SN-3482",
+    "SN-3873",
+    "SN-3887",
+    "SN-4560",
+    "SN-5610",
+    "SN-6173"
+  ],
+  "calibration_donors": [
+    "Hao:P5",
+    "SN-2561",
+    "SN-3345"
+  ],
+  "reference_states": [
+    "B_background",
+    "DA_neuron",
+    "Endothelial",
+    "Mono_macro",
+    "NK_background",
+    "Neuron_other",
+    "OPC",
+    "Oligodendrocyte",
+    "Pericyte",
+    "T_CD4_background",
+    "T_CD8_background",
+    "astro",
+    "microglia_homeostatic",
+    "microglia_mhc2"
+  ],
+  "n_common_genes": 23277,
+  "n_deconv_genes": 18447,
+  "n_model_genes": 4741,
+  "n_program_genes": 2503,
+  "deconv_program_overlap": 0,
+  "reference_state_donors": {
+    "B_background": 4,
+    "DA_neuron": 7,
+    "Endothelial": 9,
+    "Mono_macro": 5,
+    "NK_background": 4,
+    "Neuron_other": 9,
+    "OPC": 8,
+    "Oligodendrocyte": 9,
+    "Pericyte": 9,
+    "T_CD4_background": 4,
+    "T_CD8_background": 4,
+    "astro": 9,
+    "microglia_homeostatic": 4,
+    "microglia_mhc2": 9
+  },
+  "protocol_sha256": "23e1b3afbef254f95383b9b248579263b8b3d22a5bebdaa0d4b6964a878ce38c"
+}

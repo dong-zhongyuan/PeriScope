@@ -1,0 +1,351 @@
+item,actual,expected,absolute_error,passed
+macro/mean_mse/mean,13.943817724369,13.943817724369003,3.552713678800501e-15,True
+macro/mean_mse/std,17.631392383099122,17.631392383099122,0.0,True
+macro/mmd/mean,0.1229476609751436,0.1229476609751436,0.0,True
+macro/mmd/std,0.02224219654052944,0.0222421965405294,3.8163916471489756e-17,True
+macro/energy_per_sqrt_gene/mean,0.7605327223622761,0.7605327223622761,0.0,True
+macro/energy_per_sqrt_gene/std,0.8121324799253798,0.8121324799253798,0.0,True
+macro/variance_ratio/mean,141.81433351806675,141.81433351806675,0.0,True
+macro/variance_ratio/std,160.56500039599675,160.56500039599675,0.0,True
+macro/condition_aware_rho/mean,0.14491146623645015,0.1449114662364501,5.551115123125783e-17,True
+macro/condition_aware_rho/std,0.014295948609870584,0.0142959486098705,8.326672684688674e-17,True
+macro/condition_aware_delta_mse/mean,34.78047457616776,34.78047457616776,0.0,True
+macro/condition_aware_delta_mse/std,44.0285318326516,44.0285318326516,0.0,True
+macro/condition_aware_predicted_rms/mean,2.055578683502972,2.055578683502972,0.0,True
+macro/condition_aware_predicted_rms/std,1.765818758332308,1.765818758332308,0.0,True
+macro/fixed_control_rho/mean,0.00884041933826672,0.0088404193382667,2.0816681711721685e-17,True
+macro/fixed_control_rho/std,0.015915162044967613,0.0159151620449676,1.3877787807814457e-17,True
+macro/fixed_control_delta_mse/mean,5.7626783055796595,5.76267830557966,8.881784197001252e-16,True
+macro/fixed_control_delta_mse/std,5.560881271461788,5.560881271461788,0.0,True
+macro/fixed_control_predicted_rms/mean,1.0350358655365806,1.0350358655365806,0.0,True
+macro/fixed_control_predicted_rms/std,0.41102711135642256,0.4110271113564225,5.551115123125783e-17,True
+macro/fixed_PD_rho/mean,0.04549104023085062,0.0454910402308506,2.0816681711721685e-17,True
+macro/fixed_PD_rho/std,0.009015843232212602,0.0090158432322126,1.734723475976807e-18,True
+macro/fixed_PD_delta_mse/mean,0.019938063613759976,0.0199380636137599,7.632783294297951e-17,True
+macro/fixed_PD_delta_mse/std,0.0005986291323299375,0.0005986291323299,3.7513395167998453e-17,True
+macro/fixed_PD_predicted_rms/mean,0.09853078067923586,0.0985307806792358,5.551115123125783e-17,True
+macro/fixed_PD_predicted_rms/std,0.0025679956763865076,0.0025679956763865,7.37257477290143e-18,True
+axis_direction/cDC__astro/mean,0.17984823341144396,0.17985,1.766588556051385e-06,True
+axis_direction/cDC__astro/std,0.028086504515946614,0.02809,3.4954840533868436e-06,True
+axis_direction/cDC__microglia_mhc2/mean,0.20320977608101218,0.20321,2.239189878239234e-07,True
+axis_direction/cDC__microglia_mhc2/std,0.02799483950817603,0.02799,4.839508176028573e-06,True
+axis_direction/classical_mono__astro/mean,0.05842543006205848,0.05843,4.569937941525937e-06,True
+axis_direction/classical_mono__astro/std,0.196841585770938,0.19684,1.5857709380062701e-06,True
+axis_direction/classical_mono__microglia_mhc2/mean,0.20539773635788694,0.2054,2.2636421130595163e-06,True
+axis_direction/classical_mono__microglia_mhc2/std,0.006787622081193197,0.00679,2.377918806802798e-06,True
+axis_direction/nonclassical_mono__astro/mean,0.20509328942832938,0.20509,3.2894283293893878e-06,True
+axis_direction/nonclassical_mono__astro/std,0.04479776231598956,0.0448,2.2376840104407214e-06,True
+axis_direction/nonclassical_mono__microglia_mhc2/mean,0.1665668606537524,0.16657,3.1393462475992617e-06,True
+axis_direction/nonclassical_mono__microglia_mhc2/std,0.10528217481886853,0.10528,2.174818868536099e-06,True
+axis_direction/pDC__astro/mean,0.06473365894083254,0.06473,3.6589408325404804e-06,True
+axis_direction/pDC__astro/std,0.03216696894294121,0.03217,3.031057058788811e-06,True
+axis_direction/pDC__microglia_mhc2/mean,0.07601674495628541,0.07602,3.255043714595063e-06,True
+axis_direction/pDC__microglia_mhc2/std,0.08082490826544157,0.08082,4.908265441569415e-06,True
+raw_axis/cellot/cDC/astro/mean_mse/mean,0.021684325610597927,0.0216843256105979,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/astro/mean_mse/std,0.0005703811175858735,0.0005703811175858,7.340048707726865e-17,True
+raw_axis/cellot/cDC/astro/mean_mse/min,0.02109675295650959,0.0210967529565095,9.020562075079397e-17,True
+raw_axis/cellot/cDC/astro/mean_mse/max,0.02223580051213503,0.022235800512135,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/astro/mmd/mean,0.10813039063672476,0.1081303906367247,6.938893903907228e-17,True
+raw_axis/cellot/cDC/astro/mmd/std,0.001167366804566695,0.0011673668045666,9.497611030973019e-17,True
+raw_axis/cellot/cDC/astro/mmd/min,0.10689137538461098,0.1068913753846109,8.326672684688674e-17,True
+raw_axis/cellot/cDC/astro/mmd/max,0.10920965489424694,0.1092096548942469,4.163336342344337e-17,True
+raw_axis/cellot/cDC/astro/energy_per_sqrt_gene/mean,0.1507211110911273,0.1507211110911273,0.0,True
+raw_axis/cellot/cDC/astro/energy_per_sqrt_gene/std,0.002871798049961026,0.002871798049961,2.6020852139652106e-17,True
+raw_axis/cellot/cDC/astro/energy_per_sqrt_gene/min,0.14784438291670224,0.1478443829167022,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/astro/energy_per_sqrt_gene/max,0.15358795349375515,0.1535879534937551,5.551115123125783e-17,True
+raw_axis/cellot/cDC/astro/variance_ratio/mean,0.10701199819644291,0.1070119981964429,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/astro/variance_ratio/std,0.010813527978244959,0.0108135279782449,5.898059818321144e-17,True
+raw_axis/cellot/cDC/astro/variance_ratio/min,0.09690605700016022,0.0969060570001602,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/astro/variance_ratio/max,0.11841594129800796,0.1184159412980079,5.551115123125783e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_rho/mean,0.17984823341144396,0.1798482334114439,5.551115123125783e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_rho/std,0.028086504515946614,0.0280865045159466,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_rho/min,0.1478898347072751,0.1478898347072751,0.0,True
+raw_axis/cellot/cDC/astro/condition_aware_rho/max,0.20060731771228213,0.2006073177122821,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_delta_mse/mean,0.013963323707381884,0.0139633237073818,8.326672684688674e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_delta_mse/std,0.0015979910617892976,0.0015979910617892,9.75781955236954e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_delta_mse/min,0.01251615583896637,0.0125161558389663,6.938893903907228e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_delta_mse/max,0.015678297728300095,0.0156782977283,9.367506770274758e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_predicted_rms/mean,0.1002367337544759,0.1002367337544759,0.0,True
+raw_axis/cellot/cDC/astro/condition_aware_predicted_rms/std,0.005036689744848523,0.0050366897448485,2.2551405187698492e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_predicted_rms/min,0.09574447572231293,0.0957444757223129,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/astro/condition_aware_predicted_rms/max,0.10568176209926605,0.105681762099266,5.551115123125783e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_rho/mean,-0.03075151516069477,-0.0307515151606947,6.938893903907228e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_rho/std,0.04086429597923438,0.0408642959792343,8.326672684688674e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_rho/min,-0.07304695869249488,-0.0730469586924948,6.938893903907228e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_rho/max,0.008512836485365194,0.0085128364853651,9.367506770274758e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_delta_mse/mean,0.022329046080509823,0.0223290460805098,2.42861286636753e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_delta_mse/std,0.0030465059845605066,0.0030465059845605,6.5052130349130266e-18,True
+raw_axis/cellot/cDC/astro/fixed_control_delta_mse/min,0.019575491547584534,0.0195754915475845,3.469446951953614e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_delta_mse/max,0.02560178004205227,0.0256017800420522,6.938893903907228e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_predicted_rms/mean,0.11057872573534648,0.1105787257353464,8.326672684688674e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_predicted_rms/std,0.014862501495832969,0.0148625014958329,6.938893903907228e-17,True
+raw_axis/cellot/cDC/astro/fixed_control_predicted_rms/min,0.0962672084569931,0.0962672084569931,0.0,True
+raw_axis/cellot/cDC/astro/fixed_control_predicted_rms/max,0.12593688070774078,0.1259368807077407,8.326672684688674e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_rho/mean,-0.08559565028199256,-0.0855956502819925,6.938893903907228e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_rho/std,0.0517833386585991,0.0517833386585991,0.0,True
+raw_axis/cellot/cDC/astro/fixed_PD_rho/min,-0.12198714230375102,-0.121987142303751,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_rho/max,-0.026311479575660712,-0.0263114795756607,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_delta_mse/mean,0.01656789829333623,0.0165678982933362,3.122502256758253e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_delta_mse/std,0.001270248710628287,0.0012702487106282,8.695301423333746e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_delta_mse/min,0.01510116457939148,0.0151011645793914,7.979727989493313e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_delta_mse/max,0.017308402806520462,0.0173084028065204,6.245004513516506e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_predicted_rms/mean,0.07846969117720921,0.0784696911772092,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_predicted_rms/std,0.00984527903730538,0.0098452790373053,7.979727989493313e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_predicted_rms/min,0.06883956491947174,0.0688395649194717,4.163336342344337e-17,True
+raw_axis/cellot/cDC/astro/fixed_PD_predicted_rms/max,0.08851686865091324,0.0885168686509132,4.163336342344337e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mean_mse/mean,0.026038009300827978,0.0260380093008279,7.632783294297951e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mean_mse/std,0.000465076832549778,0.0004650768325497,7.800834631033204e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mean_mse/min,0.025605333037674427,0.0256053330376744,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mean_mse/max,0.026529828645288946,0.0265298286452889,4.5102810375396984e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mmd/mean,0.08612315323001235,0.0861231532300123,5.551115123125783e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mmd/std,0.0025864936889812336,0.0025864936889812,3.382710778154774e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mmd/min,0.08388762429238458,0.0838876242923845,8.326672684688674e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/mmd/max,0.08895607290460542,0.0889560729046054,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/energy_per_sqrt_gene/mean,0.1461920718158303,0.1461920718158303,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/energy_per_sqrt_gene/std,0.008788753288133324,0.0087887532881333,2.42861286636753e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/energy_per_sqrt_gene/min,0.14025231145732706,0.140252311457327,5.551115123125783e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/energy_per_sqrt_gene/max,0.15628807432930683,0.1562880743293068,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/variance_ratio/mean,0.1616797501842181,0.1616797501842181,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/variance_ratio/std,0.01659741158768494,0.0165974115876849,3.8163916471489756e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/variance_ratio/min,0.1441810593008995,0.1441810593008995,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/variance_ratio/max,0.1771982118487358,0.1771982118487358,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_rho/mean,0.20320977608101218,0.2032097760810121,8.326672684688674e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_rho/std,0.02799483950817603,0.027994839508176,3.122502256758253e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_rho/min,0.1717756902480347,0.1717756902480347,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_rho/max,0.2254563461604958,0.2254563461604958,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_delta_mse/mean,0.02134956605732441,0.0213495660573244,1.0408340855860843e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_delta_mse/std,0.0030103371536467473,0.0030103371536467,4.7271214720367993e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_delta_mse/min,0.019270235672593117,0.0192702356725931,1.734723475976807e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_delta_mse/max,0.024801578372716904,0.0248015783727169,3.469446951953614e-18,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_predicted_rms/mean,0.11095219602187474,0.1109521960218747,4.163336342344337e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_predicted_rms/std,0.011473806976279107,0.0114738069762791,6.938893903907228e-18,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_predicted_rms/min,0.10202665627002716,0.1020266562700271,5.551115123125783e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/condition_aware_predicted_rms/max,0.12389431148767471,0.1238943114876747,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_rho/mean,0.023574154981369094,0.023574154981369,9.367506770274758e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_rho/std,0.045332585031089945,0.0453325850310899,4.163336342344337e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_rho/min,-0.016568674384266072,-0.016568674384266,7.28583859910259e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_rho/max,0.07273952442272928,0.0727395244227292,8.326672684688674e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_delta_mse/mean,0.026236387590567272,0.0262363875905672,7.28583859910259e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_delta_mse/std,0.002321164785389789,0.0023211647853897,8.890457814381136e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_delta_mse/min,0.02449123188853264,0.0244912318885326,3.8163916471489756e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_delta_mse/max,0.028870677575469017,0.028870677575469,1.734723475976807e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_predicted_rms/mean,0.12909905115763345,0.1290990511576334,5.551115123125783e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_predicted_rms/std,0.0026486481432904494,0.0026486481432904,4.9439619065339e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_predicted_rms/min,0.12650641798973083,0.1265064179897308,2.7755575615628914e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_control_predicted_rms/max,0.13180036842823029,0.1318003684282302,8.326672684688674e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_rho/mean,0.08046406013368777,0.0804640601336877,6.938893903907228e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_rho/std,0.02035121023985461,0.0203512102398546,1.0408340855860843e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_rho/min,0.0608639013857177,0.0608639013857177,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_rho/max,0.1014912090726814,0.1014912090726814,0.0,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_delta_mse/mean,0.018395367388923962,0.0183953673889239,6.245004513516506e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_delta_mse/std,0.00040608336576772905,0.0004060833657677,2.905661822261152e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_delta_mse/min,0.01813783310353756,0.0181378331035375,5.898059818321144e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_delta_mse/max,0.018863487988710403,0.0188634879887104,3.469446951953614e-18,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_predicted_rms/mean,0.09281625350316365,0.0928162535031636,5.551115123125783e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_predicted_rms/std,0.0030292754491034507,0.0030292754491034,5.074066167232161e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_predicted_rms/min,0.09022445976734161,0.0902244597673416,1.3877787807814457e-17,True
+raw_axis/cellot/cDC/microglia_mhc2/fixed_PD_predicted_rms/max,0.09614647179841995,0.0961464717984199,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/mean_mse/mean,0.022064483414093655,0.0220644834140936,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/mean_mse/std,0.00032315116872953315,0.0003231511687295,3.3176586478056436e-17,True
+raw_axis/cellot/nonclassical_mono/astro/mean_mse/min,0.021698508597910404,0.0216985085979104,3.469446951953614e-18,True
+raw_axis/cellot/nonclassical_mono/astro/mean_mse/max,0.02231050655245781,0.0223105065524578,1.0408340855860843e-17,True
+raw_axis/cellot/nonclassical_mono/astro/mmd/mean,0.10554917377288925,0.1055491737728892,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/mmd/std,0.0018654238699258715,0.0018654238699258,7.155734338404329e-17,True
+raw_axis/cellot/nonclassical_mono/astro/mmd/min,0.10343339397744526,0.1034333939774452,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/mmd/max,0.10695693951628008,0.10695693951628,6.938893903907228e-17,True
+raw_axis/cellot/nonclassical_mono/astro/energy_per_sqrt_gene/mean,0.15659196303830747,0.1565919630383074,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/energy_per_sqrt_gene/std,0.008017686327551633,0.0080176863275516,3.2959746043559335e-17,True
+raw_axis/cellot/nonclassical_mono/astro/energy_per_sqrt_gene/min,0.14785283840481428,0.1478528384048142,8.326672684688674e-17,True
+raw_axis/cellot/nonclassical_mono/astro/energy_per_sqrt_gene/max,0.1636080456227287,0.1636080456227287,0.0,True
+raw_axis/cellot/nonclassical_mono/astro/variance_ratio/mean,0.09433023184537888,0.0943302318453788,8.326672684688674e-17,True
+raw_axis/cellot/nonclassical_mono/astro/variance_ratio/std,0.014554961616516041,0.014554961616516,4.163336342344337e-17,True
+raw_axis/cellot/nonclassical_mono/astro/variance_ratio/min,0.08324629962444305,0.083246299624443,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/variance_ratio/max,0.11081325560808182,0.1108132556080818,1.3877787807814457e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_rho/mean,0.20509328942832938,0.2050932894283293,8.326672684688674e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_rho/std,0.04479776231598956,0.0447977623159895,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_rho/min,0.17531218498778148,0.1753121849877814,8.326672684688674e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_rho/max,0.2566124352913543,0.2566124352913543,0.0,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_delta_mse/mean,0.013490615412592888,0.0134906154125928,8.847089727481716e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_delta_mse/std,0.0011762876457782074,0.0011762876457782,7.37257477290143e-18,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_delta_mse/min,0.012601841241121292,0.0126018412411212,9.194034422677078e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_delta_mse/max,0.014824504032731056,0.014824504032731,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_predicted_rms/mean,0.10534629225730896,0.1053462922573089,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_predicted_rms/std,0.012430036898697224,0.0124300368986972,2.42861286636753e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_predicted_rms/min,0.09209837764501572,0.0920983776450157,1.3877787807814457e-17,True
+raw_axis/cellot/nonclassical_mono/astro/condition_aware_predicted_rms/max,0.11675307154655457,0.1167530715465545,6.938893903907228e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_rho/mean,-0.0013529177579266645,-0.0013529177579266,6.440160904563896e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_rho/std,0.045668461109888404,0.0456684611098884,6.938893903907228e-18,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_rho/min,-0.05406856006825109,-0.054068560068251,9.020562075079397e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_rho/max,0.02618986415727793,0.0261898641572779,3.122502256758253e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_delta_mse/mean,0.0113189530869325,0.0113189530869325,0.0,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_delta_mse/std,0.0012116766697408408,0.0012116766697408,4.0766001685454967e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_delta_mse/min,0.010597536340355873,0.0105975363403558,7.28583859910259e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_delta_mse/max,0.012717846781015396,0.0127178467810153,9.540979117872439e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_predicted_rms/mean,0.05701442311207453,0.0570144231120745,3.469446951953614e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_predicted_rms/std,0.007348171701600373,0.0073481717016003,7.28583859910259e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_predicted_rms/min,0.05161779001355171,0.0516177900135517,1.3877787807814457e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_control_predicted_rms/max,0.06538309156894684,0.0653830915689468,4.163336342344337e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_rho/mean,0.08116973633291964,0.0811697363329196,4.163336342344337e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_rho/std,0.04241159311301454,0.0424115931130145,4.163336342344337e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_rho/min,0.0330020298995198,0.0330020298995198,0.0,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_rho/max,0.11291174031160256,0.1129117403116025,5.551115123125783e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_delta_mse/mean,0.010416641210516294,0.0104166412105162,9.367506770274758e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_delta_mse/std,0.0007274763043839711,0.0007274763043839,7.101524229780054e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_delta_mse/min,0.00964135117828846,0.0096413511782884,5.898059818321144e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_delta_mse/max,0.011084314435720444,0.0110843144357204,4.336808689942018e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_predicted_rms/mean,0.05649055168032646,0.0564905516803264,6.245004513516506e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_predicted_rms/std,0.00850561730643365,0.0085056173064336,4.85722573273506e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_predicted_rms/min,0.04697241261601448,0.0469724126160144,8.326672684688674e-17,True
+raw_axis/cellot/nonclassical_mono/astro/fixed_PD_predicted_rms/max,0.06334707140922546,0.0633470714092254,6.938893903907228e-17,True
+residual_axis/cellot/cDC__astro/mmd/mean,0.0512467450949581,0.0512467450949581,0.0,True
+residual_axis/cellot/cDC__astro/mmd/std,0.00011016339990054674,0.0001101633999005,4.674266616128131e-17,True
+residual_axis/cellot/cDC__astro/mean_mse/mean,0.0225193024483239,0.0225193024483239,0.0,True
+residual_axis/cellot/cDC__astro/mean_mse/std,0.0005703813207353552,0.0005703813207353,5.5185890579512176e-17,True
+residual_axis/cellot/cDC__astro/variance_ratio/mean,0.7205123091287629,0.7205123091287629,0.0,True
+residual_axis/cellot/cDC__astro/variance_ratio/std,0.01081352616809909,0.010813526168099,9.020562075079397e-17,True
+residual_axis/cellot/cDC__astro/condition_aware_rho/mean,0.17984817740205783,0.1798481774020578,2.7755575615628914e-17,True
+residual_axis/cellot/cDC__astro/condition_aware_rho/std,0.028086906470553414,0.0280869064705533,1.1449174941446927e-16,True
+residual_axis/cellot/cDC__astro/condition_aware_delta_mse/mean,0.0139633240481062,0.0139633240481062,0.0,True
+residual_axis/cellot/cDC__astro/condition_aware_delta_mse/std,0.0015979908976855586,0.0015979908976855,5.854691731421724e-17,True
+residual_axis/cellot/cDC__microglia_mhc2/mmd/mean,0.048201335307346105,0.0482013353073461,6.938893903907228e-18,True
+residual_axis/cellot/cDC__microglia_mhc2/mmd/std,0.001112039823233988,0.0011120398232339,8.782037597132586e-17,True
+residual_axis/cellot/cDC__microglia_mhc2/mean_mse/mean,0.027104604889523733,0.0271046048895237,3.469446951953614e-17,True
+residual_axis/cellot/cDC__microglia_mhc2/mean_mse/std,0.00046507704387449886,0.0004650770438744,9.8879238130678e-17,True
+residual_axis/cellot/cDC__microglia_mhc2/variance_ratio/mean,0.9923925879254153,0.9923925879254152,1.1102230246251565e-16,True
+residual_axis/cellot/cDC__microglia_mhc2/variance_ratio/std,0.016597417158651293,0.0165974171586513,6.938893903907228e-18,True
+residual_axis/cellot/cDC__microglia_mhc2/condition_aware_rho/mean,0.2032094359421582,0.2032094359421582,0.0,True
+residual_axis/cellot/cDC__microglia_mhc2/condition_aware_rho/std,0.027995156933579853,0.0279951569335798,5.204170427930421e-17,True
+residual_axis/cellot/cDC__microglia_mhc2/condition_aware_delta_mse/mean,0.021349566599939265,0.0213495665999393,3.469446951953614e-17,True
+residual_axis/cellot/cDC__microglia_mhc2/condition_aware_delta_mse/std,0.003010337048605351,0.0030103370486053,5.117434254131581e-17,True
+residual_axis/cellot/classical_mono__astro/mmd/mean,0.05633058071309897,0.056330580713099,3.469446951953614e-17,True
+residual_axis/cellot/classical_mono__astro/mmd/std,0.009242116218208765,0.0092421162182087,6.591949208711867e-17,True
+residual_axis/cellot/classical_mono__astro/mean_mse/mean,0.025854422453391965,0.025854422453392,3.469446951953614e-17,True
+residual_axis/cellot/classical_mono__astro/mean_mse/std,0.004750334674829473,0.0047503346748294,7.28583859910259e-17,True
+residual_axis/cellot/classical_mono__astro/variance_ratio/mean,0.7719485499196792,0.7719485499196792,0.0,True
+residual_axis/cellot/classical_mono__astro/variance_ratio/std,0.0797415343588163,0.0797415343588163,0.0,True
+residual_axis/cellot/classical_mono__astro/condition_aware_rho/mean,0.05842542471276916,0.0584254247127691,6.245004513516506e-17,True
+residual_axis/cellot/classical_mono__astro/condition_aware_rho/std,0.1968417344630381,0.1968417344630381,0.0,True
+residual_axis/cellot/classical_mono__astro/condition_aware_delta_mse/mean,0.026619300161163265,0.0266193001611633,3.469446951953614e-17,True
+residual_axis/cellot/classical_mono__astro/condition_aware_delta_mse/std,0.014536433991968963,0.0145364339919689,6.245004513516506e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/mmd/mean,0.048829740009754964,0.0488297400097549,6.245004513516506e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/mmd/std,0.0007752016591440724,0.000775201659144,7.24247051220317e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/mean_mse/mean,0.027079302750654465,0.0270793027506545,3.469446951953614e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/mean_mse/std,0.0004767816790168116,0.0004767816790168,1.1600963245594897e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/variance_ratio/mean,0.9555447023037011,0.9555447023037013,1.1102230246251565e-16,True
+residual_axis/cellot/classical_mono__microglia_mhc2/variance_ratio/std,0.010669215239790739,0.0106692152397908,6.071532165918825e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/condition_aware_rho/mean,0.20539776879138982,0.2053977687913899,8.326672684688674e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/condition_aware_rho/std,0.006787591409566793,0.0067875914095667,9.280770596475918e-17,True
+residual_axis/cellot/classical_mono__microglia_mhc2/condition_aware_delta_mse/mean,0.0247086166658655,0.0247086166658655,0.0,True
+residual_axis/cellot/classical_mono__microglia_mhc2/condition_aware_delta_mse/std,0.0012956809064155195,0.0012956809064154,1.194790794079026e-16,True
+residual_axis/cellot/nonclassical_mono__astro/mmd/mean,0.04878812493508377,0.0487881249350838,2.7755575615628914e-17,True
+residual_axis/cellot/nonclassical_mono__astro/mmd/std,0.0003709693544903886,0.0003709693544903,8.863352760068999e-17,True
+residual_axis/cellot/nonclassical_mono__astro/mean_mse/mean,0.022906427517828603,0.0229064275178286,3.469446951953614e-18,True
+residual_axis/cellot/nonclassical_mono__astro/mean_mse/std,0.00032315135890602234,0.000323151358906,2.233456475320139e-17,True
+residual_axis/cellot/nonclassical_mono__astro/variance_ratio/mean,0.7448193809723493,0.7448193809723493,0.0,True
+residual_axis/cellot/nonclassical_mono__astro/variance_ratio/std,0.01455496029002925,0.0145549602900292,4.85722573273506e-17,True
+residual_axis/cellot/nonclassical_mono__astro/condition_aware_rho/mean,0.2050933741347959,0.2050933741347959,0.0,True
+residual_axis/cellot/nonclassical_mono__astro/condition_aware_rho/std,0.04479770066067438,0.0447977006606743,7.632783294297951e-17,True
+residual_axis/cellot/nonclassical_mono__astro/condition_aware_delta_mse/mean,0.013490616003937765,0.0134906160039378,3.469446951953614e-17,True
+residual_axis/cellot/nonclassical_mono__astro/condition_aware_delta_mse/std,0.0011762860391086667,0.0011762860391086,6.678685382510707e-17,True
+pig_primary/spearman,-0.038920193891865,-0.038920193891865,0.0,True
+pig_primary/pearson,0.0810479208117617,0.0810479208117617,0.0,True
+pig_primary/response_RMSE,1.0206791106564927,1.0206791106564927,0.0,True
+pig_primary/zero_response_RMSE,0.6378709375466477,0.6378709375466477,0.0,True
+pig_primary/improvement_over_zero,-1.5604294996618728,-1.5604294996618728,0.0,True
+pig_primary/predicted_RMS,0.6347328307980511,0.6347328307980511,0.0,True
+pig_primary/observed_RMS,0.6378709375466477,0.6378709375466477,0.0,True
+pig_primary/magnitude_ratio,0.9950803421760108,0.9950803421760108,0.0,True
+pig_primary/sign_agreement,0.3158176943699732,0.3158176943699732,0.0,True
+pig_primary/n_genes,3730.0,3730.0,0.0,True
+pig_primary/exact_group_p_positive,0.6476190476190476,0.6476190476190476,0.0,True
+pig_primary/exact_group_p_two_sided,0.7047619047619048,0.7047619047619048,0.0,True
+pig_primary/within_group_pairing_cosine,-0.0384691925344935,-0.0384691925344935,0.0,True
+pig_primary/within_group_pairing_p,0.654050925925926,0.654050925925926,0.0,True
+pig_primary/spearman_ci_low,-0.1125695598773917,-0.1125695598773917,0.0,True
+pig_primary/spearman_ci_high,0.0338155565115046,0.0338155565115046,0.0,True
+pig_primary/improvement_ci_low,-2.270895260889799,-2.270895260889799,0.0,True
+pig_primary/improvement_ci_high,-0.7616410429722964,-0.7616410429722964,0.0,True
+"pig_response/(0, 'all_one2one')/spearman",-0.038920193891865,-0.038920193891865,0.0,True
+"pig_response/(0, 'all_one2one')/pearson",0.0810479208117617,0.0810479208117617,0.0,True
+"pig_response/(0, 'all_one2one')/response_RMSE",1.0206791106564927,1.0206791106564927,0.0,True
+"pig_response/(0, 'all_one2one')/zero_response_RMSE",0.6378709375466477,0.6378709375466477,0.0,True
+"pig_response/(0, 'all_one2one')/improvement_over_zero",-1.5604294996618728,-1.5604294996618728,0.0,True
+"pig_response/(0, 'all_one2one')/predicted_RMS",0.6347328307980511,0.6347328307980511,0.0,True
+"pig_response/(0, 'all_one2one')/observed_RMS",0.6378709375466477,0.6378709375466477,0.0,True
+"pig_response/(0, 'all_one2one')/magnitude_ratio",0.9950803421760108,0.9950803421760108,0.0,True
+"pig_response/(0, 'all_one2one')/sign_agreement",0.3158176943699732,0.3158176943699732,0.0,True
+"pig_response/(0, 'all_one2one')/n_genes",3730.0,3730.0,0.0,True
+"pig_response/(0, 'all_one2one')/exact_group_p_positive",0.6476190476190476,0.6476190476190476,0.0,True
+"pig_response/(0, 'all_one2one')/exact_group_p_two_sided",0.7047619047619048,0.7047619047619048,0.0,True
+"pig_response/(0, 'all_one2one')/within_group_pairing_cosine",-0.0384691925344935,-0.0384691925344935,0.0,True
+"pig_response/(0, 'all_one2one')/within_group_pairing_p",0.654050925925926,0.654050925925926,0.0,True
+"pig_response/(0, 'high_confidence')/spearman",-0.0387150977546311,-0.0387150977546311,0.0,True
+"pig_response/(0, 'high_confidence')/pearson",0.0852439515752576,0.0852439515752576,0.0,True
+"pig_response/(0, 'high_confidence')/response_RMSE",1.021921408773799,1.021921408773799,0.0,True
+"pig_response/(0, 'high_confidence')/zero_response_RMSE",0.63966876136894,0.63966876136894,0.0,True
+"pig_response/(0, 'high_confidence')/improvement_over_zero",-1.552258804372134,-1.552258804372134,0.0,True
+"pig_response/(0, 'high_confidence')/predicted_RMS",0.6336391685872188,0.6336391685872188,0.0,True
+"pig_response/(0, 'high_confidence')/observed_RMS",0.63966876136894,0.63966876136894,0.0,True
+"pig_response/(0, 'high_confidence')/magnitude_ratio",0.9905738826938844,0.9905738826938844,0.0,True
+"pig_response/(0, 'high_confidence')/sign_agreement",0.3148876404494382,0.3148876404494382,0.0,True
+"pig_response/(0, 'high_confidence')/n_genes",3560.0,3560.0,0.0,True
+"pig_response/(0, 'astro_markers')/spearman",0.1233363336333633,0.1233363336333633,0.0,True
+"pig_response/(0, 'astro_markers')/pearson",0.1479601530909433,0.1479601530909433,0.0,True
+"pig_response/(0, 'astro_markers')/response_RMSE",0.7473516715813338,0.7473516715813338,0.0,True
+"pig_response/(0, 'astro_markers')/zero_response_RMSE",0.6961818614529,0.6961818614529,0.0,True
+"pig_response/(0, 'astro_markers')/improvement_over_zero",-0.1524036171576896,-0.1524036171576896,0.0,True
+"pig_response/(0, 'astro_markers')/predicted_RMS",0.3564751907312198,0.3564751907312198,0.0,True
+"pig_response/(0, 'astro_markers')/observed_RMS",0.6961818614529,0.6961818614529,0.0,True
+"pig_response/(0, 'astro_markers')/magnitude_ratio",0.5120432037503423,0.5120432037503423,0.0,True
+"pig_response/(0, 'astro_markers')/sign_agreement",0.55,0.55,0.0,True
+"pig_response/(0, 'astro_markers')/n_genes",100.0,100.0,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/spearman",0.2106330633063306,0.2106330633063306,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/pearson",0.1732209825474917,0.1732209825474917,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/response_RMSE",1.755415613534853,1.755415613534853,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/zero_response_RMSE",0.4862047050030426,0.4862047050030426,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/improvement_over_zero",-12.03531706903295,-12.03531706903295,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/predicted_RMS",1.6597302365137443,1.6597302365137443,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/observed_RMS",0.4862047050030426,0.4862047050030426,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/magnitude_ratio",3.4136449512625715,3.4136449512625715,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/sign_agreement",0.47,0.47,0.0,True
+"pig_response/(0, 'microglia_mhc2_markers')/n_genes",100.0,100.0,0.0,True
+"pig_response/(1, 'all_one2one')/spearman",-0.2173610212612469,-0.2173610212612469,0.0,True
+"pig_response/(1, 'all_one2one')/pearson",-0.0582948509802928,-0.0582948509802928,0.0,True
+"pig_response/(1, 'all_one2one')/response_RMSE",0.7875086079350787,0.7875086079350787,0.0,True
+"pig_response/(1, 'all_one2one')/zero_response_RMSE",0.6378709375466477,0.6378709375466477,0.0,True
+"pig_response/(1, 'all_one2one')/improvement_over_zero",-0.5242106377093725,-0.5242106377093725,0.0,True
+"pig_response/(1, 'all_one2one')/predicted_RMS",0.2523031923406041,0.2523031923406041,0.0,True
+"pig_response/(1, 'all_one2one')/observed_RMS",0.6378709375466477,0.6378709375466477,0.0,True
+"pig_response/(1, 'all_one2one')/magnitude_ratio",0.3955395637101793,0.3955395637101793,0.0,True
+"pig_response/(1, 'all_one2one')/sign_agreement",0.1978552278820375,0.1978552278820375,0.0,True
+"pig_response/(1, 'all_one2one')/n_genes",3730.0,3730.0,0.0,True
+"pig_response/(1, 'high_confidence')/spearman",-0.2222275963546644,-0.2222275963546644,0.0,True
+"pig_response/(1, 'high_confidence')/pearson",-0.0572333079487851,-0.0572333079487851,0.0,True
+"pig_response/(1, 'high_confidence')/response_RMSE",0.7905799305996632,0.7905799305996632,0.0,True
+"pig_response/(1, 'high_confidence')/zero_response_RMSE",0.63966876136894,0.63966876136894,0.0,True
+"pig_response/(1, 'high_confidence')/improvement_over_zero",-0.5275002366770485,-0.5275002366770485,0.0,True
+"pig_response/(1, 'high_confidence')/predicted_RMS",0.2530129220644155,0.2530129220644155,0.0,True
+"pig_response/(1, 'high_confidence')/observed_RMS",0.63966876136894,0.63966876136894,0.0,True
+"pig_response/(1, 'high_confidence')/magnitude_ratio",0.3955374052078899,0.3955374052078899,0.0,True
+"pig_response/(1, 'high_confidence')/sign_agreement",0.1926966292134831,0.1926966292134831,0.0,True
+"pig_response/(1, 'high_confidence')/n_genes",3560.0,3560.0,0.0,True
+"pig_response/(1, 'astro_markers')/spearman",-0.164068406840684,-0.164068406840684,0.0,True
+"pig_response/(1, 'astro_markers')/pearson",-0.1247928330027363,-0.1247928330027363,0.0,True
+"pig_response/(1, 'astro_markers')/response_RMSE",0.8640255169151951,0.8640255169151951,0.0,True
+"pig_response/(1, 'astro_markers')/zero_response_RMSE",0.6961818614529,0.6961818614529,0.0,True
+"pig_response/(1, 'astro_markers')/improvement_over_zero",-0.5403085613708531,-0.5403085613708531,0.0,True
+"pig_response/(1, 'astro_markers')/predicted_RMS",0.3280340204418642,0.3280340204418642,0.0,True
+"pig_response/(1, 'astro_markers')/observed_RMS",0.6961818614529,0.6961818614529,0.0,True
+"pig_response/(1, 'astro_markers')/magnitude_ratio",0.4711901280468182,0.4711901280468182,0.0,True
+"pig_response/(1, 'astro_markers')/sign_agreement",0.21,0.21,0.0,True
+"pig_response/(1, 'astro_markers')/n_genes",100.0,100.0,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/spearman",0.1918751875187518,0.1918751875187518,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/pearson",0.1689565449789149,0.1689565449789149,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/response_RMSE",0.7538084304020044,0.7538084304020044,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/zero_response_RMSE",0.4862047050030426,0.4862047050030426,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/improvement_over_zero",-1.4037188319875629,-1.4037188319875629,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/predicted_RMS",0.5629110660106097,0.5629110660106097,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/observed_RMS",0.4862047050030426,0.4862047050030426,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/magnitude_ratio",1.157765567091925,1.157765567091925,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/sign_agreement",0.48,0.48,0.0,True
+"pig_response/(1, 'microglia_mhc2_markers')/n_genes",100.0,100.0,0.0,True

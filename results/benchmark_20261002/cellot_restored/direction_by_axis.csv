@@ -1,0 +1,9 @@
+axis,condition_aware_rho_mean,condition_aware_rho_std
+cDC__astro,0.17985,0.02809
+cDC__microglia_mhc2,0.20321,0.02799
+classical_mono__astro,0.05843,0.19684
+classical_mono__microglia_mhc2,0.20540,0.00679
+nonclassical_mono__astro,0.20509,0.04480
+nonclassical_mono__microglia_mhc2,0.16657,0.10528
+pDC__astro,0.06473,0.03217
+pDC__microglia_mhc2,0.07602,0.08082

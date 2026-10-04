@@ -1,0 +1,17 @@
+combo,protein,blood_state,brain_state,response_direction,program_definition,n_genes,q_gene_decoy,matched_brain_q,cell_state_sensitivity_kamath_effect,cell_state_sensitivity_gse157783_effect,matched_program_abundance_hypothesis
+raw::CD22__cDC__x__astro__up,CD22,cDC,astro,up,raw,43,0.0103249140155813,0.0043141986603828,-0.4477053425240829,-0.1968513122741578,increase
+raw::CD22__pDC__x__astro__up,CD22,pDC,astro,up,raw,47,0.00042204193984,0.0209822668252026,-0.3573073419161495,-0.1411909640510168,increase
+raw::CD22__cDC__x__microglia_mhc2__down,CD22,cDC,microglia_mhc2,down,raw,45,0.00042204193984,0.0030347121600505,-0.4360686338481789,-0.0093880511330568,decrease
+raw::CD40__cDC__x__astro__up,CD40,cDC,astro,up,raw,59,0.00042204193984,0.0002335030977932,-0.3365762549771259,-0.2834466704893761,increase
+relative::CD40__classical_mono__x__astro__up,CD40,classical_mono,astro,up,relative,38,0.0422197853422945,0.0002313528075842,-0.6260934319354065,-0.4053322761646459,increase
+relative::CD40__nonclassical_mono__x__astro__up,CD40,nonclassical_mono,astro,up,relative,50,0.0012009875136928,0.0001178496409825,-0.6208812529851768,-0.4523063636113269,increase
+raw::CD40__cDC__x__microglia_mhc2__up,CD40,cDC,microglia_mhc2,up,raw,58,0.00042204193984,0.0002972268915364,-0.5368371503823322,-0.237623291619581,increase
+raw::CD40__classical_mono__x__microglia_mhc2__up,CD40,classical_mono,microglia_mhc2,up,raw,68,0.00042204193984,0.0001415970760435,-0.5544475550858926,-0.1656031640459294,increase
+raw::CD40__nonclassical_mono__x__microglia_mhc2__up,CD40,nonclassical_mono,microglia_mhc2,up,raw,63,0.00042204193984,0.0002237769699869,-0.5469951439836828,-0.254491026271532,increase
+raw::CD40__pDC__x__microglia_mhc2__up,CD40,pDC,microglia_mhc2,up,raw,69,0.00042204193984,0.0001877149522905,-0.5827086640629348,-0.2081438905393162,increase
+raw::CD71__nonclassical_mono__x__astro__down,CD71,nonclassical_mono,astro,down,raw,97,0.0030836500867572,0.0025667493170322,-0.3716310613627328,-0.1505285419193034,decrease
+raw::CD71__pDC__x__astro__down,CD71,pDC,astro,down,raw,41,0.0015850996467373,0.0082044580346963,-0.2394038836969642,-0.2017968652628016,decrease
+raw::CD71__cDC__x__microglia_mhc2__down,CD71,cDC,microglia_mhc2,down,raw,58,0.00042204193984,0.0020368392346298,-0.4515750722162847,-0.0808154930871447,decrease
+raw::CD71__classical_mono__x__microglia_mhc2__down,CD71,classical_mono,microglia_mhc2,down,raw,50,0.00042204193984,0.0003336295322089,-0.5742821198037552,-0.0572473288565188,decrease
+raw::CD71__nonclassical_mono__x__microglia_mhc2__down,CD71,nonclassical_mono,microglia_mhc2,down,raw,70,0.00042204193984,0.0001575760040077,-0.5283850172982273,-0.0861711507531544,decrease
+raw::CD71__pDC__x__microglia_mhc2__down,CD71,pDC,microglia_mhc2,down,raw,75,0.00042204193984,0.0002769250283585,-0.5829836548422993,-0.0446213389217157,decrease

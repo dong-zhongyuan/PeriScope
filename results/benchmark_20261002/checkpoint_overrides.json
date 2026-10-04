@@ -1,0 +1,9 @@
+{
+  "reason": "user-authorized post-warmup checkpoint repair for seeds47/48/49",
+  "checkpoints": {
+    "47": "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/seed_repair/models/seed_47/model.pt",
+    "48": "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/seed_repair/models/seed_48/model.pt",
+    "49": "/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002/seed_repair/models/seed_49/model.pt"
+  },
+  "eligible_from_epoch": 50
+}

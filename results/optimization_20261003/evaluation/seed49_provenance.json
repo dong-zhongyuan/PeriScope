@@ -1,0 +1,11 @@
+{
+  "seed": 49,
+  "checkpoint_sha256": "5798d6114e5d0d2506caf08a936e75e0fa03aa6da8a7cd295d56b06688e86002",
+  "outputs": {
+    "protein_accuracy_model_state_seed49.csv": "7a5dd93c2e400b7b211479636eb45363b72fdd478e02daccdc366d4412e2b76f",
+    "brain_direction_seed49.csv": "ed42542c385ef4e9b3c3ce8f0f6fbdb33113f052fdb5a47df339023c4f9a93d1",
+    "brain_donor_readouts_seed49.npz": "5bd1961e6d6451294a66a8fe233990d9475d9407695d2943e8d88c9a7f21742c",
+    "protein_accuracy_seed49.csv": "dba988dd19b3108461f70777936e9d5193625a534e8d7fa2c8ea0be50c33656b",
+    "blood_donor_predictions_seed49.csv": "8137ec6788637a8022720bee752a059ceb389526be34b13a2c40045024266ff8"
+  }
+}

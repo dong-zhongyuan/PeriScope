@@ -1,0 +1,83 @@
+{
+  "version": "repaired_ten_seed_20261004",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "replaced_seeds": [
+    47,
+    48,
+    49
+  ],
+  "discovery_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "confirmation_seeds": [
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "models": {
+    "42": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_42/model.pt",
+      "sha256": "5e7afe4eddcc33409e36da71b85da46393719abcf54a824f72e47da3f6cb0529"
+    },
+    "43": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_43/model.pt",
+      "sha256": "9694e8c505b4851f6b0f1661753ac72b009f6b77eb6a27178cef8547517b6c9c"
+    },
+    "44": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_44/model.pt",
+      "sha256": "99f4223a16a02ddfa09d6001105fcaacd96ffeb0d18aa88838d1da3c6dc00130"
+    },
+    "45": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_45/model.pt",
+      "sha256": "6ee242e4756a17777063f70d8336b89b8b1d117c2e69a06ef20774ac3b24a508"
+    },
+    "46": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_46/model.pt",
+      "sha256": "eb8b4da9708f415053bb3a66a60bd6c3300d595a007406114383dc392e76f989"
+    },
+    "47": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_47/model.pt",
+      "sha256": "6e855e31b12ce65052f27efaf1068ac7af5ac65fb4b338ef959785c063f6df85"
+    },
+    "48": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_48/model.pt",
+      "sha256": "b1a19d966f377f5599ede325e490ac7adf3645976a784d32944ef7abcc03e11e"
+    },
+    "49": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_49/model.pt",
+      "sha256": "5798d6114e5d0d2506caf08a936e75e0fa03aa6da8a7cd295d56b06688e86002"
+    },
+    "50": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_50/model.pt",
+      "sha256": "c9b0fc5a4f460a5a89fc4feb802a2e762cf58a50d0e709cb9215e9b7b3c71da8"
+    },
+    "51": {
+      "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/models/seed_51/model.pt",
+      "sha256": "40188c3b521f0478b1d3ae06211c439e3aafadcad31d92004e5e75a4041ad6e7"
+    }
+  },
+  "discovery_files": {
+    "programs.json": "b64b5ac56782bee39d313a26d4c65f9e3452c54891a894481de0ca816ec670ba",
+    "target_specific/programs.json": "950b54db6da8f8750a25675a1a767052070349dc7ae82204be4a87d2d8751e3a",
+    "joint_analysis/programs.json": "d5bcbbb5e80a8493a19c27deb31b3526bf6d8de3523be836af006017bb5f4599",
+    "program_folds.json": "58619b9378b10a6616209d0e2a1c80feab0a11ec7daf1aa499596b2af65e1057",
+    "target_specific/program_folds.json": "a2e218bebc30f62f0997c98aa625d49214da60ab63bf7ac39b908049eaedd8f8"
+  }
+}

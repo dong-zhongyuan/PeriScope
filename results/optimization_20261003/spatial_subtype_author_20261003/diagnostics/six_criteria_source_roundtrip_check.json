@@ -1,0 +1,22 @@
+{
+  "heldout_observed_RNA_mean_log1p_CP10k": {
+    "max_abs_difference": 2.220446049250313e-16,
+    "equal_rtol_1e_12": true
+  },
+  "heldout_observed_median_ADT_CLR": {
+    "max_abs_difference": 8.881784197001252e-16,
+    "equal_rtol_1e_12": true
+  },
+  "cell_state_sensitivity_meta_p_up": {
+    "max_abs_difference": 3.3881317890172014e-21,
+    "equal_rtol_1e_12": true
+  },
+  "cell_state_sensitivity_meta_p_down": {
+    "max_abs_difference": 3.3881317890172014e-21,
+    "equal_rtol_1e_12": true
+  },
+  "brain_meta_p_down": {
+    "max_abs_difference": 1.3552527156068805e-20,
+    "equal_rtol_1e_12": true
+  }
+}

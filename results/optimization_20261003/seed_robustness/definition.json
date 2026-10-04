@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "model_registry_sha256": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9",
+  "n_programs": 6849,
+  "n_gene_decoys": 5000,
+  "discovery_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "confirmation_seeds": [
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "omitted_seeds": [
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "random_seed": 7,
+  "statistic": "Signed mean confirmation slope within frozen program / mean absolute whole-gene slope",
+  "null": "5000 uniformly sampled gene sets without replacement, matched to program size; identical draws for each gene universe and set size in every omission",
+  "multiplicity": "Separate BH over all 6849 raw+relative programs in each omission; never BH on the displayed subset",
+  "threshold": 0.05,
+  "role": "Model seed sensitivity evaluation only; no new nomination gate",
+  "plot_selection": "All programs already passing the current MR+perturbation and C1/C2/C4/C5/C6 criteria, without selection on this robustness result",
+  "original_plot": "panel_grid/source/round2_panels.R: original 4E, delivered 4f, planned new 5f",
+  "all_five_p_and_q_reproduce_current_tables": true,
+  "input_sha256": {
+    "model_registry.json": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9",
+    "joint_analysis/programs.json": "d5bcbbb5e80a8493a19c27deb31b3526bf6d8de3523be836af006017bb5f4599",
+    "joint_analysis/all_program_evidence.csv": "8f4b1f23f9d12aa610682fd82d70731a1c12ed20f0a83e076b0d4694939915f0",
+    "mr_parallel_gate_20261003/priority_all_programs.csv": "f23dbf3d4abb282c478df0a24d7209f5003eb78b117d440a8d6052e3b14b2abc",
+    "curves/cDC__x__astro__slopes.npz": "c6e798f4e42bf7363f9f0007caf8f3e1d08fa071fba67d05bf37ea70ac12bbd7",
+    "curves/cDC__x__microglia_homeostatic__slopes.npz": "efba418e56b5e46abc0162b3fd0f18d3ae1ee48cdd7021aa753e0e1b2788b1b1",
+    "curves/cDC__x__microglia_mhc2__slopes.npz": "8c692b841698eb946e490120ec6d6dd49d4163851b13b1c4582dbfc75f309ca9",
+    "curves/classical_mono__x__astro__slopes.npz": "16796ed9f1035a0c819c2bec2163c8a42c7a2c037382d799739af4daa2823829",
+    "curves/classical_mono__x__microglia_homeostatic__slopes.npz": "158e315af12d073fa8c0d4b4770e3dacf261fbc6383fdec0c66022c7abc2a192",
+    "curves/classical_mono__x__microglia_mhc2__slopes.npz": "fc7190ce3377b7b1832c28f37bbb27b98656921e0a21d59ce00542eb1cf84c52",
+    "curves/nonclassical_mono__x__astro__slopes.npz": "715b7fe1ac021eff26d90892efa0ed9697f685fecd385dd584f55ee05f446eaa",
+    "curves/nonclassical_mono__x__microglia_homeostatic__slopes.npz": "46bd1aa6261d955a305cb8e254febe69ad03d98ebe300cd1d6d946693ee13989",
+    "curves/nonclassical_mono__x__microglia_mhc2__slopes.npz": "6f0c4d31e9b7b5dd02d942fef1cd245ee6aa85188931177620c0d843085176c3",
+    "curves/pDC__x__astro__slopes.npz": "3e5144a2de16bf66d6caf8ffcbbb44298dac3f9c1d02a709cffc1a3014101089",
+    "curves/pDC__x__microglia_homeostatic__slopes.npz": "1ac0d7833fa9afd91a0dc4728fa36f85d33c855a9a682fd96a9d79ba4111b401",
+    "curves/pDC__x__microglia_mhc2__slopes.npz": "8e9407e5892ae53391506dcacd7453250759b066e0e586c29c090068efa1ebd1"
+  },
+  "source_sha256": "dc7601e8f4fe818afbfd9d83601e4864ed8e7fd31390f54a0e1a779500d821d7"
+}

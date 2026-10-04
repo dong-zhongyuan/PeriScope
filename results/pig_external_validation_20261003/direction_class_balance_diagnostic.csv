@@ -1,0 +1,2 @@
+method,observed_up,observed_down,observed_zero,up_direction_recall,down_direction_recall,balanced_direction_accuracy,observed_majority_fraction
+periscope,3095,586,49,0.9192245557350566,0.1569965870307167,0.5381105713828866,0.8297587131367292

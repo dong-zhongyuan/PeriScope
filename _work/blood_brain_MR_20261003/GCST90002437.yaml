@@ -1,0 +1,32 @@
+# Study meta-data
+gwas_id: GCST90002437
+gwas_catalog_api: https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90002437
+date_metadata_last_modified: 2025-01-09
+
+# Trait Information
+trait_description:
+  - IDP T1 FIRST right thalamus volume
+ontology_mapping:
+  - EFO_0006930
+
+# Genotyping Information
+genome_assembly: GRCh37
+genotyping_technology:
+  - Genome-wide genotyping array
+
+# Sample Information
+samples:
+  - sample_ancestry_category:
+      - European
+    sample_ancestry:
+      - British
+    sample_size: 22128
+
+# Summary Statistic information
+data_file_name: GCST90002437_buildGRCh37.tsv
+file_type: ''
+data_file_md5sum: 48f90fbf839e4b93e0c62087b6bf4eba
+
+# Harmonization status
+is_harmonised: false
+is_sorted: false

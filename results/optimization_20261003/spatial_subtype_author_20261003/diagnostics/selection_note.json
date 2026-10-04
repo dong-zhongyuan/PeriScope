@@ -1,0 +1,5 @@
+{
+  "final_reference": "Author-annotated SN subtypes with independent reference and QC donors",
+  "selection_based_on": "reference metadata, biological annotation, heldout mixture recovery; no candidate p/q or pass counts",
+  "failed_reference_use": "diagnostics only; never merged as biological candidate evidence"
+}

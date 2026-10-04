@@ -1,0 +1,194 @@
+{
+  "periscope": {
+    "offset_alpha": 0.5,
+    "residual_scale": 1.0,
+    "validation_mean_mse_grid": [
+      0.01948158971802535,
+      0.019420899242400966,
+      0.019410218872144155,
+      0.019538888447733268
+    ],
+    "validation_mmd_grid": [
+      0.08750289869858163,
+      0.08087033242251007,
+      0.06398713243859355,
+      0.033815695954411695
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scale_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "human validation only; identical grids for all methods",
+    "offset": "pooled training-only, condition-independent",
+    "noise": "same centered training brain reconstruction residual draw for all methods",
+    "contrast_error": 0.0
+  },
+  "ot_ridge": {
+    "offset_alpha": 1.0,
+    "residual_scale": 1.0,
+    "validation_mean_mse_grid": [
+      0.2043847080918722,
+      0.12530042091638321,
+      0.06719476848886587,
+      0.013919367877746135
+    ],
+    "validation_mmd_grid": [
+      0.08813150837387951,
+      0.08068250621485706,
+      0.06169320056811978,
+      0.02591928376232
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scale_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "human validation only; identical grids for all methods",
+    "offset": "pooled training-only, condition-independent",
+    "noise": "same centered training brain reconstruction residual draw for all methods",
+    "contrast_error": 0.0
+  },
+  "conditional_mlp": {
+    "offset_alpha": 1.0,
+    "residual_scale": 1.0,
+    "validation_mean_mse_grid": [
+      0.01645970627392309,
+      0.01613974584717948,
+      0.01591199736245199,
+      0.015733136219045363
+    ],
+    "validation_mmd_grid": [
+      0.08081332954948306,
+      0.07423808310342062,
+      0.05747024992204941,
+      0.027770542500726525
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scale_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "human validation only; identical grids for all methods",
+    "offset": "pooled training-only, condition-independent",
+    "noise": "same centered training brain reconstruction residual draw for all methods",
+    "contrast_error": 0.0
+  },
+  "conditional_icnn": {
+    "offset_alpha": 0.5,
+    "residual_scale": 1.0,
+    "validation_mean_mse_grid": [
+      0.017427187300865697,
+      0.017312728519453115,
+      0.01724789042750509,
+      0.017267076312002708
+    ],
+    "validation_mmd_grid": [
+      0.0816024163388086,
+      0.07513240645890884,
+      0.058761511551963075,
+      0.030239771929399084
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scale_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "human validation only; identical grids for all methods",
+    "offset": "pooled training-only, condition-independent",
+    "noise": "same centered training brain reconstruction residual draw for all methods",
+    "contrast_error": 0.0
+  },
+  "shared_label_mean": {
+    "offset_alpha": 1.0,
+    "residual_scale": 1.0,
+    "validation_mean_mse_grid": [
+      0.20733945649221108,
+      0.12688286438877766,
+      0.06780754931759111,
+      0.013800750271958675
+    ],
+    "validation_mmd_grid": [
+      0.08790058270557632,
+      0.08045868098689779,
+      0.06148007474374095,
+      0.025732889989810603
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scale_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "human validation only; identical grids for all methods",
+    "offset": "pooled training-only, condition-independent",
+    "noise": "same centered training brain reconstruction residual draw for all methods",
+    "contrast_error": 0.0
+  },
+  "shared_label_marginal": {
+    "offset_alpha": 1.0,
+    "residual_scale": 1.0,
+    "validation_mean_mse_grid": [
+      0.20692758872621814,
+      0.12646357547222226,
+      0.06742272192632172,
+      0.013610493958806614
+    ],
+    "validation_mmd_grid": [
+      0.08608369875801547,
+      0.07872409960016613,
+      0.060043552518210475,
+      0.025266916890232083
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scale_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "selection": "human validation only; identical grids for all methods",
+    "offset": "pooled training-only, condition-independent",
+    "noise": "same centered training brain reconstruction residual draw for all methods",
+    "contrast_error": 2.498001805406602e-16
+  }
+}

@@ -1,0 +1,32 @@
+# Study meta-data
+gwas_id: GCST90003864
+gwas_catalog_api: https://www.ebi.ac.uk/gwas/rest/api/studies/GCST90003864
+date_metadata_last_modified: 2025-01-04
+
+# Trait Information
+trait_description:
+  - IDP SWI T2star right thalamus
+ontology_mapping:
+  - EFO_0004346
+
+# Genotyping Information
+genome_assembly: GRCh37
+genotyping_technology:
+  - Genome-wide genotyping array
+
+# Sample Information
+samples:
+  - sample_ancestry_category:
+      - European
+    sample_ancestry:
+      - British
+    sample_size: 20043
+
+# Summary Statistic information
+data_file_name: GCST90003864_buildGRCh37.tsv
+file_type: ''
+data_file_md5sum: c0c036a7244584235bcd154afda71a23
+
+# Harmonization status
+is_harmonised: false
+is_sorted: false

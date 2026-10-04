@@ -1,0 +1,40 @@
+{
+  "version": "20261003_spatial_subtype_v2",
+  "method": "RCTD full mode; C-SIDE intercept per spatial donor; donor-level program tests",
+  "reference": "GSE178265 substantia nigra training donors; donor-balanced signatures; microglia restricted to original Microglia lineage, original Mono_macro retained as separate nuisance; Hao P1-P4 T/B/NK nuisance profiles",
+  "pre_fit_amendment": "Reference inventory showed negligible T/B coverage and original Mono_macro cells absorbed into purified microglia labels. Add nuisance lineages before any RCTD or candidate result is examined.",
+  "states": [
+    "astro",
+    "microglia_homeostatic",
+    "microglia_mhc2"
+  ],
+  "resolution": "matches existing model recipient states; astro is a cell type, microglia split into two marker-defined states; no individual-cell spatial measurement claimed",
+  "deconvolution_genes": "exclude entire 4741-gene model vocabulary, not just selected candidate genes; counts from remaining shared genes",
+  "quality_mixtures": "400 RNA mixtures from brain calibration donors plus Hao P5 immune backgrounds, disjoint from reference donors; 1500 UMIs each; synthetic mixtures are QC only, never candidate evidence",
+  "quality_rule_per_state": {
+    "fraction_spearman_min": 0.5,
+    "fraction_RMSE_max": 0.15,
+    "minimum_QC_mixtures": 100
+  },
+  "RCTD": "full mode, default gene/fold thresholds, UMI_min=100; no case/control labels used in deconvolution",
+  "CSIDE": {
+    "cell_type_threshold": 25,
+    "gene_threshold": 1e-05,
+    "weight_threshold": 0.8,
+    "doublet_mode": false,
+    "sigma_gene": true,
+    "normalize_expr": false,
+    "expression": "intercept model fit separately for each donor; all sufficiently represented mixture types included"
+  },
+  "program_test": {
+    "minimum_donors_each_arm": 3,
+    "minimum_genes": 4,
+    "minimum_program_gene_fraction": 0.5,
+    "gene_values": "C-SIDE estimated cell-state log-expression; nonconverged/nonfinite estimates missing",
+    "competitive_null": "5000 expression-matched random gene sets,20 bins,seed42; whole6849program family and both directions",
+    "C7": "state passes QC; estimable donor contrast; competitive q<=0.05; spatial within-state disease direction agrees with pre-existing Kamath same-state direction",
+    "missing": "unresolved, not biological negative; no substitution of mixed tissue or different microglia state"
+  },
+  "adoption": "quality evaluated before inspecting target outcomes; seven-criterion results use unchanged C1-C6 and independently report C7 pass/not_supported/unresolved",
+  "reference_source": "https://github.com/dmcable/spacexr"
+}

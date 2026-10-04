@@ -1,0 +1,8 @@
+step,n_programs,n_antigens
+all_programs,6849,213
+technical_pass,1449,82
+reproducible_pass,469,78
+specificity_pass,111,30
+brain_pass,6,4
+independent_direction_pass,6,4
+genetics,0,0

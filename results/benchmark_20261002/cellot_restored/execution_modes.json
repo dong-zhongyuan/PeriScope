@@ -1,0 +1,144 @@
+{
+  "seed42": {
+    "cDC__astro": {
+      "candidates": {
+        "cpu_worker": {
+          "rho": 0.1609085974619348,
+          "three_seed_mean": 0.169801916627164,
+          "three_seed_sd": 0.027460910362309115,
+          "matches_archived_values": false
+        },
+        "cuda_direct": {
+          "rho": 0.21451178793423795,
+          "three_seed_mean": 0.18766964678459838,
+          "three_seed_sd": 0.03514482408148718,
+          "matches_archived_values": false
+        },
+        "cpu_direct": {
+          "rho": 0.1910475478147747,
+          "three_seed_mean": 0.179848233411444,
+          "three_seed_sd": 0.028086504515946617,
+          "matches_archived_values": true
+        }
+      },
+      "selected": "cpu_direct"
+    },
+    "cDC__microglia_mhc2": {
+      "candidates": {
+        "cpu_worker": {
+          "rho": 0.22701291667937998,
+          "three_seed_mean": 0.2216221848914606,
+          "three_seed_sd": 0.008026812373492473,
+          "matches_archived_values": false
+        },
+        "cuda_direct": {
+          "rho": 0.20607228527308194,
+          "three_seed_mean": 0.2146419744226946,
+          "three_seed_sd": 0.009885059638820085,
+          "matches_archived_values": false
+        },
+        "cpu_direct": {
+          "rho": 0.1717756902480347,
+          "three_seed_mean": 0.20320977608101218,
+          "three_seed_sd": 0.027994839508176037,
+          "matches_archived_values": true
+        }
+      },
+      "selected": "cpu_direct"
+    },
+    "classical_mono__astro": {
+      "candidates": {
+        "cpu_worker": {
+          "rho": 0.29924083251081945,
+          "three_seed_mean": 0.06297402007440525,
+          "three_seed_sd": 0.20471586031719216,
+          "matches_archived_values": false
+        },
+        "cuda_direct": {
+          "rho": 0.24701219526057058,
+          "three_seed_mean": 0.04556447432432229,
+          "three_seed_sd": 0.1745793993404341,
+          "matches_archived_values": false
+        },
+        "cpu_direct": {
+          "rho": 0.28559506247377914,
+          "three_seed_mean": 0.05842543006205848,
+          "three_seed_sd": 0.196841585770938,
+          "matches_archived_values": true
+        }
+      },
+      "selected": "cpu_direct"
+    },
+    "classical_mono__microglia_mhc2": {
+      "candidates": {
+        "cpu_worker": {
+          "rho": 0.20815176128248747,
+          "three_seed_mean": 0.2039114038366432,
+          "three_seed_sd": 0.004531723392442612,
+          "matches_archived_values": false
+        },
+        "cuda_direct": {
+          "rho": 0.07595805694570913,
+          "three_seed_mean": 0.15984683572438374,
+          "three_seed_sd": 0.07269832492696976,
+          "matches_archived_values": false
+        },
+        "cpu_direct": {
+          "rho": 0.21261075884621874,
+          "three_seed_mean": 0.20539773635788697,
+          "three_seed_sd": 0.006787622081193195,
+          "matches_archived_values": true
+        }
+      },
+      "selected": "cpu_direct"
+    },
+    "nonclassical_mono__astro": {
+      "candidates": {
+        "cpu_worker": {
+          "rho": 0.01999822099469944,
+          "three_seed_mean": 0.12622188466277776,
+          "three_seed_sd": 0.09208025172630628,
+          "matches_archived_values": false
+        },
+        "cuda_direct": {
+          "rho": 0.09157805965046396,
+          "three_seed_mean": 0.15008183088136592,
+          "three_seed_sd": 0.050825103559721835,
+          "matches_archived_values": false
+        },
+        "cpu_direct": {
+          "rho": 0.2566124352913543,
+          "three_seed_mean": 0.20509328942832938,
+          "three_seed_sd": 0.04479776231598955,
+          "matches_archived_values": true
+        }
+      },
+      "selected": "cpu_direct"
+    },
+    "nonclassical_mono__microglia_mhc2": {
+      "candidates": {
+        "cpu_worker": {
+          "rho": 0.25237834666030845,
+          "three_seed_mean": 0.23565995068657095,
+          "three_seed_sd": 0.015104568130024677,
+          "matches_archived_values": false
+        },
+        "cuda_direct": {
+          "rho": 0.20703220580669068,
+          "three_seed_mean": 0.22054457040203168,
+          "three_seed_sd": 0.012468255818742805,
+          "matches_archived_values": false
+        },
+        "cpu_direct": {
+          "rho": 0.04509907656185281,
+          "three_seed_mean": 0.1665668606537524,
+          "three_seed_sd": 0.10528217481886853,
+          "matches_archived_values": true
+        }
+      },
+      "selected": "cpu_direct"
+    }
+  },
+  "later_workers": "CPU single thread",
+  "selection_basis": "Exact historical numeric fingerprints; full metric validation follows"
+}

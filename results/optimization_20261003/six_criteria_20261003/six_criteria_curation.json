@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-03",
+  "purpose": "Resolve obvious source-context and drug-identity mismatches using biology, not response magnitude or desired candidate count. Review status is missing resolution, not evidence that the target is biologically ineffective.",
+  "binding_site_gene_resolution": {
+    "1793": {"binding_genes": ["CD3E"], "evidence": "ChEMBL binding_site_comment identifies CD3 epsilon"},
+    "1077": {"binding_genes": ["ITGB3"], "evidence": "ChEMBL binding_site_comment identifies beta subunit"},
+    "1294": {"binding_genes": ["ITGB3"], "evidence": "ChEMBL binding_site_comment identifies beta subunit"},
+    "1790": {"binding_genes": ["IL2RA"], "evidence": "ChEMBL binding_site_comment identifies alpha subunit; withdrawn status retained"},
+    "1791": {"binding_genes": ["IL2RA", "IL2RB"], "evidence": "ChEMBL binding_site_comment identifies alpha and beta subunits"},
+    "1803": {"binding_genes": ["IFNGR1"], "evidence": "ChEMBL binding_site_comment identifies alpha subunit; primary label link in mechanism record"},
+    "2042": {"binding_genes": ["ITGAL"], "evidence": "ChEMBL binding_site_comment identifies alpha-L subunit"},
+    "5769": {"binding_genes": ["ITGAL"], "evidence": "ChEMBL binding_site_comment identifies alpha-L site I domain"},
+    "8418": {"binding_genes": ["ITGB1"], "evidence": "ChEMBL binding_site_comment identifies beta subunit"},
+    "8419": {"binding_genes": ["ITGB3"], "evidence": "ChEMBL binding_site_comment identifies beta subunit"},
+    "9101": {"binding_genes": ["IL15RA"], "evidence": "ChEMBL binding_site_comment identifies IL15 receptor alpha"},
+    "5632": {"binding_genes": ["LY96"], "evidence": "ChEMBL binding_site_comment identifies MD2 hydrophobic pocket, not TLR4 directly"},
+    "1112": {"binding_genes": ["ITGA4"], "evidence": "ChEMBL binding_site_comment: alpha subunit; natalizumab label", "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5fdde91-1989-4dd2-9129-4f3323ea2962"},
+    "1295": {"binding_genes": ["ITGA4"], "evidence": "ChEMBL binding_site_comment: alpha subunit; natalizumab label", "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5fdde91-1989-4dd2-9129-4f3323ea2962"},
+    "1792": {"binding_genes": ["IL2RA"], "evidence": "ChEMBL binding_site_comment and basiliximab label identify alpha subunit", "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1af01887-b69d-444b-91ed-ebfe12784440"},
+    "1789": {"binding_genes": ["IL2RA", "IL2RB"], "evidence": "ChEMBL binding_site_comment identifies alpha and beta subunits; aldesleukin label in mechanism_refs"},
+    "5973": {"binding_genes": ["IL6R"], "evidence": "Satralizumab binds soluble/membrane IL6R, not GP130", "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=64c156a4-9bad-4d45-a294-0733c141f47b"}
+  },
+  "source_context_review": [
+    {"antigens": ["CD19", "CD20", "CD21", "CD268", "CD269", "CD307e", "IgD", "IgM"], "reason": "B-lineage/receptor context is not established as a cell-intrinsic drug target in the four modelled DC/monocyte states; retain measured signal and request context resolution.", "source": "Gene-specific reviewed UniProt tissue-specificity annotations in uniprot_targets.json; https://pmc.ncbi.nlm.nih.gov/articles/PMC6329307/"},
+    {"antigens": ["CD3", "TCR-1", "TCR-2", "TCR-V-2", "TCR-V-7.2", "TCR-V-9", "TCR-V-24-J-18", "CD8", "CD8a"], "reason": "T-cell receptor/lineage object in DC/monocyte-labelled cells needs mixed-event or source-lineage resolution; expression signal alone does not establish that intervention context.", "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6329307/; reviewed UniProt annotations"},
+    {"antigens": ["CD27", "CD28", "CD152", "CD154", "CD223", "CD278", "TIGIT"], "reason": "Canonical lymphocyte activation/checkpoint context conflicts with the current DC/monocyte source interpretation; activation-specific or cell-interaction evidence is needed before claiming this source-cell intervention.", "source": "Gene-specific reviewed UniProt tissue-specificity annotations; raw measured RNA/ADT summaries remain in output"},
+    {"antigens": ["CD41", "CD42b", "CD62P", "CD110", "CD235a", "CD235ab"], "reason": "Platelet/megakaryocyte or erythrocyte-associated measurement may reflect cell association rather than a DC/monocyte-intrinsic target; do not silently convert it into that target.", "source": "priority_identity_qc_definition.json and reviewed UniProt records for ITGA2B, GP1BA, SELP, MPL, GYPA"},
+    {"antigens": ["CD62E", "CD144", "CD146", "CD140a", "CD140b", "CD309", "VEGFR-3", "CD340"], "reason": "Endothelial/mesenchymal/epithelial receptor context requires specific support in these blood states; existing low or undetected source RNA does not establish the intended cell-intrinsic route.", "source": "Reviewed UniProt tissue-specificity annotations plus assay_identity_context.csv; no new numerical expression cutoff"},
+    {"antigens": ["Siglec-8", "CD203c", "CD66b"], "reason": "Granulocyte/basophil/eosinophil context is not represented by the four modelled source states; retain for source-context follow-up.", "source": "Reviewed UniProt tissue-specificity annotations for SIGLEC8, ENPP3, CEACAM8"},
+    {"antigens": ["CD22"], "states": ["classical_mono", "nonclassical_mono"], "reason": "CD22 DC evidence does not automatically establish a monocyte-intrinsic intervention; this source context remains unresolved.", "source": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.b.20469; current assay_identity_context.csv"},
+    {"antigens": ["CD2", "CD56"], "states": ["classical_mono", "nonclassical_mono"], "reason": "DC subset expression does not establish the same intervention in monocytes; requires source-context resolution.", "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2749454/; https://pmc.ncbi.nlm.nih.gov/articles/PMC8017819/"},
+    {"antigens": ["CD79b"], "states": ["classical_mono", "nonclassical_mono"], "reason": "DC transcript support is documented, but a monocyte intervention context is not established.", "source": "https://www.proteinatlas.org/ENSG00000007312-CD79B/single+cell/dendritic+cells"},
+    {"antigens": ["CD85g", "CD303"], "states": ["classical_mono", "nonclassical_mono"], "reason": "Plasmacytoid/DC receptor context does not support interpreting the monocyte-labelled signal as the same direct intervention.", "source": "Reviewed UniProt tissue annotations for LILRA4 and CLEC4C"},
+    {"antigens": ["CD85g"], "states": ["cDC"], "reason": "LILRA4 is pDC-restricted in the reviewed protein evidence; a cDC signal needs state-resolution before drug prioritization.", "source": "Reviewed UniProt LILRA4 tissue-specificity annotation"},
+    {"antigens": ["CD64"], "states": ["pDC"], "reason": "Normal/reactive pDC are reported CD64-negative; do not treat measured pDC-labelled CD64 signal as resolved without context review.", "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8017819/"}
+  ],
+  "positive_context_exceptions": [
+    {"antigen": "CD22", "states": ["cDC", "pDC"], "evidence": "Primary study reports anti-CD22 reactivity of peripheral DCs; cDC source also has measured RNA/ADT concordance in the current held-out CITE data. Clone dependence retained as annotation.", "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.b.20469"},
+    {"antigen": "CD2", "states": ["cDC", "pDC"], "evidence": "DC subset expression must not be rejected solely because CD2 is also a lymphocyte marker.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2749454/"},
+    {"antigen": "CD79b", "states": ["cDC", "pDC"], "evidence": "Independent DC transcript data and project measurements support retaining the DC context; transcript support does not substitute for surface epitope specificity.", "url": "https://www.proteinatlas.org/ENSG00000007312-CD79B/single+cell/dendritic+cells"}
+  ],
+  "drug_exceptions": [
+    {"target": "TREM1", "drug": "NANGIBOTIDE", "decision": "clinical ligand-trap pathway modulation; not direct receptor binding", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10231876/"},
+    {"target": "HLA-DR", "drug": "LYM-1", "decision": "HLA-DR10-associated epitope requires allele resolution", "url": "https://aacrjournals.org/clincancerres/article/13/18/5621s/194351/Selective-High-Affinity-Ligand-Antibody-Mimics-for"},
+    {"target": "CD38", "drug": "HUMAX-IL15", "decision": "source target annotation incorrect; drug targets IL15", "url": "https://ir.genmab.com/static-files/057b3aab-fcfe-4274-a9ba-d46973af21d1"},
+    {"target": "CR1", "drug": "MIROCOCEPT", "decision": "functional analogue; not a direct CR1-targeting inhibitor", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1576234/"},
+    {"target": "CD22", "drug": "INOTUZUMAB OZOGAMICIN", "decision": "direct target evidence, ADC/internalization/cytotoxicity route; not equivalent to abundance decrease", "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc7014b1-c775-411d-b374-8113248b4077"},
+    {"target": "CD44", "drug": "BIVATUZUMAB", "decision": "v6-specific drug; broad CD44 panel epitope does not automatically identify v6", "source": "ChEMBL mechanism text and original panel antigen definition"},
+    {"target": "PTPRC isoforms", "decision": "pan-CD45 drug does not demonstrate selective modulation of a measured isoform; retained as related-target option"},
+    {"target": "FCGR3A/FCGR3B", "decision": "Fc-recruiting antibody mechanism requires discrimination from direct selective CD16 intervention"}
+  ]
+}

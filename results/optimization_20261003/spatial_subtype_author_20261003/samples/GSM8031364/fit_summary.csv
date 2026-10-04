@@ -1,0 +1,11 @@
+"state","n_genes","converged"
+"Endothelial",2062,2041
+"OPC",2062,2039
+"Oligo",2062,2044
+"Tcells",2062,2040
+"astro_fibrous",2062,2028
+"astro_protoplasmic",2062,2041
+"microglia_homeostatic",2062,2052
+"microglia_mhc2",2062,2039
+"neuron_GABAergic",2062,2036
+"neuron_dopaminergic",2062,2051

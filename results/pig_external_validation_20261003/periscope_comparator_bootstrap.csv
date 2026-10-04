@@ -1,0 +1,7 @@
+comparator,delta_spearman_ci_low,delta_spearman_ci_high,bootstrap_fraction_periscope_higher
+conditional_icnn,0.14108857928478613,0.4361035999772849,0.998
+conditional_mlp,0.07254969168077155,0.20786198806987963,1.0
+ot_ridge,0.1958881774766895,0.5246540106276107,1.0
+shared_label_marginal,,,
+shared_label_mean,,,
+cellot,0.03767641263850321,0.438233501754493,0.986

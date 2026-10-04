@@ -1,0 +1,14 @@
+{
+  "numerical_threads": {
+    "original_six_axes": 2,
+    "pDC_extension": 1
+  },
+  "solver": "randomized",
+  "n_components": 64,
+  "random_state": 42,
+  "confirmed_original_log": {
+    "classical_mono__astro_seed43_condition0_step1000": 0.08640657587276501,
+    "classical_mono__astro_seed43_condition1_step1000": 0.08771100400034615
+  },
+  "pdc_source": "original launch_extension.py uses OPENBLAS_NUM_THREADS=1 for preparation"
+}

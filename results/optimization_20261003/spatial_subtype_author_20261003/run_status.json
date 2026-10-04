@@ -1,0 +1,51 @@
+{
+  "stage": "complete",
+  "completed": [
+    {
+      "sample": "QC",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031360",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031361",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031362",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031363",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031364",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031365",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031366",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031367",
+      "returncode": 0
+    },
+    {
+      "sample": "GSM8031368",
+      "returncode": 0,
+      "reused": true
+    },
+    {
+      "sample": "GSM8031369",
+      "returncode": 0,
+      "reused": true
+    }
+  ]
+}

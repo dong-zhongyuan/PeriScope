@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "n_programs": 6849,
+  "n_omission_tests": 34245,
+  "n_full_tests": 6849,
+  "full_FDR_programs": 3950,
+  "all_five_omissions_retained": 2575,
+  "full_FDR_and_all_five_retained": 2575,
+  "priority_programs": 16,
+  "priority_all_five_retained": 10,
+  "priority_retention_histogram": {
+    "3": 4,
+    "4": 2,
+    "5": 10
+  },
+  "model_registry_sha256": "4fe849e5ea3e0a712451ad23908ec2f4f8c93cbef03d354f9a5ddf8953c3d6f9",
+  "all_five_matches_current_statistics": true
+}

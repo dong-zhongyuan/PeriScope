@@ -1,0 +1,14 @@
+donor,citeseq_subtype,blood_state,n
+P6,cDC2,cDC,284
+P7,cDC1,cDC,47
+P7,cDC2,cDC,519
+P8,cDC2,cDC,370
+P6,CD14 Mono,classical_mono,5571
+P7,CD14 Mono,classical_mono,8287
+P8,CD14 Mono,classical_mono,6597
+P6,CD16 Mono,nonclassical_mono,1056
+P7,CD16 Mono,nonclassical_mono,909
+P8,CD16 Mono,nonclassical_mono,756
+P6,pDC,pDC,77
+P7,pDC,pDC,316
+P8,pDC,pDC,66
