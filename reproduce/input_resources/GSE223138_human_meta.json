@@ -1,0 +1,67 @@
+{
+  "accession": "GSE223138",
+  "n_samples_total": 6,
+  "n_samples_human": 6,
+  "human_samples": [
+    {
+      "accession": "GSM6940192",
+      "title": "Normal 1, scRNAseq",
+      "source": "blood",
+      "characteristics": {
+        "disease state": "Normal",
+        "tissue": "blood",
+        "cell type": "peripheral blood mononuclear cell"
+      }
+    },
+    {
+      "accession": "GSM6940193",
+      "title": "Normal 2, scRNAseq",
+      "source": "blood",
+      "characteristics": {
+        "disease state": "Normal",
+        "tissue": "blood",
+        "cell type": "peripheral blood mononuclear cell"
+      }
+    },
+    {
+      "accession": "GSM6940194",
+      "title": "Early PD 1, scRNAseq",
+      "source": "blood",
+      "characteristics": {
+        "disease state": "Early Parkinson's disease (PD)",
+        "tissue": "blood",
+        "cell type": "peripheral blood mononuclear cell"
+      }
+    },
+    {
+      "accession": "GSM6940195",
+      "title": "Early PD 2, scRNAseq",
+      "source": "blood",
+      "characteristics": {
+        "disease state": "Early Parkinson's disease (PD)",
+        "tissue": "blood",
+        "cell type": "peripheral blood mononuclear cell"
+      }
+    },
+    {
+      "accession": "GSM6940196",
+      "title": "Advance PD 1, scRNAseq",
+      "source": "blood",
+      "characteristics": {
+        "disease state": "Late Parkinson's disease (PD)",
+        "tissue": "blood",
+        "cell type": "peripheral blood mononuclear cell"
+      }
+    },
+    {
+      "accession": "GSM6940197",
+      "title": "Advance PD 2, scRNAseq",
+      "source": "blood",
+      "characteristics": {
+        "disease state": "Late Parkinson's disease (PD)",
+        "tissue": "blood",
+        "cell type": "peripheral blood mononuclear cell"
+      }
+    }
+  ]
+}

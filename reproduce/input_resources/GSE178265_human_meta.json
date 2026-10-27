@@ -1,0 +1,1656 @@
+{
+  "accession": "GSE178265",
+  "n_samples_total": 101,
+  "n_samples_human": 97,
+  "human_samples": [
+    {
+      "accession": "GSM5386628",
+      "title": "pPDCN4340DAPIA030419",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Caudate nucleus",
+        "Sex": "Male",
+        "age": "47",
+        "pmi": "12.5",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Esophageal cancer with liver mets",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386629",
+      "title": "pPDCN4340DAPIB030419",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Caudate nucleus",
+        "Sex": "Male",
+        "age": "47",
+        "pmi": "12.5",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Esophageal cancer with liver mets",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386630",
+      "title": "pPDsHSrSNxi3482d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "79",
+        "pmi": "14",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Coronary artery disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386631",
+      "title": "pPDsHSrSNxi3346d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "91",
+        "pmi": "10",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Congestive Heart failure",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386632",
+      "title": "pPDsHSrSNxi3482d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "79",
+        "pmi": "14",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Coronary artery disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386633",
+      "title": "pPDsHSrSNxi3346d200429PosC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "91",
+        "pmi": "10",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Congestive Heart failure",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386634",
+      "title": "pPDsHSrSNxi3873d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386635",
+      "title": "pPDsHSrSNxi5610d200429Pos",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "49",
+        "pmi": "7",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Smoke inhalation",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386636",
+      "title": "pPDsHSrSNxi3873d200429PosE",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386637",
+      "title": "pPDsHSrSNxi3322d200429PosG",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386638",
+      "title": "pPDsHSrSNxi3873d200429PosF",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386639",
+      "title": "pPDsHSrSNxi3322d200429PosE",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386640",
+      "title": "pPDsHSrSNxi3346d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "91",
+        "pmi": "10",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Congestive Heart failure",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386641",
+      "title": "pPDCN3839DAPIB030419",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Caudate nucleus",
+        "Sex": "Male",
+        "age": "59",
+        "pmi": "15.8",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer, cholangiocarcinoma",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386642",
+      "title": "pPDsHSrSNxi3345d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "82",
+        "pmi": "12.9",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386643",
+      "title": "pPDsHSrSNxi3482d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "79",
+        "pmi": "14",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Coronary artery disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386644",
+      "title": "pPDsHSrSNxi4956d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "92",
+        "pmi": "23.3",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386645",
+      "title": "pPDsHSrSNxi3482d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "79",
+        "pmi": "14",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Coronary artery disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386646",
+      "title": "pPDsHSrSNxi3322d200429PosF",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386647",
+      "title": "pPDsHSrSNxi6173d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "49",
+        "pmi": "7.2",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Not listed",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386648",
+      "title": "pPDsHSrSNxi3345d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "82",
+        "pmi": "12.9",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386649",
+      "title": "pPDsHSrSNxi3346d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "91",
+        "pmi": "10",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Congestive Heart failure",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386650",
+      "title": "pPDsHSrSNxi4775d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "75",
+        "pmi": "13.8",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386651",
+      "title": "pPDsHSrSNxi2544d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "89",
+        "pmi": "10",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386652",
+      "title": "pPDsHSrSNxi3887d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "13.7",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386653",
+      "title": "pPDsHSrSNxi3873d200429PosD",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386654",
+      "title": "pPDsHSrSNxi4560d200429PosD",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "83",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386655",
+      "title": "pPDsHSrSNxi4956d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "92",
+        "pmi": "23.3",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386656",
+      "title": "pPDsHSrSNxi3322d200429PosC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386657",
+      "title": "pPDsHSrSNxi3873d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386658",
+      "title": "pPDsHSrSNxi3322d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386659",
+      "title": "pPDsHSrSNxi4956d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "92",
+        "pmi": "23.3",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386660",
+      "title": "pPDsHSrSNxi3887d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "13.7",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386661",
+      "title": "pPDsHSrSNxi3873d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386662",
+      "title": "pPDsHSrSNxi3873d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386663",
+      "title": "pPDsHSrSNxi4560d200429PosE",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "83",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386664",
+      "title": "pPDsHSrSNxi3887d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "13.7",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386665",
+      "title": "pPDsHSrSNxi4560d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "83",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386666",
+      "title": "pPDsHSrSNxi4775d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "75",
+        "pmi": "13.8",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386667",
+      "title": "pPDsHSrSNxi3873d200429PosC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "76",
+        "pmi": "6.8",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386668",
+      "title": "pPDsHSrSNxi4775d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "75",
+        "pmi": "13.8",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386669",
+      "title": "pPDsHSrSNxi3345d200429DAPIC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "82",
+        "pmi": "12.9",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386670",
+      "title": "pPDsHSrSNxi4775d200429DAPIC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "75",
+        "pmi": "13.8",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386671",
+      "title": "pPDsHSrSNxi4560d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "83",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386672",
+      "title": "pPDsHSrSNxi3322d200429PosD",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386673",
+      "title": "pPDsHSrSNxi4560d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "83",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386674",
+      "title": "pPDsHSrSNxi4775d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "75",
+        "pmi": "13.8",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386675",
+      "title": "pPDsHSrSNxi2561d200429PosC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "70",
+        "pmi": "21",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386676",
+      "title": "pPDCN3839DAPIA030419",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Caudate nucleus",
+        "Sex": "Male",
+        "age": "59",
+        "pmi": "15.8",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer, cholangiocarcinoma",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386677",
+      "title": "pPDsHSrSNxi4568d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "78",
+        "pmi": "22.3",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386678",
+      "title": "pPDsHSrSNxi3345d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "82",
+        "pmi": "12.9",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386679",
+      "title": "pPDsHSrSNxi5610d200429Neg",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "49",
+        "pmi": "7",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Smoke inhalation",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386680",
+      "title": "pPDsHSrSNxi2142d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "90",
+        "pmi": "2",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386681",
+      "title": "pPDsHSrSNxi4560d200429PosC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "83",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386682",
+      "title": "pPDsHSrSNxi3322d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386683",
+      "title": "pPDCN5730NeuN22119",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "25",
+        "pmi": "33.75",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Seizure disorder,congenital heart disease",
+        "facs classification": "NeuN",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386684",
+      "title": "pPDsHSrSNxi4568d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "78",
+        "pmi": "22.3",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386685",
+      "title": "pPDsHSrSNxi4560d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "83",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386686",
+      "title": "pPDsHSrSNxi1963d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386687",
+      "title": "pPDsHSrSNxi2544d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "89",
+        "pmi": "10",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386688",
+      "title": "pPDsHSrSNxi3887d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "13.7",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386689",
+      "title": "pPDsHSrSNxi4568d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "78",
+        "pmi": "22.3",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386690",
+      "title": "pPDsHSrSNxi4568d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "78",
+        "pmi": "22.3",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386691",
+      "title": "pPDsHSrSNxi2569d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "74",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386692",
+      "title": "pPDsHSrSNxi1963d200429DAPIC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386693",
+      "title": "pPDsHSrSNxi2544d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "89",
+        "pmi": "10",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386694",
+      "title": "pPDsHSrSNxi1963d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386695",
+      "title": "pPDsHSrSNxi4956d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "92",
+        "pmi": "23.3",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386696",
+      "title": "pPDsHSrSNxi6173d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "49",
+        "pmi": "7.2",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Not listed",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386697",
+      "title": "pPDsHSrSNxi2142d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "90",
+        "pmi": "2",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386698",
+      "title": "pPDsHSrSNxi3322d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386699",
+      "title": "pPDsHSrSNxi2569d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "74",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386700",
+      "title": "pPDsHSrSNxi2561d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "70",
+        "pmi": "21",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386701",
+      "title": "pPDsHSrSNxi3298d200429DAPIC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "79",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386702",
+      "title": "pPDsHSrSNxi2561d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "70",
+        "pmi": "21",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386703",
+      "title": "pPDsHSrSNxi3322d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386704",
+      "title": "pPDsHSrSNxi3322d200429PosH",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386705",
+      "title": "pPDsHSrSNxi2544d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "89",
+        "pmi": "10",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386706",
+      "title": "pPDsHSrSNxi2544d200429PosC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "89",
+        "pmi": "10",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386707",
+      "title": "pPDsHSrSNxi3322d200429DAPIC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "90",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Colon cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386708",
+      "title": "pPDsHSrSNxi2561d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "70",
+        "pmi": "21",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386709",
+      "title": "pPDsHSrSNxi6173d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "49",
+        "pmi": "7.2",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Not listed",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386710",
+      "title": "pPDsHSrSNxi3298d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "79",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386711",
+      "title": "pPDCN5730DAPI22119",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Caudate nucleus",
+        "Sex": "Male",
+        "age": "25",
+        "pmi": "33.75",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Seizure disorder,congenital heart disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386712",
+      "title": "pPDsHSrSNxi2142d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "90",
+        "pmi": "2",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386713",
+      "title": "pPDsHSrSNxi3298d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "79",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386714",
+      "title": "pPDsHSrSNxi1963d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386715",
+      "title": "pPDsHSrSNxi2561d200429DAPIA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Female",
+        "age": "70",
+        "pmi": "21",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386716",
+      "title": "pPDsHSrSNxi1963d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386717",
+      "title": "pPDsHSrSNxi2569d200429DAPIB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "74",
+        "pmi": "13",
+        "disease": "Disease",
+        "status": "LBD",
+        "Cause of death": "Lewy body dementia",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386718",
+      "title": "pPDsHSrSNxi1963d200429PosC",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386719",
+      "title": "pPDCN3898DAPIB030419",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Caudate nucleus",
+        "Sex": "Male",
+        "age": "79",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386720",
+      "title": "pPDsHSrSNxi1963d200429PosD",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386721",
+      "title": "pPDCN3898DAPIA030419",
+      "source": "Human Caudate nucleus",
+      "characteristics": {
+        "tissue": "Caudate nucleus",
+        "Sex": "Male",
+        "age": "79",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Negative",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386722",
+      "title": "pPDsHSrSNxi3298d200429PosA",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "79",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386723",
+      "title": "pPDsHSrSNxi1963d200429PosE",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "82",
+        "pmi": "6",
+        "disease": "Disease",
+        "status": "PD",
+        "Cause of death": "Parkinson's disease",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    },
+    {
+      "accession": "GSM5386724",
+      "title": "pPDsHSrSNxi3298d200429PosB",
+      "source": "Human Substantia nigra pars compacta",
+      "characteristics": {
+        "tissue": "Substantia nigra pars compacta",
+        "Sex": "Male",
+        "age": "79",
+        "pmi": "22",
+        "disease": "Ctrl",
+        "status": "Ctrl",
+        "Cause of death": "Prostate cancer",
+        "facs classification": "Positive",
+        "10x version": "V3",
+        "genome build": "hg19"
+      }
+    }
+  ]
+}

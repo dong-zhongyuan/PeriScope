@@ -1,0 +1,442 @@
+{
+  "raw": [
+    {
+      "path": "GSE178265/geo_original/GSE178265_Homo_bcd.tsv.gz",
+      "bytes": 2732185,
+      "sha256": "5e8ccf574fb1afcedd9d258b7432b1c2f4e88c8747406f901d70f0121623751c",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE178nnn/GSE178265/suppl/GSE178265_Homo_bcd.tsv.gz"
+    },
+    {
+      "path": "GSE178265/geo_original/GSE178265_Homo_features.tsv.gz",
+      "bytes": 295300,
+      "sha256": "fa2b4e9cc742ef81747ccd9c348b5dc55095525f790e329168ff4f1daff8cbf9",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE178nnn/GSE178265/suppl/GSE178265_Homo_features.tsv.gz"
+    },
+    {
+      "path": "GSE178265/geo_original/GSE178265_Homo_matrix.mtx.gz",
+      "bytes": 5089750754,
+      "sha256": "d39c5da8b7746e7c9e83db0f29a66e5d60a4e8131274f200e1ef4e9d9302aa9f",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE178nnn/GSE178265/suppl/GSE178265_Homo_matrix.mtx.gz"
+    },
+    {
+      "path": "GSE223138/geo_original/GSE223138_RAW.tar",
+      "bytes": 321792000,
+      "sha256": "627ffb24cf9a0d33b36b00d40fdc5059cd11ff7a551957813fcf1591e67d5f5c",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE223nnn/GSE223138/suppl/GSE223138_RAW.tar"
+    },
+    {
+      "path": "moquin_beaudry_2025/scPD_AllCells_Annotated.rds",
+      "bytes": 13621163945,
+      "sha256": "9fa72986133db7ea6d4e5ca33cd6a8fd42bf0b287b9af97eaf8ef8486d9f7db3",
+      "url": "https://zenodo.org/api/records/14372434/files/scPD_AllCells_Annotated.rds/content",
+      "source_layer": "RNA@data (author LogNormalize), preserved to reproduce the frozen model inputs"
+    },
+    {
+      "path": "citeseq_hao/GSE164378_RAW.tar",
+      "bytes": 1467842560,
+      "sha256": "1a02b28c3aa3cc2e8d986d54dc35f953b807461752d91791d5d053af3b2d34a8",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE164nnn/GSE164378/suppl/GSE164378_RAW.tar"
+    },
+    {
+      "path": "citeseq_hao/GSE164378_sc.meta.data_3P.csv.gz",
+      "bytes": 3119866,
+      "sha256": "eaf9acf53cf24c86ebf6228ebef4f0bf682c5ea8c7018a3aa42a386a28f232ab",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE164nnn/GSE164378/suppl/GSE164378_sc.meta.data_3P.csv.gz"
+    }
+  ],
+  "resources": {
+    "purification/purification_report.json": {
+      "bytes": 10722,
+      "sha256": "86c36c14d78d1f4223910fe32a4dc005576569b0b1105ff157c3c11aba7b3006"
+    },
+    "purification/c178_brain_astro.csv": {
+      "bytes": 1043134,
+      "sha256": "02a38758e77e06f0e053ce472b247e9551bf3801d096ac9164e4f1439a5f59ae"
+    },
+    "purification/c178_brain_microglia.csv": {
+      "bytes": 652507,
+      "sha256": "ffd213726b55912ac48158bd46c59c36f81ced7f3f5e2d3f81ef8b5c4fd9590b"
+    },
+    "purification/b223_blood_myeloid.csv": {
+      "bytes": 598294,
+      "sha256": "2be5a5b4915e67dd7bd35f852ee33c736d72564de47f80bccf5509b21281a82b"
+    },
+    "purification/bmb_blood_myeloid.csv": {
+      "bytes": 1845371,
+      "sha256": "59cecb6c038ea81fdfae6950093c4f98364cf7ee2c616781df1f34c9e9668609"
+    },
+    "GSE178265_sn_donor_split_v1.json": {
+      "bytes": 981,
+      "sha256": "9e97e463c7c6674d510c2cbcff1dfbf56a96ba2678176ddc34d545dbdf754e1a"
+    },
+    "GSE178265_human_meta.json": {
+      "bytes": 48919,
+      "sha256": "7b5557099b29ea2ed802b1ddce591d2653a0dfa94f49e78efe459009801e7822"
+    },
+    "GSE223138_human_meta.json": {
+      "bytes": 1781,
+      "sha256": "3730518e32dede3f2ffccb9756642682a810ac312f78fab5f02292017b62930b"
+    },
+    "hgnc_complete_set.txt": {
+      "bytes": 16963116,
+      "sha256": "2b4224ea847df2fc6982f5b2a52804c5d92fbb8810b134afb636f6029452dc03"
+    },
+    "hgnc_source.json": {
+      "bytes": 176,
+      "sha256": "25bc5ca57b4b36e01bd3ee803f899073b24c370335b0661cf55393cfac0ce24e"
+    }
+  },
+  "expected_arrays": {
+    "blood.npz": {
+      "X.npy": {
+        "bytes": 2656154860,
+        "sha256": "02bc94b4d062798915afe763197a36366446424ecf9aa8a6a6999afe484e808d"
+      },
+      "barcodes.npy": {
+        "bytes": 16247436,
+        "sha256": "e03008b235ff616b739fe7986a3af6ec0bf7c67a2252f158abced4d2082daf8d"
+      },
+      "is_val.npy": {
+        "bytes": 140191,
+        "sha256": "ccf941da6e8db27548e8974fac5f7b450422f74de6c1c5a0ef4d0a593f84bf5a"
+      },
+      "is_test.npy": {
+        "bytes": 140191,
+        "sha256": "42654720b7e314e27f412be52b399651cb263d0e91da28b95e68d728c2c86ad0"
+      },
+      "donor_names.npy": {
+        "bytes": 1328,
+        "sha256": "e21758c343ac0a897e20c1ddc8d494dd4611c3fe850d72a025d1778a1e84ca81"
+      },
+      "cond2.npy": {
+        "bytes": 1120632,
+        "sha256": "414f076b26c34c842a58a02f079829ec2b5127ba15022d19f7df8e22a69da4bb"
+      },
+      "state.npy": {
+        "bytes": 1120632,
+        "sha256": "dc35457e4ecf54ba6ca3f7b0a70a429683eb7b7a4aec58c95b5f93a5f621ae71"
+      },
+      "ct.npy": {
+        "bytes": 1120632,
+        "sha256": "f79a54dd4a2de50b555911e2b42231aca7652f393861405c79ee34977636ba71"
+      },
+      "donor.npy": {
+        "bytes": 1120632,
+        "sha256": "9bc62cea2e821b2343abdfcf1cd14ef514725b1ace314b2f8ab38e77dd34d19a"
+      },
+      "cohort.npy": {
+        "bytes": 1120632,
+        "sha256": "f1cbcd8d86ac667ff6c027ef4ac52cff5008fa4fad507ac34a2523fa6d721961"
+      },
+      "gene_mu.npy": {
+        "bytes": 19092,
+        "sha256": "ad8773e2517a05f05e3e56200413a438c5d36b7bd764f509c75c3cb38d0c9032"
+      },
+      "gene_sd.npy": {
+        "bytes": 19092,
+        "sha256": "7bff03e701409dbfa2969c26116a6838c1908651704f3e799d503b37de4b3453"
+      },
+      "genes.npy": {
+        "bytes": 227696,
+        "sha256": "ae9cf7435d67420e766133a68689ad45f261175642cd146feabd12152ac95b3e"
+      },
+      "state_vocab.npy": {
+        "bytes": 968,
+        "sha256": "d19d8f3e6d83ede3515b6149768ace0f648b5d81ef78278679d7dcd21c222dc9"
+      },
+      "n_states.npy": {
+        "bytes": 136,
+        "sha256": "17b6885bfd19a4fa6936e6e9500e05c00d7134d5ab1078bff014b7e3ed795870"
+      }
+    },
+    "brain_calibration.npz": {
+      "X.npy": {
+        "bytes": 757839496,
+        "sha256": "b935188b9da6bd12946e16244dfe0a93c01f308f5b2ac37d3a1f5b83bd687c6d"
+      },
+      "cond2.npy": {
+        "bytes": 319824,
+        "sha256": "de186e68f610bd654158cb6bab5b2a4506bad823528af6f403d2c8ece749062d"
+      },
+      "state.npy": {
+        "bytes": 319824,
+        "sha256": "7255da0d600c5d0b1b7a375ba2172dd360cabd6042f0a99f98549d37c2778f12"
+      },
+      "ct.npy": {
+        "bytes": 319824,
+        "sha256": "03f1878d5fac99988160b9541de9067c64a4e9d415eb3fe877feefc17d2e578f"
+      },
+      "donor.npy": {
+        "bytes": 319824,
+        "sha256": "3411f38cdcd006b212669c59ec3751565a2e93038c60dfc830ef1a8e9031ac69"
+      },
+      "barcodes.npy": {
+        "bytes": 1119064,
+        "sha256": "8510d94983604c9b41dcdaacc13dc16d64bee80876aa8e71e420e1fec1da736e"
+      },
+      "donor_names.npy": {
+        "bytes": 744,
+        "sha256": "4dcc5589d0818030fbf2da53d1e5ecdd90f1bd220e639572b988cd2ec7918924"
+      },
+      "gene_mu.npy": {
+        "bytes": 19092,
+        "sha256": "a83fee34659eef65f2ace5eff353748c75e552a810dcd0228f9b2f73c7344217"
+      },
+      "gene_sd.npy": {
+        "bytes": 19092,
+        "sha256": "7bff03e701409dbfa2969c26116a6838c1908651704f3e799d503b37de4b3453"
+      },
+      "genes.npy": {
+        "bytes": 227696,
+        "sha256": "ae9cf7435d67420e766133a68689ad45f261175642cd146feabd12152ac95b3e"
+      },
+      "state_vocab.npy": {
+        "bytes": 968,
+        "sha256": "d19d8f3e6d83ede3515b6149768ace0f648b5d81ef78278679d7dcd21c222dc9"
+      },
+      "n_states.npy": {
+        "bytes": 136,
+        "sha256": "17b6885bfd19a4fa6936e6e9500e05c00d7134d5ab1078bff014b7e3ed795870"
+      }
+    },
+    "brain_locked_test.npz": {
+      "X.npy": {
+        "bytes": 2271697688,
+        "sha256": "4ae587720d81c2d0e6ca1ddb2807f2e1ea307b54c8e3afe75adb9ae5e0173c48"
+      },
+      "barcodes.npy": {
+        "bytes": 3354248,
+        "sha256": "8caef6b67cb2cc0db518b94c1574ed1c28c81b0b9f82a2d77d1fe7ec27510e26"
+      },
+      "donor_names.npy": {
+        "bytes": 744,
+        "sha256": "4dcc5589d0818030fbf2da53d1e5ecdd90f1bd220e639572b988cd2ec7918924"
+      },
+      "cond2.npy": {
+        "bytes": 958448,
+        "sha256": "bf9883d8f3bbfe9c17d240ac1b52337457afea5b4a1708dc98506caf973057fc"
+      },
+      "state.npy": {
+        "bytes": 958448,
+        "sha256": "1b1f6c91111961077a440e442277afb33e780122540b304f33994363972af426"
+      },
+      "ct.npy": {
+        "bytes": 958448,
+        "sha256": "3304a6c93e6a84b9358e4afb4ab9d34def6a781b50841bed8d93ae5c2f1f006f"
+      },
+      "donor.npy": {
+        "bytes": 958448,
+        "sha256": "d72e1e0516958f91dbdd86522eb117f931f713fcb88cb81efc6e04a466f7b1c9"
+      },
+      "gene_mu.npy": {
+        "bytes": 19092,
+        "sha256": "a83fee34659eef65f2ace5eff353748c75e552a810dcd0228f9b2f73c7344217"
+      },
+      "gene_sd.npy": {
+        "bytes": 19092,
+        "sha256": "7bff03e701409dbfa2969c26116a6838c1908651704f3e799d503b37de4b3453"
+      },
+      "genes.npy": {
+        "bytes": 227696,
+        "sha256": "ae9cf7435d67420e766133a68689ad45f261175642cd146feabd12152ac95b3e"
+      },
+      "state_vocab.npy": {
+        "bytes": 968,
+        "sha256": "d19d8f3e6d83ede3515b6149768ace0f648b5d81ef78278679d7dcd21c222dc9"
+      },
+      "n_states.npy": {
+        "bytes": 136,
+        "sha256": "17b6885bfd19a4fa6936e6e9500e05c00d7134d5ab1078bff014b7e3ed795870"
+      }
+    },
+    "brain_train.npz": {
+      "X.npy": {
+        "bytes": 4313836028,
+        "sha256": "f8367178a83f9276e88fd6123c15d3e33da34fa3958b31a54e3c29bdd883eca6"
+      },
+      "is_val.npy": {
+        "bytes": 227603,
+        "sha256": "c69f427980b1d4e26fe8c32d2bedfc06eb168fec32804df948a0ca571e9efc0f"
+      },
+      "barcodes.npy": {
+        "bytes": 6369428,
+        "sha256": "8c5d70f32051199aa831f9c6f50fb4760273c905dfc2feb76cb19548b602fce6"
+      },
+      "donor_names.npy": {
+        "bytes": 744,
+        "sha256": "4dcc5589d0818030fbf2da53d1e5ecdd90f1bd220e639572b988cd2ec7918924"
+      },
+      "cond2.npy": {
+        "bytes": 1819928,
+        "sha256": "66ee8b3543a61895656d898465577f853c884384d873a2eb1f729781ecfe65e4"
+      },
+      "state.npy": {
+        "bytes": 1819928,
+        "sha256": "b6084e391c6b391e502b7416880d5b07db6e8b616fd0b1ee2cfde99e381adffc"
+      },
+      "ct.npy": {
+        "bytes": 1819928,
+        "sha256": "af2eac6768625f336989c559a2120d7ddc4efc0e52cbd62b2749f967a168f47c"
+      },
+      "donor.npy": {
+        "bytes": 1819928,
+        "sha256": "86f2ba6f254141f6b57fd9d3d6514bd1632f28ba51519a41efd0ef642fbb416f"
+      },
+      "gene_mu.npy": {
+        "bytes": 19092,
+        "sha256": "a83fee34659eef65f2ace5eff353748c75e552a810dcd0228f9b2f73c7344217"
+      },
+      "gene_sd.npy": {
+        "bytes": 19092,
+        "sha256": "7bff03e701409dbfa2969c26116a6838c1908651704f3e799d503b37de4b3453"
+      },
+      "genes.npy": {
+        "bytes": 227696,
+        "sha256": "ae9cf7435d67420e766133a68689ad45f261175642cd146feabd12152ac95b3e"
+      },
+      "state_vocab.npy": {
+        "bytes": 968,
+        "sha256": "d19d8f3e6d83ede3515b6149768ace0f648b5d81ef78278679d7dcd21c222dc9"
+      },
+      "n_states.npy": {
+        "bytes": 136,
+        "sha256": "17b6885bfd19a4fa6936e6e9500e05c00d7134d5ab1078bff014b7e3ed795870"
+      }
+    },
+    "bridge_data.npz": {
+      "X.npy": {
+        "bytes": 3526159048,
+        "sha256": "82094c50d6f33dce47ee943fe7eab53daf638795a2a135e8b8a9c030b9c84f0d"
+      },
+      "Y.npy": {
+        "bytes": 146977136,
+        "sha256": "7021390240bdcecba960e420d25535958dbbb7d97be3e920ffdc9637465b514f"
+      },
+      "ct.npy": {
+        "bytes": 1289400,
+        "sha256": "0b0b6401b8b29f4baa2766291948120f80923ec1a4ece49733f819133ecfe576"
+      },
+      "barcodes.npy": {
+        "bytes": 13537484,
+        "sha256": "e42acef0835d3015c7b574f4e8f84ba64307f5a909700a843f6ef5ed785d1803"
+      },
+      "subtype.npy": {
+        "bytes": 10958940,
+        "sha256": "f6565d1ebb5298427e70d59b41e7af740d4b52662f4e6bdd732c482aae268339"
+      },
+      "adt_counts.npy": {
+        "bytes": 146977136,
+        "sha256": "3e7a3b2e088de1b20a75a0cbdd92699fe191e1018c17c421848791b552e21fd6"
+      },
+      "genes.npy": {
+        "bytes": 328328,
+        "sha256": "5eab7110cf346b3c85776be9660434bd6dcb51d5ad3874a779205f9a366ed4fc"
+      },
+      "proteins.npy": {
+        "bytes": 11984,
+        "sha256": "3fbeab200d20f9f8eb195a990564de9146f77ea5bb23b0eef411a80b657b2d68"
+      },
+      "ct_labels.npy": {
+        "bytes": 248,
+        "sha256": "88c7a5d07f68b1205efc96fae16c67e0bba72adfdff489bfed7d59361a13c5c1"
+      },
+      "donor.npy": {
+        "bytes": 1289400,
+        "sha256": "099855c9382cf35f0ac0f42445586210aa533f6abab95a60e7dc79e0a30db3e4"
+      },
+      "expr_mean_ct.npy": {
+        "bytes": 131408,
+        "sha256": "c63788e0f0a24a527e97ccf997f6a851f038010f679907d77c3fd39d2263e8ab"
+      },
+      "adt_mean_ct.npy": {
+        "bytes": 5600,
+        "sha256": "2de6644eea9dff1d266a380b644b318941f905bbe8138173d5433570ca43c1f1"
+      },
+      "gene_mu.npy": {
+        "bytes": 22008,
+        "sha256": "601965e395289666b64efa4b3351885d843d066ec7d0b6f9c801306e2a4093cc"
+      },
+      "gene_sd.npy": {
+        "bytes": 22008,
+        "sha256": "96a8d13156d609630a8b36bbdf3efcf964596f93d4a97b7db48cefef188767db"
+      }
+    },
+    "citeseq.npz": {
+      "X.npy": {
+        "bytes": 3056219404,
+        "sha256": "394c440707bdc5edc40c6a564dabf58407c7fc3c3aa56da2988fd087d141e9b7"
+      },
+      "Y.npy": {
+        "bytes": 146977136,
+        "sha256": "7021390240bdcecba960e420d25535958dbbb7d97be3e920ffdc9637465b514f"
+      },
+      "barcodes.npy": {
+        "bytes": 13537484,
+        "sha256": "e42acef0835d3015c7b574f4e8f84ba64307f5a909700a843f6ef5ed785d1803"
+      },
+      "subtype.npy": {
+        "bytes": 10958940,
+        "sha256": "f6565d1ebb5298427e70d59b41e7af740d4b52662f4e6bdd732c482aae268339"
+      },
+      "is_val.npy": {
+        "bytes": 161287,
+        "sha256": "f7526c689c5430d2e9613b858699d59a042c5ce587528e4c5d3039732dc896d0"
+      },
+      "donor_names.npy": {
+        "bytes": 192,
+        "sha256": "46b7d5f40e590522410cfd072106f25bd0e96c9fcf20e4b1cffdb6edc04e9851"
+      },
+      "proteins.npy": {
+        "bytes": 11984,
+        "sha256": "3fbeab200d20f9f8eb195a990564de9146f77ea5bb23b0eef411a80b657b2d68"
+      },
+      "adt_counts.npy": {
+        "bytes": 146977136,
+        "sha256": "3e7a3b2e088de1b20a75a0cbdd92699fe191e1018c17c421848791b552e21fd6"
+      },
+      "cond2.npy": {
+        "bytes": 1289400,
+        "sha256": "fbb48dee9eb8dab6b459b9777fda36e41a4540c0a9c2c3e355241b62afa3f469"
+      },
+      "state.npy": {
+        "bytes": 1289400,
+        "sha256": "3c82815b77f01f5c3e29ab4a23cb2fa8c55371946163f9d27d88451f2ce39730"
+      },
+      "ct.npy": {
+        "bytes": 1289400,
+        "sha256": "0b0b6401b8b29f4baa2766291948120f80923ec1a4ece49733f819133ecfe576"
+      },
+      "donor.npy": {
+        "bytes": 1289400,
+        "sha256": "192bbd8cc740dff01ede1a3ef017cb3e919a09341601b12129b05a77794f8b5b"
+      },
+      "is_test.npy": {
+        "bytes": 161287,
+        "sha256": "7db437ea83ff200dd2de003311d4a995c67ef0640c3056c59b50d2fdfe2ea695"
+      },
+      "gene_mu.npy": {
+        "bytes": 19092,
+        "sha256": "ad8773e2517a05f05e3e56200413a438c5d36b7bd764f509c75c3cb38d0c9032"
+      },
+      "gene_sd.npy": {
+        "bytes": 19092,
+        "sha256": "7bff03e701409dbfa2969c26116a6838c1908651704f3e799d503b37de4b3453"
+      },
+      "genes.npy": {
+        "bytes": 227696,
+        "sha256": "ae9cf7435d67420e766133a68689ad45f261175642cd146feabd12152ac95b3e"
+      },
+      "state_vocab.npy": {
+        "bytes": 968,
+        "sha256": "d19d8f3e6d83ede3515b6149768ace0f648b5d81ef78278679d7dcd21c222dc9"
+      },
+      "n_states.npy": {
+        "bytes": 136,
+        "sha256": "17b6885bfd19a4fa6936e6e9500e05c00d7134d5ab1078bff014b7e3ed795870"
+      }
+    }
+  },
+  "schema_version": 1,
+  "annotation_mode": "Frozen published cell-state maps; clustering is not rerun. Gene reference and donor assignments are bundled and checksummed.",
+  "reference_run": "rescreen_20261002"
+}

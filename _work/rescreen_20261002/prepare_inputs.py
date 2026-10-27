@@ -1,6 +1,10 @@
 import subprocess,sys,json,time,os
 from pathlib import Path
-W=Path(__file__).parent;O=Path('/public/home/mengxl/dzy/pd_product_assets/results/rescreen_20261002')
+W=Path(__file__).parent
+if not set(sys.argv[1:]).issubset({'--build-only'}):
+ sys.exit(subprocess.call([sys.executable,str(W.parents[1]/'reproduce/build_inputs.py'),*sys.argv[1:]]))
+from input_utils import ROOT
+O=ROOT/'preparation_status'
 O.mkdir(parents=True,exist_ok=True)
 stages=['run_build.py'] if '--build-only' in sys.argv else ['input_utils.py','preprocess_citeseq_hao.py','run_build.py']
 for name in stages:

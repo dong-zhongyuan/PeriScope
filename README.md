@@ -86,6 +86,8 @@ The plotting project retains its original seven figure identifiers. The NMI subm
 
 ## Reproduction scope
 
+The six cell-level input matrices can be regenerated with `python reproduce/build_inputs.py --output /absolute/path/to/new_build`. Install `reproduce/requirements-inputs.txt` and the R packages SeuratObject and Matrix first. The runner downloads and checks the public source files, uses the bundled frozen annotations and donor partitions, and verifies all 84 output arrays against the original inputs. Use `--raw-cache /path/to/raw --offline` for an existing source cache, or `--resume` to continue a stopped build after checking its completed outputs.
+
 [REPRODUCIBILITY.md](REPRODUCIBILITY.md) gives exact commands, input requirements, seed definitions and the verification record. The released tables, compact prediction contrasts, donor pseudobulks and checkpoints support the CPU recomputations above. A complete run from downloaded raw matrices through GPU training, spatial deconvolution and final figure assembly requires additional large input resources and environment setup; it has not been executed from a clean public checkout for this release.
 
 The full analysis environment is listed in `requirements.txt`; install the core package with `pip install -e .`. CellOT's original numerical recipe includes its CPU/BLAS configuration. Spatial deconvolution uses RCTD/CSIDE from [spacexr](https://github.com/dmcable/spacexr). Vendored CellOT code retains its BSD-3-Clause license; figure asset attribution is retained under `figures/assets/`.

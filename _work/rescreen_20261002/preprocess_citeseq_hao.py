@@ -14,7 +14,7 @@ Output: assets/interim/rescreen_20261002/bridge_data.npz and pairing_audit.json.
 """
 import os
 import json
-from input_utils import ROOT, canonical_symbols
+from input_utils import ROOT, REPORT, HGNC, canonical_symbols
 import gzip
 import tarfile
 import time
@@ -25,8 +25,7 @@ import pandas as pd
 from scipy.io import mmread
 from scipy.sparse import csr_matrix
 
-PROJECT = Path("/public/home/mengxl/dzy/pd_product_assets")
-DATA = PROJECT / "raw/citeseq_hao"
+DATA = Path(REPORT['cite_raw_dir'])
 RAW_TAR = DATA / "GSE164378_RAW.tar"
 META = DATA / "GSE164378_sc.meta.data_3P.csv.gz"
 RAW_DIR = DATA / "raw_3p"
@@ -45,17 +44,23 @@ def log(s):
 
 
 def extract_raw():
-    if RAW_DIR.exists() and any(RAW_DIR.iterdir()):
-        return
+    required = [f'{p}-{s}' for p in ('GSM5008737_RNA_3P', 'GSM5008738_ADT_3P')
+                for s in ('matrix.mtx.gz', 'features.tsv.gz', 'barcodes.tsv.gz')]
     if not RAW_TAR.exists() or not META.exists():
         raise SystemExit(f"缺原始文件: 请从 GEO 下载到 {DATA}/\n  {GEO_URL}GSE164378_RAW.tar\n"
                          f"  {GEO_URL}GSE164378_sc.meta.data_3P.csv.gz")
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
-    log(f"解包 {RAW_TAR.name} (1.5GB) ...")
     with tarfile.open(RAW_TAR) as tf:
-        for m in tf.getmembers():
-            if ("_3P-" in m.name) or m.name.startswith("GSE164378_sc.meta"):
-                tf.extract(m, RAW_DIR)
+        members = {m.name: m for m in tf.getmembers() if m.name in required}
+        if set(members) != set(required) or any(not m.isfile() for m in members.values()):
+            raise ValueError('Incomplete or invalid Hao RNA/ADT archive')
+        if all((RAW_DIR / n).is_file() and (RAW_DIR / n).stat().st_size == m.size for n, m in members.items()):
+            return
+        RAW_DIR.mkdir(parents=True, exist_ok=True)
+        log(f"解包 {RAW_TAR.name} (1.5GB) ...")
+        import shutil
+        for name, member in members.items():
+            with tf.extractfile(member) as src, (RAW_DIR / name).open('wb') as dst:
+                shutil.copyfileobj(src, dst)
 
 
 def read_10x(prefix):
@@ -136,7 +141,7 @@ def main():
     hvg = set(np.argsort(-disp)[:N_HVG].tolist())
 
     # Protected features come from annotation and training tissue HVGs, never old candidates.
-    hgnc = pd.read_csv(Path(__file__).parent / "reference/hgnc_complete_set.txt", sep="\t", dtype=str).fillna("")
+    hgnc = pd.read_csv(HGNC, sep="\t", dtype=str).fillna("")
     cd = hgnc.apply(lambda r: any(x.upper().startswith('CD') and x[2:3].isdigit()
                               for x in [r['symbol']]+r['alias_symbol'].split('|')+r['prev_symbol'].split('|')), axis=1)
     protected = set(hgnc.loc[cd,'symbol'])

@@ -3,19 +3,19 @@
   "release": "nmi-submission-20261027",
   "previous_public_commit": "ef0a5f08991f441427106004bc7c591b15625e19",
   "server_source_commit": "d2d210c",
-  "source_state": "Server working files including current manuscript-revision analyses and figure exports; repository-specific portable runners added and validated.",
+  "source_state": "NMI submission sources plus portable input regeneration from public source files and bundled frozen annotations; all six inputs rebuilt and all 84 arrays verified against the original run.",
   "files": {
     ".gitignore": {
       "bytes": 135,
       "sha256": "c11159fe219ec0ecc9c0b0e78bae3f8e7ad4269925fdbcdf388130e35b664748"
     },
     "README.md": {
-      "bytes": 9210,
-      "sha256": "7152f1121ec00f80b9046bb3096f5ac999636c827aa77ee21e33c38b35320158"
+      "bytes": 9765,
+      "sha256": "a78f39c3d362933b87e02aa42671318db2a9ae12e00ec132baf647cef5545c44"
     },
     "REPRODUCIBILITY.md": {
-      "bytes": 10747,
-      "sha256": "243190482044ce0439924eda22d3d1de3f861ab6de80f8873c96aca9187620f4"
+      "bytes": 11952,
+      "sha256": "fe533080cd6fb24719f224efcf387ef42a9e388059d3d647e33209f68759bea1"
     },
     "_work/benchmark_20261002/expansion_protocol.txt": {
       "bytes": 1836,
@@ -1014,8 +1014,8 @@
       "sha256": "6ad1afd138f25ec0d76a9804095f798ebba8f24cb4f42c3e40c3a3873739716c"
     },
     "_work/rescreen_20261002/build_training_data.py": {
-      "bytes": 16736,
-      "sha256": "0a9ef9f9944f22d52a7f666d96b93d2c7710fa60c1033b772de8c40d84427f11"
+      "bytes": 16755,
+      "sha256": "2de0af5f3ef5772bbcba8c4871acf92f853c8ea00b5d2235100f7fdc12d9b609"
     },
     "_work/rescreen_20261002/candidate_registry.py": {
       "bytes": 4492,
@@ -1062,8 +1062,8 @@
       "sha256": "9af04beb03842b68bbf5e77f826ee72822ee3b8778808371b9e42c69b4d3e97c"
     },
     "_work/rescreen_20261002/input_utils.py": {
-      "bytes": 5277,
-      "sha256": "07bf039d9b839766a459215e8455bf37b765adb0e0e7d83eef0ebf8d6799cae7"
+      "bytes": 6081,
+      "sha256": "18b37ddfcfb1ff8792f1ed0d666ac5df17c42f23225f52b9f09696c836134845"
     },
     "_work/rescreen_20261002/launch_ahead.py": {
       "bytes": 1296,
@@ -1074,12 +1074,12 @@
       "sha256": "0e44260a7346f7bbec884b91eb2c35ee33c7fc7f6a962486f4e91ecb964af990"
     },
     "_work/rescreen_20261002/prepare_inputs.py": {
-      "bytes": 736,
-      "sha256": "e591639d3206bfe475fc4f76d1d0dea924a5b9be7345f63c1721e33d6809862b"
+      "bytes": 873,
+      "sha256": "bfd092463b3c22a6cef87edcbfe0d3c842df06b9fb35ccbb28c1db23ff538574"
     },
     "_work/rescreen_20261002/preprocess_citeseq_hao.py": {
-      "bytes": 10061,
-      "sha256": "ecd03fec25906e71deb4ecc3446c359a0b922bde1da526791bdab99853fa9211"
+      "bytes": 10484,
+      "sha256": "917a5ccdfbb9b44b63f5fc32708c003074086e04f7164c35b4cdad29ea880b23"
     },
     "_work/rescreen_20261002/priority_identity_qc.py": {
       "bytes": 3785,
@@ -1102,8 +1102,8 @@
       "sha256": "7c6d32b5887c726637e2feae0d567806c89cbe83ff87e1939b7ddd8cb57903f8"
     },
     "_work/rescreen_20261002/run_build.py": {
-      "bytes": 682,
-      "sha256": "f63bad40aea4a6b0dc86a484a7711bbb9c662910bf03529e271f6e318b5456d3"
+      "bytes": 534,
+      "sha256": "80ece67b9f130cf396a87c26fc8ed220f454a0802097ade3fb8d0435fcbc0c4e"
     },
     "_work/rescreen_20261002/run_distribution_pilots.py": {
       "bytes": 1935,
@@ -1597,6 +1597,10 @@
       "bytes": 15182,
       "sha256": "b9be5bfe943614e08f18cc805ebaa6e1a5650c0ca455d3d4d2b3aacf1dbec0cc"
     },
+    "reproduce/build_inputs.py": {
+      "bytes": 11194,
+      "sha256": "b999b7ee10d21d1d3a93c6b7f7a07a02325052c3840ba158aeef054b16766365"
+    },
     "reproduce/check_model_loading.py": {
       "bytes": 2368,
       "sha256": "695630f952e43f430e04633e1777d402e31044ec9d667f49eaa4bae2ac9054f8"
@@ -1612,6 +1616,54 @@
     "reproduce/download_checkpoints.py": {
       "bytes": 3392,
       "sha256": "db0e770a04fd28c1437688d63daa1634e4671d35775827b0d897629d0c97169a"
+    },
+    "reproduce/export_mb2025.R": {
+      "bytes": 1272,
+      "sha256": "909f9ba40730e0a61c5d3e48091a2de1de5eb371d82276f217c52f59d7e51cdb"
+    },
+    "reproduce/input_resources/GSE178265_human_meta.json": {
+      "bytes": 48919,
+      "sha256": "7b5557099b29ea2ed802b1ddce591d2653a0dfa94f49e78efe459009801e7822"
+    },
+    "reproduce/input_resources/GSE178265_sn_donor_split_v1.json": {
+      "bytes": 981,
+      "sha256": "9e97e463c7c6674d510c2cbcff1dfbf56a96ba2678176ddc34d545dbdf754e1a"
+    },
+    "reproduce/input_resources/GSE223138_human_meta.json": {
+      "bytes": 1781,
+      "sha256": "3730518e32dede3f2ffccb9756642682a810ac312f78fab5f02292017b62930b"
+    },
+    "reproduce/input_resources/hgnc_complete_set.txt.gz": {
+      "bytes": 4057191,
+      "sha256": "2fcd3976294cd469633ff8df045922bd91d6a86a8fdbfa26685f7b6c84a6ec5e"
+    },
+    "reproduce/input_resources/hgnc_source.json": {
+      "bytes": 176,
+      "sha256": "25bc5ca57b4b36e01bd3ee803f899073b24c370335b0661cf55393cfac0ce24e"
+    },
+    "reproduce/input_resources/purification/b223_blood_myeloid.csv": {
+      "bytes": 598294,
+      "sha256": "2be5a5b4915e67dd7bd35f852ee33c736d72564de47f80bccf5509b21281a82b"
+    },
+    "reproduce/input_resources/purification/bmb_blood_myeloid.csv": {
+      "bytes": 1845371,
+      "sha256": "59cecb6c038ea81fdfae6950093c4f98364cf7ee2c616781df1f34c9e9668609"
+    },
+    "reproduce/input_resources/purification/c178_brain_astro.csv": {
+      "bytes": 1043134,
+      "sha256": "02a38758e77e06f0e053ce472b247e9551bf3801d096ac9164e4f1439a5f59ae"
+    },
+    "reproduce/input_resources/purification/c178_brain_microglia.csv": {
+      "bytes": 652507,
+      "sha256": "ffd213726b55912ac48158bd46c59c36f81ced7f3f5e2d3f81ef8b5c4fd9590b"
+    },
+    "reproduce/input_resources/purification/purification_report.json": {
+      "bytes": 10722,
+      "sha256": "86c36c14d78d1f4223910fe32a4dc005576569b0b1105ff157c3c11aba7b3006"
+    },
+    "reproduce/input_sources.json": {
+      "bytes": 15995,
+      "sha256": "0f26d06954a7a01c02838b4156fa9122427d389ff288051aa903d283043af894"
     },
     "reproduce/inputs/benchmark_contrasts.npz": {
       "bytes": 4065760,
@@ -1641,6 +1693,10 @@
       "bytes": 8443,
       "sha256": "71c8e1b3686f55b17c397579cd07b65e2ffc5793175b319e4d7cbf59255717ae"
     },
+    "reproduce/requirements-inputs.txt": {
+      "bytes": 118,
+      "sha256": "932ac5561a61276c444714a924dbd2df743bc0ae9c564e864903d234649b7dea"
+    },
     "reproduce/requirements-numerical.txt": {
       "bytes": 112,
       "sha256": "db078b2b2ec21d821f90131bb6c5dbbdfa92429ef8db154db0ef47611ca460f0"
@@ -1650,8 +1706,12 @@
       "sha256": "d431f4c783e1aa197f02ae0a7f6d37b9c12d6d9c522f91402b42f64a9d8145c1"
     },
     "reproduce/validation_20261027.json": {
-      "bytes": 2193,
-      "sha256": "7550f7de54b75d9b9930561021977883748aa00beb17485e0f440d9d40e31548"
+      "bytes": 6856,
+      "sha256": "2b1b4576d71673c398c951488cda1aac0a56f72d699ffd8e496f1ce9cd02c82e"
+    },
+    "reproduce/verify_inputs.py": {
+      "bytes": 1840,
+      "sha256": "831197dbd5075272b01cd7cf2f1d802c5dea1cbdb6aa38f466f49d18c59ee611"
     },
     "reproduce/verify_manifest.py": {
       "bytes": 849,
@@ -4189,5 +4249,6 @@
       "bytes": 17703,
       "sha256": "0cccc92ab54c7e1214110810d50d23cedfe0780ee23780bbc9db482cd19c4155"
     }
-  }
+  },
+  "maintenance_revision": "input-rebuild-20261027"
 }

@@ -1,0 +1,45 @@
+{
+  "donors": {
+    "SN-1963": "train",
+    "SN-2142": "locked_test",
+    "SN-2544": "train",
+    "SN-2561": "calibration",
+    "SN-2569": "model_selection",
+    "SN-3298": "locked_test",
+    "SN-3322": "locked_test",
+    "SN-3345": "calibration",
+    "SN-3346": "train",
+    "SN-3482": "train",
+    "SN-3873": "train",
+    "SN-3887": "train",
+    "SN-4560": "train",
+    "SN-4568": "locked_test",
+    "SN-4775": "locked_test",
+    "SN-4956": "model_selection",
+    "SN-5610": "train",
+    "SN-6173": "train"
+  },
+  "meta": {
+    "condition_counts": {
+      "Ctrl": 8,
+      "Disease": 10
+    },
+    "condition_key": "condition",
+    "dataset": "GSE178265",
+    "excluded_donors": [
+      "CN-3839",
+      "CN-3898",
+      "CN-4340",
+      "CN-5730"
+    ],
+    "n_donors": 18,
+    "ratios": {
+      "calibration": 0.15,
+      "locked_test": 0.15,
+      "model_selection": 0.15,
+      "train": 0.55
+    },
+    "scope": "SN donors only; caudate donors excluded",
+    "seed": 42
+  }
+}

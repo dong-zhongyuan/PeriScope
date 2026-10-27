@@ -1,6 +1,7 @@
 """Read counts without loading duplicate h5ad layers; fixed donor splits."""
 from pathlib import Path
 import json
+import os
 import h5py
 import anndata as ad
 from anndata.experimental import read_elem, sparse_dataset
@@ -8,9 +9,24 @@ import numpy as np
 import pandas as pd
 from scipy import sparse
 
-A = Path('/public/home/mengxl/dzy/pd_product_assets')
-ROOT = A / 'interim/rescreen_20261002'
-REPORT = json.loads((A / 'interim/ccwm_v23/build_report.json').read_text())
+A = Path(os.environ.get('PERISCOPE_ASSET_ROOT', '/public/home/mengxl/dzy/pd_product_assets'))
+RESOURCES = Path(__file__).resolve().parents[2] / 'reproduce/input_resources'
+# A fresh checkout must not require an earlier, unrelated build report.
+REPORT = {
+    'inputs': {key: {'path': str(A / path)} for key, path in {
+        'brain': 'processed/gse178265/v0.1/GSE178265_sn_annotated.h5ad',
+        'blood223': 'processed/gse223138/v0.1/GSE223138_pbmc_annotated.h5ad',
+        'bloodmb': 'processed/moquin_beaudry2025/v0.1/MB2025_pbmc_annotated.h5ad',
+    }.items()},
+    'purify_dir': str(RESOURCES / 'purification'),
+    'out_dir': str(A / 'interim/rescreen_20261002'),
+    'cite_raw_dir': str(A / 'raw/citeseq_hao'),
+}
+REPORT['inputs']['split'] = {'path': str(RESOURCES / 'GSE178265_sn_donor_split_v1.json')}
+if os.environ.get('PERISCOPE_INPUT_CONFIG'):
+    REPORT = json.loads(Path(os.environ['PERISCOPE_INPUT_CONFIG']).read_text())
+ROOT = Path(REPORT['out_dir'])
+HGNC = RESOURCES / 'hgnc_complete_set.txt.gz'
 BRAIN_VAL = ['SN-2569', 'SN-4956']
 BLOOD_VAL = ['b223:BL-E2', 'b223:BL-N2', 'bmb:CTRL2', 'bmb:PD2']
 BLOOD_TEST = ['bmb:CTRL1', 'bmb:PD1']
@@ -26,7 +42,7 @@ _HGNC_RENAME = None
 def canonical_symbols(values):
     global _HGNC_RENAME
     if _HGNC_RENAME is None:
-        h=pd.read_csv(Path(__file__).parent/'reference/hgnc_complete_set.txt',sep='\t',dtype=str).fillna('')
+        h=pd.read_csv(HGNC,sep='\t',dtype=str).fillna('')
         approved=set(h.symbol);previous={}
         for _,r in h.iterrows():
             for old in r.prev_symbol.split('|'):

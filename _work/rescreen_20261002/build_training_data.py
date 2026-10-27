@@ -12,6 +12,7 @@ NPZ files, together with gene order, center vectors, donor metadata and report.
 import argparse
 import hashlib
 import json
+import shlex
 import sys
 from pathlib import Path
 
@@ -110,9 +111,9 @@ def main() -> int:
     VOCAB = load_state_vocab(args.purify_dir)
 
     manifest = new_run_manifest(
-        "ccwm-build-training-data-v12",
-        approved_scope="CCWM prereg v1.2 fine-state strata (a9e73a1)",
-        command="python scripts/step1_world_model/ccwm/build_training_data.py",
+        "rescreen-input-build",
+        approved_scope="Rebuild frozen rescreen_20261002 model inputs with the amended preparation recipe",
+        command=shlex.join([sys.executable, *sys.argv]),
     )
     write_run_manifest(manifest, args.run_dir)
 
