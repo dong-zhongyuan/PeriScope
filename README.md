@@ -44,7 +44,7 @@ python -m pip install torch==2.5.1
 python reproduce/check_model_loading.py --models /absolute/path/to/periscope_models
 ```
 
-The downloader verifies both the archive and every checkpoint against the scientific model registry. The second command sequence tests strict checkpoint loading and a small synthetic CPU inference. For the original analysis directory layout, use an output path ending in `pd_product_assets/results/optimization_20261003/models`.
+The downloader joins three release parts and verifies each part, the complete archive and every checkpoint against the scientific model registry. The second command sequence tests strict checkpoint loading and a small synthetic CPU inference. For the original analysis directory layout, use an output path ending in `pd_product_assets/results/optimization_20261003/models`.
 
 Discovery uses seeds **42–46** and confirmation **47–51**. The repaired 47–49 checkpoints are part of that ten-model set. They are distinct from the **42–44** models used in the three-run human comparison. Gene and protein vocabularies, centering metadata and state labels are provided in `reproduce/inputs/`.
 

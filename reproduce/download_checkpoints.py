@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import shutil
 import tarfile
 import tempfile
 import urllib.request
@@ -37,8 +38,15 @@ def main():
     with tempfile.TemporaryDirectory(prefix="periscope-download-") as temp:
         archive = args.archive.expanduser().resolve() if args.archive else Path(temp) / "models.tar.gz"
         if not args.archive:
-            print("Downloading", manifest["url"], flush=True)
-            urllib.request.urlretrieve(manifest["url"], archive)
+            with archive.open("wb") as joined:
+                for part in manifest["parts"]:
+                    print("Downloading", part["url"], flush=True)
+                    downloaded = Path(temp) / part["name"]
+                    urllib.request.urlretrieve(part["url"], downloaded)
+                    if downloaded.stat().st_size != part["bytes"] or digest(downloaded) != part["sha256"]:
+                        raise SystemExit(f"Archive part hash mismatch: {part['name']}")
+                    with downloaded.open("rb") as source:
+                        shutil.copyfileobj(source, joined)
         if archive.stat().st_size != manifest["bytes"] or digest(archive) != manifest["sha256"]:
             raise SystemExit("Archive size or SHA-256 mismatch")
         with tarfile.open(archive, "r:gz") as tar:

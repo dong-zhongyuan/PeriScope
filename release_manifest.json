@@ -10,12 +10,12 @@
       "sha256": "c11159fe219ec0ecc9c0b0e78bae3f8e7ad4269925fdbcdf388130e35b664748"
     },
     "README.md": {
-      "bytes": 9165,
-      "sha256": "20885f9fc4839faac7130c92f75702a1b2620232638e4d378b1d105913720cd3"
+      "bytes": 9210,
+      "sha256": "7152f1121ec00f80b9046bb3096f5ac999636c827aa77ee21e33c38b35320158"
     },
     "REPRODUCIBILITY.md": {
-      "bytes": 10697,
-      "sha256": "08b6b699a4daf7ae97ef057dca63df2fe6cbcee37c1192b7a4eb39370ef65820"
+      "bytes": 10747,
+      "sha256": "243190482044ce0439924eda22d3d1de3f861ab6de80f8873c96aca9187620f4"
     },
     "_work/benchmark_20261002/expansion_protocol.txt": {
       "bytes": 1836,
@@ -1602,16 +1602,16 @@
       "sha256": "695630f952e43f430e04633e1777d402e31044ec9d667f49eaa4bae2ac9054f8"
     },
     "reproduce/checkpoint_release.json": {
-      "bytes": 1280,
-      "sha256": "6cd40f7bc8b9b8aeb37168fb64cd19c5ac25073c09ba8f71d9af58f420f80c05"
+      "bytes": 2198,
+      "sha256": "764b047a263e9c890c92023fdb531c4c760d3c103848f050b528c8ec6433c43b"
     },
     "reproduce/configure_paths.py": {
       "bytes": 2204,
       "sha256": "0312b17abf0fb69910122dcfaead8771e17ac4bdbfb8f90a0324cf47f79f8a23"
     },
     "reproduce/download_checkpoints.py": {
-      "bytes": 2902,
-      "sha256": "f31abc514d0aacac04fec2f8113d3184ea018e160e4edd553fee396e57c9f124"
+      "bytes": 3392,
+      "sha256": "db0e770a04fd28c1437688d63daa1634e4671d35775827b0d897629d0c97169a"
     },
     "reproduce/inputs/benchmark_contrasts.npz": {
       "bytes": 4065760,

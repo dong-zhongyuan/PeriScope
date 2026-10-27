@@ -61,7 +61,7 @@ python -m pip install torch==2.5.1
 python reproduce/check_model_loading.py --models /absolute/path/to/periscope_models
 ```
 
-`reproduce/checkpoint_release.json` specifies the public release asset, size, SHA-256 and expected members. The downloader verifies all ten checkpoint hashes against `results/optimization_20261003/model_registry.json` before extraction. It can also verify a local download using `--archive /path/to/periscope-models-seeds42-51.tar.gz`.
+`reproduce/checkpoint_release.json` specifies the three public release parts, their sizes and SHA-256 hashes, the complete archive hash and expected members. The downloader verifies all ten checkpoint hashes against `results/optimization_20261003/model_registry.json` before extraction. It can also verify a local download using `--archive /path/to/periscope-models-seeds42-51.tar.gz`.
 
 The model-loading check imports the preserved implementation, strictly loads every state dictionary, checks the feature/context dimensions, and runs a synthetic blood-to-brain forward calculation on CPU. It checks software compatibility; it is not a scientific performance evaluation. The archive contains model parameters/configuration, not the complete training matrices or every comparator checkpoint.
 
