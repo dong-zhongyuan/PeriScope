@@ -1,0 +1,13 @@
+# Direct cp of copied_grouped.R; retain and edit only the annotated donor heatmap.
+draw_spatial_heatmap<-function(){
+f<-rd('spatial_heat_scores');v<-rd('spatial_heat_annotation');oo<-v$combo
+dm<-unique(f[,c('donor','condition')]);dm<-dm[order(factor(dm$condition,c('Control','PD')),dm$donor),];M<-matrix(NA,length(oo),nrow(dm),dimnames=list(oo,dm$donor));for(i in 1:nrow(f))M[f$combo[i],f$donor[i]]<-f$score[i]
+stopifnot(!anyNA(M));status<-function(q)ifelse(is.na(q),'Not tested',ifelse(q<=.05,'Pass','No pass'));statuscols<-c(Pass='#398b82','No pass'='#d4d9dc','Not tested'='#e4b75e');lg<-list(labels_gp=gpar(fontsize=12),title_gp=gpar(fontsize=12,fontface='bold'))
+e<-rd('spatial_candidates');e<-e[match(oo,e$combo),]
+anno<-rowAnnotation(Perturbation=status(e$q_gene_decoy),`Matched brain`=status(e$matched_brain_q),`Fibrous astro`=status(v$spatial_q),col=list(Perturbation=statuscols,`Matched brain`=statuscols,`Fibrous astro`=statuscols),simple_anno_size=unit(4,'mm'),annotation_name_gp=gpar(fontsize=12),annotation_name_rot=90,show_legend=c(TRUE,FALSE,FALSE),annotation_legend_param=list(Perturbation=c(list(title='Evidence status'),lg)))
+top<-HeatmapAnnotation(Condition=dm$condition,col=list(Condition=c(Control='#398f9f',PD='#c55c61')),annotation_name_gp=gpar(fontsize=12),annotation_legend_param=list(Condition=lg))
+mx<-ceiling(max(abs(M)));hm<-Heatmap(M,name='Program score',col=colorRamp2(c(-mx,0,mx),c('#286b99','#fbfbfb','#b54458')),top_annotation=top,right_annotation=anno,row_labels=short(oo),row_names_gp=gpar(fontsize=12),column_names_gp=gpar(fontsize=12),column_names_rot=45,column_split=factor(dm$condition,c('Control','PD')),cluster_column_slices=FALSE,column_title=NULL,cluster_rows=TRUE,clustering_method_rows='complete',clustering_method_columns='complete',row_dend_width=unit(9,'mm'),column_dend_height=unit(7,'mm'),row_names_max_width=unit(58,'mm'),heatmap_legend_param=c(list(at=c(-mx,0,mx)),lg))
+
+ id<-'6c';pdf(file.path(BUILD,paste0(id,'.pdf')),width=4*U,height=2*U,family='Helvetica',useDingbats=FALSE);draw(hm,padding=unit(c(4,4,7,4),'mm'),merge_legends=TRUE);letter(id);dev.off();manifest[[id]]<<-list(id=id,units_x=4,units_y=2,width_in=4*U,height_in=2*U,width_px=6000,height_px=3000,base_unit_px=1500)
+ write.csv(M,file.path(DATA,'spatial_heat_exact_matrix.csv'));write_json(list(row_distance='Euclidean',column_distance='Euclidean within condition',linkage='complete',standardization='unchanged pipeline donor program score; no display-wise renormalization',row_order=rownames(M)[hclust(dist(M),method='complete')$order]),file.path(DATA,'spatial_heat_clustering.json'),auto_unbox=TRUE,pretty=TRUE)
+}

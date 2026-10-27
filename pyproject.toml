@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pdproduct"
 version = "0.1.0"
-description = "pd_product: PD blood-protein to brain-gene intervention model track (CCWM equilibrium simulator); platform components copied from pd_bbm"
+description = "PeriScope: a blood-brain world model for cross-tissue therapeutic target analysis"
 requires-python = ">=3.10"
 dependencies = [
     "pyyaml>=6",

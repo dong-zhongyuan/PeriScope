@@ -1,0 +1,534 @@
+[
+  {
+    "path": "scMOBA_R_1to1/run.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/run.R",
+    "backup_sha256": "b1c2460c45eecb7cbc57921ad5732fdd6c60e7c0c916017f5c4dbba018773c62",
+    "current_sha256": "b1c2460c45eecb7cbc57921ad5732fdd6c60e7c0c916017f5c4dbba018773c62",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/R/render_native.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/R/render_native.R",
+    "backup_sha256": "cef167b905a3f85079d22e2f0712a3e83b343c083b7e6a3f481aae72d498087f",
+    "current_sha256": "cef167b905a3f85079d22e2f0712a3e83b343c083b7e6a3f481aae72d498087f",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/R/calibrated_panels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/R/calibrated_panels.R",
+    "backup_sha256": "e89fe4c328bd6b529bb1bd5984caeaad3a3d3163dad5ee40130457eb02342bbe",
+    "current_sha256": "e89fe4c328bd6b529bb1bd5984caeaad3a3d3163dad5ee40130457eb02342bbe",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/R/base_supplement.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/R/base_supplement.R",
+    "backup_sha256": "d0113660b844fed0bb2f00fb3608d2a9fa7f43098dc88d4a7c24b125cde827b0",
+    "current_sha256": "d0113660b844fed0bb2f00fb3608d2a9fa7f43098dc88d4a7c24b125cde827b0",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/R/fig4_corrections.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/R/fig4_corrections.R",
+    "backup_sha256": "2244b42c87387165ad8f0e413938066d5a33ac9e000c5d00c7419123bc646956",
+    "current_sha256": "2244b42c87387165ad8f0e413938066d5a33ac9e000c5d00c7419123bc646956",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/R/base_main.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/R/base_main.R",
+    "backup_sha256": "3aeb3c35fc47de519339b827e02dc47d395dad408f12da7e6a7ea30c29b903e0",
+    "current_sha256": "3aeb3c35fc47de519339b827e02dc47d395dad408f12da7e6a7ea30c29b903e0",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/R/base_helpers.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/R/base_helpers.R",
+    "backup_sha256": "80796edb184cabca51126365dcae8a45f36dafabb91eebe263eb15bab830437f",
+    "current_sha256": "80796edb184cabca51126365dcae8a45f36dafabb91eebe263eb15bab830437f",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/refine_annotations.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/refine_annotations.py",
+    "backup_sha256": "f6b009007cf32543ce5ddbf24f11312be69d1a57775aae4dd013537c1985108c",
+    "current_sha256": "f6b009007cf32543ce5ddbf24f11312be69d1a57775aae4dd013537c1985108c",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/finish_geometry.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/finish_geometry.py",
+    "backup_sha256": "428cf3ec8a5e190d0c5a1c79d9abfc326f954e8644dd98e461bf5965a2e2bc9d",
+    "current_sha256": "428cf3ec8a5e190d0c5a1c79d9abfc326f954e8644dd98e461bf5965a2e2bc9d",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/prepare_digitization.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/prepare_digitization.py",
+    "backup_sha256": "afe8d72ceb0ef31a876f26a5a93e73cff5568820d6197043426b9fae21a592fd",
+    "current_sha256": "afe8d72ceb0ef31a876f26a5a93e73cff5568820d6197043426b9fae21a592fd",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/prepare_references.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/prepare_references.py",
+    "backup_sha256": "952c38e1267f8a8c759387421a7dcc2fe1f6f3794d21ff96aded173108282fed",
+    "current_sha256": "952c38e1267f8a8c759387421a7dcc2fe1f6f3794d21ff96aded173108282fed",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/build_deliverables.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/build_deliverables.py",
+    "backup_sha256": "26f02c10591b3fefc37dc285c5222b917d369a80899d61a40f6ff7f0f5dde836",
+    "current_sha256": "26f02c10591b3fefc37dc285c5222b917d369a80899d61a40f6ff7f0f5dde836",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/augment_data.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/augment_data.py",
+    "backup_sha256": "51b3c7ec5b9550c16075e26e66fd958e191754ea3af1be88a5db8e2ade05e51b",
+    "current_sha256": "51b3c7ec5b9550c16075e26e66fd958e191754ea3af1be88a5db8e2ade05e51b",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/correct_matrices.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/correct_matrices.py",
+    "backup_sha256": "637fd0e2e0d2199eb24f3511729fca83d106cae7f4871891aa620ca6afc57d06",
+    "current_sha256": "637fd0e2e0d2199eb24f3511729fca83d106cae7f4871891aa620ca6afc57d06",
+    "same": true
+  },
+  {
+    "path": "scMOBA_R_1to1/finalize_labels.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/scMOBA_R_1to1/finalize_labels.py",
+    "backup_sha256": "420f1fb55f57a7d9e593f5e4561571cc1a3b39ca81410e67bdf3cbb96105090f",
+    "current_sha256": "420f1fb55f57a7d9e593f5e4561571cc1a3b39ca81410e67bdf3cbb96105090f",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/round2_panels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/round2_panels.R",
+    "backup_sha256": "1e00fd5f10d636deaef4c688c27f2bdd7c61392af13ebbce20c0915886ca9301",
+    "current_sha256": "1e00fd5f10d636deaef4c688c27f2bdd7c61392af13ebbce20c0915886ca9301",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/fix_sinkhorn_labels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/fix_sinkhorn_labels.R",
+    "backup_sha256": "e14f6c4a1341c592ee2e4ee2f3f6ad45d155f9ac2d507dcbe973a918fd4ddc05",
+    "current_sha256": "e14f6c4a1341c592ee2e4ee2f3f6ad45d155f9ac2d507dcbe973a918fd4ddc05",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/map_spatial.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/map_spatial.R",
+    "backup_sha256": "a8dd204ec3a488e06945c62d7a3e9f6157120d2875da03ed9b5b3ec2793c029e",
+    "current_sha256": "a8dd204ec3a488e06945c62d7a3e9f6157120d2875da03ed9b5b3ec2793c029e",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/enhance_sinkhorn_runs.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/enhance_sinkhorn_runs.R",
+    "backup_sha256": "e6b11bac5f51e92e09bf3315e7e8232a2d20c8c4484b612f9c1af4ea3ead6c39",
+    "current_sha256": "e6b11bac5f51e92e09bf3315e7e8232a2d20c8c4484b612f9c1af4ea3ead6c39",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/embedding.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/embedding.R",
+    "backup_sha256": "2b739e9cbe7f8be4808a2b767de4842fb0d3e7074544a0414041d6c570d6e790",
+    "current_sha256": "2b739e9cbe7f8be4808a2b767de4842fb0d3e7074544a0414041d6c570d6e790",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/render.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/render.R",
+    "backup_sha256": "826fed237ffcca85a537813b9373738d80d66ad2d6527f76e682f96fb3ce572f",
+    "current_sha256": "826fed237ffcca85a537813b9373738d80d66ad2d6527f76e682f96fb3ce572f",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/original/render_native.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/original/render_native.R",
+    "backup_sha256": "cef167b905a3f85079d22e2f0712a3e83b343c083b7e6a3f481aae72d498087f",
+    "current_sha256": "cef167b905a3f85079d22e2f0712a3e83b343c083b7e6a3f481aae72d498087f",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/original/calibrated_panels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/original/calibrated_panels.R",
+    "backup_sha256": "e89fe4c328bd6b529bb1bd5984caeaad3a3d3163dad5ee40130457eb02342bbe",
+    "current_sha256": "e89fe4c328bd6b529bb1bd5984caeaad3a3d3163dad5ee40130457eb02342bbe",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/original/base_supplement.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/original/base_supplement.R",
+    "backup_sha256": "d0113660b844fed0bb2f00fb3608d2a9fa7f43098dc88d4a7c24b125cde827b0",
+    "current_sha256": "d0113660b844fed0bb2f00fb3608d2a9fa7f43098dc88d4a7c24b125cde827b0",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/original/fig4_corrections.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/original/fig4_corrections.R",
+    "backup_sha256": "2244b42c87387165ad8f0e413938066d5a33ac9e000c5d00c7419123bc646956",
+    "current_sha256": "2244b42c87387165ad8f0e413938066d5a33ac9e000c5d00c7419123bc646956",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/original/base_main.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/original/base_main.R",
+    "backup_sha256": "3aeb3c35fc47de519339b827e02dc47d395dad408f12da7e6a7ea30c29b903e0",
+    "current_sha256": "3aeb3c35fc47de519339b827e02dc47d395dad408f12da7e6a7ea30c29b903e0",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/original/base_helpers.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/original/base_helpers.R",
+    "backup_sha256": "80796edb184cabca51126365dcae8a45f36dafabb91eebe263eb15bab830437f",
+    "current_sha256": "80796edb184cabca51126365dcae8a45f36dafabb91eebe263eb15bab830437f",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/copied/render_native.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/copied/render_native.R",
+    "backup_sha256": "f34a4a97f2c928e28624dcc3c6038e8a8a82f9bc65270ffaaddf21a2fdd1eb48",
+    "current_sha256": "f34a4a97f2c928e28624dcc3c6038e8a8a82f9bc65270ffaaddf21a2fdd1eb48",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/copied/calibrated_panels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/copied/calibrated_panels.R",
+    "backup_sha256": "6972b13ab120ac5e5a9ce58d93362ae085a7c796be76d69c299452eedcbe9af4",
+    "current_sha256": "6972b13ab120ac5e5a9ce58d93362ae085a7c796be76d69c299452eedcbe9af4",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/copied/base_supplement.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/copied/base_supplement.R",
+    "backup_sha256": "9b71bc8074c671eddb97c6b0d4d581468002e9dde75c02da97cca141960d8036",
+    "current_sha256": "9b71bc8074c671eddb97c6b0d4d581468002e9dde75c02da97cca141960d8036",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/copied/fig4_corrections.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/copied/fig4_corrections.R",
+    "backup_sha256": "2244b42c87387165ad8f0e413938066d5a33ac9e000c5d00c7419123bc646956",
+    "current_sha256": "2244b42c87387165ad8f0e413938066d5a33ac9e000c5d00c7419123bc646956",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/copied/base_main.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/copied/base_main.R",
+    "backup_sha256": "e97184aad420e0f01f922c7feff2d44bdb1663604a7422496be9673817c0e5f5",
+    "current_sha256": "e97184aad420e0f01f922c7feff2d44bdb1663604a7422496be9673817c0e5f5",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/R/copied/base_helpers.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/R/copied/base_helpers.R",
+    "backup_sha256": "a2a53ae8a084fa692823d78cea265e93ae66728e1572c6b78b8274f1eddb3c56",
+    "current_sha256": "a2a53ae8a084fa692823d78cea265e93ae66728e1572c6b78b8274f1eddb3c56",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/before_1A_layer_fix/render.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/before_1A_layer_fix/render.R",
+    "backup_sha256": "5067d57fb7cd184a453de1acfc3031acd7312c8cf748a0da8d442c20ba89c914",
+    "current_sha256": "5067d57fb7cd184a453de1acfc3031acd7312c8cf748a0da8d442c20ba89c914",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/inputs/spatial_mapping/visium_row_col.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/inputs/spatial_mapping/visium_row_col.R",
+    "backup_sha256": "c3ca8967186d0d86f1e3f0dba8096cb0053d5bb9b1f4203c113053b65bd8f787",
+    "current_sha256": "c3ca8967186d0d86f1e3f0dba8096cb0053d5bb9b1f4203c113053b65bd8f787",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/build_delivery.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/build_delivery.py",
+    "backup_sha256": "1a7c2d49f373013bef76140ced25418c8f2f9e3d34ace07c6050e180910a1371",
+    "current_sha256": "1a7c2d49f373013bef76140ced25418c8f2f9e3d34ace07c6050e180910a1371",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/package_delivery.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/package_delivery.py",
+    "backup_sha256": "1a7c2d49f373013bef76140ced25418c8f2f9e3d34ace07c6050e180910a1371",
+    "current_sha256": "1a7c2d49f373013bef76140ced25418c8f2f9e3d34ace07c6050e180910a1371",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/verify_delivery.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/verify_delivery.py",
+    "backup_sha256": "da94d95b8fe12bc09f827b160f8bc8d3da24fee796bba44eb1b0f29061410471",
+    "current_sha256": "da94d95b8fe12bc09f827b160f8bc8d3da24fee796bba44eb1b0f29061410471",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/extract_readonly.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/extract_readonly.py",
+    "backup_sha256": "70e420c2f6035f56a8a0517ca8cd0b137840eada13343b888c070774d49ee114",
+    "current_sha256": "70e420c2f6035f56a8a0517ca8cd0b137840eada13343b888c070774d49ee114",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/extract_spatial_readonly.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/extract_spatial_readonly.py",
+    "backup_sha256": "ffc3eb6e9d8822941555f093586b7bd7b82f883816e12b529847d3c46c4eff6f",
+    "current_sha256": "ffc3eb6e9d8822941555f093586b7bd7b82f883816e12b529847d3c46c4eff6f",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/update_round2_delivery.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/update_round2_delivery.py",
+    "backup_sha256": "22623dbf5af77c7c6d64e95f80c46020597b523ef29e909470b5d85c449b62bc",
+    "current_sha256": "22623dbf5af77c7c6d64e95f80c46020597b523ef29e909470b5d85c449b62bc",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/extract_independent_validation.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/extract_independent_validation.py",
+    "backup_sha256": "9c0f1653e43a6f6bbb15d23438f0c7fbf9c72801fe7a805a9a024b93a9d3df11",
+    "current_sha256": "9c0f1653e43a6f6bbb15d23438f0c7fbf9c72801fe7a805a9a024b93a9d3df11",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/extract_annotation_audit.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/extract_annotation_audit.py",
+    "backup_sha256": "73e9cd10d3131ce91e73799de48995a7cca76a1bcd18e77bc7fd6e7c5ea8ce41",
+    "current_sha256": "73e9cd10d3131ce91e73799de48995a7cca76a1bcd18e77bc7fd6e7c5ea8ce41",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/extract_round2.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/extract_round2.py",
+    "backup_sha256": "2c9c8f164ec20f86c8c2794ae964d1c4275cc670aef8d790a9619b1047a5d251",
+    "current_sha256": "2c9c8f164ec20f86c8c2794ae964d1c4275cc670aef8d790a9619b1047a5d251",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/build_template_audit.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/build_template_audit.py",
+    "backup_sha256": "812ce31788a6dacdc3728aea1a4338696dfe5cd3adf360f25276b8d9dc851546",
+    "current_sha256": "812ce31788a6dacdc3728aea1a4338696dfe5cd3adf360f25276b8d9dc851546",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/extract_signature_sensitivity.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/extract_signature_sensitivity.py",
+    "backup_sha256": "dcc191652fe7c336a9b56c6669708aea18e25612afab65290650737d8bd6b833",
+    "current_sha256": "dcc191652fe7c336a9b56c6669708aea18e25612afab65290650737d8bd6b833",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/extract_age_latents.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/extract_age_latents.py",
+    "backup_sha256": "46f6db3467ffeca8726e5d8dfe5f45e0dc701d8b0b6f28efab19cf117985996c",
+    "current_sha256": "46f6db3467ffeca8726e5d8dfe5f45e0dc701d8b0b6f28efab19cf117985996c",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/edit_driver.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/edit_driver.py",
+    "backup_sha256": "f0540ee3149b3b0c33caad7209174eda745d08c213696ed5d44bfa2e567800cf",
+    "current_sha256": "f0540ee3149b3b0c33caad7209174eda745d08c213696ed5d44bfa2e567800cf",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/edit_copies.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/edit_copies.py",
+    "backup_sha256": "9d1bed0bafbad013a6c7220044af92748a7ad11ab8773ed58ec3d4d1d8c3c254",
+    "current_sha256": "9d1bed0bafbad013a6c7220044af92748a7ad11ab8773ed58ec3d4d1d8c3c254",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/template_semantic_review/audit/prepare_round2.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/template_semantic_review/audit/prepare_round2.py",
+    "backup_sha256": "b62e033fd142e8981b147d49db1d5068d062a08d514ad263bcebb2a48463011d",
+    "current_sha256": "b62e033fd142e8981b147d49db1d5068d062a08d514ad263bcebb2a48463011d",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/copied_grouped.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/copied_grouped.R",
+    "backup_sha256": "b67eaede1bda652b576c8020a6f20baab96e24ba4921641b60f77b4d2ffbc24d",
+    "current_sha256": "ad3bcda8c64e0d05008f2a0e975afd1cccfebbf670e81f6f2948ee7ffbbe2f7b",
+    "same": false
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/captured_render.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/captured_render.R",
+    "backup_sha256": "804943c681b478a9939369d73211124243ef59eff57601c6285891d278ff5ac4",
+    "current_sha256": "eb9e75d4d327480fffce6282cc0fe46799cfb64179311051e9ce9758e0bc18d7",
+    "same": false
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/render_grid.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/render_grid.R",
+    "backup_sha256": "7a7a60b3735d325a1bf39913266b6168395c0443676e7fbcb1884d4873ed2d4a",
+    "current_sha256": "0c4c8d783f0ba59a9128c762522c26672fdc0ec998e442338b4c0e7992e5c914",
+    "same": false
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/reused_base_helpers.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/reused_base_helpers.R",
+    "backup_sha256": "a2a53ae8a084fa692823d78cea265e93ae66728e1572c6b78b8274f1eddb3c56",
+    "current_sha256": "a2a53ae8a084fa692823d78cea265e93ae66728e1572c6b78b8274f1eddb3c56",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/umap_grid.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/umap_grid.R",
+    "backup_sha256": "f201bf42fcdde17f2cd4aeacb61fce33a9249ece5170586c153a7faa6e31aeec",
+    "current_sha256": "f201bf42fcdde17f2cd4aeacb61fce33a9249ece5170586c153a7faa6e31aeec",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/rings_grid.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/rings_grid.R",
+    "backup_sha256": "80242cb0459d08c26e3f78be076be71b1eae1f1f64a946f4bc1fd0452558a95d",
+    "current_sha256": "80242cb0459d08c26e3f78be076be71b1eae1f1f64a946f4bc1fd0452558a95d",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/round2_panels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/round2_panels.R",
+    "backup_sha256": "1e00fd5f10d636deaef4c688c27f2bdd7c61392af13ebbce20c0915886ca9301",
+    "current_sha256": "4773043efba005cd173bbd8439baee3c80836d3da072025b8caa27f7268e02d9",
+    "same": false
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/paths.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/paths.R",
+    "backup_sha256": "70a6b2191742c046712b328d8dc1f9ef8dde0d15c397407359b76f740ff85112",
+    "current_sha256": "70a6b2191742c046712b328d8dc1f9ef8dde0d15c397407359b76f740ff85112",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/reused_calibrated_panels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/reused_calibrated_panels.R",
+    "backup_sha256": "6972b13ab120ac5e5a9ce58d93362ae085a7c796be76d69c299452eedcbe9af4",
+    "current_sha256": "6972b13ab120ac5e5a9ce58d93362ae085a7c796be76d69c299452eedcbe9af4",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/additional_panels.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/additional_panels.R",
+    "backup_sha256": "8a2f5b57df0a0a22d6d74a32dcb1e59318f09b6d97159efb2a1ef94e4ecac816",
+    "current_sha256": "8a2f5b57df0a0a22d6d74a32dcb1e59318f09b6d97159efb2a1ef94e4ecac816",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/audit/rings_before_leaders.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/audit/rings_before_leaders.R",
+    "backup_sha256": "d95774b7b2f6220e9371ef2b4f9988f9b968973ec6ed4be7e844f4fdcc395945",
+    "current_sha256": "d95774b7b2f6220e9371ef2b4f9988f9b968973ec6ed4be7e844f4fdcc395945",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/audit/exploratory_not_in_main/additional_panels_initial.R",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/audit/exploratory_not_in_main/additional_panels_initial.R",
+    "backup_sha256": "602a58e32de79b5ccac337514701d52db111d8e0548678ddab28d1049f03a316",
+    "current_sha256": "602a58e32de79b5ccac337514701d52db111d8e0548678ddab28d1049f03a316",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/copied_workflow_design.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/copied_workflow_design.py",
+    "backup_sha256": "0370cba0214b8eab8873c1853c0b377dbba8fb8e9f92b16773ea89d947f4ad40",
+    "current_sha256": "23bf1cb612b5b00029f87bfdefbccc6da5e610229b5ecfa82abed9b1b7f787b1",
+    "same": false
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/workflow_grid.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/workflow_grid.py",
+    "backup_sha256": "ce631bbe751d78518365d55564c99a70f1714e0bbc085f10dab4822b31e1d848",
+    "current_sha256": "b023347035e875a0d9760da8adbc43feb117f974f599b42d67c503a3b1baa735",
+    "same": false
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/deliver_grid.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/deliver_grid.py",
+    "backup_sha256": "ef4d9299d9f2c6f9565bddb56057fa98506ab65b1ba6dbabe430e70206429246",
+    "current_sha256": "ef4d9299d9f2c6f9565bddb56057fa98506ab65b1ba6dbabe430e70206429246",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/prepare_additional_data.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/prepare_additional_data.py",
+    "backup_sha256": "d5d525edec542f59834f05760c1a10ecce7ed6b9dea32e069330c45eba5d183f",
+    "current_sha256": "d5d525edec542f59834f05760c1a10ecce7ed6b9dea32e069330c45eba5d183f",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/source/preview_grid.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/source/preview_grid.py",
+    "backup_sha256": "af25256215dbfe11de4933c6242f842cd4466f884cc756d7bbc95a6a14570626",
+    "current_sha256": "af25256215dbfe11de4933c6242f842cd4466f884cc756d7bbc95a6a14570626",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/ppt/source/embed_svg.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/ppt/source/embed_svg.py",
+    "backup_sha256": "0f91866308bf0b6b35debf42e9748585d8fdd01094981fe4705b5b5121e94d08",
+    "current_sha256": "0f91866308bf0b6b35debf42e9748585d8fdd01094981fe4705b5b5121e94d08",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/ppt/source/package_delivery.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/ppt/source/package_delivery.py",
+    "backup_sha256": "c7645416214319c6285af0753de329aabb906d75030b81b2c2542ce2cb98c0c9",
+    "current_sha256": "fe3df75a1a9daef9e2281753012fc617559556df282617da65f6672a8f40d459",
+    "same": false
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/ppt/source/validate_delivery.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/ppt/source/validate_delivery.py",
+    "backup_sha256": "48f2fe896e4396bd51ea717a734b730c6e43b81273f8d0da7791f7986c6fc53c",
+    "current_sha256": "48f2fe896e4396bd51ea717a734b730c6e43b81273f8d0da7791f7986c6fc53c",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/panel_grid/ppt/source/prepare.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/panel_grid/ppt/source/prepare.py",
+    "backup_sha256": "216e8cc1da380751c1854cb776e2fe998a91b71ac8bea13ac941c7400b01ddcd",
+    "current_sha256": "216e8cc1da380751c1854cb776e2fe998a91b71ac8bea13ac941c7400b01ddcd",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/workflow_panels_detailed/source/build_blender.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/workflow_panels_detailed/source/build_blender.py",
+    "backup_sha256": "676e8cc86fc54dadb0f3a63572572df89435cf2a3b49186c5dd2a14e9fc258f9",
+    "current_sha256": "676e8cc86fc54dadb0f3a63572572df89435cf2a3b49186c5dd2a14e9fc258f9",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/workflow_panels_detailed/source/design.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/workflow_panels_detailed/source/design.py",
+    "backup_sha256": "3b1afc849118e267dbdffa07e5cb563ba79c8c121338c798864c2c767e2d559c",
+    "current_sha256": "3b1afc849118e267dbdffa07e5cb563ba79c8c121338c798864c2c767e2d559c",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/workflow_panels_detailed/source/export_and_assemble.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/workflow_panels_detailed/source/export_and_assemble.py",
+    "backup_sha256": "22623dbf5af77c7c6d64e95f80c46020597b523ef29e909470b5d85c449b62bc",
+    "current_sha256": "22623dbf5af77c7c6d64e95f80c46020597b523ef29e909470b5d85c449b62bc",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/workflow_panels_detailed/source/biological_assets.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/workflow_panels_detailed/source/biological_assets.py",
+    "backup_sha256": "8a6dc1e6f2fffdfd498cd9c08e6eb98d1a1b5287003a9fdb67d524e15938cc5a",
+    "current_sha256": "8a6dc1e6f2fffdfd498cd9c08e6eb98d1a1b5287003a9fdb67d524e15938cc5a",
+    "same": true
+  },
+  {
+    "path": "pd_product_figure_design/workflow_panels_detailed/source/gallery.py",
+    "backup": "/Users/dawnmeng/Desktop/copy/project/pd_product_figure_design/workflow_panels_detailed/source/gallery.py",
+    "backup_sha256": "22623dbf5af77c7c6d64e95f80c46020597b523ef29e909470b5d85c449b62bc",
+    "current_sha256": "22623dbf5af77c7c6d64e95f80c46020597b523ef29e909470b5d85c449b62bc",
+    "same": true
+  }
+]

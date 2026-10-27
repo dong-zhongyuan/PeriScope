@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-27",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "numpy": "2.2.6",
+    "pandas": "2.3.2",
+    "scipy": "1.15.3",
+    "torch": "2.5.1"
+  },
+  "standard_library_checks": 33,
+  "fresh_base_R_MR": {
+    "selected_rows": 576,
+    "numeric_columns_compared": [
+      "sign",
+      "beta_MR",
+      "se_MR",
+      "se_second_order",
+      "p_MR",
+      "CI_low",
+      "CI_high",
+      "q_BH",
+      "F_exposure"
+    ],
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "passed": true
+  },
+  "nmi_recomputation": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "pandas": "2.3.2",
+    "scipy": "1.15.3",
+    "checks": [
+      {
+        "file": "mgap_allmethods.csv",
+        "rows": 14,
+        "matches_archive": true
+      },
+      {
+        "file": "mgap_matched.csv",
+        "rows": 7,
+        "matches_archive": true
+      },
+      {
+        "file": "donor_dependence.csv",
+        "rows": 8,
+        "matches_archive": true
+      },
+      {
+        "file": "mr_steiger.csv",
+        "rows": 48,
+        "matches_archive": true
+      },
+      {
+        "file": "ma_spatial_complement.csv",
+        "rows": 16,
+        "matches_archive": true
+      }
+    ],
+    "ma_recomputed": false,
+    "scope": "Statistics from frozen predictions, harmonized MR and donor pseudobulk inputs; no training or fresh spatial deconvolution."
+  },
+  "ma_pseudobulk_recomputation": {
+    "file": "ma_cohort_test.csv",
+    "rows": 22,
+    "matches_archive": true
+  },
+  "checkpoint_validation": {
+    "count": 10,
+    "registry": "results/optimization_20261003/model_registry.json",
+    "sha256_verified": true,
+    "strict_state_dict_loading": true,
+    "synthetic_CPU_inference": true,
+    "genes": 4741
+  },
+  "python_syntax_files": 337,
+  "credential_pattern_scan": "passed",
+  "not_executed": [
+    "fresh raw-data acquisition",
+    "GPU retraining",
+    "refitting all comparators",
+    "fresh spatial deconvolution",
+    "complete final figure rendering"
+  ],
+  "source_relocation": {
+    "separate_output": true,
+    "copied_results_and_inputs": true,
+    "nested_publication_root_corrected": true,
+    "relocated_python_syntax": "passed"
+  }
+}

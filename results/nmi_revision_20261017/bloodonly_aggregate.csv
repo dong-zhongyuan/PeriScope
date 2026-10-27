@@ -1,0 +1,12 @@
+condition,receiver,rho_ensemble,rho_per_seed_mean,n_seed_positive
+fixed_control,microglia_mhc2,-0.06130541246683683,-0.016629117922370353,4
+fixed_control,astro,-0.22947028816086237,-0.06891756278285807,4
+fixed_control,pooled,-0.1417588158000259,,-1
+fixed_PD,microglia_mhc2,7.296744208030575e-05,-0.006038086117529095,5
+fixed_PD,astro,-0.28214312982982204,-0.09456401639562047,2
+fixed_PD,pooled,-0.11779313390845324,,-1
+fixed_control_by_method,periscope,-0.1417588158000259,-0.22947028816086237,10
+fixed_control_by_method,conditional_mlp,-0.13122969752491767,-0.19901422444449748,3
+fixed_control_by_method,conditional_icnn,-0.16777889212022137,-0.24004715437312632,3
+fixed_control_by_method,ot_ridge,-0.018256443742256843,0.2076268181112015,3
+fixed_control_by_method,cellot,-0.017298803050805823,0.005189246863966567,3

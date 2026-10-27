@@ -1,0 +1,86 @@
+[
+  {
+    "source": "pd_product_figure_design/panel_grid/source/captured_render.R",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/render_current.R",
+    "copied_sha256": "eb9e75d4d327480fffce6282cc0fe46799cfb64179311051e9ce9758e0bc18d7",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/source/copied_grouped.R",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/annotated_heatmap.R",
+    "copied_sha256": "ad3bcda8c64e0d05008f2a0e975afd1cccfebbf670e81f6f2948ee7ffbbe2f7b",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/manuscript_review/optimization_20261003/evaluate_models.py",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/export_current.py",
+    "copied_sha256": "48e536555460d4e508aa8d679aec8221fd759be503e557588e2083fede5344e3",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/template_semantic_review/R/copied/base_helpers.R",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/R/base_helpers.R",
+    "copied_sha256": "a2a53ae8a084fa692823d78cea265e93ae66728e1572c6b78b8274f1eddb3c56",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/template_semantic_review/R/copied/base_supplement.R",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/R/base_supplement.R",
+    "copied_sha256": "9b71bc8074c671eddb97c6b0d4d581468002e9dde75c02da97cca141960d8036",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/template_semantic_review/R/copied/calibrated_panels.R",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/R/calibrated_panels.R",
+    "copied_sha256": "6972b13ab120ac5e5a9ce58d93362ae085a7c796be76d69c299452eedcbe9af4",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/manuscript_review/optimization_20261003/cell_state_validation.py",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/export_matched_donors.py",
+    "copied_sha256": "4d69a4c2ef5cce0255487ce4016c34d4cc7df62e76032b241a0df78de3bb3fb8",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/source/copied_workflow_design.py",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/workflow_primitives.py",
+    "copied_sha256": "23bf1cb612b5b00029f87bfdefbccc6da5e610229b5ecfa82abed9b1b7f787b1",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/source/workflow_grid.py",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/workflows_current.py",
+    "copied_sha256": "b023347035e875a0d9760da8adbc43feb117f974f599b42d67c503a3b1baa735",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/source/rings_grid.R",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/rings_grid.R",
+    "copied_sha256": "80242cb0459d08c26e3f78be076be71b1eae1f1f64a946f4bc1fd0452558a95d",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/source/umap_grid.R",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/umap_grid.R",
+    "copied_sha256": "f201bf42fcdde17f2cd4aeacb61fce33a9249ece5170586c153a7faa6e31aeec",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/ppt/source/build_ppt.mjs",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/ppt/source/build_ppt.mjs",
+    "copied_sha256": "7371ea41d5b917446d477f58a3e2a4c6e03669a61688344a885ea51258332502",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/ppt/source/embed_svg.py",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/ppt/source/embed_svg.py",
+    "copied_sha256": "0f91866308bf0b6b35debf42e9748585d8fdd01094981fe4705b5b5121e94d08",
+    "identical_before_edit": true
+  },
+  {
+    "source": "pd_product_figure_design/panel_grid/source/deliver_grid.py",
+    "copy": "pd_product_figure_design/manuscript_review/figure_redesign_20261004/source/deliver_current.py",
+    "copied_sha256": "ef4d9299d9f2c6f9565bddb56057fa98506ab65b1ba6dbabe430e70206429246",
+    "identical_before_edit": true
+  }
+]

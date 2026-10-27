@@ -1,0 +1,17 @@
+program,n,mean_DA_share,n_DA_dominant,t_DA_dominant,t_other,rho_t_vs_DAshare
+raw::CD71__cDC x microglia_mhc2__down,58,0.098,7,-0.43,-0.32,
+raw::CD71__classical_mono x microglia_mhc2__do,49,0.109,5,-0.78,-0.44,-0.24
+raw::CD71__nonclassical_mono x microglia_mhc2_,69,0.119,10,-0.97,-0.37,
+raw::CD71__pDC x microglia_mhc2__down,75,0.128,12,-0.55,-0.27,-0.23
+raw::CD71__pDC x astro__down,41,0.074,2,-0.41,-0.26,-0.04
+raw::CD71__nonclassical_mono x astro__down,95,0.082,7,-0.09,-0.28,0.08
+raw::CD22__cDC x microglia_mhc2__down,44,0.064,1,-1.43,-0.34,-0.37
+raw::CD22__pDC x astro__up,46,0.046,1,-0.09,-0.14,-0.14
+raw::CD40__cDC x astro__up,59,0.159,10,-0.31,-0.54,0.03
+raw::CD40__cDC x microglia_mhc2__up,57,0.155,11,-0.62,-0.54,-0.16
+raw::CD40__classical_mono x microglia_mhc2__up,67,0.122,11,-0.57,-0.39,-0.2
+raw::CD40__nonclassical_mono x microglia_mhc2_,62,0.149,13,-0.61,-0.59,-0.17
+raw::CD40__pDC x microglia_mhc2__up,69,0.154,14,-0.54,-0.46,-0.09
+relative::CD40__nonclassical_mono x astro__up,49,0.317,27,-0.82,-0.99,0.19
+raw::CD22__cDC x astro__up,42,0.041,0,,-0.16,-0.02
+relative::CD40__classical_mono x astro__up,34,0.293,14,-1.1,-0.64,-0.27

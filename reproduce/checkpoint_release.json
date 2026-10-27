@@ -1,0 +1,19 @@
+{
+  "tag": "nmi-submission-20261027",
+  "url": "https://github.com/dong-zhongyuan/PeriScope/releases/download/nmi-submission-20261027/periscope-models-seeds42-51.tar.gz",
+  "bytes": 217751698,
+  "sha256": "e911f24a351e35548a87b6487eda157a0a98567ba6859f010762b4f1d2d95230",
+  "registry": "results/optimization_20261003/model_registry.json",
+  "members": {
+    "seed_42/model.pt": "5e7afe4eddcc33409e36da71b85da46393719abcf54a824f72e47da3f6cb0529",
+    "seed_43/model.pt": "9694e8c505b4851f6b0f1661753ac72b009f6b77eb6a27178cef8547517b6c9c",
+    "seed_44/model.pt": "99f4223a16a02ddfa09d6001105fcaacd96ffeb0d18aa88838d1da3c6dc00130",
+    "seed_45/model.pt": "6ee242e4756a17777063f70d8336b89b8b1d117c2e69a06ef20774ac3b24a508",
+    "seed_46/model.pt": "eb8b4da9708f415053bb3a66a60bd6c3300d595a007406114383dc392e76f989",
+    "seed_47/model.pt": "6e855e31b12ce65052f27efaf1068ac7af5ac65fb4b338ef959785c063f6df85",
+    "seed_48/model.pt": "b1a19d966f377f5599ede325e490ac7adf3645976a784d32944ef7abcc03e11e",
+    "seed_49/model.pt": "5798d6114e5d0d2506caf08a936e75e0fa03aa6da8a7cd295d56b06688e86002",
+    "seed_50/model.pt": "c9b0fc5a4f460a5a89fc4feb802a2e762cf58a50d0e709cb9215e9b7b3c71da8",
+    "seed_51/model.pt": "40188c3b521f0478b1d3ae06211c439e3aafadcad31d92004e5e75a4041ad6e7"
+  }
+}

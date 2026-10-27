@@ -1,0 +1,12 @@
+{
+  "repo_HEAD": "f63f9a8fd51a483d8c4f4039bb9418be9eaff3ed",
+  "versions": {
+    "torch": "2.5.1+cu121",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2"
+  },
+  "cellot_source": "git archive HEAD reference/cellot; original upstream 522d2b95 as recorded in archived benchmark",
+  "loss_functions": "AST-extracted exact compute_loss_f and compute_loss_g, to avoid importing unused missing training-CLI dependencies",
+  "source_edits": "no existing tracked model/training code changed"
+}

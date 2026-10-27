@@ -1,0 +1,345 @@
+[
+  {
+    "id": "1a",
+    "template": "workflow",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/1a.png",
+    "width_in": 8.75,
+    "height_in": 5
+  },
+  {
+    "id": "1b",
+    "template": "1_A",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/1_A.png",
+    "width_in": 6.25,
+    "height_in": 5
+  },
+  {
+    "id": "1c",
+    "template": "3_B",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/3_B.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "1d",
+    "template": "7_G",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_G.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "1e",
+    "template": "5_E",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/5_E.png",
+    "width_in": 5,
+    "height_in": 10
+  },
+  {
+    "id": "1f",
+    "template": "2_E",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/2_E.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "1g",
+    "template": "6_J",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_J.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "1h",
+    "template": "5_C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/5_C.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "2a",
+    "template": "workflow",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/2a.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "2b",
+    "template": "4_J",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/4_J.png",
+    "width_in": 5,
+    "height_in": 2.5
+  },
+  {
+    "id": "2c",
+    "template": "7_G",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_G.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "2d",
+    "template": "4_I",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/4_I.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "2e",
+    "template": "6_F",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_F.png",
+    "width_in": 10,
+    "height_in": 10
+  },
+  {
+    "id": "2f",
+    "template": "6_G",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_G.png",
+    "width_in": 5,
+    "height_in": 7.5
+  },
+  {
+    "id": "2g",
+    "template": "7_I",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_I.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "3a",
+    "template": "workflow",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/3a.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "3b",
+    "template": "6_J",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_J.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "3c",
+    "template": "3_C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/3_C.png",
+    "width_in": 8.75,
+    "height_in": 5
+  },
+  {
+    "id": "3d",
+    "template": "4_J",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/4_J.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "3e",
+    "template": "7_E",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_E.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "3f",
+    "template": "4_J",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/4_J.png",
+    "width_in": 6.25,
+    "height_in": 5
+  },
+  {
+    "id": "4a",
+    "template": "workflow",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/4a.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "4b",
+    "template": "S5_D",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/S5_D.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "4c",
+    "template": "S2_F",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/S2_F.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "4d",
+    "template": "5_G",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/5_G.png",
+    "width_in": 5,
+    "height_in": 2.5
+  },
+  {
+    "id": "4e",
+    "template": "6_I",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_I.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "4f",
+    "template": "S2_C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/S2_C.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "4g",
+    "template": "4_J",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/4_J.png",
+    "width_in": 4.1667,
+    "height_in": 2.5
+  },
+  {
+    "id": "4h",
+    "template": "4_I",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/4_I.png",
+    "width_in": 4.1667,
+    "height_in": 2.5
+  },
+  {
+    "id": "5a",
+    "template": "workflow",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/5a.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "5b",
+    "template": "3_C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/3_C.png",
+    "width_in": 10,
+    "height_in": 7.5
+  },
+  {
+    "id": "5c",
+    "template": "6_G",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_G.png",
+    "width_in": 5,
+    "height_in": 7.5
+  },
+  {
+    "id": "5d",
+    "template": "7_E",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_E.png",
+    "width_in": 7.5,
+    "height_in": 5
+  },
+  {
+    "id": "5e",
+    "template": "7_E",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_E.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "5f",
+    "template": "7_G",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_G.png",
+    "width_in": 7.5,
+    "height_in": 5
+  },
+  {
+    "id": "6a",
+    "template": "workflow",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/6a.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "6b",
+    "template": "7_E",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_E.png",
+    "width_in": 5,
+    "height_in": 7.5
+  },
+  {
+    "id": "6c",
+    "template": "old5C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/5c.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "6d",
+    "template": "7_I",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_I.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "6e",
+    "template": "3_C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/3_C.png",
+    "width_in": 5,
+    "height_in": 2.5
+  },
+  {
+    "id": "6f",
+    "template": "6_F",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_F.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "6g",
+    "template": "5_C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/5_C.png",
+    "width_in": 7.5,
+    "height_in": 5
+  },
+  {
+    "id": "6h",
+    "template": "5_C",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/5_C.png",
+    "width_in": 7.5,
+    "height_in": 5
+  },
+  {
+    "id": "7a",
+    "template": "workflow",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/copy_review/reference_panels/6a.png",
+    "width_in": 10,
+    "height_in": 5
+  },
+  {
+    "id": "7b",
+    "template": "5_E",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/5_E.png",
+    "width_in": 7.5,
+    "height_in": 10
+  },
+  {
+    "id": "7c",
+    "template": "6_J",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/6_J.png",
+    "width_in": 7.5,
+    "height_in": 5
+  },
+  {
+    "id": "7d",
+    "template": "user_evidence_wheel",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/references/user_wheel_structure.png",
+    "width_in": 7.5,
+    "height_in": 10
+  },
+  {
+    "id": "7e",
+    "template": "7_G",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/scMOBA_template_library/thumbnails/7_G.png",
+    "width_in": 5,
+    "height_in": 5
+  },
+  {
+    "id": "7f",
+    "template": "new_upset",
+    "source": "/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/references/UpSet_baseline_same_real_data.png",
+    "width_in": 7.5,
+    "height_in": 5
+  }
+]

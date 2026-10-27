@@ -1,0 +1,13 @@
+routes,readout,receiver,rho,exact_p,n_seeds
+all four routes,fixed control,astro,0.11079167407563648,0.5,10
+all four routes,fixed control,microglia_mhc2,0.01751157538091837,0.5,10
+all four routes,fixed control,pooled,0.06519409971767431,0.5,10
+all four routes,fixed PD,astro,0.17065258748224454,0.5,10
+all four routes,fixed PD,microglia_mhc2,-0.015463269094401136,0.55,10
+all four routes,fixed PD,pooled,0.07838676941889318,0.45,10
+three routes with 3 vs 3 donors,fixed control,astro,-0.22961381331130948,0.8,10
+three routes with 3 vs 3 donors,fixed control,microglia_mhc2,-0.06354138852303193,0.75,10
+three routes with 3 vs 3 donors,fixed control,pooled,-0.13354419269991122,0.75,10
+three routes with 3 vs 3 donors,fixed PD,astro,-0.18520256366651205,0.75,10
+three routes with 3 vs 3 donors,fixed PD,microglia_mhc2,0.06754282672665805,0.1,10
+three routes with 3 vs 3 donors,fixed PD,pooled,-0.04735467888102896,0.7,10

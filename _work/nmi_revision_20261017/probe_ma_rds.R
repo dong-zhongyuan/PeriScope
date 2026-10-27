@@ -1,0 +1,20 @@
+# Export donor x lineage x sublineage pseudobulk counts from the Ma et al. processed Seurat object,
+# touching only the assays and meta.data slots (other slots need the full Seurat package).
+args <- commandArgs(trailingOnly = TRUE); rds <- args[1]; out <- args[2]
+suppressPackageStartupMessages({library(Matrix); library(SeuratObject)})
+t0 <- Sys.time(); obj <- readRDS(rds); cat("loaded in", format(Sys.time() - t0), "\n")
+meta <- attr(obj, "meta.data"); cat("meta.data:", paste(dim(meta), collapse = " x "), "\n"); cat(names(meta), "\n")
+assays <- attr(obj, "assays"); cat("assays:", names(assays), "\n")
+rna <- assays[[if ("RNA" %in% names(assays)) "RNA" else names(assays)[1]]]; cat("assay class:", class(rna), "\n")
+cm <- tryCatch(SeuratObject::LayerData(rna, layer = "counts"), error = function(e) NULL)
+if (is.null(cm)) cm <- tryCatch(attr(rna, "counts"), error = function(e) NULL)
+if (is.null(cm)) cm <- tryCatch(SeuratObject::GetAssayData(rna, slot = "counts"), error = function(e) NULL)
+stopifnot(!is.null(cm)); cat("counts:", paste(dim(cm), collapse = " x "), class(cm), "\n")
+stopifnot(all(colnames(cm) == rownames(meta)))
+key <- paste(meta$Donor, meta$broad_lineages, meta$sublineage, sep = "|"); grp <- factor(key)
+ind <- sparse.model.matrix(~ grp - 1); colnames(ind) <- levels(grp)
+pb <- cm %*% ind; cnt <- table(grp)
+write.csv(as.matrix(pb), file.path(out, "ma_pseudobulk_counts.csv"))
+write.csv(data.frame(group = names(cnt), n_cells = as.integer(cnt)), file.path(out, "ma_pseudobulk_cells.csv"), row.names = FALSE)
+dm <- unique(meta[, intersect(c("Donor", "Condition", "gender", "age_bin", "Braak"), names(meta))]); write.csv(dm, file.path(out, "ma_donors.csv"), row.names = FALSE)
+cat("wrote pseudobulk", paste(dim(pb), collapse = " x "), "\n")

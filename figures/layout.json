@@ -1,0 +1,1143 @@
+[
+  {
+    "figure": 1,
+    "width": 1080.0,
+    "height": 1440.0,
+    "workflow": {
+      "panel": "a",
+      "id": "1a",
+      "x": 0,
+      "y": 0,
+      "width": 630.0,
+      "height": 360.0,
+      "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1a.svg",
+      "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1a.png",
+      "description": "Current real-data panel 1a; native dimensions, no image scaling"
+    },
+    "panels": [
+      {
+        "panel": "b",
+        "id": "1b",
+        "x": 630.0,
+        "y": 0,
+        "width": 450.0,
+        "height": 360.0,
+        "svg": "delivery/panels/1b.svg",
+        "fallback": "delivery/panels/1b.png",
+        "description": "Current real-data panel 1b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "1c",
+        "x": 0,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/1c.svg",
+        "fallback": "delivery/panels/1c.png",
+        "description": "Current real-data panel 1c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "1d",
+        "x": 360,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/1d.svg",
+        "fallback": "delivery/panels/1d.png",
+        "description": "Current real-data panel 1d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "1e",
+        "x": 720,
+        "y": 360,
+        "width": 360.0,
+        "height": 720.0,
+        "svg": "delivery/panels/1e.svg",
+        "fallback": "delivery/panels/1e.png",
+        "description": "Current real-data panel 1e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "1f",
+        "x": 0,
+        "y": 720,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/1f.svg",
+        "fallback": "delivery/panels/1f.png",
+        "description": "Current real-data panel 1f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "1g",
+        "x": 0,
+        "y": 1080,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/1g.svg",
+        "fallback": "delivery/panels/1g.png",
+        "description": "Current real-data panel 1g; native dimensions, no image scaling"
+      },
+      {
+        "panel": "h",
+        "id": "1h",
+        "x": 360,
+        "y": 1080,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/1h.svg",
+        "fallback": "delivery/panels/1h.png",
+        "description": "Current real-data panel 1h; native dimensions, no image scaling"
+      }
+    ],
+    "all_panels": [
+      {
+        "panel": "a",
+        "id": "1a",
+        "x": 0,
+        "y": 0,
+        "width": 630.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1a.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1a.png",
+        "description": "Current real-data panel 1a; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "1b",
+        "x": 630.0,
+        "y": 0,
+        "width": 450.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1b.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1b.png",
+        "description": "Current real-data panel 1b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "1c",
+        "x": 0,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1c.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1c.png",
+        "description": "Current real-data panel 1c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "1d",
+        "x": 360,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1d.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1d.png",
+        "description": "Current real-data panel 1d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "1e",
+        "x": 720,
+        "y": 360,
+        "width": 360.0,
+        "height": 720.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1e.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1e.png",
+        "description": "Current real-data panel 1e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "1f",
+        "x": 0,
+        "y": 720,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1f.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1f.png",
+        "description": "Current real-data panel 1f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "1g",
+        "x": 0,
+        "y": 1080,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1g.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1g.png",
+        "description": "Current real-data panel 1g; native dimensions, no image scaling"
+      },
+      {
+        "panel": "h",
+        "id": "1h",
+        "x": 360,
+        "y": 1080,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1h.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/1h.png",
+        "description": "Current real-data panel 1h; native dimensions, no image scaling"
+      }
+    ]
+  },
+  {
+    "figure": 2,
+    "width": 1080.0,
+    "height": 1440.0,
+    "workflow": {
+      "panel": "a",
+      "id": "2a",
+      "x": 0,
+      "y": 0,
+      "width": 720.0,
+      "height": 360.0,
+      "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2a.svg",
+      "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2a.png",
+      "description": "Current real-data panel 2a; native dimensions, no image scaling"
+    },
+    "panels": [
+      {
+        "panel": "b",
+        "id": "2b",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 180.0,
+        "svg": "delivery/panels/2b.svg",
+        "fallback": "delivery/panels/2b.png",
+        "description": "Current real-data panel 2b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "2c",
+        "x": 720,
+        "y": 180,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/2c.svg",
+        "fallback": "delivery/panels/2c.png",
+        "description": "Current real-data panel 2c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "2d",
+        "x": 720,
+        "y": 540,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/2d.svg",
+        "fallback": "delivery/panels/2d.png",
+        "description": "Current real-data panel 2d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "2e",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 720.0,
+        "svg": "delivery/panels/2e.svg",
+        "fallback": "delivery/panels/2e.png",
+        "description": "Current real-data panel 2e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "2f",
+        "x": 720,
+        "y": 900,
+        "width": 360.0,
+        "height": 540.0,
+        "svg": "delivery/panels/2f.svg",
+        "fallback": "delivery/panels/2f.png",
+        "description": "Current real-data panel 2f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "2g",
+        "x": 0,
+        "y": 1080,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/2g.svg",
+        "fallback": "delivery/panels/2g.png",
+        "description": "Current real-data panel 2g; native dimensions, no image scaling"
+      }
+    ],
+    "all_panels": [
+      {
+        "panel": "a",
+        "id": "2a",
+        "x": 0,
+        "y": 0,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2a.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2a.png",
+        "description": "Current real-data panel 2a; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "2b",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 180.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2b.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2b.png",
+        "description": "Current real-data panel 2b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "2c",
+        "x": 720,
+        "y": 180,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2c.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2c.png",
+        "description": "Current real-data panel 2c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "2d",
+        "x": 720,
+        "y": 540,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2d.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2d.png",
+        "description": "Current real-data panel 2d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "2e",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 720.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2e.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2e.png",
+        "description": "Current real-data panel 2e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "2f",
+        "x": 720,
+        "y": 900,
+        "width": 360.0,
+        "height": 540.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2f.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2f.png",
+        "description": "Current real-data panel 2f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "2g",
+        "x": 0,
+        "y": 1080,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2g.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/2g.png",
+        "description": "Current real-data panel 2g; native dimensions, no image scaling"
+      }
+    ]
+  },
+  {
+    "figure": 3,
+    "width": 1080.0,
+    "height": 1080.0,
+    "workflow": {
+      "panel": "a",
+      "id": "3a",
+      "x": 0,
+      "y": 0,
+      "width": 720.0,
+      "height": 360.0,
+      "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3a.svg",
+      "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3a.png",
+      "description": "Current real-data panel 3a; native dimensions, no image scaling"
+    },
+    "panels": [
+      {
+        "panel": "d",
+        "id": "3d",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/3d.svg",
+        "fallback": "delivery/panels/3d.png",
+        "description": "Current real-data panel 3d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "3b",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/3b.svg",
+        "fallback": "delivery/panels/3b.png",
+        "description": "Current real-data panel 3b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "3e",
+        "x": 720,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/3e.svg",
+        "fallback": "delivery/panels/3e.png",
+        "description": "Current real-data panel 3e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "3c",
+        "x": 0,
+        "y": 720,
+        "width": 630.0,
+        "height": 360.0,
+        "svg": "delivery/panels/3c.svg",
+        "fallback": "delivery/panels/3c.png",
+        "description": "Current real-data panel 3c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "3f",
+        "x": 630.0,
+        "y": 720,
+        "width": 450.0,
+        "height": 360.0,
+        "svg": "delivery/panels/3f.svg",
+        "fallback": "delivery/panels/3f.png",
+        "description": "Current real-data panel 3f; native dimensions, no image scaling"
+      }
+    ],
+    "all_panels": [
+      {
+        "panel": "a",
+        "id": "3a",
+        "x": 0,
+        "y": 0,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3a.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3a.png",
+        "description": "Current real-data panel 3a; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "3d",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3d.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3d.png",
+        "description": "Current real-data panel 3d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "3b",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3b.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3b.png",
+        "description": "Current real-data panel 3b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "3e",
+        "x": 720,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3e.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3e.png",
+        "description": "Current real-data panel 3e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "3c",
+        "x": 0,
+        "y": 720,
+        "width": 630.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3c.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3c.png",
+        "description": "Current real-data panel 3c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "3f",
+        "x": 630.0,
+        "y": 720,
+        "width": 450.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3f.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/3f.png",
+        "description": "Current real-data panel 3f; native dimensions, no image scaling"
+      }
+    ]
+  },
+  {
+    "figure": 4,
+    "width": 1080.0,
+    "height": 1080.0,
+    "workflow": {
+      "panel": "a",
+      "id": "4a",
+      "x": 0,
+      "y": 0,
+      "width": 720.0,
+      "height": 360.0,
+      "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4a.svg",
+      "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4a.png",
+      "description": "Current real-data panel 4a; native dimensions, no image scaling"
+    },
+    "panels": [
+      {
+        "panel": "e",
+        "id": "4e",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/4e.svg",
+        "fallback": "delivery/panels/4e.png",
+        "description": "Current real-data panel 4e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "4b",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/4b.svg",
+        "fallback": "delivery/panels/4b.png",
+        "description": "Current real-data panel 4b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "4f",
+        "x": 720,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/4f.svg",
+        "fallback": "delivery/panels/4f.png",
+        "description": "Current real-data panel 4f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "4c",
+        "x": 0,
+        "y": 720,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/4c.svg",
+        "fallback": "delivery/panels/4c.png",
+        "description": "Current real-data panel 4c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "4d",
+        "x": 720,
+        "y": 720,
+        "width": 360.0,
+        "height": 180.0,
+        "svg": "delivery/panels/4d.svg",
+        "fallback": "delivery/panels/4d.png",
+        "description": "Current real-data panel 4d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "h",
+        "id": "4h",
+        "x": 480.0,
+        "y": 900,
+        "width": 300.0,
+        "height": 180.0,
+        "svg": "delivery/panels/4h.svg",
+        "fallback": "delivery/panels/4h.png",
+        "description": "Current real-data panel 4h; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "4g",
+        "x": 780.0,
+        "y": 900,
+        "width": 300.0,
+        "height": 180.0,
+        "svg": "delivery/panels/4g.svg",
+        "fallback": "delivery/panels/4g.png",
+        "description": "Current real-data panel 4g; native dimensions, no image scaling"
+      }
+    ],
+    "all_panels": [
+      {
+        "panel": "a",
+        "id": "4a",
+        "x": 0,
+        "y": 0,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4a.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4a.png",
+        "description": "Current real-data panel 4a; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "4e",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4e.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4e.png",
+        "description": "Current real-data panel 4e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "4b",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4b.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4b.png",
+        "description": "Current real-data panel 4b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "4f",
+        "x": 720,
+        "y": 360,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4f.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4f.png",
+        "description": "Current real-data panel 4f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "4c",
+        "x": 0,
+        "y": 720,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4c.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4c.png",
+        "description": "Current real-data panel 4c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "4d",
+        "x": 720,
+        "y": 720,
+        "width": 360.0,
+        "height": 180.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4d.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4d.png",
+        "description": "Current real-data panel 4d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "h",
+        "id": "4h",
+        "x": 480.0,
+        "y": 900,
+        "width": 300.0,
+        "height": 180.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4h.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4h.png",
+        "description": "Current real-data panel 4h; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "4g",
+        "x": 780.0,
+        "y": 900,
+        "width": 300.0,
+        "height": 180.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4g.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/4g.png",
+        "description": "Current real-data panel 4g; native dimensions, no image scaling"
+      }
+    ]
+  },
+  {
+    "figure": 5,
+    "width": 1080.0,
+    "height": 1260.0,
+    "workflow": {
+      "panel": "a",
+      "id": "5a",
+      "x": 0,
+      "y": 0,
+      "width": 720.0,
+      "height": 360.0,
+      "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5a.svg",
+      "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5a.png",
+      "description": "Current real-data panel 5a; native dimensions, no image scaling"
+    },
+    "panels": [
+      {
+        "panel": "c",
+        "id": "5c",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 540.0,
+        "svg": "delivery/panels/5c.svg",
+        "fallback": "delivery/panels/5c.png",
+        "description": "Current real-data panel 5c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "5b",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 540.0,
+        "svg": "delivery/panels/5b.svg",
+        "fallback": "delivery/panels/5b.png",
+        "description": "Current real-data panel 5b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "5e",
+        "x": 720,
+        "y": 540,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/5e.svg",
+        "fallback": "delivery/panels/5e.png",
+        "description": "Current real-data panel 5e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "5d",
+        "x": 0,
+        "y": 900,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "delivery/panels/5d.svg",
+        "fallback": "delivery/panels/5d.png",
+        "description": "Current real-data panel 5d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "5f",
+        "x": 540,
+        "y": 900,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "delivery/panels/5f.svg",
+        "fallback": "delivery/panels/5f.png",
+        "description": "Current real-data panel 5f; native dimensions, no image scaling"
+      }
+    ],
+    "all_panels": [
+      {
+        "panel": "a",
+        "id": "5a",
+        "x": 0,
+        "y": 0,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5a.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5a.png",
+        "description": "Current real-data panel 5a; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "5c",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 540.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5c.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5c.png",
+        "description": "Current real-data panel 5c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "5b",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 540.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5b.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5b.png",
+        "description": "Current real-data panel 5b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "5e",
+        "x": 720,
+        "y": 540,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5e.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5e.png",
+        "description": "Current real-data panel 5e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "5d",
+        "x": 0,
+        "y": 900,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5d.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5d.png",
+        "description": "Current real-data panel 5d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "5f",
+        "x": 540,
+        "y": 900,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5f.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/5f.png",
+        "description": "Current real-data panel 5f; native dimensions, no image scaling"
+      }
+    ]
+  },
+  {
+    "figure": 6,
+    "width": 1080.0,
+    "height": 1440.0,
+    "workflow": {
+      "panel": "a",
+      "id": "6a",
+      "x": 0,
+      "y": 0,
+      "width": 720.0,
+      "height": 360.0,
+      "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6a.svg",
+      "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6a.png",
+      "description": "Current real-data panel 6a; native dimensions, no image scaling"
+    },
+    "panels": [
+      {
+        "panel": "b",
+        "id": "6b",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 540.0,
+        "svg": "delivery/panels/6b.svg",
+        "fallback": "delivery/panels/6b.png",
+        "description": "Current real-data panel 6b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "6c",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/6c.svg",
+        "fallback": "delivery/panels/6c.png",
+        "description": "Current real-data panel 6c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "6e",
+        "x": 720,
+        "y": 540,
+        "width": 360.0,
+        "height": 180.0,
+        "svg": "delivery/panels/6e.svg",
+        "fallback": "delivery/panels/6e.png",
+        "description": "Current real-data panel 6e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "6d",
+        "x": 0,
+        "y": 720,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "delivery/panels/6d.svg",
+        "fallback": "delivery/panels/6d.png",
+        "description": "Current real-data panel 6d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "6f",
+        "x": 720,
+        "y": 720,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/6f.svg",
+        "fallback": "delivery/panels/6f.png",
+        "description": "Current real-data panel 6f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "6g",
+        "x": 0,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "delivery/panels/6g.svg",
+        "fallback": "delivery/panels/6g.png",
+        "description": "Current real-data panel 6g; native dimensions, no image scaling"
+      },
+      {
+        "panel": "h",
+        "id": "6h",
+        "x": 540,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "delivery/panels/6h.svg",
+        "fallback": "delivery/panels/6h.png",
+        "description": "Current real-data panel 6h; native dimensions, no image scaling"
+      }
+    ],
+    "all_panels": [
+      {
+        "panel": "a",
+        "id": "6a",
+        "x": 0,
+        "y": 0,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6a.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6a.png",
+        "description": "Current real-data panel 6a; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "6b",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 540.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6b.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6b.png",
+        "description": "Current real-data panel 6b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "6c",
+        "x": 0,
+        "y": 360,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6c.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6c.png",
+        "description": "Current real-data panel 6c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "6e",
+        "x": 720,
+        "y": 540,
+        "width": 360.0,
+        "height": 180.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6e.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6e.png",
+        "description": "Current real-data panel 6e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "6d",
+        "x": 0,
+        "y": 720,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6d.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6d.png",
+        "description": "Current real-data panel 6d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "6f",
+        "x": 720,
+        "y": 720,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6f.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6f.png",
+        "description": "Current real-data panel 6f; native dimensions, no image scaling"
+      },
+      {
+        "panel": "g",
+        "id": "6g",
+        "x": 0,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6g.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6g.png",
+        "description": "Current real-data panel 6g; native dimensions, no image scaling"
+      },
+      {
+        "panel": "h",
+        "id": "6h",
+        "x": 540,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6h.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/6h.png",
+        "description": "Current real-data panel 6h; native dimensions, no image scaling"
+      }
+    ]
+  },
+  {
+    "figure": 7,
+    "width": 1080.0,
+    "height": 1440.0,
+    "workflow": {
+      "panel": "a",
+      "id": "7a",
+      "x": 0,
+      "y": 0,
+      "width": 720.0,
+      "height": 360.0,
+      "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7a.svg",
+      "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7a.png",
+      "description": "Current real-data panel 7a; native dimensions, no image scaling"
+    },
+    "panels": [
+      {
+        "panel": "e",
+        "id": "7e",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "delivery/panels/7e.svg",
+        "fallback": "delivery/panels/7e.png",
+        "description": "Current real-data panel 7e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "7b",
+        "x": 0,
+        "y": 360,
+        "width": 540.0,
+        "height": 720.0,
+        "svg": "delivery/panels/7b.svg",
+        "fallback": "delivery/panels/7b.png",
+        "description": "Current real-data panel 7b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "7d",
+        "x": 540,
+        "y": 360,
+        "width": 540.0,
+        "height": 720.0,
+        "svg": "delivery/panels/7d.svg",
+        "fallback": "delivery/panels/7d.png",
+        "description": "Current real-data panel 7d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "7c",
+        "x": 0,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "delivery/panels/7c.svg",
+        "fallback": "delivery/panels/7c.png",
+        "description": "Current real-data panel 7c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "7f",
+        "x": 540,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "delivery/panels/7f.svg",
+        "fallback": "delivery/panels/7f.png",
+        "description": "Current real-data panel 7f; native dimensions, no image scaling"
+      }
+    ],
+    "all_panels": [
+      {
+        "panel": "a",
+        "id": "7a",
+        "x": 0,
+        "y": 0,
+        "width": 720.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7a.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7a.png",
+        "description": "Current real-data panel 7a; native dimensions, no image scaling"
+      },
+      {
+        "panel": "e",
+        "id": "7e",
+        "x": 720,
+        "y": 0,
+        "width": 360.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7e.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7e.png",
+        "description": "Current real-data panel 7e; native dimensions, no image scaling"
+      },
+      {
+        "panel": "b",
+        "id": "7b",
+        "x": 0,
+        "y": 360,
+        "width": 540.0,
+        "height": 720.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7b.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7b.png",
+        "description": "Current real-data panel 7b; native dimensions, no image scaling"
+      },
+      {
+        "panel": "d",
+        "id": "7d",
+        "x": 540,
+        "y": 360,
+        "width": 540.0,
+        "height": 720.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7d.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7d.png",
+        "description": "Current real-data panel 7d; native dimensions, no image scaling"
+      },
+      {
+        "panel": "c",
+        "id": "7c",
+        "x": 0,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7c.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7c.png",
+        "description": "Current real-data panel 7c; native dimensions, no image scaling"
+      },
+      {
+        "panel": "f",
+        "id": "7f",
+        "x": 540,
+        "y": 1080,
+        "width": 540.0,
+        "height": 360.0,
+        "svg": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7f.svg",
+        "fallback": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/panels/7f.png",
+        "description": "Current real-data panel 7f; native dimensions, no image scaling"
+      }
+    ]
+  }
+]

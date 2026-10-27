@@ -1,0 +1,9 @@
+receiver,readout,scope,rho,contrast_rms,n_seeds
+astro,fixed_control,test only (1 vs 1),-0.22203170820669293,0.003994342405349016,3
+astro,fixed_control,all held-out donors,0.2039916857907055,0.012206091545522213,3
+astro,fixed_PD,test only (1 vs 1),0.0941606185846708,0.0033180832397192717,3
+astro,fixed_PD,all held-out donors,0.2264188263001493,0.013228947296738625,3
+microglia_mhc2,fixed_control,test only (1 vs 1),-0.08708524835499663,0.0031618671491742134,3
+microglia_mhc2,fixed_control,all held-out donors,-0.07944637044714131,0.004764531273394823,3
+microglia_mhc2,fixed_PD,test only (1 vs 1),0.09732149425768939,0.003430510638281703,3
+microglia_mhc2,fixed_PD,all held-out donors,0.0709326473336419,0.002304344205185771,3

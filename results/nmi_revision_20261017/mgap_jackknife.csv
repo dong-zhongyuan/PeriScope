@@ -1,0 +1,71 @@
+receiver,dropped,method,rho
+microglia_mhc2,ctrl0,PeriScope,0.26395021268766866
+microglia_mhc2,ctrl0,label/state brain mean,0.19463590682551568
+microglia_mhc2,ctrl0,label/state brain marginal,0.19076620523082316
+microglia_mhc2,ctrl0,OT-Ridge,0.1387219549291872
+microglia_mhc2,ctrl0,CellOT,0.029552964301008514
+microglia_mhc2,ctrl0,conditional ICNN,0.2901941820486343
+microglia_mhc2,ctrl0,conditional MLP,0.26063589252738273
+microglia_mhc2,ctrl1,PeriScope,-0.07591505423902359
+microglia_mhc2,ctrl1,label/state brain mean,0.16321754188273377
+microglia_mhc2,ctrl1,label/state brain marginal,0.16406820664723673
+microglia_mhc2,ctrl1,OT-Ridge,0.20244246025176552
+microglia_mhc2,ctrl1,CellOT,0.04643996116563402
+microglia_mhc2,ctrl1,conditional ICNN,-0.07914117451862382
+microglia_mhc2,ctrl1,conditional MLP,-0.044963986097863166
+microglia_mhc2,pd0,PeriScope,0.1456179991168446
+microglia_mhc2,pd0,label/state brain mean,0.2830093434897468
+microglia_mhc2,pd0,label/state brain marginal,0.28137889443519015
+microglia_mhc2,pd0,OT-Ridge,0.27314158658167687
+microglia_mhc2,pd0,CellOT,-0.01797728693893231
+microglia_mhc2,pd0,conditional ICNN,0.16137856385745658
+microglia_mhc2,pd0,conditional MLP,0.18420902823656365
+microglia_mhc2,pd1,PeriScope,0.22989846739548628
+microglia_mhc2,pd1,label/state brain mean,0.17341731364621302
+microglia_mhc2,pd1,label/state brain marginal,0.17143672030115284
+microglia_mhc2,pd1,OT-Ridge,0.10981716426906445
+microglia_mhc2,pd1,CellOT,0.07499534877605087
+microglia_mhc2,pd1,conditional ICNN,0.2638152122290823
+microglia_mhc2,pd1,conditional MLP,0.18394528069744187
+microglia_mhc2,pd2,PeriScope,0.12071201321108463
+microglia_mhc2,pd2,label/state brain mean,0.4242694590568044
+microglia_mhc2,pd2,label/state brain marginal,0.4191976504332895
+microglia_mhc2,pd2,OT-Ridge,0.40512001016192284
+microglia_mhc2,pd2,CellOT,0.06623096016659691
+microglia_mhc2,pd2,conditional ICNN,0.11765647069375623
+microglia_mhc2,pd2,conditional MLP,0.12486905079164115
+astro,ctrl0,PeriScope,0.36660830464424515
+astro,ctrl0,label/state brain mean,-0.15740386676478232
+astro,ctrl0,label/state brain marginal,-0.06407209600176049
+astro,ctrl0,OT-Ridge,-0.3354511174483453
+astro,ctrl0,CellOT,0.1254794998813518
+astro,ctrl0,conditional ICNN,0.05421239786354157
+astro,ctrl0,conditional MLP,0.1624160082312207
+astro,ctrl1,PeriScope,0.11820515961657725
+astro,ctrl1,label/state brain mean,0.01694830341051638
+astro,ctrl1,label/state brain marginal,-0.015539219461852511
+astro,ctrl1,OT-Ridge,0.13739089365863086
+astro,ctrl1,CellOT,-0.04308650521635749
+astro,ctrl1,conditional ICNN,0.12123959536096655
+astro,ctrl1,conditional MLP,0.17161057250022305
+astro,pd0,PeriScope,0.24796388439375536
+astro,pd0,label/state brain mean,-0.17363476511353826
+astro,pd0,label/state brain marginal,-0.12936319332484392
+astro,pd0,OT-Ridge,-0.21802601745440445
+astro,pd0,CellOT,0.07061652241181049
+astro,pd0,conditional ICNN,-0.007158844172469853
+astro,pd0,conditional MLP,0.11897298375983917
+astro,pd1,PeriScope,0.28082456761417607
+astro,pd1,label/state brain mean,-0.13339000206445556
+astro,pd1,label/state brain marginal,-0.040387191619566824
+astro,pd1,OT-Ridge,-0.26339399984563894
+astro,pd1,CellOT,0.053201821095976695
+astro,pd1,conditional ICNN,0.01977251610750501
+astro,pd1,conditional MLP,0.14182786335533065
+astro,pd2,PeriScope,0.3678438725234208
+astro,pd2,label/state brain mean,0.11592107901590168
+astro,pd2,label/state brain marginal,0.13366243408811884
+astro,pd2,OT-Ridge,0.0043459148449379635
+astro,pd2,CellOT,0.01713524126181876
+astro,pd2,conditional ICNN,0.2816555510996103
+astro,pd2,conditional MLP,0.3080468595046038

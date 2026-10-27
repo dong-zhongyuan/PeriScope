@@ -1,0 +1,17 @@
+,cell_state_sensitivity_ma_effect
+raw::CD71__cDC__x__microglia_mhc2__down,-0.2073
+raw::CD71__classical_mono__x__microglia_mhc2__down,-0.2534
+raw::CD71__nonclassical_mono__x__microglia_mhc2__down,-0.2856
+raw::CD71__pDC__x__microglia_mhc2__down,-0.3618
+raw::CD71__pDC__x__astro__down,-0.2973
+raw::CD71__nonclassical_mono__x__astro__down,-0.2324
+raw::CD22__cDC__x__microglia_mhc2__down,-0.2
+raw::CD22__pDC__x__astro__up,-0.273
+raw::CD40__cDC__x__astro__up,-0.1472
+raw::CD40__cDC__x__microglia_mhc2__up,-0.2837
+raw::CD40__classical_mono__x__microglia_mhc2__up,-0.2486
+raw::CD40__nonclassical_mono__x__microglia_mhc2__up,-0.33
+raw::CD40__pDC__x__microglia_mhc2__up,-0.3258
+relative::CD40__nonclassical_mono__x__astro__up,-0.0727
+raw::CD22__cDC__x__astro__up,-0.2935
+relative::CD40__classical_mono__x__astro__up,0.0845

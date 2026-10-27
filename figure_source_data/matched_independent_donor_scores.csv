@@ -197,7 +197,7 @@ raw::CD71__cDC__x__microglia_mhc2__down,microglia_mhc2,PD2,PD,0.4385820994100636
 raw::CD71__cDC__x__microglia_mhc2__down,microglia_mhc2,PD3,PD,-0.2194152194162252,58
 raw::CD71__cDC__x__microglia_mhc2__down,microglia_mhc2,PD4,PD,-0.2261893246278607,58
 raw::CD71__cDC__x__microglia_mhc2__down,microglia_mhc2,PD5,PD,-0.1420990507307774,58
-relative::CD40__nonclassical_mono__x__astro__up,astro,C1,Control,2.0858696682716276,50
+relative::CD40__nonclassical_mono__x__astro__up,astro,C1,Control,2.085869668271628,50
 relative::CD40__nonclassical_mono__x__astro__up,astro,C2,Control,-0.1779227694544547,50
 relative::CD40__nonclassical_mono__x__astro__up,astro,C3,Control,-0.4283163301743245,50
 relative::CD40__nonclassical_mono__x__astro__up,astro,C4,Control,-0.0191131698722495,50

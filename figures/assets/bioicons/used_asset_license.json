@@ -1,0 +1,9 @@
+{
+  "asset": "antibody-7.svg",
+  "author": "Servier",
+  "source": "https://github.com/duerrsimon/bioicons/blob/main/static/icons/cc-by-3.0/Blood_Immunology/Servier/antibody-7.svg",
+  "license": "CC BY 3.0 Unported",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "modification": "Converted curves to dense polylines; recoloured heavy/light chains; arranged with membrane and target schematics. Individual paths remain editable in PPTX and Blender.",
+  "sha256": "70ddb957740b060edf6df18bbf2c1be48231de0cb110fece779b08dd6d844e32"
+}

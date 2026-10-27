@@ -1,0 +1,23 @@
+program,priority,n,rho_glialT_vs_neuronShare,rho_score_vs_neuronFrac,rho_within_condition,n_core,snRNA_core_t,snRNA_core_p_down,snRNA_noncore_t,snRNA_noncore_p_down,spatial_core_t,spatial_core_p_down,spatial_core_n,spatial_all_p_down
+CD71__cDC x microglia_mhc2__down,True,58,0.09,-0.15,-0.18,19,-0.1,0.3486,-0.453,0.0087,0.453,0.7168,9,0.2153
+CD71__classical_mono x microglia_mhc2__down,True,50,-0.08,0.22,0.32,19,-0.204,0.2179,-0.631,0.0013,0.525,0.6554,10,0.5955
+CD71__nonclassical_mono x microglia_mhc2__down,True,70,-0.05,0.18,0.22,27,-0.197,0.1956,-0.616,0.001,-2.491,0.009,15,0.0113
+CD71__pDC x microglia_mhc2__down,True,75,-0.17,0.27,0.23,18,-0.021,0.4289,-0.41,0.003,0.674,0.8074,7,0.5115
+CD71__pDC x astro__down,True,41,-0.05,0.34,0.31,13,-0.258,0.4039,-0.27,0.1423,0.939,0.982,9,0.9337
+CD71__nonclassical_mono x astro__down,True,97,0.07,0.14,0.26,18,-0.046,0.6341,-0.321,0.0183,0.967,0.9953,17,0.5645
+CD22__cDC x microglia_mhc2__down,True,45,-0.19,-0.06,-0.12,10,-0.184,0.3039,-0.413,0.0187,0.119,0.4992,6,0.096
+CD22__pDC x astro__up,True,47,-0.13,0.09,-0.09,19,-0.163,0.4928,-0.158,0.2136,0.781,0.97,14,0.9593
+CD40__cDC x astro__up,True,59,0.0,0.32,0.4,12,-0.304,0.3982,-0.549,0.003,0.896,0.974,10,0.1136
+CD40__cDC x microglia_mhc2__up,True,58,0.05,0.02,-0.02,3,,,-0.579,0.0003,,,0,0.2629
+CD40__classical_mono x microglia_mhc2__up,True,68,-0.05,0.15,0.22,17,-0.166,0.2616,-0.501,0.0013,1.535,0.996,5,0.8094
+CD40__nonclassical_mono x microglia_mhc2__up,True,63,0.03,0.1,0.08,6,-0.072,0.4352,-0.639,0.0003,,,2,0.4389
+CD40__pDC x microglia_mhc2__up,True,69,0.09,0.02,0.13,6,0.143,0.5998,-0.538,0.0007,,,3,0.4435
+rel::CD40__nonclassical_mono x astro__up,True,50,-0.25,0.61,0.46,0,,,-0.877,0.0003,,,0,0.1036
+CD22__cDC x astro__up,True,43,0.01,0.4,0.15,13,0.12,0.7208,-0.328,0.08,0.86,0.9374,8,0.9214
+rel::CD40__classical_mono x astro__up,True,38,-0.45,0.36,0.32,1,,,-0.816,0.0003,,,0,0.4668
+CD294__classical_mono x astro__up,False,59,-0.06,0.61,0.54,4,-0.682,0.2556,-0.677,0.0017,0.72,0.8341,4,0.0003
+CD294__pDC x astro__up,False,65,-0.12,0.75,0.6,2,,,-0.689,0.0003,,,2,0.0003
+CD30__classical_mono x astro__up,False,52,0.08,0.16,0.17,2,,,-0.527,0.0077,,,2,0.0007
+CD80__nonclassical_mono x astro__up,False,63,-0.06,0.29,0.23,1,,,-0.149,0.1999,,,1,0.0003
+CD80__pDC x astro__up,False,66,0.02,0.7,0.36,2,,,-0.451,0.012,,,2,0.0003
+rel::CD274__pDC x astro__up,False,39,-0.11,0.32,0.24,0,,,-0.743,0.0003,,,0,0.001

@@ -1,0 +1,23 @@
+program,priority,sp_stat,sp_p_expr,sp_p_lineage,neuron_frac,sn_stat,sn_p_expr,sn_p_lineage
+CD71__cDC x microglia_mhc2__down,True,-0.082,0.0127,0.0005,0.46,-0.333,0.0155,0.033
+CD71__classical_mono x microglia_mhc2__down,True,-0.195,0.002,0.0062,0.51,-0.475,0.0035,0.0032
+CD71__nonclassical_mono x microglia_mhc2__down,True,-0.296,0.0002,0.0002,0.51,-0.457,0.0015,0.002
+CD71__pDC x microglia_mhc2__down,True,-0.168,0.0007,0.0032,0.63,-0.317,0.0112,0.0165
+CD71__pDC x astro__down,True,0.292,0.7313,0.6421,0.32,-0.267,0.1422,0.1755
+CD71__nonclassical_mono x astro__down,True,0.081,0.1847,0.1227,0.37,-0.268,0.042,0.0777
+CD22__cDC x microglia_mhc2__down,True,0.182,0.3127,0.0982,0.32,-0.361,0.0225,0.0355
+CD22__pDC x astro__up,True,0.491,0.9875,0.9565,0.17,-0.134,0.3034,0.1867
+CD40__cDC x astro__up,True,-0.291,0.0002,0.0015,0.75,-0.499,0.0067,0.0075
+CD40__cDC x microglia_mhc2__up,True,-0.129,0.0017,0.0012,0.69,-0.542,0.0007,0.0005
+CD40__classical_mono x microglia_mhc2__up,True,-0.233,0.0002,0.0002,0.55,-0.421,0.0025,0.0032
+CD40__nonclassical_mono x microglia_mhc2__up,True,-0.084,0.0052,0.0047,0.65,-0.585,0.0002,0.0005
+CD40__pDC x microglia_mhc2__up,True,-0.086,0.0025,0.0025,0.68,-0.479,0.0007,0.002
+rel::CD40__nonclassical_mono x astro__up,True,-0.625,0.0002,0.0002,0.92,-0.898,0.0002,0.0002
+CD22__cDC x astro__up,True,0.428,0.9633,0.9493,0.21,-0.165,0.2637,0.1785
+rel::CD40__classical_mono x astro__up,True,-0.539,0.0002,0.0015,0.91,-0.829,0.0002,0.0002
+CD294__classical_mono x astro__up,False,-0.432,0.0002,0.0002,0.61,-0.677,0.0012,0.0012
+CD294__pDC x astro__up,False,-0.423,0.0002,0.0002,0.68,-0.677,0.0005,0.001
+CD30__classical_mono x astro__up,False,-0.276,0.0005,0.0002,0.65,-0.556,0.005,0.013
+CD80__nonclassical_mono x astro__up,False,-0.323,0.0002,0.0002,0.67,-0.15,0.1917,0.3154
+CD80__pDC x astro__up,False,-0.387,0.0002,0.0002,0.63,-0.477,0.0047,0.0127
+rel::CD274__pDC x astro__up,False,-0.707,0.0002,0.0002,0.9,-0.743,0.0002,0.0002

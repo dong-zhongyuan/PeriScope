@@ -1,0 +1,1159 @@
+{
+  "date": "2026-10-27",
+  "operation": "Mean contrasts exported from existing frozen predictions; no training or prediction rerun.",
+  "prediction_sources": [
+    {
+      "path": "results/benchmark_20261002/cache/cDC__microglia_mhc2.npz",
+      "bytes": 65502982,
+      "sha256": "7ddfa79e9b1d16dda9c978017cf2248927877a5f5f17a4764278401f7ee29aaa"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9201884,
+      "sha256": "4e089f2939812611dfe2947bc9a4c377a781295a2c22b031e892abcc9b24abba"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9201648,
+      "sha256": "9e7ff849ccd5d22f4c8013bbc7f4923805c67f6450f4b18e1731b4bc968401f4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9202270,
+      "sha256": "b2b3ae5ea7fdca5849b01a04abed6c1a68a69421e9d5ec254c8f6e6084a7a5d5"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9201901,
+      "sha256": "50215a8fc4879dc40a0a2dabc7be934bc454706a373aa0ec158e823e761452b7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9227745,
+      "sha256": "12aa7c3f09bf9724bb0f3968b81b299766232a3089f4cf38f8f81aa1b6e125c6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9226739,
+      "sha256": "f850e42e39d3d56223a86686810f66f616d8fe7c8807e1fe9ba0a80ac182d20a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9226993,
+      "sha256": "7b5a8598912844b8fada63bcd7dcf1b07341e5158ea20c41aab7278b003aa807"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9227846,
+      "sha256": "a4faa340d0ed26c24f395dfd1929c993e3d4674102fe8dcfb74844c7dea0b9a4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9211719,
+      "sha256": "95cdee5e3972ed49743238b7a87ceb55124ed38f2a1aa190b990a942b6b70597"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9212029,
+      "sha256": "ee93182054c1aedb8b4643bd0bcd54ab2c6458d042b3f0a4b019dbcdf9ad7294"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9211904,
+      "sha256": "d4a7b207ccd0663907f66e18628099b32cd59349938a8ef96c9fa71aebe36b82"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9212858,
+      "sha256": "63f81e6f2992734dfb36d5ab415e120673921b1a822c87ff931d179667372d67"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9220996,
+      "sha256": "3918cfb0ea5926e0ef5642a202b4f46e30a39513a571ae3f61c2b8e4793c4c85"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9221158,
+      "sha256": "7a49335d2c582ecf5f4d1199d9ed86779349303cdc9990b89cdfa5ee5062bdcc"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9220816,
+      "sha256": "86e3cddbbe76a44344df748d758d20c9d2d77f960c00a0d49dcd781a7461dc95"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9220641,
+      "sha256": "f8fb5ad0c06cf5cb3bb2f394d8459325a108bbd6256842a5390e8803c5c79ec2"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9171023,
+      "sha256": "d5644ca6f9fc8b72d1719d24ac939aa7808679a866e9b5b51bac2e5c869e515b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9171927,
+      "sha256": "b6de1594d453bee95d468a68ca5b1eb9203c0f6f5a94bdc8a22cc78c4757ac48"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9171714,
+      "sha256": "47b7c28b8a823d8d970afe7ba09887d16cc1dfbd391a20f5158a0457a8f1106e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9172101,
+      "sha256": "c4d5b77d9784b97c26c86b86eae6130aadba5d421954ce8f9c34d3c07436f376"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9228346,
+      "sha256": "687ddc26a212243f69bbe96d3eceacca2119c99ae91141fd56597277b7c8de21"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9227626,
+      "sha256": "1010f23ee4b5466d8d1c0e196013a36fbc9999c2fb2ab07fda0e2912d079b870"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9227405,
+      "sha256": "fd6123703746aba3a233bca9974cc1733dc11ba87938b18801cadebe9c651fe5"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9229889,
+      "sha256": "4266de25b02276a4ac3532e8a2dc15abead69e74f77adac12d842985dc5224c8"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9193177,
+      "sha256": "1e3d7727c472741727d6b992e1ae0e67df7fc416dce6c1c125d98d0f16e745d7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9192956,
+      "sha256": "a2e80af8346f3bd050e78d78534fe30c2aedb5412b25a186dbc594ffe4fc6166"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9193143,
+      "sha256": "35c9daf1de5660fcddb9d1771e578bf13e0800f1ea05c01497ba54e4ea5af5ba"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9191884,
+      "sha256": "e8c1fdcfc1944b01b1789162fda4db6c10e2afbfde4b0348a214fe3f52b1d9af"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9195297,
+      "sha256": "e0a05688978b9b93d7c3b977e8b43714707db24a57c079d227eb227e5b04f3af"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9195443,
+      "sha256": "5866d66d2d993fea4f7324a624230c5ca2fb811c693bcc05caf4bb48c0b01de4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9195733,
+      "sha256": "e46dc5619c1364a7e024ebb601c9992ceac2e1acf1455319f00d348a510be50b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9193135,
+      "sha256": "573f7e210fadedf6dc3e4e1f6afab3b550c998f3541bf24923c03ff72e16fe78"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9229574,
+      "sha256": "5ae222d7313510e5340c1ed0d5eb6c5279a9557581fd035833487093d83e89fa"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9229549,
+      "sha256": "f451d9058c1fb476f270eb2fccb1a2b78a40b37f0dc72ab8f6fe89f08acfb2e2"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9228983,
+      "sha256": "3dbb53d8d511a6573db5a70e4424f08aacc82ea947cc0c04ccb0eed01c98293c"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9229010,
+      "sha256": "d7d520065f96b7bb3b12ef12ce4b778a22d2a6cb9e352359d691fecefa5127d1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__cDC__microglia_mhc2.npz",
+      "bytes": 9231107,
+      "sha256": "c4ef57329b10df26ec8e20db738e148b0a4dfc9cbe6a1debae9f5f782516f793"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__classical_mono__microglia_mhc2.npz",
+      "bytes": 9231168,
+      "sha256": "7efce0b362305553499a3f4880fcf52ca93ac0d91e2cb983af4c873de4bafcad"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9230883,
+      "sha256": "9d29f28630330aaf55d7c8564742bbf641c3e8566b846521734fde6f4a30de5c"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__pDC__microglia_mhc2.npz",
+      "bytes": 9230866,
+      "sha256": "d9cf39841410e6946d155fedae905b7a638877e4cfc743da66620f65c3069b4d"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__cDC__microglia_mhc2.npz",
+      "bytes": 143306,
+      "sha256": "7a20fd46924e32603284c4898b3e5fdf2c60d16f975acaf8a4548aec38485789"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__classical_mono__microglia_mhc2.npz",
+      "bytes": 143258,
+      "sha256": "91417918a51475187b1585e5f2e694aa78a71536cb41ce6bd462cb7f89354b76"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 143248,
+      "sha256": "091235d4e4b3a5ad9c1ee569d494ece73c9d4de1db20bd3ecf71fc7b42c0d1ad"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__pDC__microglia_mhc2.npz",
+      "bytes": 143276,
+      "sha256": "6a5872eb3e0dcd6646e748f5b7926a0886400dd01a860eaf7643a5bbcc20499b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__cDC__microglia_mhc2.npz",
+      "bytes": 143366,
+      "sha256": "2dd0f344845956018f6422c793772fd7be51d84464cec9aee1a97854520443b7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__classical_mono__microglia_mhc2.npz",
+      "bytes": 143380,
+      "sha256": "30fb050c5a272395337429565083df376b5ba2fd19f760bc2a4d830e6c3420ff"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 143382,
+      "sha256": "f72f53b8e81dbbde02d34cce32be5276a3eb8e77b15e6c5e760563fa461f63e9"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__pDC__microglia_mhc2.npz",
+      "bytes": 143376,
+      "sha256": "c8f78a2416f8b2c9446d973f77ba63ed8188cb15a659f95d1e06dec936853e6a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__cDC__microglia_mhc2.npz",
+      "bytes": 143312,
+      "sha256": "4a26a29c8659e88290233575a97771521d012c1910409e44b69a19d7713a7756"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__classical_mono__microglia_mhc2.npz",
+      "bytes": 143362,
+      "sha256": "395e96194a403a1f23b260297f82984d0d6db08240f84012a8325b75a4005e4e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 143354,
+      "sha256": "6c30d5a1b126d8951c1102956ee58972f6764896155556b27c49c868e50a0223"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__pDC__microglia_mhc2.npz",
+      "bytes": 143316,
+      "sha256": "1a5baad7a32089a1af2693fa47e08c48852eb8b7026177d4c5f33cf28cba9e2f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__cDC__microglia_mhc2.npz",
+      "bytes": 9073132,
+      "sha256": "ceffd3a5fab43bc53404a8484208aac675ae3ee393f49575530758c0660bf8d1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__classical_mono__microglia_mhc2.npz",
+      "bytes": 9072626,
+      "sha256": "ff759258625ccec43bcea6f9af906cd2bf77022c2c25a9f3c0d1b40817374456"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9071464,
+      "sha256": "39623f489f8795b68632eef89f4f7a7df9b4e63a5be188d666accfa24782e92c"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__pDC__microglia_mhc2.npz",
+      "bytes": 9073916,
+      "sha256": "37afb472089a35b0d678074d988227a4c92644eead30c09eff80bc7cb461ef4f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__cDC__microglia_mhc2.npz",
+      "bytes": 9085848,
+      "sha256": "2d9c1f82ea33f73b29858cae33e14886e43a75b83cfb8ad8c76aa6481e1b7dc6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__classical_mono__microglia_mhc2.npz",
+      "bytes": 9084582,
+      "sha256": "d4a5b011fdd71f99ccf6d8fac4a84ae0260e7004fc2d2a86a54c823406fea83e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9083812,
+      "sha256": "3ba9ee26cbc047c366f9898814cca9b45bd1d894c8244b6d2c668271cdf2639a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__pDC__microglia_mhc2.npz",
+      "bytes": 9086306,
+      "sha256": "5ae46cf19bfdb2a4441298e965d245886cab12d4f83b733e9294a764cacadc36"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__cDC__microglia_mhc2.npz",
+      "bytes": 9079000,
+      "sha256": "4d7d5a749c2db60b6420c0338608f603240dbacea118b711cfb28724b4f68047"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__classical_mono__microglia_mhc2.npz",
+      "bytes": 9079024,
+      "sha256": "aeb0102449d7a342104c98efdf6be73affe8a977acdf261eae176facadafc14d"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9077602,
+      "sha256": "6ee05c84cd733a25c83826b4acfb13df64faf4e2188ee225a9bd34b3a5fed03e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__pDC__microglia_mhc2.npz",
+      "bytes": 9078998,
+      "sha256": "304c203daba405bd3951f3672044a5bead9be0e6957792756d2ff8d12dcd0362"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__cDC__microglia_mhc2.npz",
+      "bytes": 9076526,
+      "sha256": "1415b33085f2d239b19a7742d14a2f0eb7b9ef46294acbb9b219ae61aad54a6e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__classical_mono__microglia_mhc2.npz",
+      "bytes": 9075376,
+      "sha256": "7cff1e64fb567ed98da2448842b0414d6d3c13fe9d28269cf7f9fc0f87eec935"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9075412,
+      "sha256": "cc98f98dabe6755361fbb37c853d902787ff7079d837d4133b67fcc0810e354f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__pDC__microglia_mhc2.npz",
+      "bytes": 9076573,
+      "sha256": "e3bcbf00c466acbd2bfe326fa9016a6a87df9cd0cd81bf2ff7984dd1c2749cfd"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__cDC__microglia_mhc2.npz",
+      "bytes": 9091192,
+      "sha256": "f094bcc6ba41ae4668c9ecce6ccf47e26e4438593498a0a052e03c09452e2e06"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__classical_mono__microglia_mhc2.npz",
+      "bytes": 9091014,
+      "sha256": "a733331d79f3d3ca8e3feb428bf405946a371c74adca60342e21763e6b3b3e1b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9091065,
+      "sha256": "240706cb467f4288b9a07d818d115b09494d694a0cd46da48d909312e1839b8e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__pDC__microglia_mhc2.npz",
+      "bytes": 9090624,
+      "sha256": "3e6a0090540c546a13e61a39b1e6d503d7ef2fce1239e0422c8ee8ee3d2147a6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__cDC__microglia_mhc2.npz",
+      "bytes": 9084721,
+      "sha256": "e4846f4f2a5c4567662246148fe752b153d93439a05216fe7eea46a0f6aef752"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__classical_mono__microglia_mhc2.npz",
+      "bytes": 9084653,
+      "sha256": "4c3699fb8517a0a10add1295d6902b9df8f73b992fd74356ab906671c1dccbe3"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9084856,
+      "sha256": "5e5810e565483e9efdf9593f68b6f9e45c459b3f534c14c9082432aabe49c487"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__pDC__microglia_mhc2.npz",
+      "bytes": 9085298,
+      "sha256": "399718f0c381c54c07656233278759ab23de2335c173d0ac23e12b223dc48a40"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__cDC__microglia_mhc2.npz",
+      "bytes": 9094380,
+      "sha256": "4ae8085b731fe4cb4958238de2bada8f9f6d53e6c7dee93a3bd3e1c7506bac19"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__classical_mono__microglia_mhc2.npz",
+      "bytes": 9204501,
+      "sha256": "cfa58552acd183306708cd9c9316c94a8dc01396f7f3851ab6703581aebf21d2"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9154037,
+      "sha256": "f8b045a8178faf9c752c4c68eaa6eb51ef2bbdaa669502381dd6196b607b044f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__pDC__microglia_mhc2.npz",
+      "bytes": 8827061,
+      "sha256": "4756b61bfa59687274117d6194de6e6bb6aa489693b59789d4d5846a9f710bc8"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__cDC__microglia_mhc2.npz",
+      "bytes": 9092431,
+      "sha256": "3ef77058f2658b91fd70e225619906d4efccdc5f62e6701a62f61fd829752978"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__classical_mono__microglia_mhc2.npz",
+      "bytes": 9203704,
+      "sha256": "a543d2f4f0675f705e1b8fd33dabfe5004739254b2c41097da2f3a89713df2f4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9165828,
+      "sha256": "23d13b5942c39feb43b1ca052be154bd9c66bad06caf3722f04e1e5e77768b39"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__pDC__microglia_mhc2.npz",
+      "bytes": 8821596,
+      "sha256": "3bf17752c6bd59457be3bdf58e692ac3da189917f85a14cb2cfb2edc127d943b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__cDC__microglia_mhc2.npz",
+      "bytes": 9091691,
+      "sha256": "1d3abb09bf2bdebcfae0cada792336cde96c0a1e98b8c1a59aa5be2406701183"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__classical_mono__microglia_mhc2.npz",
+      "bytes": 9204412,
+      "sha256": "1d47122d62a6ab6f5788959818771bfadf8bcd621d8f50e71931fc32b5a334a7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9166813,
+      "sha256": "b1bccdf3189684653583a9c53e202170091c75c01f5c7dbc2acbc48f02b0ec62"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__pDC__microglia_mhc2.npz",
+      "bytes": 8833153,
+      "sha256": "d4ac4e4c44c54b0861f43188e75a94b0e967c3a32cee075731767785598e4919"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__cDC__microglia_mhc2.npz",
+      "bytes": 9196207,
+      "sha256": "1c7d3a69a2ddcc5d2868fc095c5eaa002bb8f8f8fbd6204d49767df98e78bfdd"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__classical_mono__microglia_mhc2.npz",
+      "bytes": 9196799,
+      "sha256": "13f64371f0af0b9af91503582fef7bc0ff4477d12657b9739453bfd4443a2ea9"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9194922,
+      "sha256": "7b992a872e091fb706ef80ad699ebc2a6b4c8510320168355c173334c0d7e23d"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__pDC__microglia_mhc2.npz",
+      "bytes": 9192758,
+      "sha256": "709665b955da7f78f667b4d33333d9adc00ae9155c14f41d09c81dd31e59edaf"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__cDC__microglia_mhc2.npz",
+      "bytes": 9224646,
+      "sha256": "e8830f5f3f06d71f0264af94499f4dc5fa57ba36a6c451cdd4ad5d8f89be3aea"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__classical_mono__microglia_mhc2.npz",
+      "bytes": 9223551,
+      "sha256": "e1a038d9ae90d1322926e1d5750f8002e5cc9ac1044614788d81a22fd5cdd0e0"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9222732,
+      "sha256": "cc2c535d188143dbe9630fea2181c9f9ee4a2769acb1e05f685a04d9b5cdd3cc"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__pDC__microglia_mhc2.npz",
+      "bytes": 9221838,
+      "sha256": "8a1fd068050c8794f9b77eca82d81691945eeb5f37d71c02296af5935ef3d1bc"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__cDC__microglia_mhc2.npz",
+      "bytes": 9205359,
+      "sha256": "cc929f3249f4d844c059b6bb07eb313bdb93438e9e81d5b10cfd3ae11cebff04"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__classical_mono__microglia_mhc2.npz",
+      "bytes": 9205068,
+      "sha256": "86f4b1599b3007e784fedfbaa37426db5b1794f466e719e787ba3fa4fc8f8263"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9205729,
+      "sha256": "825bb4a549a36e03f4809964e01ab01fa9a45b98e044bc68b5a3cf7e4274f863"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__pDC__microglia_mhc2.npz",
+      "bytes": 9204619,
+      "sha256": "3a17246fc8cbbe54fcd1e52616a432b9d6a80221f6b4683e566368e9538736d5"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__cDC__microglia_mhc2.npz",
+      "bytes": 9196752,
+      "sha256": "a0e95d9b0934f7e826fd2c973389fdfa29788fac7e3599bcfbb6f688564fa0f0"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__classical_mono__microglia_mhc2.npz",
+      "bytes": 9196004,
+      "sha256": "f0b87365135ba6652909250d624f330a3c8c2389d55bb80020ea3ee83a6494e4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9196961,
+      "sha256": "9efca96dbcddbd8cb880002a867c2d8df470b99fae7a84f0ac927d20a13236aa"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__pDC__microglia_mhc2.npz",
+      "bytes": 9197496,
+      "sha256": "6b7cef4ffd29c972760fbed8b715f14819ce8cbf1c3254d971b4f4cfe2501543"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__cDC__microglia_mhc2.npz",
+      "bytes": 9226119,
+      "sha256": "37de87fb117982b9d116058fcfb16b7fa0aaac62aa44686cce4b07f12478e65e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__classical_mono__microglia_mhc2.npz",
+      "bytes": 9226588,
+      "sha256": "223a323fef03477c2eb7298e6b1590a41875e68574ff8ab46420f34dfa8da1e3"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9226902,
+      "sha256": "0e25f3b9d7014a1377fa070f872d9bd7ea73bfe493992727a682100c7686b763"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__pDC__microglia_mhc2.npz",
+      "bytes": 9228266,
+      "sha256": "92969141668cfee04a4c9ac005c031bc5f6da7293f34733a6bcde5016468fdff"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__cDC__microglia_mhc2.npz",
+      "bytes": 9207955,
+      "sha256": "2c2b516f6ff75bfd7afa141161c4b79cfd9f91d0153afc4d2f29a512ccea1948"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__classical_mono__microglia_mhc2.npz",
+      "bytes": 9207387,
+      "sha256": "e728d38794ef08f3cb850fc8cbc1ab02835285ff0b6e4126bb338b6265f13b64"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__nonclassical_mono__microglia_mhc2.npz",
+      "bytes": 9207773,
+      "sha256": "dd5d5b956978df0259afd738fc3e1f1cdb64764897eb80adc4f550b9f4cf750a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__pDC__microglia_mhc2.npz",
+      "bytes": 9210467,
+      "sha256": "2abfdf69b3ca70c8be2b612bce02a5580f91cee15ba80994371aaca7a69c14a9"
+    },
+    {
+      "path": "results/benchmark_20261002/cache/cDC__astro.npz",
+      "bytes": 66695277,
+      "sha256": "b8be73ebc3605af9580e6ec89ff320b686699dc774bbb7d8424c2aa5867abcf1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__cDC__astro.npz",
+      "bytes": 9177987,
+      "sha256": "d0a7430138b2fdaae1086f85f99db6137148fa4aaec33ed1c44fb21693851e2d"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__classical_mono__astro.npz",
+      "bytes": 9178423,
+      "sha256": "08e2b54bab10b7711e0d53b81f15165c19159b9e0e74fd0e5af91350c5ae6e3b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9178231,
+      "sha256": "95e67e5abf2d08d6b44d1515b7b89b0d52b355445cbada4302f9f3db57cb26ef"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/periscope__pDC__astro.npz",
+      "bytes": 9175680,
+      "sha256": "ab8fac031949ed1a52bb2b90be43f02ffd1932dbf2ec4eff9ae1df7c74b540ec"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__cDC__astro.npz",
+      "bytes": 9214998,
+      "sha256": "8ea2ed8ba23b00a25559c8585a4346c34ba9e1375338647d3ea890e2ca5f7fb8"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__classical_mono__astro.npz",
+      "bytes": 9213908,
+      "sha256": "748af5db81675eb64689c1fdc2e205f86ab251280ad74a958b3c056c11c1cec6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9214947,
+      "sha256": "d8ab108dbd9af989a528150bb893f4043afce79d8bf5cd3d26bc300ac4f700ec"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/periscope__pDC__astro.npz",
+      "bytes": 9214726,
+      "sha256": "babea9a59e3647d81124a0129cd37d0ec55c9bb78003cb8f40ca69d951d3bec1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__cDC__astro.npz",
+      "bytes": 9191502,
+      "sha256": "19dc3bc9af3e1bc0afe532bb6b684a3e4b45e0549f4dfe8477685eb53f9771e1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__classical_mono__astro.npz",
+      "bytes": 9192353,
+      "sha256": "f759315848b7d51374cfa4d2c69e71b1b4a6b4b0ab2c15f8a71947b5bf779738"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9191882,
+      "sha256": "6379a6927fa92e3ed2ccce636a3e93d6a6face03b730e49d94269dad931ce5b7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/periscope__pDC__astro.npz",
+      "bytes": 9190743,
+      "sha256": "3285c0cf7a9cc0233fcac9a866e55933e1dd97a9aab554c4ae5caf3364736005"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__cDC__astro.npz",
+      "bytes": 9203652,
+      "sha256": "3f721fe26847bca364b6630b42e129eddee2e0130f061576b8ebee20f1712f34"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__classical_mono__astro.npz",
+      "bytes": 9204209,
+      "sha256": "ee827d4603dedc9d5e0635b91d0653a9034ba49d69712d01830fa9d554f8422c"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9204555,
+      "sha256": "a4ff28a343205886fd585a7033db005f3093f58d9aed2ba17e629a668f949550"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_45/periscope__pDC__astro.npz",
+      "bytes": 9201141,
+      "sha256": "6e4972e24c523f124f9ee9988b2648e83b0160d83879dbc5db5ea10a02d11f82"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__cDC__astro.npz",
+      "bytes": 9164159,
+      "sha256": "e141032978ab5a466d86a19fc8613b8259bd7b1a3df516bd86bf3b823dbb1d31"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__classical_mono__astro.npz",
+      "bytes": 9164654,
+      "sha256": "76cf9e227e8cfa63fb29c2172555d4bf6f879823ff5769088bfcc21ad9595f0f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9164868,
+      "sha256": "0f23462ecde41a15aedaf6a60cdee6b26a648cc3658fa8c54758eaf8e6ed6650"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_46/periscope__pDC__astro.npz",
+      "bytes": 9162421,
+      "sha256": "27d39a2185028c99c364a5770974830b191a04ecceef0662895561d85d8c5a60"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__cDC__astro.npz",
+      "bytes": 9200816,
+      "sha256": "01bae86430114eb421b45f8dffe936d06d125ad1c9c224bfed775927cc08a591"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__classical_mono__astro.npz",
+      "bytes": 9200458,
+      "sha256": "9fea911d3a40bc9f28f3c546b81fafb843dc6b4108855f2711d7d5e075672799"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9200935,
+      "sha256": "d1a0cbb0438cd55fc722f5cd3457e6607b9832443503bde321cc6c5b87de32a6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_47/periscope__pDC__astro.npz",
+      "bytes": 9198785,
+      "sha256": "2f347a6474eb3e2d79944c6076499734a2d0b112af750ef7e83fc1cc998da3ab"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__cDC__astro.npz",
+      "bytes": 9174843,
+      "sha256": "c90525825c6534a233619ba8c42ba921e59e226bb0309b143aee3aa6d7986455"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__classical_mono__astro.npz",
+      "bytes": 9174983,
+      "sha256": "aa2254cf7b2bd890b1e60f304de15625aec5ec6314f048f5509bd5c843ad9a2e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9174625,
+      "sha256": "d41077b85e8a622f41ace9db8034d0f8973ca50c07735dfb2d958938b7295bb3"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_48/periscope__pDC__astro.npz",
+      "bytes": 9173789,
+      "sha256": "f605f656e66a7d69d0fc2cfd0c5928dc34ac22be43951abd41b53788a001abac"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__cDC__astro.npz",
+      "bytes": 9180948,
+      "sha256": "917573862ef72fa618a51e7dfd0d1dd4a1d19014d444e88a4463ba40e7c8b3d0"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__classical_mono__astro.npz",
+      "bytes": 9181575,
+      "sha256": "b4d255386e2277784218b1a4195ea688fe60cfed7cbd743ee660a9acfb034578"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9182136,
+      "sha256": "44ee6bb1082cdd523ec70ad54bc9306d4e84297521a712b9395b6ca8e026486e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_49/periscope__pDC__astro.npz",
+      "bytes": 9176455,
+      "sha256": "255495f8d1529e01c2a16a4bae1e2881f31f95abdbf2d2347c73d62bc84bdeaf"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__cDC__astro.npz",
+      "bytes": 9208525,
+      "sha256": "ac9921cb641246754fee467ca72a026dd81403e7194e666660e5bf1b20347cc6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__classical_mono__astro.npz",
+      "bytes": 9208810,
+      "sha256": "b062dcf61d985efaa51f932e7f448225d4f4fade1d7da3837af672a79b86d70c"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9208951,
+      "sha256": "1a47faf917b7826d94bff2551bc4a871f6e143896425a91f502dae2b89bb3505"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_50/periscope__pDC__astro.npz",
+      "bytes": 9207631,
+      "sha256": "df10f488d129638640f0292d3bccfce27d7a00359936daf15e05c1dbf85444f4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__cDC__astro.npz",
+      "bytes": 9203149,
+      "sha256": "bc3dba250f9de78c27bc032951b8901fa1cff9c117a628016a3ee64967edde0f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__classical_mono__astro.npz",
+      "bytes": 9202882,
+      "sha256": "36080df53bffc40e30705b6179552fba4ae5de140958556678dc745416a2717b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__nonclassical_mono__astro.npz",
+      "bytes": 9202566,
+      "sha256": "d0e4a689f18cfaf4b94da02ff2e9e6072939e9f1cfb7297c440a8dc571b90997"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_51/periscope__pDC__astro.npz",
+      "bytes": 9202844,
+      "sha256": "a946801120ae5c214f7b756230522b3c0046efed30710f837f7609387a4fc7e5"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__cDC__astro.npz",
+      "bytes": 142492,
+      "sha256": "aff7acc2ffe08f3df1bd53c794859d0ef9a472fe690df60ae5d9938656d794ac"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__classical_mono__astro.npz",
+      "bytes": 142466,
+      "sha256": "bac6137c6ffc7238df7ca8a67f4c208ccc735aaa8c1fcab67cdc1de3b8654486"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__nonclassical_mono__astro.npz",
+      "bytes": 142546,
+      "sha256": "e1dea93c867c9cfb3824c7682f9f13512123cc623078287726ef9e3311e6ba94"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_mean__pDC__astro.npz",
+      "bytes": 142492,
+      "sha256": "8f32740553d3d258683bacb12d0e41ced062ac3f490d483b40e6892645c9040a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__cDC__astro.npz",
+      "bytes": 142748,
+      "sha256": "02b68ee215ec78c0bc5c63667dea4ce0ef2cc6ced7c935eb4843ee5653e16bc5"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__classical_mono__astro.npz",
+      "bytes": 142706,
+      "sha256": "c856cf77aae959d0913e3b968bd1d84ade34aead989bfdc3eb498272b2b668d2"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__nonclassical_mono__astro.npz",
+      "bytes": 142690,
+      "sha256": "8258057f0a94be5bd75b33e202ae67cd9f01682b8edc8887d8723ddd07364e9b"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_mean__pDC__astro.npz",
+      "bytes": 142706,
+      "sha256": "bcea054ae4f954988ca5ac3543f5fdaefdaf5557807f92aa5b52cb663ae828db"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__cDC__astro.npz",
+      "bytes": 142588,
+      "sha256": "df1bc5595761875fe67419c8549dabc6ac4c015b0233bf2936c0964148ad340d"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__classical_mono__astro.npz",
+      "bytes": 142554,
+      "sha256": "0e41606d67fdd6e08dbca283b62b50a66106af485a07ad686f38bf99671b3c5e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__nonclassical_mono__astro.npz",
+      "bytes": 142632,
+      "sha256": "f9a25e252eb24e5ad9e7ee4f65470f474636e361bdba4df5dd9011c218e7b61a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_mean__pDC__astro.npz",
+      "bytes": 142584,
+      "sha256": "7aebccbc0a24486ebdee28e475a8769450cc2fa5998a1cf4c425084299edc327"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__cDC__astro.npz",
+      "bytes": 9050030,
+      "sha256": "af29b5dbee723c9f9a3e4726c04b442f2063d98bb32051ad86b4fb72820ddcdf"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__classical_mono__astro.npz",
+      "bytes": 9048580,
+      "sha256": "6e6b7c863b557a2166e2535be51725b7e10cdb469174644bca7786b55f80973d"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__nonclassical_mono__astro.npz",
+      "bytes": 9048938,
+      "sha256": "740b6e1b152227d7d71da2763f3589c3707aefde097f10ecb002eb4229d30f70"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/shared_label_marginal__pDC__astro.npz",
+      "bytes": 9048518,
+      "sha256": "8b2a771b4e6498aabb61cde51d8a7b5221b18accef3f309a8b1e480a78e9f274"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__cDC__astro.npz",
+      "bytes": 9080566,
+      "sha256": "11fbef835582d1ca4e2f9f220904a9c6459c11fa4d5afb0c83f7fbf911300769"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__classical_mono__astro.npz",
+      "bytes": 9078134,
+      "sha256": "e8021c78be9a8f4025349ba3271b1478f2768cd9e1982f8a824772a9398e6d1a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__nonclassical_mono__astro.npz",
+      "bytes": 9078124,
+      "sha256": "af491faddbb84edb2f9aabff1ad9f0d121106d4400b539a474edfbf09dd36ce4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/shared_label_marginal__pDC__astro.npz",
+      "bytes": 9077634,
+      "sha256": "35a269c3d81dfc4e16ed88cdda6fb4731eb4b7367b0f71b1c287bae929a2df61"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__cDC__astro.npz",
+      "bytes": 9067248,
+      "sha256": "4cd692c54bc87f4ed9f5ff24b383932a24e57b94c75cad98c7153df1d42d477e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__classical_mono__astro.npz",
+      "bytes": 9065122,
+      "sha256": "0fa06855d33844d384fddc8f7b1a65b257a59f8936e3438e7bb7f9f944f0816f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__nonclassical_mono__astro.npz",
+      "bytes": 9065302,
+      "sha256": "83c4b61c0eb203a487f827522a82a433c526bf2fbb9d06c5b170f7eceeb853c8"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/shared_label_marginal__pDC__astro.npz",
+      "bytes": 9065278,
+      "sha256": "570e5fe2c44820abfd939d8cb5cef1f639987f9c47142eb59471d6e1ed3398c1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__cDC__astro.npz",
+      "bytes": 9026546,
+      "sha256": "5cdd8a60d57576b9156821db644a8c577af86d06657fa06e42574fff60a6e562"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__classical_mono__astro.npz",
+      "bytes": 9025195,
+      "sha256": "2ac3ee7d9bfd1e22754f3a97ed0bd0d623cb5ec0ac0fbef325a7a4cb4134c52a"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__nonclassical_mono__astro.npz",
+      "bytes": 9025992,
+      "sha256": "691d2bea55a836817bae6ddee655079edbb5474e1e3d8d31eefa794086bd42e4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/ot_ridge__pDC__astro.npz",
+      "bytes": 9022125,
+      "sha256": "80188dd17fd9e2daf434837587ab34ffa4ef7b48db8b53ae43cda03018721127"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__cDC__astro.npz",
+      "bytes": 9053211,
+      "sha256": "a28f3c04b712e5947608346acadd15425f594ade578a782b492fd857291b8380"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__classical_mono__astro.npz",
+      "bytes": 9053292,
+      "sha256": "1153e40e7984821d7c62243a782546ee70dead7f10f91935be37fb29446ee959"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__nonclassical_mono__astro.npz",
+      "bytes": 9054671,
+      "sha256": "22db9b72f114e7e2ad17973cf98cd41ce68dd3666b5589f0ce7fac391fcfca27"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/ot_ridge__pDC__astro.npz",
+      "bytes": 9058119,
+      "sha256": "b89c1b220cb609484d115ff5bc21024e14fe23b26e2dafd053a87f79512560f9"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__cDC__astro.npz",
+      "bytes": 9031069,
+      "sha256": "a4602a7cf5b21cce62ae322df112209c53651323dfd2e0e6459bca7faf9fe115"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__classical_mono__astro.npz",
+      "bytes": 9030430,
+      "sha256": "0a1f05ec5f31217a20ebb17e77bd81246d4d89f0e979731cecb756d55817f855"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__nonclassical_mono__astro.npz",
+      "bytes": 9033952,
+      "sha256": "794bbe257e4013e4b4341115faa357d84bae76374b6a6837f6e90753152bf831"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/ot_ridge__pDC__astro.npz",
+      "bytes": 9035168,
+      "sha256": "cb1ff2140367a6d73623759a469749e1f792b8cbf87927f5f0e429be3dbb1247"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__cDC__astro.npz",
+      "bytes": 9162490,
+      "sha256": "ed6655d1f1b6e311d799e95b8f397d3d684511f5dfcbe53948d684e61f9bdeb0"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__classical_mono__astro.npz",
+      "bytes": 9197399,
+      "sha256": "7ab7b17f7d737025d0a5a020503718280f0601944cff6b8cdbe268f0f83b5251"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__nonclassical_mono__astro.npz",
+      "bytes": 9200165,
+      "sha256": "5204859b3294411312ee522a4d3fa4af14066cdc39a287970df44ad20a4c83f7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/cellot__pDC__astro.npz",
+      "bytes": 8935898,
+      "sha256": "50ddd540b83f19f71a82c18f039186d11d73592d8057d8e3c74fa8e9fd980ce9"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__cDC__astro.npz",
+      "bytes": 9157680,
+      "sha256": "258372a737470a49217777f8edc4736db3cdba155216dc628a3ea225c8026bd3"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__classical_mono__astro.npz",
+      "bytes": 9186903,
+      "sha256": "cf259ea7c84768dbb3c44d7cc439d2adc72e95c060746dcd9bce3c7034183f37"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__nonclassical_mono__astro.npz",
+      "bytes": 9201010,
+      "sha256": "cc7a27a4ac99884fff94928a312fad971b37c62fd1f71b1a81e1025ae76f20a0"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/cellot__pDC__astro.npz",
+      "bytes": 8917947,
+      "sha256": "2559b1a01252885af2d1fcbb34cec420b4e3fc0a1acbd24186d7b1908bdde6b6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__cDC__astro.npz",
+      "bytes": 9160888,
+      "sha256": "714cf4cab9859591432487817d5a87359ddff6029ec7ab425d3fc545875df7bc"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__classical_mono__astro.npz",
+      "bytes": 9188297,
+      "sha256": "b1d5d1c6a3ce21d79a6a1a19dbaae92a7599da24a0a3529626cd335035e864de"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__nonclassical_mono__astro.npz",
+      "bytes": 9199392,
+      "sha256": "a2638df5b0014c16b0c6ec2637e77b658b12613bff39b44b5e8e607520665bf1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/cellot__pDC__astro.npz",
+      "bytes": 8928001,
+      "sha256": "259ad5bc414e8d6d3fd058cd972e9eddd6b988c54c8d3a3475739bb42e62c4f8"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__cDC__astro.npz",
+      "bytes": 9167355,
+      "sha256": "5ff7c7335d8d400c790813a713f6207f9fc7375b2b919c1d341753cae2da8890"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__classical_mono__astro.npz",
+      "bytes": 9168628,
+      "sha256": "ac05e5b01644228adf7a48ef40564bce2841a14ae7d227c4360c147b621cdc60"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__nonclassical_mono__astro.npz",
+      "bytes": 9166890,
+      "sha256": "e71da6d3bd339e76e794a5a3d346893fc02dd4cc9f818906e15ad56eb6b697e2"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_icnn__pDC__astro.npz",
+      "bytes": 9154924,
+      "sha256": "47a81a4311fe32ef45919b374a2faf93ea9418d36727d3978b4a414d6d8e01db"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__cDC__astro.npz",
+      "bytes": 9201231,
+      "sha256": "d306697facb2cfe3e3718f8ff3a45b077267cf109aa64df4908d1ed29fa07eac"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__classical_mono__astro.npz",
+      "bytes": 9199147,
+      "sha256": "b0e463668aa22e847a80cf8b3ccae84b394ad8e92051a03a5cff87af3c2071f7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__nonclassical_mono__astro.npz",
+      "bytes": 9196800,
+      "sha256": "5e23eb4b4d8793db25a21ed1c98b2871957b658478b4690b3002c10401636dc7"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_icnn__pDC__astro.npz",
+      "bytes": 9197491,
+      "sha256": "8384d55f3ff211b591b177287f9bb27dbf9c4af1a748614cae8de2f3a872d216"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__cDC__astro.npz",
+      "bytes": 9174908,
+      "sha256": "68e6f7bc18f4532744125be1e9906e8ee4d7c7192aa66f3848cc976dcdd25209"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__classical_mono__astro.npz",
+      "bytes": 9182636,
+      "sha256": "6dcfed8753ddcff422b7ec6f65dbef8dc906c28fa326445a3934edcb6c9ae1b1"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__nonclassical_mono__astro.npz",
+      "bytes": 9184336,
+      "sha256": "fb61abe873824466954700e4267b356012e310ccba816e1f08bd2b2ef2aaee14"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_icnn__pDC__astro.npz",
+      "bytes": 9166857,
+      "sha256": "fa8f0cd55f843127854e2c94caf2e4c7dedb89d27fbba19acadece6d3d9f7a64"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__cDC__astro.npz",
+      "bytes": 9177865,
+      "sha256": "6422bebc3093fe47414cc4e9b398d76a71c5b1b747df8f89ed24d9510faf0303"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__classical_mono__astro.npz",
+      "bytes": 9179727,
+      "sha256": "225e63a325f648ad70a6c694b728761d202121bfaa8104afcce3c70831c998a4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__nonclassical_mono__astro.npz",
+      "bytes": 9179294,
+      "sha256": "d5e90fab370248aa480c88e4d831cb83eb159c0309a43831bce457cdfd0d4a19"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_42/conditional_mlp__pDC__astro.npz",
+      "bytes": 9176714,
+      "sha256": "ac84e28924d8d9a3831a8b6de4832a5c007d84a26a3883d036777e289790c23e"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__cDC__astro.npz",
+      "bytes": 9209253,
+      "sha256": "e4481c9cb403ffeeb6834b2c6889003d759a885d27de8b2312f9bfad8ed73ef4"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__classical_mono__astro.npz",
+      "bytes": 9208632,
+      "sha256": "2c95d2577be43895cb5627cc5363fcd7cca4eb206d5f03d6b5ce95b59442c53f"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__nonclassical_mono__astro.npz",
+      "bytes": 9208555,
+      "sha256": "c25e63e565ee3cc58c924355ac74c151cc6e62e4e2452bb92aac68e5f4eb7ee9"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_43/conditional_mlp__pDC__astro.npz",
+      "bytes": 9210011,
+      "sha256": "95f6ce43d3dd5bd106fa3edb6fd40d94ea1632290d24c2f3d9f61fda5d69f5f3"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__cDC__astro.npz",
+      "bytes": 9189019,
+      "sha256": "39cc186c322c4966476b458477417cb30ab21e8bc9920010bf785b8a64b549c8"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__classical_mono__astro.npz",
+      "bytes": 9189147,
+      "sha256": "a8d9539fa4d0c5451b630d88b0ac14b908413838c0ea0b22cc6d90a0a9847b41"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__nonclassical_mono__astro.npz",
+      "bytes": 9188674,
+      "sha256": "d0516be848fc62c3ebdf5e2fbb825372894d59a219d17af9947a0b46e28cbfa6"
+    },
+    {
+      "path": "results/benchmark_20261002/results/seed_44/conditional_mlp__pDC__astro.npz",
+      "bytes": 9190075,
+      "sha256": "bdae8c214731ec3cd57a490a5016b48d370c60878f2425e7911b4ed246755fba"
+    }
+  ],
+  "preprocessing_source_directory": "interim/rescreen_20261002",
+  "files": {
+    "benchmark_contrasts.npz": {
+      "sha256": "67254e39712bf4b4dea37b898fe83003aec72ef86cd8547c2fa2fea2fab2c100",
+      "bytes": 4065760
+    },
+    "blood_preprocessing.npz": {
+      "sha256": "162e789a88708a0c9911c69d777e4c3c4da3e9749641a1e69c5645c1aa226c35",
+      "bytes": 40696
+    },
+    "blood_donor_metadata.csv": {
+      "sha256": "49b587a5a5fbe632c5a46425a63d5c2b8746e04fe03da7f4b50fb035e049db70",
+      "bytes": 662
+    },
+    "brain_train_preprocessing.npz": {
+      "sha256": "0ab02a102570472d6dd471884b05c7d9d76c9c2626ffca94976c717d56eeb598",
+      "bytes": 40057
+    },
+    "citeseq_preprocessing.npz": {
+      "sha256": "fb79c0635b1cf06683e7d12c340a9cf877f154cb85969ac978ec89dfeedcf783",
+      "bytes": 42101
+    }
+  }
+}

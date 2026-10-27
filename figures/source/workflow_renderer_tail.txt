@@ -1,0 +1,26 @@
+for sc in out:
+ if os.environ.get('FIGURE') and sc['figure']!=int(os.environ['FIGURE']):continue
+ c=canvas.Canvas(str(PANEL_BUILD/f'{sc["figure"]}a.pdf'),pagesize=(sc['width'],sc['height']));c.setTitle(f'{sc["figure"]}a')
+ for e in sc['elements']:
+  typ=e['type'];fill=e.get('fill','none');stroke=e.get('stroke','none')
+  c.setLineWidth(e.get('lw',.7));c.setFillColor(HexColor(fill)if fill!='none'else HexColor('#FFFFFF'));c.setStrokeColor(HexColor(stroke)if stroke!='none'else HexColor('#FFFFFF'))
+  if typ in ('rect','ellipse'):
+   fn=c.rect if typ=='rect'else c.ellipse
+   args=(e['x'],sc['height']-e['y']-e['h'],e['w'],e['h'])if typ=='rect'else(e['x'],sc['height']-e['y']-e['h'],e['x']+e['w'],sc['height']-e['y'])
+   fn(*args,fill=int(fill!='none'),stroke=int(stroke!='none'))
+  elif typ=='path':
+   p=c.beginPath();p.moveTo(e['pts'][0][0],sc['height']-e['pts'][0][1]);[p.lineTo(x,sc['height']-y)for x,y in e['pts'][1:]]
+   if e.get('closed'):p.close()
+   c.drawPath(p,fill=int(fill!='none'),stroke=int(stroke!='none'))
+  elif typ=='image':
+   paths=list(ASSETS.glob('*'+e['asset']+'*.png'))
+   if not paths:raise RuntimeError(e['asset'])
+   c.drawImage(str(paths[0]),e['x'],sc['height']-e['y']-e['h'],e['w'],e['h'],preserveAspectRatio=True,anchor='c',mask='auto')
+  elif typ=='text':
+   font='Helvetica-Bold'if e.get('bold')else'Helvetica';size=e['size'];c.setFont(font,size);c.setFillColor(HexColor(e['color']));lines=lines_for(e);lh=size*1.17;total=lh*len(lines)
+   if total>e['h']+4 and e['text'].strip():issues.append((sc['figure'],e['text'],round(total-e['h'],1)))
+   base=sc['height']-e['y']-(e['h']-total)/2-size*.85
+   for j,t in enumerate(lines):
+    x=e['x']if e.get('align')=='left'else e['x']+e['w']/2
+    (c.drawString if e.get('align')=='left'else c.drawCentredString)(x,base-j*lh,t)
+ c.showPage();c.save()

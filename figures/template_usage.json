@@ -1,0 +1,214 @@
+{
+  "1b": {
+    "template": "1_A",
+    "source": "panel_grid/objects/1A.rds",
+    "question": "unchanged source-cohort description; layout and physical typography redrawn"
+  },
+  "1c": {
+    "template": "3_B",
+    "source": "panel_grid/objects/1B.rds",
+    "question": "unchanged source-cohort description; layout and physical typography redrawn"
+  },
+  "1d": {
+    "template": "7_G",
+    "source": "panel_grid/objects/1C.rds",
+    "question": "unchanged source-cohort description; layout and physical typography redrawn"
+  },
+  "1e": {
+    "template": "5_E",
+    "source": "panel_grid/objects/1D.rds",
+    "question": "unchanged source-cohort description; layout and physical typography redrawn"
+  },
+  "1f": {
+    "template": "2_E",
+    "source": "panel_grid/objects/1E.rds",
+    "question": "unchanged source-cohort description; layout and physical typography redrawn"
+  },
+  "1h": {
+    "template": "5_C",
+    "source": "panel_grid/objects/1G.rds",
+    "question": "unchanged source-cohort description; layout and physical typography redrawn"
+  },
+  "1g": {
+    "template": "6_J",
+    "n": 6,
+    "source": "R copied ordinary factory"
+  },
+  "2b": {
+    "template": "4_J",
+    "n": 14200,
+    "source": "R copied ordinary factory"
+  },
+  "2c": {
+    "template": "7_G",
+    "n": 13,
+    "source": "R copied ordinary factory"
+  },
+  "2d": {
+    "template": "4_I",
+    "n": 8,
+    "source": "R copied ordinary factory"
+  },
+  "2e": {
+    "template": "6_F",
+    "n": 5067,
+    "source": "R copied ordinary factory"
+  },
+  "2f": {
+    "template": "6_G",
+    "n": 5067,
+    "source": "R copied ordinary factory"
+  },
+  "2g": {
+    "template": "7_I",
+    "n": 2769,
+    "source": "R copied ordinary factory"
+  },
+  "3b": {
+    "template": "6_J",
+    "n": 56,
+    "source": "R copied ordinary factory"
+  },
+  "3c": {
+    "template": "3_C",
+    "n": 63,
+    "source": "R copied ordinary factory"
+  },
+  "3d": {
+    "template": "4_J",
+    "n": 18,
+    "source": "R copied ordinary factory"
+  },
+  "3e": {
+    "template": "7_E",
+    "n": 7,
+    "source": "R copied ordinary factory"
+  },
+  "3f": {
+    "template": "4_J",
+    "n": 50,
+    "source": "R copied ordinary factory"
+  },
+  "4b": {
+    "template": "S5_D",
+    "n": 100,
+    "source": "R copied ordinary factory"
+  },
+  "4c": {
+    "template": "S2_F",
+    "n": 50,
+    "source": "R copied ordinary factory"
+  },
+  "4d": {
+    "template": "5_G",
+    "n": 4741,
+    "source": "R copied ordinary factory"
+  },
+  "5c": {
+    "template": "6_G",
+    "n": 25000,
+    "source": "R copied ordinary factory"
+  },
+  "4e": {
+    "template": "6_I",
+    "n": 17,
+    "source": "R copied ordinary factory"
+  },
+  "4f": {
+    "template": "S2_C",
+    "n": 6,
+    "source": "R copied ordinary factory"
+  },
+  "4g": {
+    "template": "4_J",
+    "n": 160,
+    "source": "R copied ordinary factory"
+  },
+  "4h": {
+    "template": "4_I",
+    "n": 5,
+    "source": "R copied ordinary factory"
+  },
+  "5b": {
+    "template": "3_C",
+    "n": 48,
+    "source": "R copied ordinary factory"
+  },
+  "5d": {
+    "template": "7_E",
+    "n": 5,
+    "source": "R copied ordinary factory"
+  },
+  "5e": {
+    "template": "7_E",
+    "n": 6,
+    "source": "R copied ordinary factory"
+  },
+  "5f": {
+    "template": "7_G",
+    "source": "cp round2_panels.R -> R/seed_robustness.R",
+    "n": 80
+  },
+  "6b": {
+    "template": "7_E",
+    "n": 48,
+    "source": "R copied ordinary factory"
+  },
+  "6c": {
+    "template": "old5C annotated ComplexHeatmap",
+    "source": "cp copied_grouped.R -> annotated_heatmap.R",
+    "n": 60
+  },
+  "6d": {
+    "template": "7_I",
+    "n": 33,
+    "source": "R copied ordinary factory"
+  },
+  "6e": {
+    "template": "3_C",
+    "n": 4,
+    "source": "R copied ordinary factory"
+  },
+  "6f": {
+    "template": "6_F",
+    "n": 6,
+    "source": "R copied ordinary factory"
+  },
+  "6g": {
+    "template": "5_C",
+    "n": 11859,
+    "source": "R copied ordinary factory"
+  },
+  "6h": {
+    "template": "5_C",
+    "n": 11859,
+    "source": "R copied ordinary factory"
+  },
+  "7b": {
+    "template": "5_E",
+    "n": 24,
+    "source": "R copied ordinary factory"
+  },
+  "7c": {
+    "template": "6_J",
+    "n": 16,
+    "source": "R copied ordinary factory"
+  },
+  "7d": {
+    "template": "user_evidence_wheel",
+    "source": "cp references/user_fig5_e_wheel.py -> source/evidence_wheel.py",
+    "n": 97,
+    "question": "Evidence alignment over every frozen program for the three nominated targets"
+  },
+  "7e": {
+    "template": "7_G",
+    "n": 6,
+    "source": "R copied ordinary factory"
+  },
+  "7f": {
+    "template": "new_upset",
+    "source": "source/target_overlap.R",
+    "n": 337,
+    "question": "Exclusive and shared priority-program gene coverage across targets"
+  }
+}
