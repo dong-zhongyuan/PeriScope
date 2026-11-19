@@ -29,7 +29,7 @@ The additions are:
 
 ## Result tables
 
-`result_tables/` contains the summary tables. The complete MR atlas (two files of about 1.5 GB each) and the five random-pairing checkpoints are deposited at Zenodo, DOI [10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535), together with the same summary tables.
+`result_tables/` contains the summary tables. The complete MR atlas and the five random-pairing checkpoints are deposited at Zenodo, DOI [10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535), together with the same summary tables. Each of the two atlas tables (primary and sensitivity policy, 11,655,183 rows) is stored as 12 csv.gz parts of about 125 MB; every part carries the header row and can be read on its own.
 
 | Folder | Contents |
 | --- | --- |
