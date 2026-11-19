@@ -1,0 +1,12 @@
+step,gate,antigens,removed_from_previous,programs,antigens_list,level
+0,all PeriScope antigens,213,,6849,,shared
+1,C1 identity and source-cell context,170,43,5301,,shared
+2,C2 measured dose (same program),170,0,5301,,shared
+3,C3 specific model response (same program),163,7,2735,,shared
+4,C4 matched-cell-state PD brain support (same program),148,15,990,,shared
+5,C5 surface/extracellular accessibility (same program),148,0,990,,shared
+6,MR: pair BH q<0.05 or best trait with maxT p<0.05 / assay q<0.05,9,139,,CD119;CD206;CD301;CD304;CD325;CD71;CD79b;CLEC12A;HLA-DR,shared
+7,coloc on the same pair: unified_H4>=0.8 on AGES or UKB,7,2,,CD119;CD301;CD304;CD325;CD71;CD79b;CLEC12A,shared
+8a,single resolved restorative direction (mixed fails),5,2,,CD119;CD325;CD71;CD79b;CLEC12A,shared
+8,"PRIMARY: direction-matched drug, expanded routes",2,3,,CD119;CD71,expanded (primary)
+8_direct,"labelled subset: direction-matched drug, direct route only",1,1,,CD71,strict (direct only)

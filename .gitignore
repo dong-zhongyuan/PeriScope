@@ -10,3 +10,5 @@ nohup.out
 /data/
 /models/
 recomputed/
+._*
+.DS_Store

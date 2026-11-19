@@ -6,9 +6,13 @@ The blood–brain barrier limits therapeutic exposure in Parkinson's disease. Ch
 
 PeriScope learns from unpaired blood and brain single-cell atlases, with paired RNA–protein measurements anchoring the protein input. A learned coupling potential organizes recipient-state updates: the blood state is held fixed, the recipient brain latent state follows the potential gradient, and a decoder reads out its transcriptional response. Clamping a protein input at observed abundance quantiles makes candidate modulations comparable for a specified recipient cell state.
 
-Computational perturbation, human brain expression and blood-protein Mendelian randomization nominate **CD22, CD40 and CD71 (TFRC)**, with **16 recipient-specific programs and 337 distinct genes**. Their modulation directions depend on the recipient state. Direct target mechanisms link the three proteins to **24 clinical-stage molecules**. Human brain cohorts, spatial transcriptomics and an independent blood–brain response evaluation in pigs provide complementary evidence for the model and its programs.
+Protein-calibrated dose queries, matched human brain cohorts, a plasma protein–brain imaging Mendelian randomization (MR) atlas, colocalization and direction-matched drug evidence narrow **213 blood-cell surface antigens to two targets: TFRC (CD71) and IFNGR1 (CD119)**. The atlas covers 2,941 UK Biobank plasma protein assays and 3,963 brain imaging phenotypes (11,655,183 protein–phenotype pairs). TFRC links blood myeloid cells to iron-sensitive imaging of the substantia nigra and pallidum; IFNGR1 provides a second route through astrocytes. Held-out donors, independent human brain cohorts, spatial transcriptomics, systemic-inflammation experiments in pigs and mice, and a random-pairing ablation support the model.
 
-This repository accompanies the current **Nature Machine Intelligence submission**, updated against the analysis files and figure data on 27 October 2026. The manuscript title is reproduced above.
+This repository accompanies the current manuscript (November 2026); its title is reproduced above.
+
+- [`pd-v3/`](pd-v3/README.md) holds the MR atlas, replication, colocalization, drug evidence, target funnel, the random-pairing ablation on seeds 52–56, the code of the five main figures and the summary tables.
+- The complete MR atlas, the summary tables and the five random-pairing checkpoints are deposited at Zenodo, DOI [10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535).
+- The world model, its ten trained models (seeds 42–51) and the analyses released with the earlier submission are in the directories described below and at the tag [`nmi-submission-20261027`](https://github.com/dong-zhongyuan/PeriScope/releases/tag/nmi-submission-20261027). The sections that follow document that release.
 
 ## Run the released analyses
 
@@ -52,6 +56,7 @@ Discovery uses seeds **42–46** and confirmation **47–51**. The repaired 47�
 
 | Location | Contents |
 | --- | --- |
+| `pd-v3/` | Current manuscript: MR atlas, colocalization, drug evidence, target funnel, main-figure code and summary tables ([guide](pd-v3/README.md)) |
 | `src/pdproduct/` | Core model, preprocessing and package interfaces |
 | `scripts/` | Data preparation and analysis entry points |
 | `_work/rescreen_20261002/` | Current input preparation |
@@ -72,7 +77,7 @@ Discovery uses seeds **42–46** and confirmation **47–51**. The repaired 47�
 
 ## Figure numbering
 
-The plotting project retains its original seven figure identifiers. The NMI submission contains six main figures and one supplementary figure:
+The five main figures of the current manuscript are produced by `pd-v3/papers/figures_v2_20261119/`. The earlier plotting project retains its original seven figure identifiers. The NMI submission contains six main figures and one supplementary figure:
 
 | Project identifier | NMI placement | Information |
 | --- | --- | --- |
@@ -106,6 +111,8 @@ The full analysis environment is listed in `requirements.txt`; install the core 
 | Sun et al., Nature 2023; Gudjonsson et al., Nature Communications 2022 | UKB plasma and AGES serum cis-pQTLs |
 | Smith et al., Nature Neuroscience 2021 | UKB brain imaging GWAS |
 | Olney et al., Journal of Neuroinflammation 2024 | Independent pig systemic inflammation study |
+| [GSE245309](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245309), Boles et al. 2024; [GSE122766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE122766), Shemer et al., Nature Communications 2018; [GSE109834](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109834), Hirbec et al., Glia 2018 | Mouse systemic inflammation studies |
+| Wang et al., Nature Neuroscience 2022 | UKB quantitative susceptibility and T2\* GWAS |
 
 ## Citation
 

@@ -1,0 +1,324 @@
+{
+ "retrieved_on": "2026-11-19",
+ "user_agent": "research-client/1.0",
+ "sources": [
+  {
+   "name": "Open Targets Platform",
+   "status": "used",
+   "access": "GraphQL per gene (antigen, ligand and partner genes) and bulk release tables",
+   "url": "https://api.platform.opentargets.org/api/v4/graphql",
+   "version": {
+    "name": "Open Targets GraphQL & REST API Beta",
+    "apiVersion": {
+     "x": "26",
+     "y": "9",
+     "z": "0"
+    },
+    "dataVersion": {
+     "year": "26",
+     "month": "09",
+     "iteration": null
+    }
+   },
+   "files": [
+    {
+     "pattern": "opentargets/genes/*.json.gz",
+     "n_files": 596,
+     "bytes": 541595,
+     "combined_sha256": "bf9c3512921627c04954635d24c8bcb189a293b4e2b1cd7fac579b678ed824c1"
+    },
+    {
+     "pattern": "opentargets/bulk/*/*.parquet",
+     "n_files": 4,
+     "bytes": 10172820,
+     "combined_sha256": "23ea0cb0e58badd310a9941aa5aefef3d1f1d878cebb4598832896dc5fa71d23"
+    },
+    {
+     "path": "raw/opentargets/meta.json",
+     "bytes": 231,
+     "sha256": "22635be584d7369809af2734f14091b9f41c0f6b25feba15753cb9e005f084d1",
+     "modified": "2026-11-19 10:22 +0800"
+    },
+    {
+     "path": "raw/opentargets/symbol_to_ensembl.json",
+     "bytes": 16714,
+     "sha256": "23e5151f5ba87e8db6a5b12429293ba3e1a1f71a4ccfdc0577528fe0e8c328b7",
+     "modified": "2026-11-19 10:19 +0800"
+    },
+    {
+     "path": "raw/opentargets/ensembl_to_symbol.json",
+     "bytes": 43478,
+     "sha256": "7f9913318b044d5348761b7643a4e1ff5244a83f8d8e9d1d76ef57a14de809dd",
+     "modified": "2026-11-19 11:01 +0800"
+    },
+    {
+     "path": "raw/opentargets/manifest_26.09.json",
+     "bytes": 19314465,
+     "sha256": "11e94f0cd4fc29be736e18ff4d493253af0ad21b4a7a173cb44832e06396b5a5",
+     "modified": "2026-11-19 10:14 +0800"
+    }
+   ],
+   "note": "Mechanism, action type and stage are ChEMBL-derived. An approval listed only here is not accepted without a second source."
+  },
+  {
+   "name": "ChEMBL REST API",
+   "status": "used",
+   "url": "https://www.ebi.ac.uk/chembl/api/data",
+   "version": "ChEMBL_37",
+   "detail": "Endpoints returned HTTP 500 or timed out early in the run, then recovered. Targets, mechanisms and molecules were pulled for antigen, ligand and partner proteins; the 2026-10-03 snapshot is kept alongside. Activity tables were not pulled. The complete ChEMBL 37 SQLite dump was not used: it ran at about 86 kB/s, roughly 18 hours.",
+   "last_check_result": 200,
+   "files": [
+    {
+     "path": "raw/chembl/checksums.txt",
+     "bytes": 790,
+     "sha256": "e949808982cc9f0d08fa16b42ebe75b4e04b511d8b96693c973890e6e024e62a",
+     "modified": "2026-11-19 10:03 +0800"
+    },
+    {
+     "path": "raw/chembl/chembl_37_release_notes.txt",
+     "bytes": 12208,
+     "sha256": "218202b6e5e3747838073b86034c8da29836de6ad239d503cfe91897df8f40c7",
+     "modified": "2026-11-19 10:03 +0800"
+    },
+    {
+     "path": "raw/chembl/REQUIRED.ATTRIBUTION",
+     "bytes": 733,
+     "sha256": "41eb0cf5eb2ceec5954db84f6c73969c7d928799fe39a7771140cdb0afc4a0df",
+     "modified": "2026-11-19 10:03 +0800"
+    },
+    {
+     "path": "raw/chembl/rest_20261119/mechanisms.json.gz",
+     "bytes": 55031,
+     "sha256": "264855e51dac920e37ab1159887bbb20898d5c4e5683492fd6b4cbd7600fb6f5",
+     "modified": "2026-11-19 11:00 +0800"
+    },
+    {
+     "path": "raw/chembl/rest_20261119/meta.json",
+     "bytes": 406,
+     "sha256": "05e7697f9aa9437a92f490f879c1e08cc4fe5b0efbd4d533493dc7bbe835ccf9",
+     "modified": "2026-11-19 11:00 +0800"
+    },
+    {
+     "path": "raw/chembl/rest_20261119/molecules.json.gz",
+     "bytes": 329492,
+     "sha256": "d8b949931af775b0ef11363b8b14e1e4634afa513843542fb9d73fc8ae2740a1",
+     "modified": "2026-11-19 11:00 +0800"
+    },
+    {
+     "path": "raw/chembl/rest_20261119/targets.json.gz",
+     "bytes": 420092,
+     "sha256": "4b7131a3e98bc72492868dd2dc10714c3806ece522f7e6e217d85b12df4d2873",
+     "modified": "2026-11-19 11:00 +0800"
+    }
+   ]
+  },
+  {
+   "name": "Guide to Pharmacology",
+   "status": "used",
+   "access": "public download files; the web service returned HTTP 401",
+   "url": "https://www.guidetopharmacology.org/DATA/",
+   "version": "# GtoPdb Version: 2026.3.1 - published: 2026-10-12",
+   "files": [
+    {
+     "path": "raw/gtopdb/interactions.csv",
+     "bytes": 7560316,
+     "sha256": "cdbd18c66cf99d1adba9a60c807e256204221ff74756b70344822fd6642b244b",
+     "modified": "2026-11-19 10:05 +0800"
+    },
+    {
+     "path": "raw/gtopdb/ligand_id_mapping.csv",
+     "bytes": 2620944,
+     "sha256": "f3c4f271d05e8778401c2a48d9bafa01229d9fad148593e6d934100d582817ce",
+     "modified": "2026-11-19 10:07 +0800"
+    },
+    {
+     "path": "raw/gtopdb/ligands.csv",
+     "bytes": 6880425,
+     "sha256": "f8e9f6959d563e49ccc2fb65652c17c3d93e345997e26f99a1a7924361d6d8b7",
+     "modified": "2026-11-19 10:06 +0800"
+    },
+    {
+     "path": "raw/gtopdb/targets_and_families.csv",
+     "bytes": 1896910,
+     "sha256": "9e91ae4eed1e147f0c5b01dd2e0645c2d57edb39442114d3128c70232b0d39fb",
+     "modified": "2026-11-19 10:06 +0800"
+    }
+   ]
+  },
+  {
+   "name": "DrugCentral",
+   "status": "used",
+   "access": "public download of drug.target.interaction.tsv.gz",
+   "url": "https://unmtid-dbs.net/download/DrugCentral/2027/",
+   "version": "folder 2027, file dated 2026-09-27 on the server",
+   "files": [
+    {
+     "path": "raw/drugcentral/directory_listing_2027.html",
+     "bytes": 1703,
+     "sha256": "aed4527a8230de8dce72ab12dcde374998c7ba2983eafeae6e4d7270c9ec6526",
+     "modified": "2026-11-19 10:07 +0800"
+    },
+    {
+     "path": "raw/drugcentral/drug.target.interaction.tsv.gz",
+     "bytes": 956583,
+     "sha256": "1908684983a79a067a44da952e1f6fd26b0f34cc36560cd9be0f0843bbfee1e1",
+     "modified": "2026-11-19 10:06 +0800"
+    }
+   ],
+   "note": "No database login used. Drug names linked through GtoPdb DrugCentral identifiers or exact names."
+  },
+  {
+   "name": "DGIdb",
+   "status": "used",
+   "access": "fresh GraphQL query per gene",
+   "url": "https://dgidb.org/api/graphql",
+   "version": "live service, no version field exposed",
+   "files": [
+    {
+     "pattern": "dgidb/genes/*.json.gz",
+     "n_files": 602,
+     "bytes": 861522,
+     "combined_sha256": "998c73c9be4e18997ebc8428d11c95170f75d889759b4eaae8c5ac4302a7d235"
+    }
+   ],
+   "note": "Interactions found only here never count as usable. Antibody type alone is not treated as inhibition."
+  },
+  {
+   "name": "openFDA drug labels",
+   "status": "used",
+   "access": "label API, mechanism of action section",
+   "url": "https://api.fda.gov/drug/label.json",
+   "files": [
+    {
+     "path": "raw/openfda/labels.jsonl",
+     "bytes": 230696,
+     "sha256": "5b7a1c82376cc7727f259eede0d2be82bd7330891d347b1322744277f792f985",
+     "modified": "2026-11-19 10:55 +0800"
+    }
+   ],
+   "note": "Used for approval support and for functional effects of biologics."
+  },
+  {
+   "name": "ClinicalTrials.gov API v2",
+   "status": "used",
+   "url": "https://clinicaltrials.gov/api/v2/studies",
+   "files": [
+    {
+     "path": "raw/clinicaltrials/lookup.json",
+     "bytes": 58396,
+     "sha256": "fd7c36eca4f49c31f6d729b892351b282ab5eb81332a2395535103723f54e695",
+     "modified": "2026-11-19 10:48 +0800"
+    }
+   ],
+   "note": "Lookups for manually curated drugs only."
+  },
+  {
+   "name": "CellPhoneDB data",
+   "status": "used for ligand and complex links",
+   "url": "https://github.com/ventolab/cellphonedb-data",
+   "version": "71ffa8a163389913907d40993bec2821a111f64d",
+   "version_date": "2023-10-31T13:13:05Z",
+   "files": [
+    {
+     "path": "raw/cellphonedb/complex_input.csv",
+     "bytes": 56886,
+     "sha256": "c761b75f5438d5b23f9fefa5ddaac84acb127fe5dd72fe931d5c07d8a557b362",
+     "modified": "2026-11-19 10:06 +0800"
+    },
+    {
+     "path": "raw/cellphonedb/gene_input.csv",
+     "bytes": 65195,
+     "sha256": "538fff62a77d9077e0307337552bed087817632da015c620f17666d088066623",
+     "modified": "2026-11-19 10:06 +0800"
+    },
+    {
+     "path": "raw/cellphonedb/interaction_input.csv",
+     "bytes": 505620,
+     "sha256": "3cf0ceace45dcb42478f0e6a7be9a50104794eac68d731f7c82d4c13325175ab",
+     "modified": "2026-11-19 10:06 +0800"
+    },
+    {
+     "path": "raw/cellphonedb/master_commit.json",
+     "bytes": 3124,
+     "sha256": "83fe39fa5a3d657bdb592769a67b587aa90800663305c0d8050bf3de571eeaeb",
+     "modified": "2026-11-19 10:06 +0800"
+    },
+    {
+     "path": "raw/cellphonedb/protein_input.csv",
+     "bytes": 158940,
+     "sha256": "322f277963ca2fc879c97660eb1409478603a3d2d7442c6606bce79a45f14ae2",
+     "modified": "2026-11-19 10:06 +0800"
+    }
+   ]
+  },
+  {
+   "name": "OmniPath",
+   "status": "used for ligand candidates; complexes query failed and its file was removed",
+   "url": "https://omnipathdb.org",
+   "files": [
+    {
+     "path": "raw/omnipath/interactions.tsv",
+     "bytes": 21264199,
+     "sha256": "1aa20295a1d69e565c497a51dd71e56c7f1fb11216f96e6f8ad08e0489c66171",
+     "modified": "2026-11-19 10:12 +0800"
+    },
+    {
+     "path": "raw/omnipath/intercell_generic.tsv",
+     "bytes": 6744799,
+     "sha256": "33cfe3ba193f06647728bbe9b287122495af242ce803416ae555f3249073abaa",
+     "modified": "2026-11-19 10:13 +0800"
+    }
+   ]
+  },
+  {
+   "name": "Complex Portal",
+   "status": "used for complex candidates",
+   "url": "https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9606.tsv",
+   "files": [
+    {
+     "path": "raw/complexportal/9606.tsv",
+     "bytes": 5362905,
+     "sha256": "f9e977e0cce4f518de066eb267c70cabc2f8c1e659cfc1c164fbee41d4380d53",
+     "modified": "2026-11-19 10:05 +0800"
+    }
+   ]
+  },
+  {
+   "name": "PubMed E-utilities",
+   "status": "used for manual citations",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+   "files": [
+    {
+     "path": "curation/lit_results_2.txt",
+     "bytes": 27738,
+     "sha256": "4c56479c535b097ae507ac562e9226c3124ef07e72b28a3b2a1ce26bf4ff1dae",
+     "modified": "2026-11-19 10:44 +0800"
+    },
+    {
+     "path": "curation/lit_results_3.txt",
+     "bytes": 13166,
+     "sha256": "57761b02a1033bf854af118e8bd508e206a4c08b2f1749125675b90a1c5c4440",
+     "modified": "2026-11-19 10:48 +0800"
+    }
+   ]
+  },
+  {
+   "name": "Europe PMC",
+   "status": "unreachable",
+   "detail": "HTTP 503 and dropped TLS connections during the citation search; PubMed was used instead"
+  },
+  {
+   "name": "Existing project inputs",
+   "status": "read only",
+   "path": "/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003/",
+   "files_used": [
+    "six_criteria_20261003/verified_drug_target_mechanisms.csv",
+    "six_criteria_20261003/all_drug_target_mechanisms.csv",
+    "six_criteria_20261003/chembl_mechanisms.json",
+    "six_criteria_20261003/chembl_molecules.json",
+    "six_criteria_20261003/chembl_targets.json",
+    "candidate_registry.json"
+   ]
+  }
+ ]
+}
