@@ -55,7 +55,7 @@ PERISCOPE<-'#C2185B';PERISCOPE_LIGHT<-tint(PERISCOPE,.35);PERISCOPE_FAINT<-tint(
 # comparators: greys plus shapes (filled = learned comparator, open = summary baseline); PeriScope is the only coloured method
 METHODS<-data.frame(key=c('periscope','cellot','ot_ridge','conditional_icnn','conditional_mlp','ridge',
   'state_mean','subtype_mean','shared_label_mean','shared_label_marginal','zero_response'),
- label=c('PeriScope','CellOT','OT-Ridge','Conditional ICNN','Conditional MLP','Ridge','State mean','Subtype mean','Label mean','Label marginal','Zero response'),
+ label=c('PeriScope','CellOT','OT–Ridge','Conditional ICNN','Conditional MLP','Ridge','State mean','Subtype mean','Label mean','Label marginal','Zero response'),
  fill=c(PERISCOPE,'#3C3C3C','#5C5C5C','#7A7A7A','#979797','#B0B0B0','white','white','white','white','white'),
  col=c(PERISCOPE,'#3C3C3C','#5C5C5C','#7A7A7A','#979797','#8C8C8C','#5C5C5C','#5C5C5C','#7A7A7A','#7A7A7A','#5C5C5C'),
  shape=c(21,24,22,23,25,22,22,23,24,25,4),stringsAsFactors=FALSE)

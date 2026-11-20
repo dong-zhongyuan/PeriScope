@@ -24,7 +24,7 @@ make_panel<-function(b){
  a<-read_src(file.path(FRD,'protein_accuracy.csv'),cols=c('target','citeseq_subtype','donor','n','is_control','mse'))
  a<-a[!a$is_control&is.finite(a$mse),]
  st<-c(`CD14 Mono`='cMono',`CD16 Mono`='nMono',cDC1='cDC',cDC2='cDC',pDC='pDC');ord<-c('CD14 Mono','CD16 Mono','cDC1','cDC2','pDC')
- slab<-c(`CD14 Mono`='cMono',`CD16 Mono`='nMono',cDC1='cDC1',cDC2='cDC2',pDC='pDC')
+ slab<-c(`CD14 Mono`='CD14 Mono',`CD16 Mono`='CD16 Mono',cDC1='cDC1',cDC2='cDC2',pDC='pDC')
  s<-do.call(rbind,lapply(split(a,list(a$citeseq_subtype,a$donor),drop=TRUE),function(z)data.frame(row.names=NULL,sub=z$citeseq_subtype[1],donor=z$donor[1],
   med=stats::median(z$mse),lo=unname(stats::quantile(z$mse,.25)),hi=unname(stats::quantile(z$mse,.75)))))
  s$state<-st[s$sub];s$gx<-match(s$sub,ord);s$x<-6-s$gx-(match(s$donor,c('P6','P7','P8'))-2)*.27

@@ -3,8 +3,6 @@
 # Data: target_funnel_final_20261119/final_target_mr_coloc_pairs.csv.
 PANEL<-list(id='4k_target_coloc',blocks=c('1x1'),what='Final-target coloc by protein platform')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig4/_mr.R'))
-SHORT<-c(QSM_Left_SN='QSM SN L',QSM_Right_pallidum='QSM GP R',QSM_Left_pallidum='QSM GP L',`T2*_Left_SN`='T2* SN L',
- IDP_SWI_T2star_left_pallidum='T2* GP L',IDP_T1_FAST_ROIs_R_thalamus='GM thalamus R',`rfMRI connectivity (ICA100 edge 868)`='rfMRI edge 868')
 make_panel<-function(b){
  f<-read_src(file.path(TF,'final_target_mr_coloc_pairs.csv'),cols=c('UKB_gene','trait','unified_H4_AGES','unified_H4_UKB'))
  f$lab<-unname(SHORT[f$trait]);stopifnot(!anyNA(f$lab))

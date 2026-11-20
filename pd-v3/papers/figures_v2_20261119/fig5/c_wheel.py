@@ -27,7 +27,7 @@ order = {'astro': 0, 'microglia_mhc2': 1, 'microglia_homeostatic': 2}
 E['_b'] = E.combo.str.split('__').str[3].map(order).fillna(3); E['_s'] = E.combo
 m = E.sort_values(['protein', '_b', '_s'], key=lambda s: s.map({t: i for i, t in enumerate(TARGETS)}) if s.name == 'protein' else s)
 layers = ['C1', 'C2', 'C3', 'C4', 'C5', 'MR', 'Coloc', 'Drug']
-names = ['Blood antigen', 'Measured dose', 'Perturbation', 'Brain disease', 'Accessibility', 'Protein MR', 'Coloc', 'Matched drug']
+names = ['C1 Antigen', 'C2 Dose', 'C3 Specificity', 'C4 PD brain', 'C5 Surface', 'MR', 'Coloc', 'Drug']
 colors = ['#599CAF', '#D0AE67', '#C66C7E', '#879C66', '#9D88AE', '#4A9D8B', '#B07A4F', '#6D91AF']
 (ROOT/'fig5/data').mkdir(exist_ok=True)
 m[['combo', 'protein'] + layers].to_csv(ROOT/'fig5/data/evidence_wheel_final_targets.csv', index=False)

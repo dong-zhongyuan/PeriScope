@@ -8,6 +8,6 @@ make_panel<-function(b){fp<-final_prog_genes();G<-strsplit(fp$genes,';');U<-uniq
  L<-do.call(rbind,lapply(seq_len(ny),function(j)data.frame(x=seq_along(U),y=ny-j+1,m=M[,j],col=TARGET_COL[as.character(fp$antigen[j])])))
  ggplot(L,aes(x,y))+geom_tile(fill=ifelse(L$m,L$col,FAINT),width=.9,height=.85)+
   scale_x_continuous(breaks=seq_along(U),labels=U,position='top',expand=expansion(add=.5))+
-  scale_y_continuous(breaks=ny:1,labels=paste(fp$antigen,fp$blood,fp$brain),expand=expansion(add=.5))+
+  scale_y_continuous(breaks=ny:1,labels=paste(fp$antigen,fp$lab),expand=expansion(add=.5))+
   labs(x=NULL,y=NULL)+theme_fig()+theme(axis.line=element_blank(),axis.ticks=element_blank(),axis.text.x.top=element_text(angle=90,hjust=0,vjust=.5,face='italic'),
    axis.text.y=element_text(colour=unname(TARGET_COL[as.character(fp$antigen)])))}

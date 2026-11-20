@@ -4,9 +4,9 @@
 PANEL<-list(id='4i_final_target_forest',blocks=c('1x2'),what='Final-target MR forest')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig4/_mr.R'))
 make_panel<-function(b){
- f<-read_src(file.path(TF,'final_target_mr_coloc_pairs.csv'),cols=c('antigen','UKB_gene','phenotype_description','family','beta','se','q_bh_global'))
- f$lab<-gsub('_',' ',f$phenotype_description);f$lab<-sub('^QSM ','',f$lab);f$lab<-sub('rfMRI connectivity \\(ICA100 edge ([0-9]+)\\)','rfMRI edge \\1',f$lab)
- f$lab<-sub('^Median T2star in (left|right) (\\w+).*$','T2* \\1 \\2',f$lab);f$lab<-sub('^Volume of grey matter in (Left|Right) (\\w+).*$','GM volume \\L\\1 \\2',f$lab,perl=TRUE);f$lab<-vapply(strsplit(f$lab,' '),function(w)paste(head(w,4),collapse=' '),'');f$lab<-paste0(f$UKB_gene,'  ',f$lab);f<-f[order(f$UKB_gene,-abs(f$beta/f$se)),];f$y<-rev(seq_len(nrow(f)))
+ f<-read_src(file.path(TF,'final_target_mr_coloc_pairs.csv'),cols=c('antigen','UKB_gene','trait','phenotype_description','family','beta','se','q_bh_global'))
+ stopifnot(!anyNA(SHORT[f$trait]));f$lab<-paste0(f$UKB_gene,'  ',unname(SHORT[f$trait]))
+ f<-f[order(match(f$UKB_gene,c('TFRC','IFNGR1')),-abs(f$beta/f$se)),];f$y<-rev(seq_len(nrow(f)))
  f$mod<-ifelse(f$family=='QSM','QSM',ifelse(grepl('T2',f$phenotype_description),'T2*',ifelse(grepl('volume',f$family,ignore.case=TRUE),'Volume','Other')))
  mc<-c(MOD_COL,Other=LIGHT);f$sig<-is.finite(f$q_bh_global)&f$q_bh_global<.05;f$col<-FT_COL[f$UKB_gene]
  xr<-max(abs(c(f$beta-1.96*f$se,f$beta+1.96*f$se)))*1.05

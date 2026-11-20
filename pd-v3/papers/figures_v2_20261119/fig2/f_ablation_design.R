@@ -17,5 +17,5 @@ make_panel<-function(b){W<-b$w;H<-b$h;assign('PANEL_H',H,envir=globalenv())
   g<-c(g,list(drect(xb-1.4,y0+rh*.12,2.8,rh*.8,fill=NA,col=BLOOD_COL[['cMono']],lwd=glwd('thin'),r=.6),drect(xr-1.4,y0+rh*.12,2.8,rh*.8,fill=NA,col=BRAIN_COL[['Astro']],lwd=glwd('thin'),r=.6)))
   if(i<3)g<-c(g,list(dline(1,y0+rh,W-1,y0+rh,col=FAINT,lwd=glwd('hair'))))}
  g<-c(g,list(dtxt('Blood',xb,H-.2,just=c('centre','bottom'),col=MID),dtxt('Brain',xr,H-.2,just=c('centre','bottom'),col=MID)))
- kk<-key_row(list(ki(kg_dot(DX_COL[['Control']],NA,1.6),'Ctrl'),ki(kg_dot(DX_COL[['PD']],NA,1.6),'PD')),1,H-1.4,gap=1.4,h=H)
+ kk<-key_row(list(ki(kg_dot(DX_COL[['Control']],NA,1.6),'Control'),ki(kg_dot(DX_COL[['PD']],NA,1.6),'PD')),1,H-1.4,gap=1.4,h=H)
  dgroup(c(g,kk))}

@@ -11,7 +11,7 @@ make_panel<-function(b){
  tl<-c(B_cell='B',CD4_T='CD4 T',CD8_T='CD8 T',NK='NK',Monocyte_CD14='cMono',Monocyte_CD16='nMono',DC='cDC',pDC='pDC',unassigned='Other',Other='Other')
  d$target<-ifelse(d$target%in%names(tl),tl[d$target],d$target)
  st0<-tapply(d$count,d$source,sum);keep<-names(st0)[st0>=1000|names(st0)%in%c('cDC','pDC','CD16 mono','CD14 mono')]
- d$source[!d$source%in%keep]<-'Other';d$source<-sub(' cells$','',d$source);d<-aggregate(count~source+target,d,sum)
+ d$source[!d$source%in%keep]<-'Other';d$source<-sub(' mono$',' Mono',sub(' cells$','',d$source));d<-aggregate(count~source+target,d,sum)
  tcol<-c(B='#C9B48A',`CD4 T`='#E4DCCB',`CD8 T`='#B8AD95',NK='#8E8471',cMono=unname(BLOOD_COL['cMono']),nMono=unname(BLOOD_COL['nMono']),cDC=unname(BLOOD_COL['cDC']),pDC=unname(BLOOD_COL['pDC']),Other=FAINT)
  tord<-intersect(names(tcol),unique(d$target));stopifnot(setequal(tord,unique(d$target)))
  st<-tapply(d$count,d$source,sum);tt<-tapply(d$count,d$target,sum)

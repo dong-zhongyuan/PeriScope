@@ -6,5 +6,5 @@ PANEL<-list(id='5a_antigen_funnel',blocks=c('1x4'),what='Antigen funnel through 
 source(file.path(Sys.getenv('FIGV2_ROOT'),'_system/blender_panel.R'))
 make_panel<-function(b){D<-file.path(Sys.getenv('FIGV2_ROOT'),'fig5/blender');g<-blender_panel(b,D,'5a')
  K<-jsonlite::fromJSON(file.path(D,'layout_5a.json'))$keys;H<-b$h
- k<-key_row(list(ki(kg_dot(K$keep,NA,1.6),'Passes'),ki(kg_dot(K$gone,NA,1.6),'Removed'),ki(kg_dot(K$CD71,NA,1.6),'CD71'),ki(kg_dot(K$CD119,NA,1.6),'CD119')),1,H-1.9,gap=2.4,h=H)
+ k<-key_row(list(ki(kg_dot(K$keep,NA,1.6),'Retained'),ki(kg_dot(K$gone,NA,1.6),'Removed'),ki(kg_dot(K$CD71,NA,1.6),'CD71'),ki(kg_dot(K$CD119,NA,1.6),'CD119')),1,H-1.9,gap=2.4,h=H)
  gTree(children=gList(g,do.call(gList,k)))}

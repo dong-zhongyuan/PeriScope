@@ -10,8 +10,8 @@ PeriScope learns from unpaired blood and brain single-cell atlases, with paired 
 
 - **Built on 813,363 blood and brain cells, nuclei and spatial spots** from 110 donors, with 161,159 paired RNA–protein cells calibrating the protein input (median antigen-level Spearman 0.63 in held-out donors).
 - **Predicts disease-related brain changes in locked donors.** With the same seeds (42–44) for every method, PeriScope reaches a disease-direction Spearman of 0.250 over eight blood-to-brain routes: 72% above CellOT, 196% above OT–Ridge and 27% above the strongest comparator. In two independent brain cohorts it reaches 3.0× and 2.3× CellOT.
-- **Transfers across species.** In a paired pig endotoxemia study its brain-response correlation is 2.8× that of the next-best method; in two mouse LPS studies it lowers the error of the no-change baseline by 52–57%.
-- **Depends on blood–brain alignment.** Training with shuffled blood–brain pairing removes the program responses (median cosine to the confirmation reference falls from 0.27 to −0.01).
+- **Transfers across species.** In a paired pig endotoxemia study its brain-response correlation is 2.8× that of the next-best method.
+- **Depends on blood–brain alignment.** Training with shuffled blood–brain pairing removes the program responses.
 - **Adds a protein–brain imaging Mendelian randomization (MR) atlas**: 2,941 UK Biobank plasma protein assays × 3,963 brain imaging phenotypes = 11,655,183 protein–phenotype pairs, 1,006 at full-family q < 0.05, with independent replication, colocalization on two protein platforms and reverse MR.
 - **Narrows 213 antigens to two antibody-accessible blood targets.** TFRC (CD71) links blood myeloid cells to iron-sensitive imaging of the substantia nigra and pallidum; IFNGR1 (CD119) provides a second route through astrocytes, and its pathway can be blocked by an approved antibody.
 

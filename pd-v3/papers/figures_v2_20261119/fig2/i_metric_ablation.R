@@ -1,12 +1,12 @@
-# Figure 2i - random pairing (seeds 52-56) relative to the full-model mean (seeds 42-51) on six readouts: points = seeds,
+# Figure 2i - random pairing (seeds 52-56) relative to the full-model mean (seeds 42-51) on five readouts: points = seeds,
 # bar = mean, grey band = the full model's own seed range, number = mean change. Higher is better for the two Spearman
 # readouts, lower for the four error readouts. Data: arm_vs_full_pool.csv (arm_set random_pairing_new).
 PANEL<-list(id='2i_metric_ablation',blocks=c('1x1'),what='Readout changes under random pairing')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig2/_arms.R'))
 make_panel<-function(b){
  a<-read_src(file.path(RES,'random_pairing_20261119/evaluation/tables/arm_vs_full_pool.csv'))
- mets<-c(f_all_mean='Route ρ',h_rho_all='Axis ρ',h_contrast_mse='Contrast MSE',h_mean_mse='Mean MSE',h_mmd='MMD',h_energy='Energy')
- a<-a[a$arm_set=='random_pairing_new'&a$metric%in%names(mets),];a<-a[match(names(mets),a$metric),];stopifnot(nrow(a)==6)
+ mets<-c(f_all_mean='Spearman',h_contrast_mse='Contrast MSE',h_mean_mse='Mean MSE',h_mmd='MMD',h_energy='Energy')
+ a<-a[a$arm_set=='random_pairing_new'&a$metric%in%names(mets),];a<-a[match(names(mets),a$metric),];stopifnot(nrow(a)==5)
  a$y<-rev(seq_len(nrow(a)));a$lab<-mets[a$metric]
  pts<-do.call(rbind,lapply(seq_len(nrow(a)),function(i){v<-as.numeric(strsplit(a$arm_values[i],';')[[1]]);data.frame(y=a$y[i],p=(v/a$full_mean[i]-1)*100)}))
  a$lo<-(a$full_min/a$full_mean-1)*100;a$hi<-(a$full_max/a$full_mean-1)*100

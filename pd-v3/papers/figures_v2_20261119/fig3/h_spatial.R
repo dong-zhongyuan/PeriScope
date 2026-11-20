@@ -26,5 +26,5 @@ make_panel<-function(b){
  k<-list(gr,rectGrob(unit(W-11.4,'mm'),unit(H/2-3,'mm'),width=unit(1.6,'mm'),height=unit(20,'mm'),gp=gpar(fill=NA,col=INK,lwd=glwd('hair'))))
  for(i in seq_along(tk))k<-c(k,list(textGrob(c('0','0.25','1')[i],unit(W-10.1,'mm'),unit(yy[i],'mm'),just=c('left','centre'),gp=gpar(fontfamily=FONT,fontsize=PT,col=INK))))
  k<-c(k,list(textGrob('Fraction',unit(W-11.4,'mm'),unit(H/2-3+11.6,'mm'),just=c('centre','bottom'),gp=gpar(fontfamily=FONT,fontsize=PT,fontface='bold',col=INK))))
- k<-c(k,key_row(list(ki(kg_box(DX_COL[['Control']],w=2.2,ht=1.2),'Ctrl')),W-12.6,H-5.6,h=H),key_row(list(ki(kg_box(DX_COL[['PD']],w=2.2,ht=1.2),'PD')),W-12.6,H-2.6,h=H))
+ k<-c(k,key_row(list(ki(kg_box(DX_COL[['Control']],w=2.2,ht=1.2),'Control')),W-12.6,H-5.6,h=H),key_row(list(ki(kg_box(DX_COL[['PD']],w=2.2,ht=1.2),'PD')),W-12.6,H-2.6,h=H))
  gTree(children=gList(gg_grob(p),do.call(gList,k)))}
