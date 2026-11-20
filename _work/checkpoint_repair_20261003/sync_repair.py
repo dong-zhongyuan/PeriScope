@@ -1,7 +1,7 @@
 """Follow the currently running repair and synchronize its completed artifacts."""
 import hashlib,json,subprocess,sys,time
 from pathlib import Path
-P=Path('/Users/dawnmeng/Desktop/董仲元');W=P/'pd_product_figure_design/manuscript_review/checkpoint_repair_20261003';O=P/'delivery/benchmark_20261002';R=O/'seed_repair';R.mkdir(exist_ok=True)
+P=Path('/path/to/project');W=P/'pd_product_figure_design/manuscript_review/checkpoint_repair_20261003';O=P/'delivery/benchmark_20261002';R=O/'seed_repair';R.mkdir(exist_ok=True)
 REMOTE='/public/home/mengxl/dzy/pd_product_assets/results/benchmark_20261002'
 SSH=['ssh','-S','/tmp/pd_rescreen_20261002_ssh','-o','BatchMode=yes','-o','ConnectTimeout=10']
 script="""import json

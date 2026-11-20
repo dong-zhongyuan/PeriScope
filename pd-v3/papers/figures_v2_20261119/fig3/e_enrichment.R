@@ -15,7 +15,7 @@ make_panel<-function(b){W<-b$w;H<-b$h;assign('PANEL_H',H,envir=globalenv())
  g<-c(g,key_row(list(ki(kg_dot(tc[1],NA,1.5),'Modification'),ki(kg_dot(tc[2],NA,1.5),'Phosphorylation')),.6,ky,h=H))
  cd<-read_src(file.path(FRD,'cd40_functional_go.csv'),cols=c('term','q','overlap'))
  cd$t<-sub(' \\(GO:[0-9]+\\)$','',cd$term);cd$t<-paste0(toupper(substr(cd$t,1,1)),tolower(substring(cd$t,2)))
- sh<-c('Modulation of chemical synaptic transmission'='Synaptic modulation','Chemical synaptic transmission'='Synaptic transmission','Anterograde trans-synaptic signaling'='Anterograde signalling','Positive regulation of synaptic transmission'='Synaptic up-regulation','Synapse organization'='Synapse organization','Regulation of trans-synaptic signaling'='Trans-synaptic regulation');stopifnot(all(cd$t%in%names(sh)));cd$t<-unname(sh[cd$t]);cd<-cd[order(cd$q,decreasing=TRUE),];cd$y<-seq_len(nrow(cd));cd$lq<- -log10(cd$q)
+ sh<-c('Modulation of chemical synaptic transmission'='Synaptic modulation','Chemical synaptic transmission'='Synaptic transmission','Anterograde trans-synaptic signaling'='Anterograde signaling','Positive regulation of synaptic transmission'='Synaptic upregulation','Synapse organization'='Synapse organization','Regulation of trans-synaptic signaling'='Trans-synaptic regulation');stopifnot(all(cd$t%in%names(sh)));cd$t<-unname(sh[cd$t]);cd<-cd[order(cd$q,decreasing=TRUE),];cd$y<-seq_len(nrow(cd));cd$lq<- -log10(cd$q)
  p<-ggplot(cd,aes(overlap,y))+geom_segment(aes(x=0,xend=overlap,yend=y),colour=FAINT,linewidth=gglw('emph'))+
   geom_point(aes(fill=lq),shape=21,colour='white',stroke=.2,size=ggsz('big'))+
   scale_fill_gradientn(colours=seq_col(seq(0,1,length.out=60),PERISCOPE),limits=c(0,max(cd$lq)),guide='none')+

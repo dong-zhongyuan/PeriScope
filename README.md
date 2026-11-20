@@ -1,6 +1,6 @@
 # PeriScope
 
-**A Blood–Brain World Model Nominates Peripherally Druggable Targets in Parkinson's Disease**
+**A Blood–Brain World Model Maps Peripheral Interventions onto Brain-Cell Responses in Parkinson's Disease**
 
 Treating the brain through the blood bypasses the blood–brain barrier, but which blood target moves which brain cell has been unknown. **PeriScope is a potential-form blood–brain world model** that answers this question computationally: set the dose of any of 213 blood-cell surface proteins, and it predicts how astrocyte and microglial gene programs in Parkinson's disease (PD) respond.
 
@@ -77,6 +77,6 @@ after installing `reproduce/requirements-inputs.txt` and the R packages SeuratOb
 
 ## Citation
 
-Zhongyuan Dong, Lianghua Wang and Xuanlin Meng. *PeriScope: A Blood–Brain World Model Nominates Peripherally Druggable Targets in Parkinson's Disease*. Manuscript, 2026.
+*PeriScope: A Blood–Brain World Model Maps Peripheral Interventions onto Brain-Cell Responses in Parkinson's Disease*. Manuscript, 2026.
 
-Data: Dong Z, Wang L, Meng X. PeriScope: plasma protein–brain imaging Mendelian randomization atlas, colocalization, drug evidence and result tables. Zenodo (2026). doi:[10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535)
+Data: PeriScope: plasma protein–brain imaging Mendelian randomization atlas, colocalization, drug evidence and result tables. Zenodo (2026). doi:[10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535)

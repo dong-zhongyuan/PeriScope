@@ -9,7 +9,7 @@ import json
 import numpy as np
 import pandas as pd
 
-ROOT = Path('/Users/dawnmeng/Desktop/董仲元')
+ROOT = Path('/path/to/project')
 D = ROOT / 'delivery/optimization_20261003'
 S = D / 'scope_review'
 S.mkdir(exist_ok=True)

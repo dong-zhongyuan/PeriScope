@@ -24,6 +24,6 @@
     "samples/GSM8031369/rctd.rds",
     "samples/QC/rctd.rds"
   ],
-  "preview_directory": "/Users/dawnmeng/Desktop/\u8463\u4ef2\u5143/delivery/preview/spatial_subtype_review",
+  "preview_directory": "/path/to/project/delivery/preview/spatial_subtype_review",
   "all_statistics_and_inputs_verified": true
 }
