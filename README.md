@@ -9,7 +9,7 @@ PeriScope learns from unpaired blood and brain single-cell atlases, with paired 
 ## Highlights
 
 - **Built on 813,363 blood and brain cells, nuclei and spatial spots** from 110 donors, with 161,159 paired RNA–protein cells calibrating the protein input (median antigen-level Spearman 0.63 in held-out donors).
-- **Predicts disease-related brain changes in locked donors.** With the same seeds (42–44) for every method, PeriScope reaches a disease-direction Spearman of 0.250 over eight blood-to-brain routes: 72% above CellOT, 196% above OT–Ridge and 27% above the strongest comparator. In two independent brain cohorts it reaches 3.0× and 2.3× CellOT.
+- **Predicts disease-related brain changes in locked donors.** With the same seeds for every method, PeriScope reaches a disease-direction Spearman of 0.250 over eight blood-to-brain routes: 72% above CellOT, 196% above OT–Ridge and 27% above the strongest comparator. In two independent brain cohorts it reaches 3.0× and 2.3× CellOT.
 - **Transfers across species.** In a paired pig endotoxemia study its brain-response correlation is 2.8× that of the next-best method.
 - **Depends on blood–brain alignment.** Training with shuffled blood–brain pairing removes the program responses.
 - **Adds a protein–brain imaging Mendelian randomization (MR) atlas**: 2,941 UK Biobank plasma protein assays × 3,963 brain imaging phenotypes = 11,655,183 protein–phenotype pairs, 1,006 at full-family q < 0.05, with independent replication, colocalization on two protein platforms and reverse MR.
@@ -30,10 +30,9 @@ PeriScope learns from unpaired blood and brain single-cell atlases, with paired 
 
 ## Data and models
 
-- **MR atlas and result tables.** The complete atlas (primary and sensitivity policy, each in 12 csv.gz parts with headers), the colocalization, replication, drug-evidence and funnel tables, and the five random-pairing checkpoints are deposited at Zenodo, DOI [10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535). The same summary tables are in [`pd-v3/result_tables/`](pd-v3/result_tables).
-- **Trained world models.** The ten models (seeds 42–51) are attached to the [model release](https://github.com/dong-zhongyuan/PeriScope/releases/tag/nmi-submission-20261027). Seeds 42–46 define the response programs and seeds 47–51 confirm them; method comparisons use seeds 42–44 for every method.
+- **MR atlas and result tables.** The complete atlas (primary and sensitivity policy, each in 12 csv.gz parts with headers), the colocalization, replication, drug-evidence and funnel tables, and the trained models (ten full models in three archive parts, and five random-pairing models) are deposited at Zenodo, DOI [10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535). The same summary tables are in [`pd-v3/result_tables/`](pd-v3/result_tables).
 
-Download and verify the models without a GitHub login, then test strict loading and a small CPU inference:
+Download and verify the models from Zenodo, then test strict loading and a small CPU inference:
 
 ```bash
 python reproduce/download_checkpoints.py --output /absolute/path/to/periscope_models
