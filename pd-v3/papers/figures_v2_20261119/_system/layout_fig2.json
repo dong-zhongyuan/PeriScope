@@ -68,7 +68,7 @@
   {
    "letter": "e",
    "id": "2e_external_cohorts",
-   "content": "外部人类队列三张卡（GSE157783、GSE184950、Ma 2025）：卡头色块印相对 CellOT 的倍数（2.8×、2.1×，Ma 如实画出略低）；卡内每个方法一行，donor bootstrap 密度带 + 点估计；灰带为置换零分布",
+   "content": "外部人类队列两张卡（GSE157783、GSE184950）：卡内每个方法一行，donor bootstrap 密度带 + 点估计；灰带为置换零分布",
    "block": "1x3",
    "row": 3,
    "col": 1,

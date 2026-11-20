@@ -7,7 +7,7 @@ make_panel<-function(b){fp<-prog_rows()
  s<-read_src(file.path(OPT,'program_seed_scores.csv'),cols=c('combo','seed','signed_program_slope'));s<-s[s$combo%in%fp$combo,]
  s$row<-fp$row[match(s$combo,fp$combo)];s$v<-s$signed_program_slope*1e3;s$x<-s$seed-41+ifelse(s$seed>=47,.4,0)
  m<-aggregate(v~row,s,mean);m$x<-11.9;lim<-stats::quantile(abs(s$v),.95);n<-nrow(fp)
- cols<-c('#3F6E9A','white',PERISCOPE);brk<-min(fp$row[fp$antigen=='CD71'])-.5
+ cols<-c('#C9C9C9','white',PERISCOPE);brk<-min(fp$row[fp$antigen=='CD71'])-.5
  p<-ggplot()+
   geom_tile(data=rbind(s[,c('x','row','v')],m[,c('x','row','v')]),aes(x,row,fill=v),width=.92,height=.86)+
   annotate('segment',x=c(.55,5.95),xend=c(5.45,10.85),y=n+.6,yend=n+.6,colour=c(MID,PERISCOPE),linewidth=gglw('emph')*1.4)+

@@ -1,9 +1,9 @@
 # Figure 2b - human disease-direction leaderboard: methods x 8 blood-to-brain routes plus the equal-route mean. Tile fill
 # and number = seed-mean Spearman; dots in the tile foot = individual seeds (position = value within the tile); right
-# column = PeriScope's relative gain over that method on the mean. PeriScope seeds 42-51, comparators seeds 42-44.
+# column = PeriScope's relative gain over that method on the mean. All methods seeds 42-44.
 PANEL<-list(id='2b_leaderboard',blocks=c('2x2'),what='Human disease-direction leaderboard')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig2/_bench.R'))
-make_panel<-function(b){d<-bench_long('spearman')
+make_panel<-function(b){d<-bench_long('spearman');d<-d[d$seed%in%42:44,];stopifnot(length(unique(d$seed[d$method=='periscope']))==3)
  t<-aggregate(value~method+label+row+col+blood+brain,d,mean)
  sm<-aggregate(value~method+label+row+seed,d,mean);m<-aggregate(value~method+label+row,sm,mean);m$col<-MEANX
  sd_<-sm;sd_$col<-MEANX

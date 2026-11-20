@@ -2,45 +2,38 @@
 
 **A Blood–Brain World Model Nominates Peripherally Druggable Targets in Parkinson's Disease**
 
-The blood–brain barrier limits therapeutic exposure in Parkinson's disease. Choosing a peripheral target requires predicting which brain-cell programs it would shift and in which direction. **PeriScope is a potential-form blood–brain world model** for this cross-tissue therapeutic target analysis.
+Treating the brain through the blood bypasses the blood–brain barrier, but which blood target moves which brain cell has been unknown. **PeriScope is a potential-form blood–brain world model** that answers this question computationally: set the dose of any of 213 blood-cell surface proteins, and it predicts how astrocyte and microglial gene programs in Parkinson's disease (PD) respond.
 
-PeriScope learns from unpaired blood and brain single-cell atlases, with paired RNA–protein measurements anchoring the protein input. A learned coupling potential organizes recipient-state updates: the blood state is held fixed, the recipient brain latent state follows the potential gradient, and a decoder reads out its transcriptional response. Clamping a protein input at observed abundance quantiles makes candidate modulations comparable for a specified recipient cell state.
+PeriScope learns from unpaired blood and brain single-cell atlases, with paired RNA–protein measurements anchoring the protein input. A learned coupling potential organizes recipient-state updates: the blood state is held fixed, the recipient brain latent state follows the potential gradient, and a decoder reads out its transcriptional response. Clamping a protein input at measured abundance quantiles makes every candidate modulation comparable for a specified recipient cell state.
 
-Protein-calibrated dose queries, matched human brain cohorts, a plasma protein–brain imaging Mendelian randomization (MR) atlas, colocalization and direction-matched drug evidence narrow **213 blood-cell surface antigens to two targets: TFRC (CD71) and IFNGR1 (CD119)**. The atlas covers 2,941 UK Biobank plasma protein assays and 3,963 brain imaging phenotypes (11,655,183 protein–phenotype pairs). TFRC links blood myeloid cells to iron-sensitive imaging of the substantia nigra and pallidum; IFNGR1 provides a second route through astrocytes. Held-out donors, independent human brain cohorts, spatial transcriptomics, systemic-inflammation experiments in pigs and mice, and a random-pairing ablation support the model.
+## Highlights
 
-This repository accompanies the current manuscript (November 2026); its title is reproduced above.
+- **Built on 813,363 blood and brain cells, nuclei and spatial spots** from 110 donors, with 161,159 paired RNA–protein cells calibrating the protein input (median antigen-level Spearman 0.63 in held-out donors).
+- **Predicts disease-related brain changes in locked donors.** With the same seeds (42–44) for every method, PeriScope reaches a disease-direction Spearman of 0.250 over eight blood-to-brain routes: 72% above CellOT, 196% above OT–Ridge and 27% above the strongest comparator. In two independent brain cohorts it reaches 3.0× and 2.3× CellOT.
+- **Transfers across species.** In a paired pig endotoxemia study its brain-response correlation is 2.8× that of the next-best method; in two mouse LPS studies it lowers the error of the no-change baseline by 52–57%.
+- **Depends on blood–brain alignment.** Training with shuffled blood–brain pairing removes the program responses (median cosine to the confirmation reference falls from 0.27 to −0.01).
+- **Adds a protein–brain imaging Mendelian randomization (MR) atlas**: 2,941 UK Biobank plasma protein assays × 3,963 brain imaging phenotypes = 11,655,183 protein–phenotype pairs, 1,006 at full-family q < 0.05, with independent replication, colocalization on two protein platforms and reverse MR.
+- **Narrows 213 antigens to two antibody-accessible blood targets.** TFRC (CD71) links blood myeloid cells to iron-sensitive imaging of the substantia nigra and pallidum; IFNGR1 (CD119) provides a second route through astrocytes, and its pathway can be blocked by an approved antibody.
 
-- [`pd-v3/`](pd-v3/README.md) holds the MR atlas, replication, colocalization, drug evidence, target funnel, the random-pairing ablation on seeds 52–56, the code of the five main figures and the summary tables.
-- The complete MR atlas, the summary tables and the five random-pairing checkpoints are deposited at Zenodo, DOI [10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535).
-- The world model, its ten trained models (seeds 42–51) and the analyses released with the earlier submission are in the directories described below and at the tag [`nmi-submission-20261027`](https://github.com/dong-zhongyuan/PeriScope/releases/tag/nmi-submission-20261027). The sections that follow document that release.
+## Repository layout
 
-## Run the released analyses
+| Location | Contents |
+| --- | --- |
+| [`pd-v3/`](pd-v3/README.md) | MR atlas, replication, colocalization, reverse MR, drug evidence, target funnel, random-pairing ablation, benchmark evaluation, the code of the five main figures and the summary tables |
+| `src/pdproduct/` | World-model package: core model, preprocessing and interfaces |
+| `scripts/` | Data preparation and analysis entry points |
+| `_work/` | Input preparation, model training, dose queries, program discovery and confirmation, human benchmark, pig evaluation, spatial analysis and target integration |
+| `results/` | Analysis tables, program memberships, prediction arrays and model identities |
+| `reproduce/` | Input rebuilding, checkpoint download and loading checks, input metadata |
+| `config/`, `contracts/`, `registry/` | Run configuration, artifact and manifest schemas, data and method registries |
+| `figure_source_data/`, `figures/` | Figure inputs, plotting assets and asset attribution |
 
-Two checks require only Python's standard library:
+## Data and models
 
-```bash
-python reproduce/verify_manifest.py
-python reproduce/verify_results.py
-```
+- **MR atlas and result tables.** The complete atlas (primary and sensitivity policy, each in 12 csv.gz parts with headers), the colocalization, replication, drug-evidence and funnel tables, and the five random-pairing checkpoints are deposited at Zenodo, DOI [10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535). The same summary tables are in [`pd-v3/result_tables/`](pd-v3/result_tables).
+- **Trained world models.** The ten models (seeds 42–51) are attached to the [model release](https://github.com/dong-zhongyuan/PeriScope/releases/tag/nmi-submission-20261027). Seeds 42–46 define the response programs and seeds 47–51 confirm them; method comparisons use seeds 42–44 for every method.
 
-The first verifies the released file hashes. The second reconstructs gene memberships and all 576 MR estimates, checks the global BH correction, and checks the published benchmark and animal-omission summaries.
-
-To recompute the revised numerical analyses on a CPU, use Python 3.10 or newer:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -r reproduce/requirements-numerical.txt
-python reproduce/recompute_nmi.py --output recomputed/nmi --ma
-```
-
-This recomputes the seven-method matched comparison, the additional available-seed aggregation, donor dependence, MR directionality and the Ma cohort test from released inputs. `--ma` reruns the 5,000 expression-matched random sets from donor pseudobulk counts; omit it for the faster checks. Each output directory must be new. Original results remain in `results/`.
-
-The primary comparison in Supplementary Table 1 uses **three shared benchmark seeds, 42–44, for every method**, with equal weighting over four blood routes within each recipient. Pooling the two recipient contrasts reproduces Spearman correlations of **0.259 for PeriScope**, 0.211 for conditional MLP, 0.176 for the label/state marginal, 0.165 for conditional ICNN, 0.159 for the label/state mean, 0.107 for OT–Ridge and 0.042 for CellOT. The ten-model PeriScope aggregation is a separate retained analysis; it does not define this matched comparison.
-
-## Trained models
-
-The [NMI submission release](https://github.com/dong-zhongyuan/PeriScope/releases/tag/nmi-submission-20261027) provides all ten authoritative model checkpoints, seeds **42–51**. Download and verify them without a GitHub login:
+Download and verify the models without a GitHub login, then test strict loading and a small CPU inference:
 
 ```bash
 python reproduce/download_checkpoints.py --output /absolute/path/to/periscope_models
@@ -48,72 +41,42 @@ python -m pip install torch==2.5.1
 python reproduce/check_model_loading.py --models /absolute/path/to/periscope_models
 ```
 
-The downloader joins three release parts and verifies each part, the complete archive and every checkpoint against the scientific model registry. The second command sequence tests strict checkpoint loading and a small synthetic CPU inference. For the original analysis directory layout, use an output path ending in `pd_product_assets/results/optimization_20261003/models`.
+Gene and protein vocabularies, centering metadata and state labels are in `reproduce/inputs/`.
 
-Discovery uses seeds **42–46** and confirmation **47–51**. The repaired 47–49 checkpoints are part of that ten-model set. They are distinct from the **42–44** models used in the three-run human comparison. Gene and protein vocabularies, centering metadata and state labels are provided in `reproduce/inputs/`.
+## Reproduce
 
-## Repository guide
+**Inputs.** The six cell-level input matrices are rebuilt from public sources with
 
-| Location | Contents |
-| --- | --- |
-| `pd-v3/` | Current manuscript: MR atlas, colocalization, drug evidence, target funnel, main-figure code and summary tables ([guide](pd-v3/README.md)) |
-| `src/pdproduct/` | Core model, preprocessing and package interfaces |
-| `scripts/` | Data preparation and analysis entry points |
-| `_work/rescreen_20261002/` | Current input preparation |
-| `_work/optimization_20261003/`, `_work/checkpoint_repair_20261003/` | Training, registered models, dose queries, confirmation and target integration |
-| `_work/benchmark_shared_20261003/` | Human comparison, shared representations and readouts |
-| `_work/cellot_results_recovery_20261003/` | Archived CellOT recipe, environment and numerical settings |
-| `_work/blood_brain_MR_20261003/` | Instrument acquisition, harmonization and MR |
-| `_work/pig_external_validation_20261003/` | Cross-species adapter, predictions and animal-level evaluation |
-| `_work/spatial_subtype_20261003/` | Subtype reference and spatial analysis |
-| `_work/nmi_revision_20261017/` | Third-cohort, spatial, donor-dependence, matched-benchmark and genetic follow-up scripts |
-| `results/` | Complete analysis tables, program memberships, prediction arrays and model identities |
-| `results/nmi_revision_20261017/` | Current follow-up results and Ma donor pseudobulk inputs |
-| `figure_source_data/` | Current numerical figure inputs |
-| `figures/` | Preserved plotting sources, R factories, layouts and asset attribution |
-| `reproduce/` | Portable numerical runners, checkpoint download, input metadata and integrity checks |
+```bash
+python reproduce/build_inputs.py --output /absolute/path/to/new_build
+```
 
-`_work/` contains tracked scientific source, including sibling imports used by the original analyses. Its historical folder names are retained for compatibility.
+after installing `reproduce/requirements-inputs.txt` and the R packages SeuratObject and Matrix. The runner downloads and checks the source files, applies the bundled annotations and donor partitions, and verifies all 84 output arrays. `--raw-cache /path/to/raw --offline` reuses an existing source cache; `--resume` continues a stopped build.
 
-## Figure numbering
+**Analyses and figures.** The MR atlas, colocalization, target funnel and the five main figures are run from `pd-v3/`; its [README](pd-v3/README.md) lists the scripts, method definitions and figure commands.
 
-The five main figures of the current manuscript are produced by `pd-v3/papers/figures_v2_20261119/`. The earlier plotting project retains its original seven figure identifiers. The NMI submission contains six main figures and one supplementary figure:
-
-| Project identifier | NMI placement | Information |
-| --- | --- | --- |
-| 1 | Main Fig. 1 | Cohorts and the blood–brain world model |
-| 2 | Main Fig. 2 | Protein-input prediction and calibration |
-| 3 | Main Fig. 3 | Human method comparison and independent response transfer |
-| 4 | Main Fig. 4 | Protein queries and recipient-dependent programs |
-| 5 | Supplementary Fig. 1 | Confirmation selectivity, MR and seed robustness |
-| 6 | Main Fig. 5 | Human brain and spatial evidence |
-| 7 | Main Fig. 6 | Target programs, pharmacology and gene overlap |
-
-## Reproduction scope
-
-The six cell-level input matrices can be regenerated with `python reproduce/build_inputs.py --output /absolute/path/to/new_build`. Install `reproduce/requirements-inputs.txt` and the R packages SeuratObject and Matrix first. The runner downloads and checks the public source files, uses the bundled frozen annotations and donor partitions, and verifies all 84 output arrays against the original inputs. Use `--raw-cache /path/to/raw --offline` for an existing source cache, or `--resume` to continue a stopped build after checking its completed outputs.
-
-[REPRODUCIBILITY.md](REPRODUCIBILITY.md) gives exact commands, input requirements, seed definitions and the verification record. The released tables, compact prediction contrasts, donor pseudobulks and checkpoints support the CPU recomputations above. A complete run from downloaded raw matrices through GPU training, spatial deconvolution and final figure assembly requires additional large input resources and environment setup; it has not been executed from a clean public checkout for this release.
-
-The full analysis environment is listed in `requirements.txt`; install the core package with `pip install -e .`. CellOT's original numerical recipe includes its CPU/BLAS configuration. Spatial deconvolution uses RCTD/CSIDE from [spacexr](https://github.com/dmcable/spacexr). Vendored CellOT code retains its BSD-3-Clause license; figure asset attribution is retained under `figures/assets/`.
+**Environment.** The analysis environment is listed in `requirements.txt`; install the package with `pip install -e .`. Spatial deconvolution uses RCTD/C-SIDE from [spacexr](https://github.com/dmcable/spacexr); colocalization uses the R packages `coloc` and `susieR`. Vendored CellOT code keeps its BSD-3-Clause license; figure asset attribution is under `figures/assets/`.
 
 ## Data resources
 
 | Resource | Use |
 | --- | --- |
-| [GSE164378](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164378), Hao et al., Cell 2021 | Paired RNA–protein reference |
+| [GSE164378](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164378), Hao et al., Cell 2021 | Paired RNA–protein (CITE-seq) reference |
 | [GSE223138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223138), Xiong et al., npj Parkinson's Disease 2024 | PD blood RNA |
 | [Zenodo 14372434](https://zenodo.org/records/14372434), Moquin-Beaudry et al., Brain 2025 | Reference blood RNA |
-| [GSE178265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178265), Kamath et al., Nature Neuroscience 2022 | Brain model anchor and held-out brain evaluation |
-| [GSE184950](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184950), Wang et al., Science Advances 2024 | Brain resource inventory |
-| [GSE157783](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157783), Smajić et al., Brain 2022 | Independent matched brain-state evidence |
-| [GSE253975](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253975), [GSE253462](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253462), Ma et al., Nature Communications 2025 | Visium tissue and subtype-resolved snRNA-seq cohort |
-| Sun et al., Nature 2023; Gudjonsson et al., Nature Communications 2022 | UKB plasma and AGES serum cis-pQTLs |
-| Smith et al., Nature Neuroscience 2021 | UKB brain imaging GWAS |
-| Olney et al., Journal of Neuroinflammation 2024 | Independent pig systemic inflammation study |
-| [GSE245309](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245309), Boles et al. 2024; [GSE122766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE122766), Shemer et al., Nature Communications 2018; [GSE109834](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109834), Hirbec et al., Glia 2018 | Mouse systemic inflammation studies |
-| Wang et al., Nature Neuroscience 2022 | UKB quantitative susceptibility and T2\* GWAS |
+| [GSE178265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178265), Kamath et al., Nature Neuroscience 2022 | Brain anchor and locked test donors |
+| [GSE157783](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157783), Smajić et al., Brain 2022 | Independent brain cohort |
+| [GSE184950](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184950), Wang et al., Science Advances 2024 | Independent brain cohort |
+| [GSE253975](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253975), [GSE253462](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253462), Ma et al., Nature Communications 2025 | Substantia nigra spatial transcriptomics and its snRNA-seq reference |
+| Olney et al., Journal of Neuroinflammation 2024 | Pig endotoxemia: paired blood and prefrontal cortex |
+| [GSE245309](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245309), Boles et al. 2024; [GSE122766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE122766), Shemer et al., Nature Communications 2018; [GSE109834](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109834), Hirbec et al., Glia 2018 | Mouse systemic inflammation |
+| Sun et al., Nature 2023; Gudjonsson et al., Nature Communications 2022 | UKB-PPP plasma and AGES serum protein GWAS and cis-pQTLs |
+| Smith et al., Nature Neuroscience 2021; Wang et al., Nature Neuroscience 2022 | BIG40 brain imaging GWAS (discovery and replication); QSM and T2\* GWAS |
+| 1000 Genomes Project, European panel | Linkage disequilibrium reference |
+| ChEMBL, Open Targets, DrugCentral, Guide to Pharmacology, DGIdb, drug labels | Drug evidence |
 
 ## Citation
 
 Zhongyuan Dong, Lianghua Wang and Xuanlin Meng. *PeriScope: A Blood–Brain World Model Nominates Peripherally Druggable Targets in Parkinson's Disease*. Manuscript, 2026.
+
+Data: Dong Z, Wang L, Meng X. PeriScope: plasma protein–brain imaging Mendelian randomization atlas, colocalization, drug evidence and result tables. Zenodo (2026). doi:[10.5281/zenodo.24374535](https://doi.org/10.5281/zenodo.24374535)

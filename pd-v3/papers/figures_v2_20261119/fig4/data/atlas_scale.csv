@@ -1,0 +1,10 @@
+level,stage,count,source
+Assays,all,2941,full_atlas_20261116/full/assay_coverage.csv (rows)
+Assays,estimable,1515,overview_figure/plot_data/A_all_assays.csv (policy drop; n_estimated > 0)
+Assays,significant,133,full_family_palindrome_drop.csv.gz (assays with a pair at q_bh_global < 0.05)
+Phenotypes,all,3963,full_atlas_20261116/full/phenotypes.csv (rows)
+Phenotypes,estimable,3963,coverage_by_phenotype_drop.csv (status estimated; n_assays > 0)
+Phenotypes,significant,690,full_family_palindrome_drop.csv.gz (phenotypes with a pair at q_bh_global < 0.05)
+Pairs,all,11655183,assays x phenotypes
+Pairs,estimable,5959151,coverage_by_phenotype_drop.csv (status estimated; sum of n_assays)
+Pairs,significant,1006,full_family_palindrome_drop.csv.gz (q_bh_global < 0.05)

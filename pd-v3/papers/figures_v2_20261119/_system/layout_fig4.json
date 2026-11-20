@@ -26,16 +26,16 @@
   {
    "letter": "b",
    "id": "4b_scale",
-   "content": "规模对比哑铃梯：assay、影像表型、MR 检验、区域、coloc 区域、反向 MR 六行，对数轴由旧值连到新值，右列印倍数（影像表型 248×，MR 检验约 20,000×）",
+   "content": "图谱规模：蛋白检测、带顺式工具的检测、影像表型、蛋白–表型配对、可估计配对、q < 0.05 配对六行，对数轴",
    "block": "1x1",
    "row": 1,
    "col": 2,
-   "source": "R01/legacy_comparison.csv、R01/full_atlas_20261116",
+   "source": "R01/full_atlas_20261116",
    "reuse": "hh S2b 哑铃加数字列（HH/S2/B.R）",
    "status": "ready",
    "plan": "4b",
    "file": "fig4/panels/4b_scale_1x1.pdf",
-   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/01_mr_imaging_scan/results/legacy_comparison.csv、/public/home/mengxl/dzy/pd-v3/papers/01_mr_imaging_scan/results/full_atlas_20261116"
+   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/01_mr_imaging_scan/results/full_atlas_20261116"
   },
   {
    "letter": "c",

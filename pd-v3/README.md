@@ -1,6 +1,6 @@
 # pd-v3: protein–brain imaging atlas, colocalization and target funnel
 
-This directory holds the analyses added to PeriScope for the current manuscript. The blood–brain world model itself is unchanged; its code, the ten trained models (seeds 42–51) and the earlier result tables are in the parent repository.
+This directory holds the genetic, pharmacological and benchmark analyses of the manuscript and the code of its five main figures. The blood–brain world model, its ten trained models (seeds 42–51) and the model-side result tables are in the parent repository.
 
 The additions are:
 
@@ -9,6 +9,7 @@ The additions are:
 - single-signal and SuSiE colocalization on two protein platforms (AGES and UKB-PPP), and reverse MR;
 - direction-matched drug evidence for 213 blood-cell surface antigens;
 - the target funnel that narrows 213 antigens to TFRC (CD71) and IFNGR1 (CD119);
+- the human benchmark on eight blood-to-brain routes and two independent brain cohorts;
 - a random-pairing ablation on five additional seeds (52–56);
 - the code for the five main figures.
 
@@ -33,12 +34,14 @@ The additions are:
 
 | Folder | Contents |
 | --- | --- |
-| `mr_atlas_tables/` | Selected cis instruments, phenotype catalogue, assay and phenotype coverage, instrument replication between the UKB-PPP discovery and replication sets, the initial targeted scan (576 tests), and the plot tables of the atlas overview |
+| `mr_atlas_tables/` | Selected cis instruments, phenotype catalogue, assay and phenotype coverage, instrument replication between the UKB-PPP discovery and replication sets, and the plot tables of the atlas overview |
 | `colocalization_reverse_mr_replication/` | Region, exposure and locus tables of the 1,375 colocalization regions (posterior probabilities for two windows and two priors, reverse MR, replication), SuSiE colocalization pairs and signal pairs, BIG40 replication pairs and summaries |
 | `target_funnel_and_drug_evidence/` | Antigen gate matrix, funnel counts, final targets with their MR and colocalization pairs and drug matches; 4,737 antigen–drug–route records and the per-antigen summary |
 | `world_model_programs_benchmark_ablation/` | Program evidence and frozen gene memberships, benchmark summaries, route-level ablation (seeds 42–44), random pairing (seeds 52–56) against the full model (seeds 42–51), and three figure tables |
 
 ## Method definitions
+
+**Benchmark.** Seven methods are compared on eight routes (cDC, cMono, nMono and pDC to Astro and MG-AP) in the locked test donors and in GSE157783 and GSE184950. The readout is the Spearman correlation between predicted and observed PD–control differences over 4,741 genes, averaged over routes with equal weight. Every method is compared on seeds 42–44; PeriScope's ten seeds (42–51) report seed stability per route.
 
 **MR atlas.** Exposures are all 2,941 UKB-PPP assays; 1,954 have a published lead cis-pQTL, and one instrument per assay is chosen by |β/SE| in the discovery set without reading imaging results. Outcomes are 3,935 BIG40 phenotypes and 28 QSM and T2\* phenotypes. Alleles are aligned on GRCh37. The primary policy drops palindromic variants that cannot be oriented; the sensitivity policy infers their orientation from allele frequency. Estimates are Wald ratios with first-order and delta standard errors. The correction family is the full grid of 11,655,183 pairs; non-estimable pairs enter with P = 1. Significance is Benjamini–Hochberg q < 0.05 over the full family.
 
