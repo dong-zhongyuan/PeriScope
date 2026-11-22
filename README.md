@@ -71,6 +71,7 @@ after installing `reproduce/requirements-inputs.txt` and the R packages SeuratOb
 | [GSE245309](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245309), Boles et al. 2024; [GSE122766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE122766), Shemer et al., Nature Communications 2018; [GSE109834](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109834), Hirbec et al., Glia 2018 | Mouse systemic inflammation |
 | Sun et al., Nature 2023; Gudjonsson et al., Nature Communications 2022 | UKB-PPP plasma and AGES serum protein GWAS and cis-pQTLs |
 | Smith et al., Nature Neuroscience 2021; Wang et al., Nature Neuroscience 2022 | BIG40 brain imaging GWAS (discovery and replication); QSM and T2\* GWAS |
+| [GCST90451684](https://www.ebi.ac.uk/gwas/studies/GCST90451684), Allara et al., Communications Biology 2024 | Soluble transferrin receptor GWAS on a clinical assay, orienting TFRC's instrument |
 | 1000 Genomes Project, European panel | Linkage disequilibrium reference |
 | ChEMBL, Open Targets, DrugCentral, Guide to Pharmacology, DGIdb, drug labels | Drug evidence |
 

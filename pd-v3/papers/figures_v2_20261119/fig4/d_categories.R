@@ -1,10 +1,13 @@
 # Figure 4d - effect profiles across imaging categories for the top-ranked assays (atlas display rows): best signed MR z
 # per assay x imaging category, diverging, saturating at the 98th percentile of |z|; empty = not estimated. Data: B_display_rows.csv, B_profiles.csv, categories.csv.
+# TFRC is oriented to the receptor-raising allele of rs3817672 (TfR1 Ser142) as read by the clinical soluble transferrin
+# receptor assay, the reverse of its Olink reading (Methods), so its signed z values are reversed; |z| is unchanged.
 PANEL<-list(id='4d_category_heatmap',blocks=c('2x2'),what='Assay x imaging-category effect profiles')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig4/_mr.R'))
 make_panel<-function(b){
  P<-read_src(file.path(OV,'B_profiles.csv'),cols=c('gene','imaging_family','is_qc','best_z','display_row','policy'));P<-P[P$policy=='drop'&!P$is_qc,]
  ca<-read_src(file.path(OV,'categories.csv'),cols=c('family','label','is_qc','family_order'));ca<-ca[!ca$is_qc,];ca<-ca[order(ca$family_order),];ab<-c('Reg. volume'='Volume','Cort. area'='Cortical area','Reg. intensity'='Intensity','WM diff.'='WM diffusivity','Rest ampl.'='Rest amplitude','Rest connect.'='Connectivity');ca$label<-ifelse(ca$label%in%names(ab),ab[ca$label],ca$label);ca$label<-gsub('.','',ca$label,fixed=TRUE)
+ P$best_z[P$gene=='TFRC']<- -P$best_z[P$gene=='TFRC']
  P<-P[P$imaging_family%in%ca$family,];P$x<-match(P$imaging_family,ca$family)
  rows<-unique(P[,c('gene','display_row')]);rows<-rows[order(rows$display_row),];P$y<-match(P$display_row,rev(rows$display_row))
  lim<-stats::quantile(abs(P$best_z),.98,na.rm=TRUE)

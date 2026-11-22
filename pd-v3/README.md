@@ -21,7 +21,7 @@ The additions are:
 | `tests/` | Unit tests for the package |
 | `papers/01_mr_imaging_scan/` | MR atlas, colocalization, reverse MR and replication: acquisition, analysis and aggregation scripts |
 | `papers/01_mr_imaging_scan/results/*/scripts/` | Scripts of the SuSiE colocalization and the BIG40 replication |
-| `papers/03_world_model_integration/` | Model evaluation, ablation, drug evidence and the target funnel (`build_target_funnel_g8rel.py`) |
+| `papers/03_world_model_integration/` | Model evaluation, ablation, drug evidence, the target funnel (`build_target_funnel_g8rel.py`) and TFRC's orientation on the clinical assay (`tfrc_orientation.py`, `extract_qsm_tfrc.py`) |
 | `papers/03_world_model_integration/results/benchmark_20261119/src/` | Benchmark evaluation on the eight blood–brain routes |
 | `papers/03_world_model_integration/results/random_pairing_20261119/training/` | Training of the random-pairing models, seeds 52–56 |
 | `papers/03_world_model_integration/results/drug_evidence_expanded_20261119/code/` | Retrieval, parsing and classification of the drug records |
@@ -36,7 +36,7 @@ The additions are:
 | --- | --- |
 | `mr_atlas_tables/` | Selected cis instruments, phenotype catalogue, assay and phenotype coverage, instrument replication between the UKB-PPP discovery and replication sets, and the plot tables of the atlas overview |
 | `colocalization_reverse_mr_replication/` | Region, exposure and locus tables of the 1,375 colocalization regions (posterior probabilities for two windows and two priors, reverse MR, replication), SuSiE colocalization pairs and signal pairs, BIG40 replication pairs and summaries |
-| `target_funnel_and_drug_evidence/` | Antigen gate matrix, funnel counts, final targets with their MR and colocalization pairs and drug matches; 4,739 antigen–drug–route records (2,367 distinct drugs), the hand-curated overlay the funnel reads, and the per-antigen summary |
+| `target_funnel_and_drug_evidence/` | Antigen gate matrix, funnel counts, final targets with their MR and colocalization pairs and drug matches; 4,739 antigen–drug–route records (2,367 distinct drugs), the hand-curated overlay the funnel reads, and the per-antigen summary; `tfrc_variant_panel.csv`, TFRC's instrument and the clinical-assay leads on the soluble transferrin receptor scale beside nigral QSM and T2\* |
 | `world_model_programs_benchmark_ablation/` | Program evidence and frozen gene memberships, benchmark summaries, route-level ablation (seeds 42–44), random pairing (seeds 52–56) against the full model (seeds 42–51), and three figure tables |
 
 ## Method definitions
@@ -48,6 +48,8 @@ The additions are:
 **Replication.** Instrument effects are compared between the UKB-PPP discovery and replication sets. Imaging associations are tested for direction in the independent BIG40 replication sample; the query list is fixed before replication values are read.
 
 **Colocalization.** Each region pairs an AGES protein GWAS and the corresponding UKB-PPP assay with the imaging phenotype of largest |z| at the instrument. Single-signal colocalization uses windows of ±500 kb and ±1 Mb with p1 = p2 = 1e-4 and p12 = 1e-5 (1e-6 also reported). SuSiE colocalization uses the 1000 Genomes European panel, L = 5 and coverage 0.95; a protein signal qualifies when the MR instrument lies in its 95% credible set or has r² ≥ 0.8 with a variant in it. The unified posterior probability is the larger of the single-signal and the instrument-carrying SuSiE PP.H4, computed separately for each protein platform.
+
+**TFRC orientation.** TFRC's instrument rs3817672 encodes TfR1 Gly142Ser. The UKB-PPP affinity assay reads its Ser142 allele as lowering plasma TFRC (β = −0.524 SD), whereas the clinical soluble transferrin receptor assay (GCST90451684, 45,330 participants, none from UK Biobank) reads it as raising the receptor (β = 0.058 SD), as do transferrin saturation and total iron-binding capacity. Figure 4i therefore scales TFRC's Wald ratios by β(UKB-PPP) / β(clinical) at rs3817672 (−9.11) and Figure 4d reverses TFRC's signed z; P values, q values and colocalization are unchanged. `tfrc_orientation.py` writes `tfrc_variant_panel.csv` from the clinical-assay GWAS cut to TFRC ± 500 kb and the nigral QSM and T2\* regions cut by `extract_qsm_tfrc.py`.
 
 **Target funnel.** After the five model-side criteria (C1–C5), an antigen needs (6) MR support, (7) a unified PP.H4 ≥ 0.8 for the same protein–phenotype pair on either platform, and (8) a clinical-stage or approved drug, not withdrawn, whose action is not opposite to the model's restorative direction, with all direction-resolved programs of the antigen pointing the same way.
 
@@ -79,6 +81,7 @@ Python dependencies are listed in `requirements.txt`; colocalization uses the R 
 
 - Plasma protein pQTLs: UKB-PPP (Sun et al., Nature 2023; Supplementary Tables 3, 9 and 16); AGES serum proteome summary statistics (Gudjonsson et al., Nature Communications 2022).
 - Brain imaging GWAS: BIG40, discovery and replication samples (Smith et al., Nature Neuroscience 2021); QSM and T2\* (Wang et al., Nature Neuroscience 2022).
+- Soluble transferrin receptor GWAS on a clinical assay: Allara et al., Communications Biology 2024 (GCST90451684); iron indices: Bell et al., Communications Biology 2021.
 - Linkage disequilibrium reference: 1000 Genomes, European panel.
 - Drug evidence: ChEMBL, Open Targets, DrugCentral, Guide to Pharmacology, DGIdb and drug labels.
 - Single-cell, spatial, CITE-seq, pig and mouse data: as listed in the parent README.
