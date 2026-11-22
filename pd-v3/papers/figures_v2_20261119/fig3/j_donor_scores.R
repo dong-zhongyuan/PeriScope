@@ -1,4 +1,4 @@
-# Figure 3j - agreement of matched-brain PD effects between the locked Kamath donors (x) and the independent GSE157783
+# Figure 3j - agreement of matched-brain PD effects between the locked Kamath donors (x) and the independent Smajic
 # donors (y): every program evaluable in both cohorts (grey) and the ten final-target programs (colour).
 # Data: optimization_20261003/all_program_evidence.csv; final programs as in 3f.
 PANEL<-list(id='3j_donor_scores',blocks=c('1x1'),what='Cross-cohort agreement of program PD effects')
@@ -12,7 +12,7 @@ make_panel<-function(b){
   geom_point(data=e,aes(x,y),shape=16,colour=MID,alpha=.22,size=ggsz('unit'))+
   geom_point(data=f,aes(x,y),shape=21,fill=TARGET_COL[f$antigen],colour='white',stroke=.3,size=ggsz('point'))+
   scale_x_continuous(labels=num_minus,n.breaks=4)+scale_y_continuous(labels=num_minus,n.breaks=4)+
-  labs(x='Kamath PD − control',y='GSE157783 PD − control')+theme_fig()+theme(plot.margin=margin(LETTER_ZONE[['h']]+.8,.6,.6,.6,'mm'))
+  labs(x='Kamath PD − control',y='Smaji\u0107 PD − control')+theme_fig()+theme(plot.margin=margin(LETTER_ZONE[['h']]+.8,.6,.6,.6,'mm'))
  W<-b$w;H<-b$h
  k<-key_row(list(ki(kg_dot(TARGET_COL[['CD71']],'white',1.4),'CD71'),ki(kg_dot(TARGET_COL[['CD119']],'white',1.4),'CD119')),6,LETTER_ZONE[['h']]-1.6,h=H)
  gTree(children=gList(gg_grob(P),do.call(gList,k)))}

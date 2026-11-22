@@ -75,6 +75,7 @@ target_label<-function(a)paste0(a,'/',TARGET_GENE[a])
 # observation type (inner ring), cohorts (shades of their tissue colour), diagnosis
 TISSUE_COL<-c(`Blood cells`='#4F7CA8',`Brain nuclei`='#D9A441',`Spatial spots`='#8F9D5A')
 COHORT_COL<-c(GSE223138='#3D6894',MB2025='#8DB0D2',GSE178265='#B9852B',GSE184950='#DDB462',GSE157783='#EED7A1',GSE253975='#8F9D5A')
+COHORT_LAB<-c(GSE223138='Xiong',MB2025='Moquin-Beaudry',GSE178265='Kamath',GSE184950='Wang',GSE157783='Smaji\u0107',GSE253975='Ma');clab<-function(x)ifelse(x%in%names(COHORT_LAB),COHORT_LAB[x],x)
 DX_COL<-c(Control='#A6B4C2',`Early PD`='#D9B8D0',PD='#B07AA1',`Late PD`='#8A4F7D',PDD='#663A5E',LBD='#5F8A80',MSA='#8FB0A8',PSP='#C3D6D1')
 MOD_COL<-c(Volume='#758AA2',QSM='#3A8B84',`T2*`='#C48A53')                                    # MR imaging modalities (pd-v3 standard)
 PLATFORM_COL<-c(`UKB-PPP`='#4D4D4D',AGES='#A6A6A6')

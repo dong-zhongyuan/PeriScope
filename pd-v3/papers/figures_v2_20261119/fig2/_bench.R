@@ -2,7 +2,7 @@
 # model seeds 42-51 (corrected_benchmark src/eval/per_axis.csv); comparators = manuscript runs, seeds 42-44
 # (human_direction_metrics.csv). Read-only sources.
 FRD<-'/public/home/mengxl/dzy/pd_product/manuscript_revision_20261017/project/pd_product_figure_design/manuscript_review/figure_redesign_20261004/data'
-PAX<-'/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/benchmark_20261119/src/eval/per_axis.csv'
+PAX<-'/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/corrected_benchmark_20261119/src/eval/per_axis.csv'
 AX_BLOOD<-c(cDC='cDC',classical_mono='cMono',nonclassical_mono='nMono',pDC='pDC');AX_BRAIN<-c(astro='Astro',microglia_mhc2='MG-AP')
 M_ORDER<-c('periscope','conditional_mlp','conditional_icnn','shared_label_marginal','cellot','shared_label_mean','ot_ridge')
 route_of<-function(axis){p<-do.call(rbind,strsplit(axis,'__'));data.frame(blood=AX_BLOOD[p[,1]],brain=AX_BRAIN[p[,2]],stringsAsFactors=FALSE)}

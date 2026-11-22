@@ -7,7 +7,7 @@ The additions are:
 - a plasma protein–brain imaging Mendelian randomization (MR) atlas: 2,941 UK Biobank Pharma Proteomics Project (UKB-PPP) assays × 3,963 brain imaging phenotypes, 11,655,183 protein–phenotype pairs;
 - replication of the instruments and of the imaging associations in independent samples;
 - single-signal and SuSiE colocalization on two protein platforms (AGES and UKB-PPP), and reverse MR;
-- direction-matched drug evidence for 213 blood-cell surface antigens;
+- drug evidence for 213 blood-cell surface antigens, with the direction of action resolved per record;
 - the target funnel that narrows 213 antigens to TFRC (CD71) and IFNGR1 (CD119);
 - the human benchmark on eight blood-to-brain routes and two independent brain cohorts;
 - a random-pairing ablation on five additional seeds (52–56);
@@ -21,7 +21,7 @@ The additions are:
 | `tests/` | Unit tests for the package |
 | `papers/01_mr_imaging_scan/` | MR atlas, colocalization, reverse MR and replication: acquisition, analysis and aggregation scripts |
 | `papers/01_mr_imaging_scan/results/*/scripts/` | Scripts of the SuSiE colocalization and the BIG40 replication |
-| `papers/03_world_model_integration/` | Model evaluation, ablation, drug evidence and the target funnel (`build_target_funnel_final.py`) |
+| `papers/03_world_model_integration/` | Model evaluation, ablation, drug evidence and the target funnel (`build_target_funnel_g8rel.py`) |
 | `papers/03_world_model_integration/results/benchmark_20261119/src/` | Benchmark evaluation on the eight blood–brain routes |
 | `papers/03_world_model_integration/results/random_pairing_20261119/training/` | Training of the random-pairing models, seeds 52–56 |
 | `papers/03_world_model_integration/results/drug_evidence_expanded_20261119/code/` | Retrieval, parsing and classification of the drug records |
@@ -36,7 +36,7 @@ The additions are:
 | --- | --- |
 | `mr_atlas_tables/` | Selected cis instruments, phenotype catalogue, assay and phenotype coverage, instrument replication between the UKB-PPP discovery and replication sets, and the plot tables of the atlas overview |
 | `colocalization_reverse_mr_replication/` | Region, exposure and locus tables of the 1,375 colocalization regions (posterior probabilities for two windows and two priors, reverse MR, replication), SuSiE colocalization pairs and signal pairs, BIG40 replication pairs and summaries |
-| `target_funnel_and_drug_evidence/` | Antigen gate matrix, funnel counts, final targets with their MR and colocalization pairs and drug matches; 4,737 antigen–drug–route records and the per-antigen summary |
+| `target_funnel_and_drug_evidence/` | Antigen gate matrix, funnel counts, final targets with their MR and colocalization pairs and drug matches; 4,739 antigen–drug–route records (2,367 distinct drugs), the hand-curated overlay the funnel reads, and the per-antigen summary |
 | `world_model_programs_benchmark_ablation/` | Program evidence and frozen gene memberships, benchmark summaries, route-level ablation (seeds 42–44), random pairing (seeds 52–56) against the full model (seeds 42–51), and three figure tables |
 
 ## Method definitions
@@ -49,9 +49,9 @@ The additions are:
 
 **Colocalization.** Each region pairs an AGES protein GWAS and the corresponding UKB-PPP assay with the imaging phenotype of largest |z| at the instrument. Single-signal colocalization uses windows of ±500 kb and ±1 Mb with p1 = p2 = 1e-4 and p12 = 1e-5 (1e-6 also reported). SuSiE colocalization uses the 1000 Genomes European panel, L = 5 and coverage 0.95; a protein signal qualifies when the MR instrument lies in its 95% credible set or has r² ≥ 0.8 with a variant in it. The unified posterior probability is the larger of the single-signal and the instrument-carrying SuSiE PP.H4, computed separately for each protein platform.
 
-**Target funnel.** After the five model-side criteria (C1–C5), an antigen needs (6) MR support, (7) a unified PP.H4 ≥ 0.8 for the same protein–phenotype pair on either platform, and (8) a clinical-stage or approved drug whose action matches the model's restorative direction, with all direction-resolved programs of the antigen pointing the same way.
+**Target funnel.** After the five model-side criteria (C1–C5), an antigen needs (6) MR support, (7) a unified PP.H4 ≥ 0.8 for the same protein–phenotype pair on either platform, and (8) a clinical-stage or approved drug, not withdrawn, whose action is not opposite to the model's restorative direction, with all direction-resolved programs of the antigen pointing the same way.
 
-**Drug evidence.** Records are compiled from ChEMBL, Open Targets, DrugCentral, Guide to Pharmacology, DGIdb and drug labels, with manual review. Routes are direct, ligand, complex partner and gene silencing; directions are increase, decrease, depletion and unknown. Depleting agents and agents of unknown direction do not count as matches.
+**Drug evidence.** Records are compiled from ChEMBL, Open Targets, DrugCentral, Guide to Pharmacology, DGIdb and drug labels, with manual review. Routes are direct, ligand, complex partner and gene silencing; directions are increase, decrease, depletion and unknown. Depleting agents, receptor-mediated delivery vehicles and links resting on text mining alone are excluded. The gate excludes only the opposite direction, so a record whose direction is unknown is retained; records added by hand are listed in `result_tables/target_funnel_and_drug_evidence/curation_manual_20261122.csv`.
 
 ## Figures
 
@@ -63,8 +63,11 @@ cd papers/figures_v2_20261119
 $FIGV2_RSCRIPT _system/render_panel.R fig2/b_leaderboard.R 2x2    # render one panel at a block size
 $FIGV2_PY _system/assemble.py _system/layout_fig2.json            # assemble a page
 _system/run_blender.sh fig2/blender 2a                            # re-render a Blender schematic
+$FIGV2_PY fig4/brain/render_brain.py --out fig4/brain             # brain sections of Figure 4j
 $FIGV2_PY fig5/c_wheel.py                                         # evidence wheel
 ```
+
+As with the Blender schematics, the rendered rasters are not in this repository: `fig4/brain/render_brain.py` rebuilds the four sections of Figure 4j from the MNI152 template, the Talairach and Harvard–Oxford atlases and the UK Biobank group-ICA maps (`rfMRI_ICA_d100.nii.gz`, `edge_list_d100.txt` and `rfMRI_GoodComponents_d100_v1.txt` from https://www.fmrib.ox.ac.uk/ukbiobank/).
 
 `_system/check_panel.py` checks panel size, fonts and bar charts. The page is a 4 × 5 grid of 41.25 mm units with 3 mm gaps (174 × 218.25 mm); all text is 7 pt Arial with bold axis titles.
 

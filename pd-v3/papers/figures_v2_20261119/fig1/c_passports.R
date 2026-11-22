@@ -21,13 +21,13 @@ make_panel<-function(b){
  chip<-c(COHORT_COL,`CITE-seq`=MID);cells<-c(cells,`CITE-seq`=CITE_CELLS)
  W<-b$w;H<-b$h;top<-LETTER_ZONE[['h']]+.4;keyh<-3.6;rh<-(H-top-keyh)/length(rows)
  sq<-1.45;pg<-.3;pitch<-sq+pg;nr<-2
- xn<-3.0;xd<-xn+max(sw(rows))+1.4
+ xn<-3.0;xd<-xn+max(sw(clab(rows)))+1.4
  maxd<-max(table(u$res),length(CITE_DONORS));ncol<-ceiling(maxd/nr);xc<-xd+ncol*pitch+.6
  xb<-xc+.4;lw<-W-xb-4;lo<-3.7;hi<-log10(max(cells))
  g<-list()
  for(i in seq_along(rows)){r<-rows[i];yc<-top+(i-.5)*rh
   g<-c(g,list(drect(.4,yc-1.1,2.2,2.2,fill=if(train[r])chip[r]else'white',col=chip[r],lwd=glwd('emph'))))
-  g<-c(g,list(dtxt(r,xn,yc,just=c('left','centre'))))
+  g<-c(g,list(dtxt(clab(r),xn,yc,just=c('left','centre'))))
   if(r=='CITE-seq'){dd<-data.frame(donor=CITE_DONORS,dx='Control')}else{dd<-u[u$res==r,c('donor','dx')]}
   dd<-dd[order(match(dd$dx,names(DX_COL)),dd$donor),];nd<-nrow(dd)
   for(j in seq_len(nd)){cc<-(j-1)%/%nr;rr<-(j-1)%%nr;x<-xd+cc*pitch;y<-yc-(nr*pitch-pg)/2+rr*pitch

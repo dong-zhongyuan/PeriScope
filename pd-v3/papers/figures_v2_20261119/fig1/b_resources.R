@@ -27,7 +27,8 @@ resource_data<-function(){
 
 key_groups<-function(a){tot<-sum(a$n)
  grp<-function(v,cols,ring){s<-tapply(a$n,v,sum);s<-s[!is.na(s)&s>0];list(ring=ring,lab=names(s),pct=rep('',length(s)),col=unname(cols[names(s)]))}
- list(grp(a$tissue,TISSUE_COL,1),grp(a$cohort,COHORT_COL,2),grp(a$dx,DX_COL,3))}
+ gc<-grp(a$cohort,COHORT_COL,2);gc$lab<-unname(clab(gc$lab))
+ list(grp(a$tissue,TISSUE_COL,1),gc,grp(a$dx,DX_COL,3))}
 
 # key geometry: a group = ring icon row + entries in ncol sub-columns; a stack = groups one above another
 SW<-2.0;ICON<-2.6

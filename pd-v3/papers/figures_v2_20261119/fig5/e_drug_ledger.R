@@ -1,18 +1,22 @@
 # Figure 5e - every drug record of the two final targets (one square per record): rows = route (direct, ligand route,
-# complex partner, gene silencing), column groups = action relative to the model restorative direction (matched,
-# opposite, unknown or cell-killing); fill = modality. Data: drug_evidence_expanded_20261119/drug_records.csv.gz.
+# complex partner, gene silencing), column groups = the direction gate (not opposite to the model
+# restorative direction, or opposite); fill = modality;
+# each route band is as tall as the squares it holds. Data: the funnel run's drug_records.csv.gz.
 PANEL<-list(id='5e_drug_ledger',blocks=c('1x1'),what='Drug record ledger of the final targets')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig5/_fun.R'))
 make_panel<-function(b){W<-b$w;H<-b$h;assign('PANEL_H',H,envir=globalenv())
  d<-read_src(file.path(DRUG,'drug_records.csv.gz'),cols=c('antigen','route_class','drug_type','direction'));d<-d[d$antigen%in%c('CD71','CD119'),]
- md<-c(CD71='down',CD119='down');d$rel<-ifelse(d$direction==md[d$antigen],'Same',ifelse(d$direction%in%c('up','down'),'Reverse','Other'))
+ md<-c(CD71='down',CD119='down');d$rel<-ifelse(d$direction%in%c('up','down')&d$direction!=md[d$antigen],'Opposite','Not opposite')
  rt<-c(direct='Direct',ligand_route='Ligand',complex_partner='Partner',gene_silencing='Silencing');d<-d[d$route_class%in%names(rt),]
  mc<-c(Antibody=PERISCOPE,`Small molecule`=MID,Protein='#D98C2B',Oligonucleotide='#2E9C8E',Unknown=LIGHT);d$drug_type[!d$drug_type%in%names(mc)]<-'Unknown'
- rt<-rt[names(rt)%in%d$route_class];rel<-c('Same','Reverse','Other');top<-LETTER_ZONE[['h']]+3.2;lw<-10.5;cw<-(W-lw-1)/3;rh<-(H-top-7)/length(rt);sq<-1.55;pg<-.35;g<-list()
+ rt<-rt[names(rt)%in%d$route_class];rel<-c('Not opposite','Opposite');top<-LETTER_ZONE[['h']]+3.2;lw<-10.5;cw<-(W-lw-1)/length(rel);sq<-1.55;pg<-.35;g<-list();nc<-floor((cw-1)/(sq+pg))
+ need<-vapply(seq_along(rt),function(i)max(1,max(vapply(rel,function(r)ceiling(sum(d$route_class==names(rt)[i]&d$rel==r)/nc),0))),0)
+ base<-need*(sq+pg)+.8;avail<-H-top-7;stopifnot(sum(base)<=avail)
+ rhv<-base+(avail-sum(base))/length(rt);y0v<-top+c(0,cumsum(rhv))[seq_along(rt)]
  for(j in seq_along(rel))g<-c(g,list(dtxt(rel[j],lw+(j-.5)*cw,top-1.6,col=MID)))
- for(i in seq_along(rt)){y0<-top+(i-1)*rh;g<-c(g,list(dtxt(rt[[i]],.6,y0+rh/2,just=c('left','centre'))))
+ for(i in seq_along(rt)){y0<-y0v[i];rh<-rhv[i];g<-c(g,list(dtxt(rt[[i]],.6,y0+rh/2,just=c('left','centre'))))
   for(j in seq_along(rel)){z<-d[d$route_class==names(rt)[i]&d$rel==rel[j],];z<-z[order(match(z$drug_type,names(mc))),];if(!nrow(z))next
-   nc<-floor((cw-1)/(sq+pg));for(k in seq_len(nrow(z))){cc<-(k-1)%%nc;rr<-(k-1)%/%nc
+   for(k in seq_len(nrow(z))){cc<-(k-1)%%nc;rr<-(k-1)%/%nc
     g<-c(g,list(drect(lw+(j-1)*cw+.5+cc*(sq+pg),y0+.4+rr*(sq+pg),sq,sq,fill=mc[[z$drug_type[k]]],col=NA)))}}
   if(i<length(rt))g<-c(g,list(dline(.6,y0+rh,W-.6,y0+rh,col=FAINT,lwd=glwd('hair'))))}
  used<-names(mc)[names(mc)%in%d$drug_type];lb<-c(Antibody='Antibody',`Small molecule`='Small',Protein='Protein',Oligonucleotide='Oligo',Unknown='Other')

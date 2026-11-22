@@ -30,12 +30,12 @@
    "block": "2x2",
    "row": 1,
    "col": 2,
-   "source": "R03/benchmark_20261119/TABLE_benchmark.csv",
+   "source": "R03/corrected_benchmark_20261119/TABLE_benchmark.csv",
    "reuse": "#06 aivc NAR 3B；备选 #07 CREED NC 2c",
    "status": "ready",
    "plan": "2b",
    "file": "fig2/panels/2b_leaderboard_2x2.pdf",
-   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/benchmark_20261119/TABLE_benchmark.csv"
+   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/corrected_benchmark_20261119/TABLE_benchmark.csv"
   },
   {
    "letter": "c",
@@ -44,12 +44,12 @@
    "block": "2x1",
    "row": 1,
    "col": 4,
-   "source": "R03/benchmark_20261119/TABLE_benchmark.csv",
+   "source": "R03/corrected_benchmark_20261119/TABLE_benchmark.csv",
    "reuse": "#03 右半点热图；#07",
    "status": "ready",
    "plan": "2c",
    "file": "fig2/panels/2c_pearson_sign_2x1.pdf",
-   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/benchmark_20261119/TABLE_benchmark.csv"
+   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/corrected_benchmark_20261119/TABLE_benchmark.csv"
   },
   {
    "letter": "d",
@@ -58,12 +58,12 @@
    "block": "1x1",
    "row": 2,
    "col": 1,
-   "source": "R03/benchmark_20261119/TABLE_ablation_corrected_by_seed.csv（只取完整模型行）、TABLE_locked_leave_one_test_donor.csv",
+   "source": "R03/corrected_benchmark_20261119/TABLE_ablation_corrected_by_seed.csv（只取完整模型行）、TABLE_locked_leave_one_test_donor.csv",
    "reuse": "#14 行设计；YeastBridge 图 6 记分卡 Met 列",
    "status": "ready",
    "plan": "2h",
    "file": "fig2/panels/2d_seed_stability_1x1.pdf",
-   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/benchmark_20261119/TABLE_ablation_corrected_by_seed.csv（只取完整模型行）、TABLE_locked_leave_one_test_donor.csv"
+   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/corrected_benchmark_20261119/TABLE_ablation_corrected_by_seed.csv（只取完整模型行）、TABLE_locked_leave_one_test_donor.csv"
   },
   {
    "letter": "e",
@@ -72,12 +72,12 @@
    "block": "1x3",
    "row": 3,
    "col": 1,
-   "source": "R03/benchmark_20261119/TABLE_benchmark_key_summary.csv 及同目录逐队列 bootstrap、置换表",
+   "source": "R03/corrected_benchmark_20261119/TABLE_benchmark_key_summary.csv 及同目录逐队列 bootstrap、置换表",
    "reuse": "#08 hh 图 3b（HH/Fig3/B.R + draw_strip()、ci_rail()）；备选 #09",
    "status": "ready",
    "plan": "2d",
    "file": "fig2/panels/2e_external_cohorts_1x3.pdf",
-   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/benchmark_20261119/TABLE_benchmark_key_summary.csv 及同目录逐队列 bootstrap、置换表"
+   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/corrected_benchmark_20261119/TABLE_benchmark_key_summary.csv 及同目录逐队列 bootstrap、置换表"
   },
   {
    "letter": "f",
@@ -86,12 +86,12 @@
    "block": "1x1",
    "row": 3,
    "col": 4,
-   "source": "R03/random_pairing_20261119/distribution_adt（README 主表，仅模型行）",
+   "source": "R03/metric_optimization_20261119/distribution_adt（README 主表，仅模型行）",
    "reuse": "#13 hh 图 6b 的分解思路，压缩为相对值阶梯",
    "status": "ready",
    "plan": "2i",
    "file": "fig2/panels/2f_ablation_design_1x1.pdf",
-   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/random_pairing_20261119/distribution_adt（README 主表，仅模型行）"
+   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/metric_optimization_20261119/distribution_adt（README 主表，仅模型行）"
   },
   {
    "letter": "g",
@@ -128,12 +128,12 @@
    "block": "1x1",
    "row": 4,
    "col": 4,
-   "source": "R03/benchmark_20261119/TABLE_ablation_by_readout.csv 等（待新评估）",
+   "source": "R03/corrected_benchmark_20261119/TABLE_ablation_by_readout.csv 等（待新评估）",
    "reuse": "#12 hh 图 2b",
    "status": "ready",
    "plan": "2g",
    "file": "fig2/panels/2i_metric_ablation_1x1.pdf",
-   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/benchmark_20261119/TABLE_ablation_by_readout.csv 等（待新评估）"
+   "source_paths": "/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/corrected_benchmark_20261119/TABLE_ablation_by_readout.csv 等（待新评估）"
   },
   {
    "letter": "j",

@@ -1,0 +1,65 @@
+{
+ "display_mm": [
+  41.1,
+  32.2
+ ],
+ "aspect": 1.2758620689655173,
+ "dpi": 600,
+ "ica_threshold_z": 8.0,
+ "sections": {
+  "sn": {
+   "plane": "z",
+   "coord": -9.0,
+   "centre": [
+    0.0,
+    -24.0
+   ],
+   "fov_mm": 165.0,
+   "colour": "#2E8B57",
+   "what": "substantia nigra",
+   "voxels": 212
+  },
+  "gp": {
+   "plane": "z",
+   "coord": -3.0,
+   "centre": [
+    0.0,
+    -24.0
+   ],
+   "fov_mm": 165.0,
+   "colour": "#2E8B57",
+   "what": "pallidum",
+   "voxels": 4251
+  },
+  "dmn": {
+   "plane": "x",
+   "coord": 0.0,
+   "centre": [
+    -16.0,
+    11.0
+   ],
+   "fov_mm": 165.0,
+   "colour": "#7B3F9E",
+   "what": "ICA d100 component 8",
+   "voxels": 33806
+  },
+  "amt": {
+   "plane": "y",
+   "coord": -12.0,
+   "centre": [
+    0.0,
+    6.0
+   ],
+   "fov_mm": 165.0,
+   "colour": "#7B3F9E",
+   "what": "ICA d100 component 45",
+   "voxels": 14717
+  }
+ },
+ "sources": {
+  "template": "MNI152 1 mm (nilearn)",
+  "sn": "Talairach Brodmann atlas, substantia nigra, left hemisphere",
+  "gp": "Harvard-Oxford sub-maxprob-thr25-1mm, left and right pallidum",
+  "ica": "/public/home/mengxl/dzy/pd-v3/data/ukb_group_ica/rfMRI_ICA_d100.nii.gz (UK Biobank group-ICA d100); edge 868 = good nodes 7, 43 = components 8, 45"
+ }
+}

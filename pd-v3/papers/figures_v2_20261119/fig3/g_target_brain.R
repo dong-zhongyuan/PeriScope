@@ -5,7 +5,7 @@ source(file.path(Sys.getenv('FIGV2_ROOT'),'fig3/_rows.R'))
 make_panel<-function(b){fp<-prog_rows();n<-nrow(fp)
  e<-read_src(file.path(OPT,'all_program_evidence.csv'),cols=c('combo','kamath_donor_score_effect','independent_effect'))
  e<-e[match(fp$combo,e$combo),];stopifnot(!anyNA(e$combo))
- co<-c(Kamath='kamath',GSE157783='independent');sh<-c(Kamath=21,GSE157783=22)
+ co<-c(Kamath="kamath","Smaji\u0107"="independent");sh<-c(Kamath=21,"Smaji\u0107"=22)
  L<-do.call(rbind,lapply(names(co),function(k){ef<-if(co[[k]]=='independent')e$independent_effect else e[[paste0(co[[k]],'_donor_score_effect')]]
   data.frame(row=fp$row,cohort=k,v=ef)}))
  L$y<-L$row;L$col<-TARGET_COL[as.character(fp$antigen[match(L$row,fp$row)])]

@@ -1,6 +1,6 @@
 # Figure 2f - ablation design: blood (left) and brain (right) donor groups of two conditions linked within strata.
 # Full: links within the matched condition; random pairing: links shuffled across conditions; coupling off: no coupling
-# term. Glyphs key the arms in 2g-2i.
+# term. Glyphs key the arms in 2g-2i: one circle per arm, coloured by arm.
 PANEL<-list(id='2f_ablation_design',blocks=c('1x1'),what='Ablation arms schematic')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig2/_arms.R'))
 make_panel<-function(b){W<-b$w;H<-b$h;assign('PANEL_H',H,envir=globalenv())
@@ -9,7 +9,7 @@ make_panel<-function(b){W<-b$w;H<-b$h;assign('PANEL_H',H,envir=globalenv())
  top<-LETTER_ZONE[['h']]+.6;rh<-(H-top-3.4)/3;g<-list();arms<-names(ARM_SHAPE)
  xb<-26;xr<-36.6
  for(i in 1:3){y0<-top+(i-1)*rh;yy<-y0+rh*c(.2,.4,.6,.8);a<-arms[i]
-  g<-c(g,dmark(1.9,y0+rh/2,switch(a,Full='periscope',`Random pairing`='cellot',`Coupling off`='ridge'),d=2.4))
+  g<-c(g,list(C(1.9,y0+rh/2,2.4,ARM_COL[[a]],'white')))
   g<-c(g,list(dtxt(a,3.6,y0+rh/2,just=c('left','centre'),bold=TRUE)))
   links<-switch(a,Full=cbind(1:4,1:4),`Random pairing`=cbind(1:4,c(3,4,1,2)),`Coupling off`=NULL)
   if(!is.null(links))for(k in seq_len(nrow(links)))g<-c(g,list(dline(xb+1,yy[links[k,1]],xr-1,yy[links[k,2]],col=ARM_COL[[a]],lwd=glwd('data'))))

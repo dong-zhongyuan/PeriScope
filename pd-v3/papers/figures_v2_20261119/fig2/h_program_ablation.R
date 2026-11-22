@@ -1,12 +1,11 @@
 # Figure 2h - program-direction ablation: median cosine between each seed's program responses and the confirmation-seed
 # (47-51) reference, for all programs and per recipient state; full model seeds 42-51 vs random pairing seeds 52-56.
-# Numbers = change of the random-pairing mean relative to the full-model mean.
-# Data: random_pairing_20261119/evaluation/tables/per_seed_metrics.csv and arm_vs_full_pool.csv.
+# Data: metric_optimization_20261119/evaluation/tables/per_seed_metrics.csv and arm_vs_full_pool.csv.
 PANEL<-list(id='2h_program_ablation',blocks=c('1x1'),what='Program-direction ablation, random pairing vs full')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig2/_arms.R'))
 make_panel<-function(b){
- s<-read_src(file.path(RES,'random_pairing_20261119/evaluation/tables/per_seed_metrics.csv'))
- a<-read_src(file.path(RES,'random_pairing_20261119/evaluation/tables/arm_vs_full_pool.csv'),cols=c('arm_set','metric','pct_diff_vs_full'))
+ s<-read_src(file.path(RES,'metric_optimization_20261119/evaluation/tables/per_seed_metrics.csv'))
+ a<-read_src(file.path(RES,'metric_optimization_20261119/evaluation/tables/arm_vs_full_pool.csv'),cols=c('arm_set','metric','pct_diff_vs_full'))
  s<-s[(s$arm=='full'&s$seed%in%42:51)|(s$arm=='random_pairing'&s$seed%in%52:56),];stopifnot(sum(s$arm=='full')==10,sum(s$arm=='random_pairing')==5)
  mets<-c(p_cos_median='All',p_cos_median_astro='Astro',p_cos_median_microglia_homeostatic='MG-H',p_cos_median_microglia_mhc2='MG-AP')
  L<-do.call(rbind,lapply(names(mets),function(m)data.frame(state=mets[[m]],metric=m,arm=ARM_LAB[s$arm],seed=s$seed,v=s[[m]])))

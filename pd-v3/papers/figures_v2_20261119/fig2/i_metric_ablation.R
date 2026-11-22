@@ -1,10 +1,10 @@
 # Figure 2i - random pairing (seeds 52-56) relative to the full-model mean (seeds 42-51) on five readouts: points = seeds,
-# bar = mean, grey band = the full model's own seed range, number = mean change. Higher is better for the two Spearman
+# bar = mean, grey band = the full model's own seed range. Higher is better for the two Spearman
 # readouts, lower for the four error readouts. Data: arm_vs_full_pool.csv (arm_set random_pairing_new).
 PANEL<-list(id='2i_metric_ablation',blocks=c('1x1'),what='Readout changes under random pairing')
 source(file.path(Sys.getenv('FIGV2_ROOT'),'fig2/_arms.R'))
 make_panel<-function(b){
- a<-read_src(file.path(RES,'random_pairing_20261119/evaluation/tables/arm_vs_full_pool.csv'))
+ a<-read_src(file.path(RES,'metric_optimization_20261119/evaluation/tables/arm_vs_full_pool.csv'))
  mets<-c(f_all_mean='Spearman',h_contrast_mse='Contrast MSE',h_mean_mse='Mean MSE',h_mmd='MMD',h_energy='Energy')
  a<-a[a$arm_set=='random_pairing_new'&a$metric%in%names(mets),];a<-a[match(names(mets),a$metric),];stopifnot(nrow(a)==5)
  a$y<-rev(seq_len(nrow(a)));a$lab<-mets[a$metric]
@@ -15,7 +15,7 @@ make_panel<-function(b){
  P<-ggplot()+
   geom_rect(data=a,aes(xmin=lo,xmax=hi,ymin=y-.32,ymax=y+.32),fill=PERISCOPE_FAINT,colour=NA)+
   geom_vline(xintercept=0,colour=PERISCOPE,linewidth=gglw('ref'))+
-  geom_point(data=pts,aes(p,y),shape=24,fill=ARM_COL[['Random pairing']],colour='white',stroke=.2,size=ggsz('point'))+
+  geom_point(data=pts,aes(p,y),shape=21,fill=ARM_COL[['Random pairing']],colour='white',stroke=.2,size=ggsz('point'))+
   geom_segment(data=a,aes(x=pct_diff_vs_full,xend=pct_diff_vs_full,y=y-.36,yend=y+.36),colour=INK,linewidth=gglw('mean'))+
   scale_y_continuous(breaks=a$y,labels=a$lab,expand=expansion(add=.55))+
   scale_x_continuous(breaks=c(-30,0,30),labels=num_minus,expand=expansion(0))+

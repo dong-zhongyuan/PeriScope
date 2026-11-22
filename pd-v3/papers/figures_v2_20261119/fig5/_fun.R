@@ -1,6 +1,6 @@
 # shared helpers for Figure 5: funnel stages per antigen and final-target program genes
-TF<-'/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/target_funnel_final_20261119'
-DRUG<-'/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/drug_evidence_expanded_20261119'
+TF<-'/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/target_funnel_g8rel_20261122'
+DRUG<-'/public/home/mengxl/dzy/pd-v3/papers/03_world_model_integration/results/target_funnel_g8rel_20261122'
 OPT<-'/public/home/mengxl/dzy/pd_product_assets/results/optimization_20261003'
 GATES<-c('All','C1','C2','C3','C4','C5','MR','Coloc','Direction','Drug')
 GCOL<-c('gate1','gate2','gate3','gate4','gate5','gate6','gate7','gate8a_direction','gate8_expanded')
